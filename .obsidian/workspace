@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "e3bd9b00f54a04fe",
+        "id": "a95656a0e8c7a66b",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -128,17 +128,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "e3bd9b00f54a04fe",
+  "active": "a95656a0e8c7a66b",
   "lastOpenFiles": [
-    "MATH 2210-12/Week 1/2022-08-23.md",
+    "README.md",
     "MATH 2210-12/Week 1/2022-08-25.md",
+    "MATH 2210-12/Week 1/2022-08-23.md",
     "MATH 2210-12/Week 1/2210 Syllabus Markdown.md",
     "MATH 2210-12/Math 2210-12.md",
     "MATH 2210-12/ZR.md",
     "CSE 2010-12(83648)/Week 1/2022-08-24 - C++ Overview.md",
     "MATH 2720-04/Week 1/2022-08-23-1.md",
     "MATH 2720-04/MATH 2720-04.md",
-    "MATH 2720-04/Discrete Mathematics.pdf",
-    "CSE 2010-12(83648)/CSE 2010-12.md"
+    "MATH 2720-04/Discrete Mathematics.pdf"
   ]
 }
