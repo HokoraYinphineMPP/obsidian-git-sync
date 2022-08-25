@@ -1,0 +1,137 @@
+{
+  "main": {
+    "id": "517ee51397efd0a8",
+    "type": "split",
+    "children": [
+      {
+        "id": "e3bd9b00f54a04fe",
+        "type": "leaf",
+        "state": {
+          "type": "graph",
+          "state": {}
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "3cd1619694278084",
+    "type": "split",
+    "children": [
+      {
+        "id": "60671ec7edba0b97",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "77a2600f3f8f93f6",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "250e691edbba8be9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "8f5521a739c035ef",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "13d8fa9bc0b22311",
+    "type": "split",
+    "children": [
+      {
+        "id": "f9acd12136d212e1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c0ad3b5e37b640b3",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "31b02b8d43ce3082",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f5cb7d0740c2f3b4",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "f11ea19c75434bac",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "250e691edbba8be9",
+  "lastOpenFiles": [
+    "CSE 2010-12(83648)/Week 1/2022-08-24 - C++ Overview.md",
+    "MATH 2720-04/MATH 2720-04.md",
+    "MATH 2210-12/Math 2210-12.md",
+    "CSE 2010-12(83648)/CSE 2010-12.md",
+    "CSE 2010-12(83648)/Week 1/Lab1/Lab 1-B.md",
+    "CSE 2010-12(83648)/Week 1/Lab1/CSE 2010 Fall 2022 Lab 1 Part B.pdf",
+    "CSE 2010-12(83648)/Week 1/Lab1/Lab 1 Submission.md",
+    "CSE 2010-12(83648)/Week 1/Lab1/lab 1B screenshot.png",
+    "CSE 2010-12(83648)/Week 1/Lab1/Lab 1-A.md",
+    "CSE 2010-12(83648)/Week 1/Lab1/8A63khBW.png"
+  ]
+}

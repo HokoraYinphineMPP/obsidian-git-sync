@@ -1,0 +1,44 @@
+{
+  "collapse-filter": true,
+  "search": "",
+  "showTags": false,
+  "showAttachments": true,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": true,
+  "colorGroups": [
+    {
+      "query": "path:\"CSE 2010-12(83648)\"",
+      "color": {
+        "a": 1,
+        "rgb": 16744576
+      }
+    },
+    {
+      "query": "path:\"MATH 2210-12\"",
+      "color": {
+        "a": 1,
+        "rgb": 8781701
+      }
+    },
+    {
+      "query": "path:\"MATH 2720-04\"",
+      "color": {
+        "a": 1,
+        "rgb": 8421631
+      }
+    }
+  ],
+  "collapse-display": true,
+  "showArrow": true,
+  "textFadeMultiplier": 0.1,
+  "nodeSizeMultiplier": 1.29039548022599,
+  "lineSizeMultiplier": 1.17966101694915,
+  "collapse-forces": true,
+  "centerStrength": 0.762162162162162,
+  "repelStrength": 14.0540540540541,
+  "linkStrength": 1,
+  "linkDistance": 30,
+  "scale": 0.7132754626224476,
+  "close": true
+}
