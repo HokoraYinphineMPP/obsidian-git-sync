@@ -7,8 +7,12 @@
         "id": "e3bd9b00f54a04fe",
         "type": "leaf",
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "MATH 2210-12/Week 1/2022-08-25.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -53,8 +57,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -74,6 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "MATH 2210-12/Week 1/2022-08-25.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -90,6 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "MATH 2210-12/Week 1/2022-08-25.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -111,7 +116,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "MATH 2210-12/Week 1/2022-08-25.md"
+              }
             }
           }
         ]
@@ -121,17 +128,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "250e691edbba8be9",
+  "active": "e3bd9b00f54a04fe",
   "lastOpenFiles": [
-    "CSE 2010-12(83648)/Week 1/2022-08-24 - C++ Overview.md",
-    "MATH 2720-04/MATH 2720-04.md",
+    "MATH 2210-12/Week 1/2210 Syllabus Markdown.md",
+    "MATH 2210-12/Week 1/2022-08-25.md",
+    "MATH 2210-12/Week 1/2022-08-23.md",
     "MATH 2210-12/Math 2210-12.md",
-    "CSE 2010-12(83648)/CSE 2010-12.md",
-    "CSE 2010-12(83648)/Week 1/Lab1/Lab 1-B.md",
-    "CSE 2010-12(83648)/Week 1/Lab1/CSE 2010 Fall 2022 Lab 1 Part B.pdf",
-    "CSE 2010-12(83648)/Week 1/Lab1/Lab 1 Submission.md",
-    "CSE 2010-12(83648)/Week 1/Lab1/lab 1B screenshot.png",
-    "CSE 2010-12(83648)/Week 1/Lab1/Lab 1-A.md",
-    "CSE 2010-12(83648)/Week 1/Lab1/8A63khBW.png"
+    "MATH 2210-12/ZR.md",
+    "CSE 2010-12(83648)/Week 1/2022-08-24 - C++ Overview.md",
+    "MATH 2720-04/Week 1/2022-08-23-1.md",
+    "MATH 2720-04/MATH 2720-04.md",
+    "MATH 2720-04/Discrete Mathematics.pdf",
+    "CSE 2010-12(83648)/CSE 2010-12.md"
   ]
 }
