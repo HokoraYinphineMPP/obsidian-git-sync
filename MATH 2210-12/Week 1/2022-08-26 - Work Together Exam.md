@@ -48,7 +48,7 @@ $V(x)=x(11-2x)(8-2x)$
 $V(x)=4x^3-38x^2+88x$
 
 #### Question 5
-
+![[Pasted image 20220826152224.png]]
 
 
 
