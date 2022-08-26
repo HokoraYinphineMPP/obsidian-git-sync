@@ -16,7 +16,7 @@ A __function__ is a rule that takes certain numbers as inputs and assigns to eac
 ## Quiz #1    Math 2210-12    Calculus 1    __James Wibowo__
 
 #### Question 1
-a) Domain: $0<x<4$
-b) Range: 
+a) Domain: $0< x< 4$
+b) Range: $0\leq V(x) \leq \frac{19- \sqrt{97}}{6}$
 c) 
 d) 
