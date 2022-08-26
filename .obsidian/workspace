@@ -112,6 +112,22 @@
               "type": "outline",
               "state": {}
             }
+          },
+          {
+            "id": "58fc83099db30a4f",
+            "type": "leaf",
+            "state": {
+              "type": "juggl_nodes",
+              "state": {}
+            }
+          },
+          {
+            "id": "84cc9fc7b2a12205",
+            "type": "leaf",
+            "state": {
+              "type": "juggl_style",
+              "state": {}
+            }
           }
         ]
       }
