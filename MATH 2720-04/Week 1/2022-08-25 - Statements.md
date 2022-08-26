@@ -71,3 +71,9 @@ p∧~q
 # Conditional Statements
 Def: p→q means:
 "if p is TRUE then q is TRUE"
+|p|q|p→q|
+|:-:|:-:|:-:|
+|T|T|T|
+|T|F|F|
+|F|T|T|
+|F|F|T|
