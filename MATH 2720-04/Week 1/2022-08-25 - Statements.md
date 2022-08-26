@@ -26,23 +26,23 @@ he had to fix compute server and 1st cooling unit
 
 
 
-|P|Q|P→Q|~P|~PvQ|
+|P|Q|P→Q|~P|~P∨Q|
 |:-:|:-:|:-:|:-:|:-:|
 |t|t|t|f|f|
 |t|f|f|f|f|
 |f|t|t|t|t|
 |f|f|t|t|t|
-~(P→Q)=~(~PvQ)
-=(~(~P))^(~Q)
-P^(~Q)
+~(P→Q)=~(~P∨Q)
+=(~(~P))∧(~Q)
+P∧(~Q)
 
 C→B
 If cow, then beans
-C→~B=~Cv~B
+C→~B=~C∨~B
 ~B→~C=C→B `contrapositive`
 B→C
 ~C→~B `inverse`
-C^~B=~(~CvB)
+C∧~B=~(~C∨B)
 =~(C→B)
 
 
