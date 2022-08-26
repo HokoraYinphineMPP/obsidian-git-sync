@@ -44,7 +44,6 @@ B→C
 ~C→~B `inverse`
 C∧~B=~(~C∨B)
 =~(C→B)
-$$$$
 
 
 # Statements
