@@ -16,4 +16,3 @@
 
 # M1 Summary
 - [M1 Wrap Up and Next Steps](https://csusb.instructure.com/courses/15759/modules/items/1037411 "M1 Wrap Up and Next Steps") (Page)
-- 
