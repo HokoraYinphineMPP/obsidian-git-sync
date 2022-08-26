@@ -4,10 +4,10 @@
     "type": "split",
     "children": [
       {
-        "id": "a95656a0e8c7a66b",
+        "id": "cc3982f43eed958d",
         "type": "leaf",
         "state": {
-          "type": "graph",
+          "type": "empty",
           "state": {}
         }
       }
@@ -114,18 +114,10 @@
             }
           },
           {
-            "id": "58fc83099db30a4f",
+            "id": "488525214e0aee42",
             "type": "leaf",
             "state": {
-              "type": "juggl_nodes",
-              "state": {}
-            }
-          },
-          {
-            "id": "84cc9fc7b2a12205",
-            "type": "leaf",
-            "state": {
-              "type": "juggl_style",
+              "type": "calendar",
               "state": {}
             }
           }
@@ -136,17 +128,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "a95656a0e8c7a66b",
+  "active": "77a2600f3f8f93f6",
   "lastOpenFiles": [
+    "MATH 2210-12/ZR.md",
+    "Recording 20220825200636.webm",
+    "MATH 2210-12/Week 1/2022-08-23.md",
+    "CSE 2010-12(83648)/Week 1/2022-08-22 - Syllabus Overview.md",
+    "Classes.md",
     "MATH 2720-04/Week 1/Week 1 Homework.md",
     "MATH 2720-04/Week 1/2720 Syllabus Markdown.md",
     "MATH 2720-04/Week 1/2022-08-25 - Statements.md",
     "CSE 2010-12(83648)/Week 1/2022-08-24 - C++ Overview.md",
-    "CSE 2010-12(83648)/Week 1/2022-08-22 - Syllabus Overview.md",
-    "CSE 2010-12(83648)/Week 1/Lab1/Lab 1 Submission.md",
-    "CSE 2010-12(83648)/Week 1/Lab1/lab 1B screenshot.png",
-    "MATH 2210-12/Week 1/2022-08-25.md",
-    "MATH 2210-12/Week 1/2210 Syllabus Markdown.md",
-    "2022-08-25.md"
+    "CSE 2010-12(83648)/Week 1/Lab1/Lab 1 Submission.md"
   ]
 }
