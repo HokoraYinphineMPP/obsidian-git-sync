@@ -5,10 +5,11 @@
 [[2022-08-23]]
 
 #### Thu
-40
+95
 [[2022-08-25 - Folded Paper]]
+
 #### Fri
-10
+110
 [[2022-08-26 - Work Together Exam]]
 
 ### Goal
