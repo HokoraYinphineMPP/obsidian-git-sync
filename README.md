@@ -1,1 +1,1 @@
-:siggy:
+![[siggy.png]]
