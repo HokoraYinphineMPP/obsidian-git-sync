@@ -97,4 +97,11 @@ p→q
 |Converse|q→p|
 |Inverse|~p→~q|
 |Contrapositive|~q→~p|
-|Biconditional|p⟷q|
+|Biconditional|p⇔q|
+Note: Conditional and Contrapositive have the same truth value
+Note: Converse and Inverse have the same truth value
+- ⇔ means: "If and only if" aka "iff"
+it means if p is true, then q is true, and vice versa
+
+ie:
+``
