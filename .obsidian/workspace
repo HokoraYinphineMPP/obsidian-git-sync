@@ -6,7 +6,7 @@
       {
         "id": "cc3982f43eed958d",
         "type": "leaf",
-        "dimension": 61.29032258064516,
+        "dimension": 64.55128205128206,
         "state": {
           "type": "markdown",
           "state": {
@@ -20,7 +20,7 @@
       {
         "id": "ce80bb250476dae4",
         "type": "leaf",
-        "dimension": 38.70967741935484,
+        "dimension": 35.44871794871795,
         "state": {
           "type": "localgraph",
           "state": {
@@ -76,7 +76,7 @@
               "repelStrength": 11.2820512820513,
               "linkStrength": 1,
               "linkDistance": 30,
-              "scale": 1.401982897776103,
+              "scale": 1.0000000000000018,
               "close": true
             }
           }
@@ -205,7 +205,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "ce80bb250476dae4",
+  "active": "cc3982f43eed958d",
   "lastOpenFiles": [
     "MATH 2210-12/Week 1/2022-08-25 - Folded Paper.md",
     "MATH 2210-12/Week 1/2022-08-26 - Work Together Exam.md",

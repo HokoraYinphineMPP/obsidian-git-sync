@@ -18,7 +18,7 @@ A __function__ is a rule that takes certain numbers as inputs and assigns to eac
 ## Quiz #1    Math 2210-12    Calculus 1    __James Wibowo__
 
 #### Question 1
-Give Domain and Range for the folded paper volume.[^1]
+*Give Domain and Range for the folded paper volume.[^1]*
 
 a) Domain: $0< x< 4$
 b) Range: $0\leq V(x) \leq \frac{19- \sqrt{97}}{6}$
@@ -31,7 +31,7 @@ What is the rule of 4?
 Table, Graph, Formula, Words
 
 #### Question 3
-What was the numerical approach of the folded paper?[^1]
+*What was the numerical approach of the folded paper?[^1]*
 
 A graph.
 
@@ -44,10 +44,13 @@ A graph.
 |$V(4)$|$4*3*0=0in^3$|
 
 #### Question 4
+*What's the formula?*
+
 $V(x)=x(11-2x)(8-2x)$
 $V(x)=4x^3-38x^2+88x$
 
 #### Question 5
+*Graph the formula*
 ![[Pasted image 20220826152224.png]]
 
 
