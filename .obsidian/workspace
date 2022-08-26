@@ -7,8 +7,12 @@
         "id": "cc3982f43eed958d",
         "type": "leaf",
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "MATH 2720-04/Week 1/2022-08-25 - Statements.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -73,6 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "MATH 2720-04/Week 1/2022-08-25 - Statements.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "MATH 2720-04/Week 1/2022-08-25 - Statements.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -110,7 +116,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "MATH 2720-04/Week 1/2022-08-25 - Statements.md"
+              }
             }
           },
           {
@@ -131,8 +139,8 @@
   },
   "active": "cc3982f43eed958d",
   "lastOpenFiles": [
-    "MATH 2720-04/Week 1/2022-08-25 - Statements.md",
     "MATH 2720-04/Week 1/Week 1 Homework.md",
+    "MATH 2720-04/Week 1/2022-08-25 - Statements.md",
     "CSE 2010-12(83648)/Week 1/2022-08-24 - C++ Overview.md",
     "MATH 2720-04/Week 1/2720 Syllabus Markdown.md",
     "MATH 2720-04/Week 1/M1.png",

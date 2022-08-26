@@ -89,3 +89,12 @@ p→q
 `I pass` = q
 `or` = ∨
 ~p∨q
+
+# Types of Statements
+|Type|p→q|
+|:-:|:-:|
+|Conditional|p→q
+|Converse|q→p|
+|Inverse|~p→~q|
+|Contrapositive|~q→~p|
+|Biconditional|p⟷q|
