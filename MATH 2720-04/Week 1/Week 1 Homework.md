@@ -8,7 +8,7 @@
 ## Learning Videos
 - [x] [Learning Video: Statements](https://csusb.instructure.com/courses/15759/modules/items/1037405) (Assignment) `Aug 25` 1pt
 - [x] [Learning Video: Conditional Statements and Truth Values](https://csusb.instructure.com/courses/15759/modules/items/1102317) (Assignment) `Aug 25` 1pt
-- [ ] [Learning Video: Contrapositive, Converse, and Inverse](https://csusb.instructure.com/courses/15759/modules/items/1102318) (Assignment) `Aug 25` 1pt
+- [x] [Learning Video: Contrapositive, Converse, and Inverse](https://csusb.instructure.com/courses/15759/modules/items/1102318) (Assignment) `Aug 25` 1pt
 
 # Learning Activities
 - [ ] [Read Section 0.2 Mathematical Statements](http://discrete.openmathbooks.org/dmoi3/sec_intro-statements.html "Read Section 0.2 Mathematical Statements")

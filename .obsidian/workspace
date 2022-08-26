@@ -7,12 +7,8 @@
         "id": "cc3982f43eed958d",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "MATH 2720-04/Week 1/2022-08-25 - Statements.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "graph",
+          "state": {}
         }
       }
     ],
@@ -77,7 +73,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MATH 2720-04/Week 1/2022-08-25 - Statements.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +89,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MATH 2720-04/Week 1/2022-08-25 - Statements.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -116,9 +110,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "MATH 2720-04/Week 1/2022-08-25 - Statements.md"
-              }
+              "state": {}
             }
           },
           {
@@ -139,15 +131,15 @@
   },
   "active": "cc3982f43eed958d",
   "lastOpenFiles": [
-    "MATH 2720-04/Week 1/Week 1 Homework.md",
-    "MATH 2720-04/Week 1/2022-08-25 - Statements.md",
+    "Classes.md",
+    "README.md",
     "CSE 2010-12(83648)/Week 1/2022-08-24 - C++ Overview.md",
     "MATH 2720-04/Week 1/2720 Syllabus Markdown.md",
+    "MATH 2720-04/Week 1/Week 1 Homework.md",
+    "MATH 2720-04/Week 1/2022-08-25 - Statements.md",
     "MATH 2720-04/Week 1/M1.png",
     "MATH 2720-04/MATH 2720-04.md",
     "MATH 2210-12/Week 1/2022-08-25.md",
-    "MATH 2210-12/Week 1/2022-08-23.md",
-    "MATH 2720-04/Week 1/2720-04-syllabus-f22.docx.pdf",
-    "Recording 20220825200636.webm"
+    "MATH 2210-12/Week 1/2022-08-23.md"
   ]
 }
