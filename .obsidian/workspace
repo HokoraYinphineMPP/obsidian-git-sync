@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "CSE 2010-12(83648)/Week 1/2022-08-24 - C++ Overview.md",
+            "file": "MATH 2210-12/Week 1/2022-08-26 - Work Together Exam.md",
             "mode": "source",
             "source": false
           }
@@ -24,7 +24,7 @@
         "state": {
           "type": "localgraph",
           "state": {
-            "file": "CSE 2010-12(83648)/Week 1/2022-08-24 - C++ Overview.md",
+            "file": "MATH 2210-12/Week 1/2022-08-26 - Work Together Exam.md",
             "options": {
               "collapse-filter": true,
               "search": "",
@@ -145,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CSE 2010-12(83648)/Week 1/2022-08-24 - C++ Overview.md",
+                "file": "MATH 2210-12/Week 1/2022-08-26 - Work Together Exam.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +162,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CSE 2010-12(83648)/Week 1/2022-08-24 - C++ Overview.md",
+                "file": "MATH 2210-12/Week 1/2022-08-26 - Work Together Exam.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -185,7 +185,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CSE 2010-12(83648)/Week 1/2022-08-24 - C++ Overview.md"
+                "file": "MATH 2210-12/Week 1/2022-08-26 - Work Together Exam.md"
               }
             }
           },
@@ -205,17 +205,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "ce80bb250476dae4",
+  "active": "cc3982f43eed958d",
   "lastOpenFiles": [
+    "MATH 2210-12/Week 1/2022-08-25 - Folded Paper.md",
     "Classes.md",
+    "CSE 2010-12(83648)/Week 1/2022-08-24 - C++ Overview.md",
     "MATH 2210-12/Week 1/2022-08-26 - Work Together Exam.md",
     "MATH 2210-12/ZR.md",
-    "MATH 2210-12/Week 1/2022-08-25 - Folded Paper.md",
     "MATH 2210-12/Math 2210-12.md",
     "MATH 2210-12/Week 1/Math 2210-12 Fall 2022 Syllabus.pdf",
     "MATH 2210-12/Week 1/2022-08-23.md",
     "MATH 2210-12/Week 1/2210 Syllabus Markdown.md",
-    "JAPN 3900-03/JAPN 3900-03.md",
-    "CSE 2010-12(83648)/Week 1/Lab1/Lab 1-A.md"
+    "JAPN 3900-03/JAPN 3900-03.md"
   ]
 }

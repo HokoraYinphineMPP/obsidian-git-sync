@@ -21,7 +21,7 @@ A __function__ is a rule that takes certain numbers as inputs and assigns to eac
 *Give Domain and Range for the folded paper volume.[^1]*
 
 a) Domain: $0< x< 4$
-b) Range: $0\leq V(x) \leq \frac{19- \sqrt{97}}{6}$
+b) Range: $0\leq V(x) \leq \frac{19- \sqrt{97}}{6}\approx 60$
 c) $h$ Height
 d) $V$ Volume
 
