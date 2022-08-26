@@ -9,7 +9,10 @@ ___Daily Snowfall in inches for Boston, January 27 to February 9, 2015___
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 |Snowfall|22.1|0.2|0|0.7|1.3|0|16.2|0|0|0.8|0|0.9|7.4|14.8|
 
+The snowfall follows a function. Each day, $t$, has a unique snowfall, $S$, associated with it.
 
 
 
-## Quiz #1   Math 2210-12   Calculus 1   James Wibowo
+## Quiz #1    Math 2210-12    Calculus 1    __James Wibowo__
+
+#### Question 1
