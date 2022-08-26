@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "MATH 2720-04/Week 1/Week 1 Homework.md",
+            "file": "Classes.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MATH 2720-04/Week 1/Week 1 Homework.md",
+                "file": "Classes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MATH 2720-04/Week 1/Week 1 Homework.md",
+                "file": "Classes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MATH 2720-04/Week 1/Week 1 Homework.md"
+                "file": "Classes.md"
               }
             }
           },
