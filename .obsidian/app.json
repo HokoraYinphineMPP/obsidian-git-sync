@@ -1,5 +1,8 @@
 {
   "promptDelete": false,
   "fileSortOrder": "alphabetical",
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "showLineNumber": false,
+  "newFileLocation": "current",
+  "attachmentFolderPath": "./"
 }
