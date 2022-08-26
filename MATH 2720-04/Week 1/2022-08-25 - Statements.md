@@ -60,3 +60,8 @@ Ex:
 |~p|not p|
 |p∧q|p and q|
 |p∨q|p or q|
+ie:
+`"my shirt is gray but my shorts are not"`
+`"my shirt is gray"` = p
+`"my shorts are gray"` = q
+`"my shorts are not gray"` = ~q
