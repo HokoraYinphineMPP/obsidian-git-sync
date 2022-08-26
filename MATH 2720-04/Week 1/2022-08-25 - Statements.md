@@ -65,3 +65,9 @@ ie:
 `"my shirt is gray"` = p
 `"my shorts are gray"` = q
 `"my shorts are not gray"` = ~q
+`"but"` = ∧
+p∧~q
+
+# Conditional Statements
+Def: p→q means:
+"if p is TRUE then q is TRUE"
