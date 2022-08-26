@@ -9,7 +9,7 @@
 [[2022-08-25 - Folded Paper]]
 #### Fri
 10
-
+[[2022-08-26 - Work Together Exam]]
 
 ### Goal
 110 per day
