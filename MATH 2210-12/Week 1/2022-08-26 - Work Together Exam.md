@@ -22,10 +22,13 @@ Give Domain and Range for the folded paper volume.[^1]
 
 a) Domain: $0< x< 4$
 b) Range: $0\leq V(x) \leq \frac{19- \sqrt{97}}{6}$
-
-#### Question 2
 c) $h$ Height
 d) $V$ Volume
+
+#### Question 2
+What is the rule of 4?
+
+Table, Graph, Formula, Words
 
 #### Question 3
 What was the numerical approach of the folded paper?[^1]
