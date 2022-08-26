@@ -61,11 +61,11 @@ Ex:
 |p∧q|p and q|
 |p∨q|p or q|
 ie:
-`"my shirt is gray but my shorts are not"`
-`"my shirt is gray"` = p
-`"my shorts are gray"` = q
-`"my shorts are not gray"` = ~q
-`"but"` = ∧
+`my shirt is gray but my shorts are not`
+`my shirt is gray` = p
+`my shorts are gray` = q
+`my shorts are not gray` = ~q
+`but` = ∧
 p∧~q
 
 # Conditional Statements
@@ -77,3 +77,15 @@ Def: p→q means:
 |T|F|F|
 |F|T|T|
 |F|F|T|
+
+ie:
+`If I study hard, then I will pass`
+`I study hard` = p
+`I will pass` = q
+if p then q
+p→q
+`either I don't study hard, or I pass`
+`I don't study hard` = ~p
+`I pass` = q
+`or` = ∨
+~p∨q
