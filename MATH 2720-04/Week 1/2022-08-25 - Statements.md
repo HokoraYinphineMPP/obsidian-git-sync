@@ -47,3 +47,16 @@ C∧~B=~(~C∨B)
 
 
 # Statements
+A __Statement__ is a sentence that is either `True` or `False`
+Ex:
+|Examples|T/F|
+|:-|:-:|
+|$p:"5>2"$|True|
+|$q:"2>5"$|False|
+|$r:"x>2"$|Not a statement|
+###### New statement from old
+|p q|def|
+|:-:|:-:|
+|~p|not p|
+|p∧q|p and q|
+|p∨q|p or q|
