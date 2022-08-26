@@ -6,7 +6,7 @@
       {
         "id": "cc3982f43eed958d",
         "type": "leaf",
-        "dimension": 51.60256410256411,
+        "dimension": 61.29032258064516,
         "state": {
           "type": "markdown",
           "state": {
@@ -20,7 +20,7 @@
       {
         "id": "ce80bb250476dae4",
         "type": "leaf",
-        "dimension": 48.3974358974359,
+        "dimension": 38.70967741935484,
         "state": {
           "type": "localgraph",
           "state": {
@@ -200,15 +200,15 @@
   },
   "active": "cc3982f43eed958d",
   "lastOpenFiles": [
-    "MATH 2210-12/Week 1/2022-08-25 - Folded Paper.md",
+    "MATH 2210-12/Math 2210-12.md",
+    "MATH 2210-12/Week 1/Math 2210-12 Fall 2022 Syllabus.pdf",
+    "MATH 2210-12/Week 1/2022-08-23.md",
+    "MATH 2210-12/Week 1/2210 Syllabus Markdown.md",
     "MATH 2210-12/Week 1/2022-08-26 - Work Together Exam.md",
+    "MATH 2210-12/Week 1/2022-08-25 - Folded Paper.md",
     "Classes.md",
     "MATH 2210-12/ZR.md",
-    "MATH 2210-12/Math 2210-12.md",
-    "MATH 2210-12/Week 1/2022-08-23.md",
     "JAPN 3900-03/JAPN 3900-03.md",
-    "CSE 2010-12(83648)/Week 1/Lab1/Lab 1-A.md",
-    "CSE 2010-12(83648)/Week 1/2022-08-22 - Syllabus Overview.md",
-    "CSE 2010-12(83648)/Week 1/2022-08-24 - C++ Overview.md"
+    "CSE 2010-12(83648)/Week 1/Lab1/Lab 1-A.md"
   ]
 }
