@@ -11,8 +11,12 @@ ___Daily Snowfall in inches for Boston, January 27 to February 9, 2015___
 
 The snowfall follows a function. Each day, $t$, has a unique snowfall, $S$, associated with it.
 
-
+A __function__ is a rule that takes certain numbers as inputs and assigns to each a definite output number. The set of all input numbers is called the __domain__ of the function and the set of resulting output numbers is called the __range__ of the function.
 
 ## Quiz #1    Math 2210-12    Calculus 1    __James Wibowo__
 
 #### Question 1
+a) Domain: $0<x<4$
+b) Range: 
+c) 
+d) 
