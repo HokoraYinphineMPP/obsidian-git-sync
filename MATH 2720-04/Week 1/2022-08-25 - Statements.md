@@ -111,3 +111,4 @@ p→q
 Converse: `If you get a good grade, then you studied`
 Inverse: `If you do not study, then you will not get a good grade`
 Contrapositive: `If you did not get a good grade, then you did not study`
+
