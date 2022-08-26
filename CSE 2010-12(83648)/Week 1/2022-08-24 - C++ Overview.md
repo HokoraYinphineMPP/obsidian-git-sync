@@ -111,7 +111,7 @@ int main()
 
 ## Basic Input
 
-`cin` statements are used to take input through an input device: keyboard, file, etc
+`cin` statements are used to take [input] through an input device: keyboard, file, etc
 `cin` statement syntax
 ``` c++
 cin >> variableName;
