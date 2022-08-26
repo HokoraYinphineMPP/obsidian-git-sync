@@ -7,8 +7,12 @@
         "id": "a95656a0e8c7a66b",
         "type": "leaf",
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "MATH 2720-04/Week 1/2022-08-25 - Statements.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -73,6 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "MATH 2720-04/Week 1/2022-08-25 - Statements.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "MATH 2720-04/Week 1/2022-08-25 - Statements.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -110,7 +116,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "MATH 2720-04/Week 1/2022-08-25 - Statements.md"
+              }
             }
           }
         ]
@@ -122,15 +130,15 @@
   },
   "active": "a95656a0e8c7a66b",
   "lastOpenFiles": [
-    "MATH 2720-04/Week 1/2022-08-25 - Statements.md",
     "README.md",
+    "siggy.png",
+    "MATH 2210-12/Week 1/2022-08-25.md",
+    "MATH 2720-04/Week 1/2022-08-25 - Statements.md",
     "MATH 2720-04/Week 1/2720 Syllabus Markdown.md",
     "MATH 2720-04/Week 1/2720-04-syllabus-f22.docx.pdf",
     "MATH 2720-04/Discrete Mathematics.pdf",
     "CSE 2010-12(83648)/Week 1/2022-08-24 - C++ Overview.md",
     "MATH 2720-04/Week 1/2022-08-23-1.md",
-    "MATH 2210-12/ZR.md",
-    "MATH 2210-12/Math 2210-12.md",
-    "MATH 2210-12/Week 1/2022-08-25.md"
+    "MATH 2210-12/ZR.md"
   ]
 }
