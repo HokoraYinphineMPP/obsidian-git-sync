@@ -93,7 +93,7 @@ p→q
 # Types of Statements
 |Type|p→q|
 |:-:|:-:|
-|Conditional|p→q
+|Conditional|p→q|
 |Converse|q→p|
 |Inverse|~p→~q|
 |Contrapositive|~q→~p|
@@ -104,4 +104,10 @@ Note: Converse and Inverse have the same truth value
 it means if p is true, then q is true, and vice versa
 
 ie:
-``
+`If you study, then you will get a good grade`
+`you study` = p
+`you will get a good grade` = q
+p→q
+Converse: `If you get a good grade, then you studied`
+Inverse: `If you do not study, then you will not get a good grade`
+Contrapositive: `If you did not get a good grade, then you did not study`
