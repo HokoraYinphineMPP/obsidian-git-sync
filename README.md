@@ -1,1 +1,1 @@
-![[siggy.png]]
+![Alt text](/siggy.png "Siggy")
