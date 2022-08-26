@@ -7,8 +7,12 @@
         "id": "cc3982f43eed958d",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "MATH 2720-04/Week 1/Week 1 Homework.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -73,6 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "MATH 2720-04/Week 1/Week 1 Homework.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "MATH 2720-04/Week 1/Week 1 Homework.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -110,7 +116,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "MATH 2720-04/Week 1/Week 1 Homework.md"
+              }
             }
           },
           {
@@ -121,24 +129,25 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
     "width": 300,
     "collapsed": true
   },
-  "active": "77a2600f3f8f93f6",
+  "active": "cc3982f43eed958d",
   "lastOpenFiles": [
-    "MATH 2210-12/ZR.md",
-    "Recording 20220825200636.webm",
-    "MATH 2210-12/Week 1/2022-08-23.md",
-    "CSE 2010-12(83648)/Week 1/2022-08-22 - Syllabus Overview.md",
-    "Classes.md",
-    "MATH 2720-04/Week 1/Week 1 Homework.md",
-    "MATH 2720-04/Week 1/2720 Syllabus Markdown.md",
-    "MATH 2720-04/Week 1/2022-08-25 - Statements.md",
     "CSE 2010-12(83648)/Week 1/2022-08-24 - C++ Overview.md",
-    "CSE 2010-12(83648)/Week 1/Lab1/Lab 1 Submission.md"
+    "MATH 2720-04/Week 1/Week 1 Homework.md",
+    "MATH 2720-04/MATH 2720-04.md",
+    "MATH 2210-12/Week 1/2022-08-25.md",
+    "MATH 2210-12/Week 1/2022-08-23.md",
+    "MATH 2720-04/Week 1/2720-04-syllabus-f22.docx.pdf",
+    "MATH 2720-04/Week 1/2720 Syllabus Markdown.md",
+    "Recording 20220825200636.webm",
+    "MATH 2210-12/ZR.md",
+    "CSE 2010-12(83648)/Week 1/2022-08-22 - Syllabus Overview.md"
   ]
 }
