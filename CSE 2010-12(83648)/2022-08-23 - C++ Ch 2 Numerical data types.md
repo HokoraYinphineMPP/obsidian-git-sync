@@ -106,4 +106,29 @@ increment and decrement operators
 when to use `double`
 	use `double` when the value contain decimal points.
 
-similar to integers, we can
+similar to integers, we can use arithmetic operators on these types.
+
+note:
+	cannot use % with floating point values.
+	can use `fmod()`, part of the cmath library
+
+### Constants
+a constant is a named value that cannot be changed.
+Use constants in your program when you are representing a fixed value
+
+###### Syntax
+`const datatype NAME = value;`
+
+
+
+## Example Program
+Write a C++ program that asks the user the number of pennies, nickles, dimes, and quarters they have, then display their total to them.
+
+###### Steps to take
+1) initialize variables
+2) prompt the user for the number of each coin
+3) calculate total of each coin
+4) calculate total of all coins
+5) display the total
+
+###### What we need for each step
