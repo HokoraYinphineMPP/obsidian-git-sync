@@ -138,7 +138,7 @@ screenshots)
 
 
 ###### **Once you have completed all 3 programming exercises, log on to Canvas. Under
-“Modules > Lab Assignments > Lab 02” , submit the following:**
+“Modules > Lab Assignments > Lab 02” , submit the following[^2]:**
 
 - .cpp file for Exercise 1
 - Screenshot for Exercise 1
