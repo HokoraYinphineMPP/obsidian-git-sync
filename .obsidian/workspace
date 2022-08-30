@@ -67,7 +67,7 @@
                 }
               ],
               "collapse-display": true,
-              "showArrow": false,
+              "showArrow": true,
               "textFadeMultiplier": 0,
               "nodeSizeMultiplier": 1,
               "lineSizeMultiplier": 1,
@@ -205,7 +205,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "cc3982f43eed958d",
+  "active": "ce80bb250476dae4",
   "lastOpenFiles": [
     "MATH 2210-12/2022-08-30.md",
     "MATH 2210-12/ZR.md",
