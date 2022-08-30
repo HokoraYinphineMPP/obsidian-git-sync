@@ -60,19 +60,33 @@ datatype variableName = initial value, variableName = initialcalue...;
 defines multiple variables of the same datatpye each with its own initial value
 
 notes:
-you can defalre/define as many variables as you want in a single statemetn, but they all must be the same data type
+you can declare/define as many variables as you want in a single statement, but they all must be the same data type
 the "=" character used above is the assignment operator
-- format is :`variable = value;` where it will assign the variable on the left the value on the right
+- format is: `variable = value;` where it will assign the variable on the left the value on the right
 
 
 ### Rules
-cariable names must start with a letter or an underscore but can contain a mix of uppercase and lower cases , numbers, and underscore
-cannot be any *C++* keyword (`int, float, double, main, class, case, etc...`)
-variable names are case sensitive
-so the variables `int pennies;` and `int Pennies;` are two different variables
-make cariable names something significant. it should be clear what it represents
+- variable names must start with a letter or an underscore but can contain a mix of uppercase and lower cases , numbers, and underscore
+
+- cannot be any *C++* keyword (`int, float, double, main, class, case, etc...`)
+
+- variable names are case sensitive
+	so the variables `int pennies;` and `int Pennies;` are two different variables
+	make cariable names something significant. it should be clear what it represents
 
 ### Integer Values
-keyword: `int`
-when to use `int`
-use `int` to represent data that can only be identified in whole numbers
+- keyword: `int`
+- when to use `int`
+	use `int` to represent data that can only be identified in whole numbers
+
+- can perform arithmetic with integers `(+, -, *, /, %)`
+	
+	###### modulus operator: `%`
+		op1 % op2 results in the remainder of dividing op1 by op2
+			ex:
+			`int x=30, y=6, z=7`
+			`int v=x%y; //v=0`
+			`int w=x%z; //w=2`
+
+a op=b -> a = a op b
+can be used with `-=, *=, /=, %=`
