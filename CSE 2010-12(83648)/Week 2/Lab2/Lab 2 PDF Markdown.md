@@ -70,7 +70,7 @@ After modifying the program, save, compile and run with the values below. You sh
 expected values:
 
 a = 1, b = 0, c = - 4 Expected Values: x1,x2 = -2, 2
-a = 1, b = 5, c = 6 Expected Values: x1,x2 = -2, -
+a = 1, b = 5, c = 6 Expected Values: x1,x2 = -2, -3
 
 Remember that after compiling, you can run the program with the following command:
 **./quadratic.**
