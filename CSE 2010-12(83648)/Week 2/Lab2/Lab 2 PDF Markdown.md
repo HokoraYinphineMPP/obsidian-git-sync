@@ -149,3 +149,4 @@ screenshots)
 
 
 [^1]:[[2022-08-23 - C++ Ch 2 Numerical data types]]
+[^2]: https://csusb.instructure.com/courses/14455/assignments/266902?module_item_id=1116378
