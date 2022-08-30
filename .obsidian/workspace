@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "CSE 2010-12(83648)/Week 1/Lab2/Lab 2 Submission.md",
+            "file": "CSE 2010-12(83648)/Week 2/Lab2/Lab 2 PDF Markdown.md",
             "mode": "source",
             "source": false
           }
@@ -24,7 +24,7 @@
         "state": {
           "type": "localgraph",
           "state": {
-            "file": "CSE 2010-12(83648)/Week 1/Lab2/Lab 2 Submission.md",
+            "file": "CSE 2010-12(83648)/Week 2/Lab2/Lab 2 PDF Markdown.md",
             "options": {
               "collapse-filter": true,
               "search": "",
@@ -145,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CSE 2010-12(83648)/Week 1/Lab2/Lab 2 Submission.md",
+                "file": "CSE 2010-12(83648)/Week 2/Lab2/Lab 2 PDF Markdown.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +162,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CSE 2010-12(83648)/Week 1/Lab2/Lab 2 Submission.md",
+                "file": "CSE 2010-12(83648)/Week 2/Lab2/Lab 2 PDF Markdown.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -185,7 +185,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CSE 2010-12(83648)/Week 1/Lab2/Lab 2 Submission.md"
+                "file": "CSE 2010-12(83648)/Week 2/Lab2/Lab 2 PDF Markdown.md"
               }
             }
           },
@@ -205,17 +205,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "77a2600f3f8f93f6",
+  "active": "cc3982f43eed958d",
   "lastOpenFiles": [
-    "CSE 2010-12(83648)/CSE 2010-12.md",
-    "CSE 2010-12(83648)/Week 1/2022-08-23 - C++ Ch 2 Numerical data types.md",
-    "Classes.md",
+    "CSE 2010-12(83648)/Week 2/Lab2/Lab 2 Submission.md",
     "CSE 2010-12(83648)/Week 1/Lab1/Lab 1 Submission.md",
+    "CSE 2010-12(83648)/CSE 2010-12.md",
+    "CSE 2010-12(83648)/Week 2/2022-08-23 - C++ Ch 2 Numerical data types.md",
+    "Classes.md",
     "CSE 2010-12(83648)/Week 1/Lab1/Lab 1-B.md",
     "CSE 2010-12(83648)/Week 1/Lab1/Lab 1-A.md",
     "MATH 2720-04/Week 1/Week 1 Homework.md",
     "MATH 2210-12/Math 2210-12.md",
-    "siggy.png",
-    "CSE 2010-12(83648)/Week 1/2022-08-24 - C++ Overview.md"
+    "siggy.png"
   ]
 }
