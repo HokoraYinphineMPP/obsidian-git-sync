@@ -166,7 +166,7 @@ int main()
 	double total = (numPennies*.01)+(numNickels*.05)+(numDimes*.1)+(numQuarters*.25);
 	
 	//display the total to the user
-	cout << fixed << setprecision(2) << "Your total is: $" << total << "\n"
+	cout << fixed << setprecision(2) << "Your total is: $" << total << "\n";
 }
 ```
 
