@@ -145,12 +145,22 @@ using namespace std;
 int main()
 {
 	//init variables for each coin
-	int numPennies = 0, num
+	int numPennies = 0, numNickels = 0, numDimes = 0, numQuarters = 0;
+	
 	//prompt user for each coin
+	//ask the user to enter the amount for each
+	cout << "Please enter the number of pennies you have: "
+	cin >> numPennies;
+	cout << "Please enter the number of nickels you have: "
+	cin >> numNickels;
+	cout << "Please enter the number of dimes you have: "
+	cin >> numDimes;
+	cout << "Please enter the number of quarters you have: "
+	cin >> numQuarters;
 	
-	//calculate the total for each coin
+	//calculate the total for coins
+	double total = (numPennies*.01)+(numNickels*.05)+(numDimes*.1)+(numQuarters*.25)
 	
-	//calculate total of all coins
 	
 	//display the total to the user
 	
