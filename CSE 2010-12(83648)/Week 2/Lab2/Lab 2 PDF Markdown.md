@@ -14,7 +14,7 @@ Learning Objectives:
 
 In this week’s lab, we will be writing programs using concepts covered in Week 2’s lecture. Look
 over how to declare numerical data types, string data types, when to use certain data types, and
-how to use and call functions in the `cmath` and <string> libraries.
+how to use and call functions in the `cmath` and `string` libraries.
 
 Open up your Terminal and navigate to your Lab02 directory.
 
@@ -25,7 +25,7 @@ helpful:
 
 [http://www.cplusplus.com/reference/string/string/](http://www.cplusplus.com/reference/string/string/)
 
-**Programming Exercise 1: Quadratic Formula (5 points)**
+## **Programming Exercise 1: Quadratic Formula (5 points)**
 
 In your Lab2 directory, create a file called **_quadratic.cpp_**. In this file, type the code below to
 implement a quadratic formula program that calculates the two solutions of a quadratic formula
@@ -77,7 +77,7 @@ Remember that after compiling, you can run the program with the following comman
 
 Once your programming is working, take a screenshot of your output.
 
-**Programming Exercise 2: Change Counter (10 points)**
+## **Programming Exercise 2: Change Counter (10 points)**
 Now it’s time for you to spread your wings and write your own program from scratch. In a file
 called **_change.cpp_** write a program that prompts the user to enter the number of pennies,
 nickels, dimes, and quarters that they have. Calculate their total and display to them.
@@ -96,7 +96,7 @@ Save, compile, and test your program with the example values above. Take a scree
 your terminal window that shows your error free compilation and test runs.
 
 
-**Programming Exercise 3: The Healthy Programmers Program (15 points)**
+## **Programming Exercise 3: The Healthy Programmers Program (15 points)**
 
 Ahsoka Tano is a computer science student trying to make some lifestyle changes and be more
 active during her programming filled days. She wants to start working out and knows that
@@ -137,7 +137,7 @@ Once your program works as expected, take a screenshot of the output. (You shoul
 screenshots)
 
 
-**Once you have completed all 3 programming exercises, log on to Canvas. Under
+###### **Once you have completed all 3 programming exercises, log on to Canvas. Under
 “Modules > Lab Assignments > Lab 02” , submit the following:**
 
 - .cpp file for Exercise 1

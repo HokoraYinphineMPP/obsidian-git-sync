@@ -15,13 +15,16 @@ Values in programming have a specific data type that determins size it takes in 
 ## Numerical Data Types
 ### integer values
 |c++ keyword|size of type|range|
+|-|-|-|
 |int|4 bytes|-2147483648 to 2147483647
 ### Floating Point values
 |c++ keyword|size of type|range|
+|-|-|-|
 |float|4 bytes|?|
 |double|8 bytes|?|
 
 |type|size|
+|-|-|
 |int|4
 |unsigned|4
 |short|2
