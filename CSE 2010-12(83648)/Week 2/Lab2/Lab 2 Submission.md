@@ -13,8 +13,13 @@ Your submission for Lab 2 should include the following:
 ![[CSE 2010 Lab 2.pdf]]
 
 # Exercise 1
+![[quadratic.cpp]]
+
 
 # Exercise 2
+![[change.cpp]]
+
 
 # Exercise 3
+![[Karvonen.cpp]]
 
