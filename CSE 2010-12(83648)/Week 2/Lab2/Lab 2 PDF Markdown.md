@@ -29,7 +29,7 @@ helpful:
 
 In your Lab2 directory, create a file called **_quadratic.cpp_**. In this file, type the code below to
 implement a quadratic formula program that calculates the two solutions of a quadratic formula
-(we went over this in class.) Be sure to include a multi-line comment header at the top of the file
+(we went over this in class.)[^1] Be sure to include a multi-line comment header at the top of the file
 with your name, file name, and program description.
 
 Save the file and compile to make sure you don’t have any errors. Remember the command to
@@ -148,3 +148,4 @@ screenshots)
 - 2 Screenshots for Exercise 3
 
 
+[^1]:[[2022-08-23 - C++ Ch 2 Numerical data types]]
