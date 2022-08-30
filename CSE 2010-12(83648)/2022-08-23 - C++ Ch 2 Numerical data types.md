@@ -140,6 +140,7 @@ Write a C++ program that asks the user the number of pennies, nickles, dimes, an
 
 ```c++
 #include <iostream>
+#inclue <iomanip>
 
 using namespace std;
 int main()
@@ -149,20 +150,23 @@ int main()
 	
 	//prompt user for each coin
 	//ask the user to enter the amount for each
-	cout << "Please enter the number of pennies you have: "
+	cout << "Please enter the number of pennies you have: ";
 	cin >> numPennies;
-	cout << "Please enter the number of nickels you have: "
+	cout << "Please enter the number of nickels you have: ";
 	cin >> numNickels;
-	cout << "Please enter the number of dimes you have: "
+	cout << "Please enter the number of dimes you have: ";
 	cin >> numDimes;
-	cout << "Please enter the number of quarters you have: "
+	cout << "Please enter the number of quarters you have: ";
 	cin >> numQuarters;
 	
 	//calculate the total for coins
-	double total = (numPennies*.01)+(numNickels*.05)+(numDimes*.1)+(numQuarters*.25)
-	
+	double total = (numPennies*.01)+(numNickels*.05)+(numDimes*.1)+(numQuarters*.25);
 	
 	//display the total to the user
-	
+	cout << fixed << setprecision(2) << "Your total is: $" << total << "\n"
 }
 ```
+
+
+# Using pre-definied C++ Libraries
+- the `cm`
