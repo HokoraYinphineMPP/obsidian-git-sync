@@ -132,3 +132,27 @@ Write a C++ program that asks the user the number of pennies, nickles, dimes, an
 5) display the total
 
 ###### What we need for each step
+1) Declare variables for each coin
+2) `cout` to ask for the coins, `cin` to take user input
+3) do some sort of arithmetic to calculate total of the coins
+4) do some more arithmetic
+5) `cout` to display the total
+
+```c++
+#include <iostream>
+
+using namespace std;
+int main()
+{
+	//init variables for each coin
+	int numPennies = 0, num
+	//prompt user for each coin
+	
+	//calculate the total for each coin
+	
+	//calculate total of all coins
+	
+	//display the total to the user
+	
+}
+```
