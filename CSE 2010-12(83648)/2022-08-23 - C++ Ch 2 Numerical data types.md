@@ -88,5 +88,22 @@ the "=" character used above is the assignment operator
 			`int v=x%y; //v=0`
 			`int w=x%z; //w=2`
 
-a op=b -> a = a op b
+a op= b → a = a op b
 can be used with `-=, *=, /=, %=`
+
+`variableName = value;`
+	this value can be any expression that is the same datatype as the variable
+
+increment and decrement operators
+	`++` increment by 1
+	`--` decrement by 1
+	- pre-increment/pre decrement (++x,--x):
+	- increment/decrement x by 1 and THEN access value
+	- post increment/post decrement (x++, x--) access the calue of x, and THEN increment/decrement by 
+
+### Floating point values
+*C++* keyword: `double`
+when to use `double`
+	use `double` when the value contain decimal points.
+
+similar to integers, we can
