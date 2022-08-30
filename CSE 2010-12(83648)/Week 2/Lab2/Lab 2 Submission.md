@@ -14,12 +14,12 @@ Your submission for Lab 2 should include the following:
 
 # Exercise 1
 ![[quadratic.cpp]]
-
+![[quadratic.png]]
 
 # Exercise 2
 ![[change.cpp]]
-
+![[change.png]]
 
 # Exercise 3
 ![[Karvonen.cpp]]
-
+![[karvonen.png]]
