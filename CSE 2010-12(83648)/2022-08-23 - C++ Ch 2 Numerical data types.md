@@ -35,7 +35,7 @@ Values in programming have a specific data type that determins size it takes in 
 ### Definition
 
 
-## Variable syntax
+### Variable syntax
 ```c++
 datatype variableName;
 ```
@@ -50,5 +50,29 @@ seperate each variable name with a comma
 ie: `int x,y,z` (makes variables called "x", "y", "z")
 
 ```c++
-datatype variableName = initial value
+datatype variableName = initial value;
 ```
+defines a signel variable with an initial calue
+
+```c++
+datatype variableName = initial value, variableName = initialcalue...;
+```
+defines multiple variables of the same datatpye each with its own initial value
+
+notes:
+you can defalre/define as many variables as you want in a single statemetn, but they all must be the same data type
+the "=" character used above is the assignment operator
+- format is :`variable = value;` where it will assign the variable on the left the value on the right
+
+
+### Rules
+cariable names must start with a letter or an underscore but can contain a mix of uppercase and lower cases , numbers, and underscore
+cannot be any *C++* keyword (`int, float, double, main, class, case, etc...`)
+variable names are case sensitive
+so the variables `int pennies;` and `int Pennies;` are two different variables
+make cariable names something significant. it should be clear what it represents
+
+### Integer Values
+keyword: `int`
+when to use `int`
+use `int` to represent data that can only be identified in whole numbers
