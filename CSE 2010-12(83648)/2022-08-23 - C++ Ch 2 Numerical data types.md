@@ -169,7 +169,7 @@ int main()
 
 
 # Using pre-definied C++ Libraries
-## C++ librarys
+## C++ librarys[^1]
 - your main function (`int main()`) is what controls the c++ program, but within main you can call other functions
 	Definition of cunctions: a function is a group of statemtns that perform a specific task
 - by including pre-defined libraries, we have access to the functions within them. 
@@ -193,9 +193,20 @@ to use functions in `cmath`, have the following line in your program.
 - include all necessary libraries
 
 Lets try an example with the quadratic formula!
+## Quadratic formula example
+$$X_{1,2} = \frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
+- I have a, b, c
+- double `x1 = sqrt(pow(b,2)-4*a*c)`
+```c++
+#include <iostream>
+#include <cmath>
 
-
-
+using namespace std;
+int main()
+{
+	//
+}
+```
 
 
 
