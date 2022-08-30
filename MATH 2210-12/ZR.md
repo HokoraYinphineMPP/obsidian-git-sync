@@ -15,6 +15,55 @@
 ## Week 2
 ### Tue
 10
+[[2022-08-30]]
+
+### Thu
+10
+
+### Fri
+10
+
+## Week 3
+### Tue
+10
+
+### Thu
+10
+
+### Fri
+10
+
+## Week 4
+### Tue
+10
+
+### Thu
+10
+
+### Fri
+10
+
+## Week 5
+### Tue
+10
+
+### Thu
+10
+
+### Fri
+10
+
+## Week 6
+### Tue
+10
+
+### Thu
+10
+
+### Fri
+10
+
+
 ## Goal
 110 per day
 330 per week

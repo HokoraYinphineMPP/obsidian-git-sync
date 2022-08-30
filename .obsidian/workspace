@@ -8,12 +8,8 @@
         "type": "leaf",
         "dimension": 64.55128205128206,
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "MATH 2210-12/ZR.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "graph",
+          "state": {}
         },
         "group": "2df6a850b37d4f6f"
       },
@@ -24,7 +20,7 @@
         "state": {
           "type": "localgraph",
           "state": {
-            "file": "MATH 2210-12/ZR.md",
+            "file": "MATH 2210-12/2022-08-30.md",
             "options": {
               "collapse-filter": true,
               "search": "",
@@ -145,7 +141,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MATH 2210-12/ZR.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +157,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MATH 2210-12/ZR.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -184,9 +178,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "MATH 2210-12/ZR.md"
-              }
+              "state": {}
             }
           },
           {
@@ -207,15 +199,15 @@
   },
   "active": "cc3982f43eed958d",
   "lastOpenFiles": [
+    "MATH 2210-12/2022-08-30.md",
+    "MATH 2210-12/ZR.md",
+    "MATH 2210-12/Week 1/2210 Syllabus Markdown.md",
     "CSE 2010-12(83648)/Week 2/Lab2/Lab 2 Submission.md",
     "CSE 2010-12(83648)/Week 2/Lab2/Lab 2 PDF Markdown.md",
     "CSE 2010-12(83648)/Week 1/Lab1/Lab 1 Submission.md",
     "CSE 2010-12(83648)/Week 1/Lab1/Lab 1-A.md",
     "CSE 2010-12(83648)/Week 1/Lab1/Lab 1-B.md",
     "CSE 2010-12(83648)/Week 2/2022-08-23 - C++ Ch 2 Numerical data types.md",
-    "CSE 2010-12(83648)/CSE 2010-12.md",
-    "CSE 2010-12(83648)/Week 2/Lab2/CSE 2010 Lab 2.pdf",
-    "Classes.md",
-    "MATH 2720-04/Week 1/Week 1 Homework.md"
+    "CSE 2010-12(83648)/CSE 2010-12.md"
   ]
 }
