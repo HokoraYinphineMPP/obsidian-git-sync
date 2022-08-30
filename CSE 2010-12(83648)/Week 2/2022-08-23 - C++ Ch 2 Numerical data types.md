@@ -206,7 +206,7 @@ $$X_{1,2} = \frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
 using namespace std;
 int main()
 {
-	float a,b,c
+	double a,b,c
 	double x1 = (-b+sqrt(pow(b,2)-4*a*c))/(2*a);
 	double x2 = (-b-sqrt(pow(b,2)-4*a*c))/(2*a);
 
