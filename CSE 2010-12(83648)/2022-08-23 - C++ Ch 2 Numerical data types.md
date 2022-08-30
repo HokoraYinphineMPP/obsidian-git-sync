@@ -195,8 +195,7 @@ to use functions in `cmath`, have the following line in your program.
 Lets try an example with the quadratic formula!
 ## Quadratic formula example
 $$X_{1,2} = \frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
-- I have a, b, c
-- double `x1 = sqrt(pow(b,2)-4*a*c)`
+- I have `a, b, c`
 ```c++
 #include <iostream>
 #include <cmath>
@@ -204,7 +203,10 @@ $$X_{1,2} = \frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
 using namespace std;
 int main()
 {
-	//
+	float a,b,c
+	double x1 = (-b+sqrt(pow(b,2)-4*a*c))/(2*a);
+	double x2 = (-b-sqrt(pow(b,2)-4*a*c))/(2*a);
+
 }
 ```
 
