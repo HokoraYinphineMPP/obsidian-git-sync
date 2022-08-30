@@ -140,7 +140,7 @@ Write a C++ program that asks the user the number of pennies, nickles, dimes, an
 
 ```c++
 #include <iostream>
-#inclue <iomanip>
+#include <iomanip>
 
 using namespace std;
 int main()
@@ -169,4 +169,16 @@ int main()
 
 
 # Using pre-definied C++ Libraries
-- the `cm`
+- the `cmath` library
+## C++ librarys
+- your main function (`int main()`) is what controls the c++ program, but within main you can call other functions
+	Definition of cunctions: a function is a group of statemtns that perform a specific task
+- by including pre-defined libraries, we have access to the functions within them. 
+- syntax for using predefined functions: `functionName (parameters)`
+- visit cplusplus.com
+
+## cmath numerics library
+to use functions in `cmath`, have the following line in your program.
+```c++
+#include <cmath>
+```
