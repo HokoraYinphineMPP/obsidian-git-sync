@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "MATH 2720-04/2022-08-30-1.md",
+            "file": "MATH 2720-04/Week 2/2022-08-30-1.md",
             "mode": "source",
             "source": false
           }
@@ -24,7 +24,7 @@
         "state": {
           "type": "localgraph",
           "state": {
-            "file": "MATH 2720-04/2022-08-30-1.md",
+            "file": "MATH 2720-04/Week 2/2022-08-30-1.md",
             "options": {
               "collapse-filter": true,
               "search": "",
@@ -145,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MATH 2720-04/2022-08-30-1.md",
+                "file": "MATH 2720-04/Week 2/2022-08-30-1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +162,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MATH 2720-04/2022-08-30-1.md",
+                "file": "MATH 2720-04/Week 2/2022-08-30-1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -185,7 +185,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MATH 2720-04/2022-08-30-1.md"
+                "file": "MATH 2720-04/Week 2/2022-08-30-1.md"
               }
             }
           },
@@ -207,15 +207,15 @@
   },
   "active": "cc3982f43eed958d",
   "lastOpenFiles": [
+    "MATH 2720-04/Week 2/Pasted image 20220830165835.png",
+    "MATH 2720-04/Week 2/2022-08-30-1.md",
     "MATH 2720-04/Week 1/Week 1 Homework.md",
-    "MATH 2720-04/2022-08-30-1.md",
     "MATH 2720-04/MATH 2720-04.md",
     "MATH 2210-12/2022-08-30.md",
     "MATH 2210-12/ZR.md",
     "MATH 2210-12/Week 1/2210 Syllabus Markdown.md",
     "CSE 2010-12(83648)/Week 2/Lab2/Lab 2 Submission.md",
     "CSE 2010-12(83648)/Week 2/Lab2/Lab 2 PDF Markdown.md",
-    "CSE 2010-12(83648)/Week 1/Lab1/Lab 1 Submission.md",
-    "CSE 2010-12(83648)/Week 1/Lab1/Lab 1-A.md"
+    "CSE 2010-12(83648)/Week 1/Lab1/Lab 1 Submission.md"
   ]
 }
