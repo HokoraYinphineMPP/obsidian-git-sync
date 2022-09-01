@@ -12,7 +12,7 @@
 
 - [x] [Learning Video: Cartesian Products](https://csusb.instructure.com/courses/15759/modules/items/1037418) (Assignment) `Aug 30` 1 pts
 
-- [ ] [Learning Video: Introduction to Functions](https://csusb.instructure.com/courses/15759/modules/items/1108681) (Assignment) `Sep 1` 1 pts
+- [x] [Learning Video: Introduction to Functions](https://csusb.instructure.com/courses/15759/modules/items/1108681) (Assignment) `Sep 1` 1 pts
 
 - [ ] [Learning Video: Two-Line Notation for Functions](https://csusb.instructure.com/courses/15759/modules/items/1108682) (Assignment) `Sep 1` 1 pts
 
