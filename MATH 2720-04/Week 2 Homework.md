@@ -4,11 +4,11 @@
 
 ## M2 Learning Videos
 
-- [ ] [Learning Video: Intro to Sets](https://csusb.instructure.com/courses/15759/modules/items/1037415) (Assignment) `Aug 30` 1 pts
+- [x] [Learning Video: Intro to Sets](https://csusb.instructure.com/courses/15759/modules/items/1037415) (Assignment) `Aug 30` 1 pts
 
-- [ ] [Learning Video: Set-Roster and Set-Builder Notation](https://csusb.instructure.com/courses/15759/modules/items/1037416) (Assignment) `Aug 30` 1 pts
+- [x] [Learning Video: Set-Roster and Set-Builder Notation](https://csusb.instructure.com/courses/15759/modules/items/1037416) (Assignment) `Aug 30` 1 pts
 
-- [ ] [Learning Video: The Empty Set](https://csusb.instructure.com/courses/15759/modules/items/1037417) (Assignment) `Aug 30` 1 pts
+- [x] [Learning Video: The Empty Set](https://csusb.instructure.com/courses/15759/modules/items/1037417) (Assignment) `Aug 30` 1 pts
 
 - [ ] [Learning Video: Cartesian Products](https://csusb.instructure.com/courses/15759/modules/items/1037418) (Assignment) `Aug 30` 1 pts
 
