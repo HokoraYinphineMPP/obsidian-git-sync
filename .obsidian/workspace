@@ -8,8 +8,12 @@
         "type": "leaf",
         "dimension": 61.03542234332425,
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "MATH 2720-04/Week 2 Homework.md",
+            "mode": "source",
+            "source": false
+          }
         },
         "group": "2df6a850b37d4f6f"
       },
@@ -20,7 +24,7 @@
         "state": {
           "type": "localgraph",
           "state": {
-            "file": "CSE 2010-12(83648)/CSE 2010-12.md",
+            "file": "MATH 2720-04/Week 2 Homework.md",
             "options": {
               "collapse-filter": false,
               "search": "",
@@ -141,6 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "MATH 2720-04/Week 2 Homework.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -157,6 +162,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "MATH 2720-04/Week 2 Homework.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -178,7 +184,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "MATH 2720-04/Week 2 Homework.md"
+              }
             }
           },
           {
@@ -199,15 +207,15 @@
   },
   "active": "cc3982f43eed958d",
   "lastOpenFiles": [
+    "MATH 2720-04/MATH 2720-04.md",
+    "MATH 2720-04/Week 1/2022-08-25 - Statements.md",
+    "MATH 2720-04/Week 2 Homework.md",
     "CSE 2010-12(83648)/CSE 2010-12.md",
     "CSE 2010-12(83648)/Week 1/Lab1/Lab 1 Submission.md",
     "Classes.md",
-    "MATH 2720-04/MATH 2720-04.md",
     "MATH 2210-12/Math 2210-12.md",
     "CSE 2010-12(83648)/Week 2/Week 2.2 Predefined Libraries and Functions.md",
     "CSE 2010-12(83648)/Week 2/2022-08-31 - C++ Fundamental Data Types, Variables, Strings.md",
-    "CSE 2010-12(83648)/Week 2/Week 2.1 Numerical Data Types and Variables.md",
-    "CSE 2010-12(83648)/Week 2/2022-08-23 - C++ Ch 2 Numerical data types.md",
-    "CSE 2010-12(83648)/Week 2/Week 2.1 Numerical Data Types and Variables.pdf"
+    "CSE 2010-12(83648)/Week 2/Week 2.1 Numerical Data Types and Variables.md"
   ]
 }
