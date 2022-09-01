@@ -103,4 +103,29 @@ if we want to store the entire input, we can use the `getline()` function
 `getline (istream is, string str)`
 - first argument is the input stream to extract characters from (we use `cin`)
 - second argument is the string to store the extracted characters
-- `getline()` extracts all characters from `is` and stores t
+- `getline()` extracts all characters from `is` and stores them into `str` until the newline
+- if there is a value stored in `str`, it will be overwritten
+```c++
+string fullName;
+cout << "Enter your full name: ";
+getline (cin, fullName);
+cout << "Your name is: " << fullName;
+```
+
+### String member functions
+- `#include <string>` gives us access to string member fucntions that allow us to manipulate strings and access information about them
+- syntax to use string member functions:
+	- `stringName.functionName(parameters)`
+
+#### `.length()/.size() - length`
+`.length()/.size()`: invoked with a string and no parameters but it returns the number of characters in the string (int)
+```c++
+string fullName = "Bob Ross";
+int n = fullName.length(); // n = 8
+int x = fullName.size(); // x = 8
+```
+- note that the space is its own character
+
+each string character has a position # the last position # is always equal to `stringName.length()-1`
+
+####
