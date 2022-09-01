@@ -14,7 +14,7 @@
 
 - [x] [Learning Video: Introduction to Functions](https://csusb.instructure.com/courses/15759/modules/items/1108681) (Assignment) `Sep 1` 1 pts
 
-- [ ] [Learning Video: Two-Line Notation for Functions](https://csusb.instructure.com/courses/15759/modules/items/1108682) (Assignment) `Sep 1` 1 pts
+- [x] [Learning Video: Two-Line Notation for Functions](https://csusb.instructure.com/courses/15759/modules/items/1108682) (Assignment) `Sep 1` 1 pts
 
 - [ ] [Learning Video: Describing Functions](https://csusb.instructure.com/courses/15759/modules/items/1108678) (Assignment) `Sep 1` 1 pts
 
@@ -33,4 +33,4 @@
 
 ## M2 Summary
 
--   [M2 Wrap Up and Next Steps](https://csusb.instructure.com/courses/15759/modules/items/1037424) (Page)
+- [[M2 Wrap Up and Next Steps]](Page)
