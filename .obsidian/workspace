@@ -76,7 +76,7 @@
               "repelStrength": 12.2442344813573,
               "linkStrength": 1,
               "linkDistance": 30,
-              "scale": 1.4019828977761015,
+              "scale": 1.4019828977761026,
               "close": true
             }
           }
@@ -205,17 +205,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "ce80bb250476dae4",
+  "active": "cc3982f43eed958d",
   "lastOpenFiles": [
     "CSE 2010-12(83648)/CSE 2010-12.md",
-    "CSE 2010-12(83648)/Week 2/Lab2/Lab 2 Submission.md",
     "MATH 2720-04/Week 2/2022-08-30-1.md",
+    "MATH 2720-04/Week 2/Pasted image 20220830170206.png",
+    "CSE 2010-12(83648)/Week 2.1 Numerical Data Types and Variables.pdf.md",
+    "CSE 2010-12(83648)/2022-08-31 - C++ Fundamental Data Types, Variables, Strings.md",
+    "CSE 2010-12(83648)/Week 2/Lab2/Lab 2 Submission.md",
     "MATH 2720-04/Week 2 Homework.md",
     "MATH 2720-04/Week 1/Week 1 Homework.md",
     "MATH 2720-04/Week 1/M1 Overview & Objectives.md",
-    "Classes.md",
-    "MATH 2210-12/Math 2210-12.md",
-    "MATH 2210-12/2022-08-30.md",
-    "MATH 2210-12/ZR.md"
+    "Classes.md"
   ]
 }
