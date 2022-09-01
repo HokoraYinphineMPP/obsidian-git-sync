@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "MATH 2720-04/Week 2/M2 Overview & Objectives.md",
+            "file": "MATH 2720-04/Week 2/Week 2 Homework.md",
             "mode": "source",
             "source": false
           }
@@ -24,7 +24,7 @@
         "state": {
           "type": "localgraph",
           "state": {
-            "file": "MATH 2720-04/Week 2/M2 Overview & Objectives.md",
+            "file": "MATH 2720-04/Week 2/Week 2 Homework.md",
             "options": {
               "collapse-filter": false,
               "search": "",
@@ -76,7 +76,7 @@
               "repelStrength": 12.2442344813573,
               "linkStrength": 1,
               "linkDistance": 30,
-              "scale": 1.0000000000000018,
+              "scale": 1.0000000000000022,
               "close": true
             }
           }
@@ -145,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MATH 2720-04/Week 2/M2 Overview & Objectives.md",
+                "file": "MATH 2720-04/Week 2/Week 2 Homework.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +162,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MATH 2720-04/Week 2/M2 Overview & Objectives.md",
+                "file": "MATH 2720-04/Week 2/Week 2 Homework.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -185,7 +185,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MATH 2720-04/Week 2/M2 Overview & Objectives.md"
+                "file": "MATH 2720-04/Week 2/Week 2 Homework.md"
               }
             }
           },
@@ -205,13 +205,13 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "cc3982f43eed958d",
+  "active": "ce80bb250476dae4",
   "lastOpenFiles": [
+    "MATH 2720-04/Week 2/M2 Overview & Objectives.md",
     "MATH 2720-04/Week 2/Week 2 Homework.md",
     "MATH 2720-04/Week 1/M1 Overview & Objectives.md",
     "MATH 2720-04/Week 1/Week 1 Homework.md",
     "MATH 2720-04/MATH 2720-04.md",
-    "MATH 2720-04/Week 2/M2 Overview & Objectives.md",
     "MATH 2720-04/Week 2/Pasted image 20220831230340.png",
     "MATH 2720-04/Week 2/Pasted image 20220830170206.png",
     "MATH 2720-04/Week 2/M2 Wrap Up and Next Steps.md",
