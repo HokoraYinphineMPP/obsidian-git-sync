@@ -69,3 +69,38 @@ use `char` to represent data that only requires a single character
 - each character allocates its own space in memory (1 byte) and has a position number associated with it
 	- position numbers start at 0! not 1!
 
+example
+```c++
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+	string name = "Sally";
+	cout << "Your name is " << name << "\n";
+	
+	//change string value
+	name = "Bob"; //replaces value in memory
+	cout << "Your name is " << name << "\n";
+	
+	return 0;
+}
+```
+Output:
+```
+Your name is Sally
+Your name is Bob
+```
+
+- We can store values into strings with `cin`
+	- `cout << "Enter your first name:";`
+	- `cin >> name; //user enters Bob`
+	- `cout << name`
+
+###### getline()
+if we want to store the entire input, we can use the `getline()` function
+`getline (istream is, string str)`
+- first argument is the input stream to extract characters from (we use `cin`)
+- second argument is the string to store the extracted characters
+- `getline()` extracts all characters from `is` and stores t
