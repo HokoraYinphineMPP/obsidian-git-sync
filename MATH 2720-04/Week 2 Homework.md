@@ -10,7 +10,7 @@
 
 - [x] [Learning Video: The Empty Set](https://csusb.instructure.com/courses/15759/modules/items/1037417) (Assignment) `Aug 30` 1 pts
 
-- [ ] [Learning Video: Cartesian Products](https://csusb.instructure.com/courses/15759/modules/items/1037418) (Assignment) `Aug 30` 1 pts
+- [x] [Learning Video: Cartesian Products](https://csusb.instructure.com/courses/15759/modules/items/1037418) (Assignment) `Aug 30` 1 pts
 
 - [ ] [Learning Video: Introduction to Functions](https://csusb.instructure.com/courses/15759/modules/items/1108681) (Assignment) `Sep 1` 1 pts
 
