@@ -8,12 +8,8 @@
         "type": "leaf",
         "dimension": 61.03542234332425,
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "CSE 2010-12(83648)/CSE 2010-12.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "graph",
+          "state": {}
         },
         "group": "2df6a850b37d4f6f"
       },
@@ -145,7 +141,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CSE 2010-12(83648)/CSE 2010-12.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +157,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CSE 2010-12(83648)/CSE 2010-12.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -184,9 +178,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "CSE 2010-12(83648)/CSE 2010-12.md"
-              }
+              "state": {}
             }
           },
           {
