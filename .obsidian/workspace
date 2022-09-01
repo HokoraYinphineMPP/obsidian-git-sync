@@ -8,12 +8,8 @@
         "type": "leaf",
         "dimension": 62.21616712079927,
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "MATH 2720-04/2022-09-01 WRKSHT2.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "graph",
+          "state": {}
         },
         "group": "2df6a850b37d4f6f"
       },
@@ -145,7 +141,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MATH 2720-04/2022-09-01 WRKSHT2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +157,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MATH 2720-04/2022-09-01 WRKSHT2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -184,9 +178,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "MATH 2720-04/2022-09-01 WRKSHT2.md"
-              }
+              "state": {}
             }
           },
           {
@@ -207,6 +199,7 @@
   },
   "active": "cc3982f43eed958d",
   "lastOpenFiles": [
+    "MATH 2720-04/2022-09-01 WRKSHT2.md",
     "MATH 2720-04/MATH 2720-04.md",
     "MATH 2720-04/Week 2/Week 2 Homework.md",
     "MATH 2210-12/ZR.md",
@@ -215,7 +208,6 @@
     "Classes.md",
     "MATH 2720-04/Week 2/M2 Overview & Objectives.md",
     "MATH 2720-04/Week 2/2022-08-30-1.md",
-    "MATH 2720-04/Week 1/Week 1 Homework.md",
-    "MATH 2720-04/Week 2/M2 Wrap Up and Next Steps.md"
+    "MATH 2720-04/Week 1/Week 1 Homework.md"
   ]
 }
