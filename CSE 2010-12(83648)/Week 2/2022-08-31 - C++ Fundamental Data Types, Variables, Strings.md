@@ -12,11 +12,9 @@ This week we will be going over the following topics:
 Monday August 29, 2022:
 
 -   [[Week 2.1 Numerical Data Types and Variables]]
-    
-     
-    -   [C++ Keywords (Links to an external site.)](https://en.cppreference.com/w/cpp/keyword)
-    -   [Data type modifiers (Links to an external site.)](https://en.cppreference.com/w/cpp/language/types)
--   [Week 2.2 Predefined Libraries and Functions.pdf](https://csusb.instructure.com/courses/14455/files/2433471?wrap=1 "Week 2.2 Predefined Libraries and Functions.pdf")
+    -   [C++ Keywords](https://en.cppreference.com/w/cpp/keyword)
+    -   [Data type modifiers](https://en.cppreference.com/w/cpp/language/types)
+-   [[Week 2.2 Predefined Libraries and Functions]]
     
     https://csusb.instructure.com/courses/14455/pages/week-2-august-29-31-fundamental-data-types-variables-strings?module_item_id=1115396# 
      
@@ -31,8 +29,7 @@ Wednesday August 31, 2022:
     - https://csusb.instructure.com/courses/14455/files/2446205/download?download_frd=1
 -   [Weeks 2-4 Course Schedule.docx](https://csusb.instructure.com/courses/14455/files/2444920?wrap=1 "Week 2-4 Schedule.docx")
     
-    [![](https://csusb.instructure.com/images/svg-icons/svg_icon_download.svg)Actions](https://csusb.instructure.com/courses/14455/pages/week-2-august-29-31-fundamental-data-types-variables-strings?module_item_id=1115396#)
-
+    https://csusb.instructure.com/courses/14455/pages/week-2-august-29-31-fundamental-data-types-variables-strings?module_item_id=1115396#
 
 # Notes
 ## Data types of char values

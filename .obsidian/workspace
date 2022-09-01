@@ -8,12 +8,8 @@
         "type": "leaf",
         "dimension": 61.03542234332425,
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "CSE 2010-12(83648)/Week 2/2022-08-31 - C++ Fundamental Data Types, Variables, Strings.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "graph",
+          "state": {}
         },
         "group": "2df6a850b37d4f6f"
       },
@@ -24,16 +20,16 @@
         "state": {
           "type": "localgraph",
           "state": {
-            "file": "CSE 2010-12(83648)/Week 2/2022-08-31 - C++ Fundamental Data Types, Variables, Strings.md",
+            "file": "CSE 2010-12(83648)/CSE 2010-12.md",
             "options": {
               "collapse-filter": false,
               "search": "",
               "localJumps": 2,
               "localBacklinks": true,
               "localForelinks": true,
-              "localInterlinks": false,
+              "localInterlinks": true,
               "showTags": false,
-              "showAttachments": false,
+              "showAttachments": true,
               "hideUnresolved": false,
               "collapse-color-groups": false,
               "colorGroups": [
@@ -76,7 +72,7 @@
               "repelStrength": 12.2442344813573,
               "linkStrength": 1,
               "linkDistance": 30,
-              "scale": 1.401982897776103,
+              "scale": 1.0000000000000018,
               "close": true
             }
           }
@@ -145,7 +141,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CSE 2010-12(83648)/Week 2/2022-08-31 - C++ Fundamental Data Types, Variables, Strings.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +157,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CSE 2010-12(83648)/Week 2/2022-08-31 - C++ Fundamental Data Types, Variables, Strings.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -184,9 +178,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "CSE 2010-12(83648)/Week 2/2022-08-31 - C++ Fundamental Data Types, Variables, Strings.md"
-              }
+              "state": {}
             }
           },
           {
@@ -205,17 +197,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "ce80bb250476dae4",
+  "active": "cc3982f43eed958d",
   "lastOpenFiles": [
     "CSE 2010-12(83648)/CSE 2010-12.md",
+    "CSE 2010-12(83648)/Week 1/Lab1/Lab 1 Submission.md",
+    "Classes.md",
+    "MATH 2720-04/MATH 2720-04.md",
+    "MATH 2210-12/Math 2210-12.md",
+    "CSE 2010-12(83648)/Week 2/Week 2.2 Predefined Libraries and Functions.md",
     "CSE 2010-12(83648)/Week 2/2022-08-31 - C++ Fundamental Data Types, Variables, Strings.md",
     "CSE 2010-12(83648)/Week 2/Week 2.1 Numerical Data Types and Variables.md",
     "CSE 2010-12(83648)/Week 2/2022-08-23 - C++ Ch 2 Numerical data types.md",
-    "CSE 2010-12(83648)/Week 2.1 Numerical Data Types and Variables.pdf",
-    "MATH 2720-04/Week 2/2022-08-30-1.md",
-    "MATH 2720-04/Week 2/Pasted image 20220830170206.png",
-    "CSE 2010-12(83648)/Week 2/Lab2/Lab 2 Submission.md",
-    "MATH 2720-04/Week 2 Homework.md",
-    "MATH 2720-04/Week 1/Week 1 Homework.md"
+    "CSE 2010-12(83648)/Week 2/Week 2.1 Numerical Data Types and Variables.pdf"
   ]
 }
