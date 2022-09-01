@@ -18,7 +18,7 @@
 
 - [x] [Learning Video: Describing Functions](https://csusb.instructure.com/courses/15759/modules/items/1108678) (Assignment) `Sep 1` 1 pts
 
-- [ ] [Learning Video: Recursive Functions](https://csusb.instructure.com/courses/15759/modules/items/1108680) (Assignment) `Sep 1` 1 pts
+- [x] [Learning Video: Recursive Functions](https://csusb.instructure.com/courses/15759/modules/items/1108680) (Assignment) `Sep 1` 1 pts
 
 - [ ] [Learning Video: Determine Function Values for Recursive Functions](https://csusb.instructure.com/courses/15759/modules/items/1108679) (Assignment) `Sep 1` 1 pts
 
