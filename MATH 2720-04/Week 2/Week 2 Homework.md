@@ -1,6 +1,6 @@
- # Module 2: Sets and Functions (Week 2)
+# Module 2: Sets and Functions (Week 2)
 
--   [M2 Overview & Objectives](https://csusb.instructure.com/courses/15759/modules/items/1037412) (Page)
+-   [[M2 Overview & Objectives]] (Page)
 
 ## M2 Learning Videos
 
@@ -24,13 +24,13 @@
 
 
 ## M1 Learning Activities
-   
+
 - [ ] [Read Section 0.3 Sets](https://csusb.instructure.com/courses/15759/modules/items/1037420)
-   
+
 - [ ] [Read Section 0.4 Functions](https://csusb.instructure.com/courses/15759/modules/items/1037433)
-   
+
 - [ ] [Check Your Understanding 2](https://csusb.instructure.com/courses/15759/modules/items/1108691) (Assignment) `Sep 2` 5 pts
 
 ## M2 Summary
 
-- [[M2 Wrap Up and Next Steps]](Page)
+- [[M2 Wrap Up and Next Steps]] (Page)
