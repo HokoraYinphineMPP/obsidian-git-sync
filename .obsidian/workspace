@@ -76,7 +76,7 @@
               "repelStrength": 12.2442344813573,
               "linkStrength": 1,
               "linkDistance": 30,
-              "scale": 1.9655560456566754,
+              "scale": 1.401982897776103,
               "close": true
             }
           }
@@ -205,7 +205,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "cc3982f43eed958d",
+  "active": "ce80bb250476dae4",
   "lastOpenFiles": [
     "CSE 2010-12(83648)/CSE 2010-12.md",
     "CSE 2010-12(83648)/Week 2/2022-08-31 - C++ Fundamental Data Types, Variables, Strings.md",

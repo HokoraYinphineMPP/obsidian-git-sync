@@ -1,6 +1,5 @@
 # Week 2 (August 29, 31): Fundamental Data Types, Variables, Strings
 
-```
 
 This week we will be going over the following topics:
 
@@ -21,19 +20,19 @@ Monday August 29, 2022:
     
     https://csusb.instructure.com/courses/14455/pages/week-2-august-29-31-fundamental-data-types-variables-strings?module_item_id=1115396# 
      
-    -   [<iomanip> (For displaying a specific number of digits) (Links to an external site.)](https://cplusplus.com/reference/iomanip/)
+    -   [`iomanip` (For displaying a specific number of digits) (Links to an external site.)](https://cplusplus.com/reference/iomanip/)
 
 Wednesday August 31, 2022:
 
 -   [Week 2.3 Characters & Strings.pdf](https://csusb.instructure.com/courses/14455/files/2446193?wrap=1 "Week 2.3 Characters & Strings-2.pdf") 
     
-    [![](https://csusb.instructure.com/images/svg-icons/svg_icon_download.svg)Actions](https://csusb.instructure.com/courses/14455/pages/week-2-august-29-31-fundamental-data-types-variables-strings?module_item_id=1115396#)
-    
-    -   [char_examples.cpp](https://csusb.instructure.com/courses/14455/files/2446205?wrap=1 "char_examples.cpp")  [![](https://csusb.instructure.com/images/svg-icons/svg_icon_download.svg) Download char_examples.cpp](https://csusb.instructure.com/courses/14455/files/2446205/download?download_frd=1) 
+    https://csusb.instructure.com/courses/14455/pages/week-2-august-29-31-fundamental-data-types-variables-strings?module_item_id=1115396#
+    -   [char_examples.cpp](https://csusb.instructure.com/courses/14455/files/2446205?wrap=1 "char_examples.cpp")
+    - https://csusb.instructure.com/courses/14455/files/2446205/download?download_frd=1
 -   [Weeks 2-4 Course Schedule.docx](https://csusb.instructure.com/courses/14455/files/2444920?wrap=1 "Week 2-4 Schedule.docx")
     
     [![](https://csusb.instructure.com/images/svg-icons/svg_icon_download.svg)Actions](https://csusb.instructure.com/courses/14455/pages/week-2-august-29-31-fundamental-data-types-variables-strings?module_item_id=1115396#)
-```
+
 
 # Notes
 ## Data types of char values
@@ -132,7 +131,7 @@ fullName
 |B|o|b| |R|o|s|s|
 |-|-|-|-|-|-|-|-|
 |0|1|2|3|4|5|6|7|
-#### .substr() - substring
+###### .substr() - substring
 The `.substr()` function can be called in two different ways
 `.substr(i,n)`: returns the substring where i is the starting position # and then extracts n characters
 ```c++
@@ -168,7 +167,3 @@ string fname = "Bob";
 string lname = "Ross";
 string name = fname + " " + lname;
 ```
-
-|B|o|b| |R|o|s|s|
-|-|-|-|-|-|-|-|-|
-|0|1|2|3|4|5|6|7|
