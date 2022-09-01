@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "MATH 2720-04/Week 2/Week 2 Homework.md",
+            "file": "Not Cow's Milk.md",
             "mode": "source",
             "source": false
           }
@@ -24,7 +24,7 @@
         "state": {
           "type": "localgraph",
           "state": {
-            "file": "MATH 2720-04/Week 2/Week 2 Homework.md",
+            "file": "Not Cow's Milk.md",
             "options": {
               "collapse-filter": false,
               "search": "",
@@ -145,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MATH 2720-04/Week 2/Week 2 Homework.md",
+                "file": "Not Cow's Milk.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +162,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MATH 2720-04/Week 2/Week 2 Homework.md",
+                "file": "Not Cow's Milk.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -185,7 +185,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MATH 2720-04/Week 2/Week 2 Homework.md"
+                "file": "Not Cow's Milk.md"
               }
             }
           },
@@ -205,17 +205,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "ce80bb250476dae4",
+  "active": "cc3982f43eed958d",
   "lastOpenFiles": [
-    "MATH 2720-04/Week 2/M2 Overview & Objectives.md",
+    "Classes.md",
+    "MATH 2720-04/Week 2/Untitled.md",
     "MATH 2720-04/Week 2/Week 2 Homework.md",
+    "MATH 2720-04/Week 2/M2 Overview & Objectives.md",
     "MATH 2720-04/Week 1/M1 Overview & Objectives.md",
     "MATH 2720-04/Week 1/Week 1 Homework.md",
     "MATH 2720-04/MATH 2720-04.md",
     "MATH 2720-04/Week 2/Pasted image 20220831230340.png",
     "MATH 2720-04/Week 2/Pasted image 20220830170206.png",
-    "MATH 2720-04/Week 2/M2 Wrap Up and Next Steps.md",
-    "MATH 2720-04/Week 1/2022-08-25 - Statements.md",
-    "CSE 2010-12(83648)/CSE 2010-12.md"
+    "MATH 2720-04/Week 2/M2 Wrap Up and Next Steps.md"
   ]
 }
