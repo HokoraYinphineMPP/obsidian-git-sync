@@ -128,4 +128,22 @@ int x = fullName.size(); // x = 8
 
 each string character has a position # the last position # is always equal to `stringName.length()-1`
 
-####
+fullName
+|B|o|b| |R|o|s|s|
+|-|-|-|-|-|-|-|-|
+|0|1|2|3|4|5|6|7|
+#### .substr() - substring
+The `.substr()` function can be called in two different ways
+`.substr(i,n)`: returns the substring where i is the starting position # and then extracts n characters
+```c++
+string fruit = "watermelon";
+string h2o = fruit.substr(0,5);
+cout << h2o << "\n"; // will display "water"
+h2o = fruit.substr(2,4);
+cout << h2o << "\n"; // will display "term"
+```
+
+`.substr(i)`: returns the substring where `i` is the starting position #, to the end of the strin
+```c++
+string richMan = fruit.substr(6)
+```
