@@ -62,7 +62,7 @@
                   }
                 }
               ],
-              "collapse-display": true,
+              "collapse-display": false,
               "showArrow": true,
               "textFadeMultiplier": 0,
               "nodeSizeMultiplier": 1,
