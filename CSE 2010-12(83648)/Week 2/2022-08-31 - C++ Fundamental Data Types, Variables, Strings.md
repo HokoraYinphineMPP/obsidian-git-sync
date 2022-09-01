@@ -52,4 +52,20 @@ use `char` to represent data that only requires a single character
 - `char s = 115; //ok`
 - `char s = 'S'; //ok`
 - `char x = 'XX'; //not ok`
-###### 
+###### convert variable to Ascii character value
+`(char)variableName`
+
+## Strings
+- values that represent a secuqnce of characters
+- this is a complex data type meaning it is made up of another data type (characters)
+- the string class allows us to use string objects
+	- `#include string`
+|C++ Keyword|Size|range of values|
+|-|-|-|
+|string|# of characters * 1 byte|depends on hardware|
+- use strings when you need to represent one or more characters
+- if you use strings, make sure you have `#include <string>`
+- `string` variable values must be within quotation marks.
+- each character allocates its own space in memory (1 byte) and has a position number associated with it
+	- position numbers start at 0! not 1!
+
