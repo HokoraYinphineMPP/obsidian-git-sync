@@ -16,7 +16,7 @@
 
 - [x] [Learning Video: Two-Line Notation for Functions](https://csusb.instructure.com/courses/15759/modules/items/1108682) (Assignment) `Sep 1` 1 pts
 
-- [ ] [Learning Video: Describing Functions](https://csusb.instructure.com/courses/15759/modules/items/1108678) (Assignment) `Sep 1` 1 pts
+- [x] [Learning Video: Describing Functions](https://csusb.instructure.com/courses/15759/modules/items/1108678) (Assignment) `Sep 1` 1 pts
 
 - [ ] [Learning Video: Recursive Functions](https://csusb.instructure.com/courses/15759/modules/items/1108680) (Assignment) `Sep 1` 1 pts
 
