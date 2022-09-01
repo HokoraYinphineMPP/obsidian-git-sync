@@ -139,11 +139,36 @@ The `.substr()` function can be called in two different ways
 string fruit = "watermelon";
 string h2o = fruit.substr(0,5);
 cout << h2o << "\n"; // will display "water"
-h2o = fruit.substr(2,4);
-cout << h2o << "\n"; // will display "term"
+string idea = fruit.substr(2,4);
+cout << idea << "\n"; // will display "term"
 ```
 
 `.substr(i)`: returns the substring where `i` is the starting position #, to the end of the strin
 ```c++
 string richMan = fruit.substr(6)
+cout << richMan << "\n"; // will display "elon"
 ```
+
+###### `.at(i)` - character in string
+`.at(i)`: returns the character at position #i
+```c++
+string fruit = "watermelon";
+int mid = fruit.length() / 2; //mid = 5
+cout << "The middle character in \"' << fruit << "\" is \"" << fruit.at(mid) << "\"\n";
+```
+Output: 
+```
+The middle character in "watermelon" is "m"
+```
+
+###### String Concatenation
+- We can put string values together "`+`"
+```c++
+string fname = "Bob";
+string lname = "Ross";
+string name = fname + " " + lname;
+```
+
+|B|o|b| |R|o|s|s|
+|-|-|-|-|-|-|-|-|
+|0|1|2|3|4|5|6|7|
