@@ -1,4 +1,3 @@
-
 # [M2 Overview & Objectives](https://csusb.instructure.com/courses/15759/modules/items/1037412)
 ![[Pasted image 20220831230340.png]]
 
