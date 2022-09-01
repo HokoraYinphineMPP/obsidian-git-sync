@@ -40,24 +40,17 @@ M2 Learning Videos
 
 - [ ] [Learning Video: Recursive Functions](https://csusb.instructure.com/courses/15759/modules/items/1108680) (Assignment) `Sep 1` 1 pts
 
-- [ ] [Learning Video: Determine Function Values for Recursive Functions](https://csusb.instructure.com/courses/15759/modules/items/1108679) (Assignment`Sep 1`
-1 pts
+- [ ] [Learning Video: Determine Function Values for Recursive Functions](https://csusb.instructure.com/courses/15759/modules/items/1108679) (Assignment) `Sep 1` 1 pts
 
 
-   M1 Learning Activities
+## M1 Learning Activities
    
 - [ ] [Read Section 0.3 Sets](https://csusb.instructure.com/courses/15759/modules/items/1037420)
    
 - [ ] [Read Section 0.4 Functions](https://csusb.instructure.com/courses/15759/modules/items/1037433)
    
-- [ ] [Check Your Understanding 2](https://csusb.instructure.com/courses/15759/modules/items/1108691) (Assignment)
-   
-   Sep 2
-   
-   5 pts
-   
--   Context Module Sub Header
-   
-   M2 Summary
-   
+- [ ] [Check Your Understanding 2](https://csusb.instructure.com/courses/15759/modules/items/1108691) (Assignment) `Sep 2` 5 pts
+
+## M2 Summary
+
 -   [M2 Wrap Up and Next Steps](https://csusb.instructure.com/courses/15759/modules/items/1037424) (Page)
