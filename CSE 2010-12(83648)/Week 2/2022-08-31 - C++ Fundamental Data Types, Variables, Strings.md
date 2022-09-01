@@ -1,7 +1,8 @@
 # Week 2 (August 29, 31): Fundamental Data Types, Variables, Strings
 
 ```
-```This week we will be going over the following topics:
+
+This week we will be going over the following topics:
 
 -   Variables (what they are, how to declare/define, how to assign a new value, rules for variables)
 -   C++ data types (numerical and character)
@@ -11,7 +12,7 @@
 
 Monday August 29, 2022:
 
--   [[Week 2.1 Numerical Data Types and Variables.pdf]]
+-   [[Week 2.1 Numerical Data Types and Variables]]
     
      
     -   [C++ Keywords (Links to an external site.)](https://en.cppreference.com/w/cpp/keyword)
@@ -36,14 +37,19 @@ Wednesday August 31, 2022:
 
 # Notes
 ## Data types of char values
-##### Characters
+###### Characters
 values that represent one single character
 |C++ Keyword|Size|range of values|
 |-|-|-|
 |char|1 byte|0 to 127|
 - Note: uses ASCII
 
-##### Character Variables
+###### Character Variables
 use `char` to represent data that only requires a single character
--`chat input;`
-- `char marital_status`
+- `chat input;`
+- `char marital_status;`
+`char` variable values must be within apostrophes and can only be a single character
+- `char s = 115; //ok`
+- `char s = 'S'; //ok`
+- `char x = 'XX'; //not ok`
+###### 
