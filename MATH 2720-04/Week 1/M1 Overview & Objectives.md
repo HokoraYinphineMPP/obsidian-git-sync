@@ -15,11 +15,9 @@ This week you will learn about mathematical statements. You will learn how to co
 **Agenda:** The purpose of the instructional materials included in this module is to reinforce learning of the content that supports the stated objectives and are to be used to help you complete the learning activities. Below is a list of instructional materials, activities, and assessments that will help you achieve the learning objectives for this module.
 
 -   Review Course Syllabus
--   Complete the Investigate! Discussion Board #1.
 -   Watch the learning videos in this module
 -   Read Section 0.2: Mathematical Statements
--   Determine your web-hosting platfrom: [Google Sites (Links to an external site.)](http://sites.google.com/), [Wordpress (Links to an external site.)](http://wordpress.com/) or, [Github (Links to an external site.)](http://github.com/) with [Jekyll (Links to an external site.)](https://jekyllrb.com/).
--   Write your first math journal.
+-   Determine your web-hosting platform: [Google Sites (Links to an external site.)](http://sites.google.com/), [Wordpress (Links to an external site.)](http://wordpress.com/) or, [Github (Links to an external site.)](http://github.com/) with [Jekyll (Links to an external site.)](https://jekyllrb.com/).
 -   Complete the Check Your Understanding Questions with Edfinity.
 -   Review Module Wrap Up
 

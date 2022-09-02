@@ -11,10 +11,8 @@ This week you will learn about sets and functions. Sets are the mathematical not
 
 **Agenda:** The purpose of the instructional materials included in this module is to reinforce learning of the content that supports the stated objectives and are to be used to help you complete the learning activities. Below is a list of instructional materials, activities, and assessments that will help you achieve the learning objectives for this module.
 
--   Complete the Investigate! Discussion Board #2.
 -   Watch the learning videos in this module
 -   Read Section 0.3: Mathematical Statements
--   Write your Journal Entry 2.
 -   Complete the Check Your Understanding Questions with Edfinity.
 -   Review Module Wrap Up
 
