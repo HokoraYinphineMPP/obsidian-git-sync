@@ -23,7 +23,7 @@
 - [x] [Learning Video: Determine Function Values for Recursive Functions](https://csusb.instructure.com/courses/15759/modules/items/1108679) (Assignment) `Sep 1` 1 pts
 
 
-## M1 Learning Activities
+## M2 Learning Activities
 
 - [ ] [Read Section 0.3 Sets](https://csusb.instructure.com/courses/15759/modules/items/1037420)
 
