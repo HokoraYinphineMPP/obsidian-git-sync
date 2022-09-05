@@ -76,7 +76,7 @@
               "repelStrength": 12.2442344813573,
               "linkStrength": 1,
               "linkDistance": 30,
-              "scale": 1.0000000000000022,
+              "scale": 1.4019828977761042,
               "close": true
             }
           }
@@ -205,7 +205,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "cc3982f43eed958d",
+  "active": "ce80bb250476dae4",
   "lastOpenFiles": [
     "MATH 2720-04/Week 2/Week 2 Homework.md",
     "MATH 2720-04/Week 3/Week 3 Homework.md",
