@@ -6,7 +6,7 @@
 
 - [x] [Learning Video: Surjective, Injective, and Bijective Functions](https://csusb.instructure.com/courses/15759/modules/items/1121775 "Learning Video: Surjective, Injective, and Bijective Functions") (Assignment) `Sep 6` 1 pts
 
-- [ ] [Learning Video: Two-Line Functions and Function Properties](https://csusb.instructure.com/courses/15759/modules/items/1121810 "Learning Video: Two-Line Functions and Function Properties") (Assignment) `Sep 6` 1 pts
+- [x] [Learning Video: Two-Line Functions and Function Properties](https://csusb.instructure.com/courses/15759/modules/items/1121810 "Learning Video: Two-Line Functions and Function Properties") (Assignment) `Sep 6` 1 pts
 
 - [ ] [Learning Video: Examples Determining either Injective, Surjective, and/or Bijective (Assignment)](https://csusb.instructure.com/courses/15759/modules/items/1123680) `Sep 6` 1 pts
 
