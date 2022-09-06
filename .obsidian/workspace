@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "MATH 2720-04/Week 3/Week 3 Homework.md",
+            "file": "MATH 2210-12/2022-09-06.md",
             "mode": "source",
             "source": false
           }
@@ -24,7 +24,7 @@
         "state": {
           "type": "localgraph",
           "state": {
-            "file": "MATH 2720-04/Week 3/Week 3 Homework.md",
+            "file": "MATH 2210-12/2022-09-06.md",
             "options": {
               "collapse-filter": false,
               "search": "",
@@ -76,7 +76,7 @@
               "repelStrength": 12.2442344813573,
               "linkStrength": 1,
               "linkDistance": 30,
-              "scale": 1.4019828977761046,
+              "scale": 0.7132754626224442,
               "close": true
             }
           }
@@ -145,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MATH 2720-04/Week 3/Week 3 Homework.md",
+                "file": "MATH 2210-12/2022-09-06.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +162,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MATH 2720-04/Week 3/Week 3 Homework.md",
+                "file": "MATH 2210-12/2022-09-06.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -185,7 +185,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MATH 2720-04/Week 3/Week 3 Homework.md"
+                "file": "MATH 2210-12/2022-09-06.md"
               }
             }
           },
@@ -205,13 +205,13 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "cc3982f43eed958d",
+  "active": "ce80bb250476dae4",
   "lastOpenFiles": [
+    "MATH 2210-12/ZR.md",
+    "MATH 2720-04/Week 3/Week 3 Homework.md",
     "MATH 2720-04/Week 2/Week 2 Homework.md",
     "MATH 2210-12/2022-09-06.md",
-    "MATH 2210-12/ZR.md",
     "MATH 2210-12/Math 2210-12.md",
-    "MATH 2720-04/Week 3/Week 3 Homework.md",
     "MATH 2720-04/Week 3/M3 Overview & Objectives.md",
     "MATH 2720-04/Week 3/M3 Wrap Up and Next Steps.md",
     "MATH 2720-04/Week 2/M2 Wrap Up and Next Steps.md",
