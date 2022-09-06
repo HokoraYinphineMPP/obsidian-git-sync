@@ -28,6 +28,7 @@ Quiz 2 (Excempt)
 ## Week 3
 ### Tue
 10
+[[2022-09-06]]
 
 ### Thu
 10
