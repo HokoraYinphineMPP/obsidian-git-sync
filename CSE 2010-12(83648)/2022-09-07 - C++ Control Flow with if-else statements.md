@@ -80,6 +80,21 @@ either TRUE or FALSE.
 whether the previous condition(s) evaluates to TRUE or FALSE
 ###### Example
 
+```mermaid
+graph TD;
+    A-->B;
+    B-->C;
+    C-->D;
+    C-->E;
+    E-->F;
+    E-->G;
+    F-->H;
+    E-->H;
+    D-->H;
+    G-->H;
+```
+
+```
 __if.cpp__
 ```c++
 /*
