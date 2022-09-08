@@ -290,52 +290,69 @@ if(condition 1 or condition 2 or...)
 ###### Number Line 1:
 ```mermaid
 flowchart LR  
-    C[... -4]:::Num---D
-    D[-3]:::Num---E
+    C[... -4]:::Yes---D
+    D[-3]:::Yes---E
     E[-2]:::Yes---F
     F[-1]:::Num---G
     G[0]:::Num---H
-    H[1]:::Num---I
-    I[2]:::Num---J
-    J[3]:::Num---K
-    K[4 ...]:::Num
+    H[1]:::Yes---I
+    I[2]:::Yes---J
+    J[3]:::Yes---K
+    K[4 ...]:::Yes
 	classDef Num fill:#0000,stroke-width:0px;
-	classDef Yes fill:#ff000090,stroke-width:0px;
-	classDef No fill:#0000,stroke-width:0px;
-    linkStyle 0 stroke-width:2px,fill:none,stroke:red;
-    linkStyle 1 stroke-width:2px,fill:none,stroke:red;
-    linkStyle 2 stroke-width:2px,fill:none,stroke:white;
-    linkStyle 3 stroke-width:2px,fill:none,stroke:white;
-    linkStyle default stroke-width:2px,fill:none,stroke:white;
+	classDef Yes fill:#ff000070,stroke-width:0px;
+	classDef No fill:#0000,stroke-width:2px,stroke:#f00;
+    linkStyle 0 stroke-width:37px,fill:none,stroke:red;
+    linkStyle 1 stroke-width:37px,fill:none,stroke:red;
+    linkStyle 5 stroke-width:37px,fill:none,stroke:red;
+    linkStyle 6 stroke-width:37px,fill:none,stroke:red;
+    linkStyle 7 stroke-width:37px,fill:none,stroke:red;
+    linkStyle default stroke-width:37px,fill:none,stroke:white;
 ```
 - Condition 1: `if(x <= -2 || x >= 1)`
 ```mermaid
 flowchart LR  
-    C[... -4]:::Num---D
-    D[-3]:::Num---E
-    E[-2]:::Num---F
+    C[... -4]:::Yes---D
+    D[-3]:::Yes---E
+    E[-2]:::No---F
     F[-1]:::Num---G
     G[0]:::Num---H
-    H[1]:::Num---I
-    I[2]:::Num---J
-    J[3]:::Num---K
-    K[4 ...]:::Num    
+    H[1]:::Yes---I
+    I[2]:::Yes---J
+    J[3]:::Yes---K
+    K[4 ...]:::Yes
 	classDef Num fill:#0000,stroke-width:0px;
+	classDef Yes fill:#ff000070,stroke-width:0px;
+	classDef No fill:#0000,stroke-width:2px,stroke:#f00;
+    linkStyle 0 stroke-width:2px,fill:none,stroke:red;
+    linkStyle 1 stroke-width:2px,fill:none,stroke:red;
+    linkStyle 5 stroke-width:2px,fill:none,stroke:red;
+    linkStyle 6 stroke-width:2px,fill:none,stroke:red;
+    linkStyle 7 stroke-width:2px,fill:none,stroke:red;
+    linkStyle default stroke-width:2px,fill:none,stroke:white;
 ```
 
 
 ```mermaid
 flowchart LR  
-    C[... -4]:::Num---D
-    D[-3]:::Num---E
-    E[-2]:::Num---F
+    C[... -4]:::Yes---D
+    D[-3]:::Yes---E
+    E[-2]:::Yes---F
     F[-1]:::Num---G
     G[0]:::Num---H
-    H[1]:::Num---I
-    I[2]:::Num---J
-    J[3]:::Num---K
-    K[4 ...]:::Num    
+    H[1]:::Yes---I
+    I[2]:::Yes---J
+    J[3]:::Yes---K
+    K[4 ...]:::Yes
 	classDef Num fill:#0000,stroke-width:0px;
+	classDef Yes fill:#ff000070,stroke-width:0px;
+	classDef No fill:#0000,stroke-width:2px,stroke:#f00;
+    linkStyle 0 stroke-width:2px,fill:none,stroke:red;
+    linkStyle 1 stroke-width:2px,fill:none,stroke:red;
+    linkStyle 5 stroke-width:2px,fill:none,stroke:red;
+    linkStyle 6 stroke-width:2px,fill:none,stroke:red;
+    linkStyle 7 stroke-width:2px,fill:none,stroke:red;
+    linkStyle default stroke-width:2px,fill:none,stroke:white;
 ```
 
 
