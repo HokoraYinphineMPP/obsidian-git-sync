@@ -83,7 +83,19 @@ either TRUE or FALSE.
 		- If the condition following the `if` is FALSE, the body of the else will execute.  
 	- Only ONE body will run.  
 	- C++ Syntax for if-else statements  
-
+```c++
+if(condition)
+	//single statement body
+else
+	//single statement body
+	```
+```c++
+if(condition) {
+	//multiple statements body
+}
+else{
+	//multiple statement body
+}```
 - Note: an `else` does not have a condition associated with it. Its performance is based on  
 whether the previous condition(s) evaluates to TRUE or FALSE
 ###### Example
@@ -218,12 +230,28 @@ int main()
 
 ```
 # Boolean/Logical Operators  
-- There may be times in our programs when running certain code is dependent on  
-multiple conditions.  
+- There may be times in our programs when running certain code is dependent on multiple conditions.
 	- Sometimes all conditions need to be true.  
 	- Sometimes only one needs to be true.  
 - We can use Boolean operators to combine our conditions!  
-- Boolean operators combine conditions where the overall expression will result in  
-either TRUE or FALSE.  
-	- && - AND operator  
-	- || - OR operator
+- Boolean operators combine conditions where the overall expression will result in either TRUE or FALSE.  
+	- `&&` - AND operator  
+	- `||` - OR operator
+
+# && - AND Operator: ALL must be TRUE
+- Combines two or more conditions where the overall result is true if and only if ALL conditions are true.  
+- You can combine as many conditions as you want.  
+- C++ Syntax for using the AND operator  
+	- Can user either && or and
+
+```c++
+if(condition 1 && condition 2 &&...)
+	...
+```
+```c++
+if(condition) {
+	//multiple statements body
+}
+else{
+	//multiple statement body
+}```
