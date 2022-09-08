@@ -238,7 +238,7 @@ int main()
 	- `&&` - AND operator  
 	- `||` - OR operator
 
-# && - AND Operator: ALL must be TRUE
+# `&&` - AND Operator: ALL must be TRUE
 - Combines two or more conditions where the overall result is true if and only if ALL conditions are true.  
 - You can combine as many conditions as you want.  
 - C++ Syntax for using the AND operator  
@@ -261,7 +261,7 @@ if(condition 1 and condition 2 and...)
 |False|True|False && True = False|
 |False|False|False && False = False|
 
-# || - OR Operator: Just ONE needs to be TRUE
+# `||` - OR Operator: Just ONE needs to be TRUE
 - Combines two or more conditions where the overall results is TRUE if AT LEAST ONE condition is true.
 - You can combine as many conditions as you want.  
 - C++ Syntax for using the OR operator  
@@ -360,9 +360,9 @@ flowchart LR
 # Combination of Boolean Operators
 ### You can use any combination of && and || in a condition
   
-- The && operator takes precedence over ||  
+- The `&&` operator takes precedence over `||`
 	- ###### Examples:  
-		- if( TRUE || TRUE ) = TRUE  
-		- if (TRUE || FALSE && TRUE) = FALSE  
-		- if((TRUE || FALSE) && TRUE) = TRUE
+		- `if( TRUE || TRUE ) = TRUE ` 
+		- `if (TRUE || FALSE && TRUE) = FALSE`  
+		- `if((TRUE || FALSE) && TRUE) = TRUE`
 
