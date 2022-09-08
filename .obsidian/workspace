@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "CSE 2010-12(83648)/Week 3/2022-09-07 - C++ Control Flow with if-else statements.md",
+            "file": "MATH 2720-04/2022-09-08 hex.md",
             "mode": "source",
             "source": false
           }
@@ -24,7 +24,7 @@
         "state": {
           "type": "localgraph",
           "state": {
-            "file": "CSE 2010-12(83648)/Week 3/2022-09-07 - C++ Control Flow with if-else statements.md",
+            "file": "MATH 2720-04/2022-09-08 hex.md",
             "options": {
               "collapse-filter": false,
               "search": "",
@@ -145,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CSE 2010-12(83648)/Week 3/2022-09-07 - C++ Control Flow with if-else statements.md",
+                "file": "MATH 2720-04/2022-09-08 hex.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +162,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CSE 2010-12(83648)/Week 3/2022-09-07 - C++ Control Flow with if-else statements.md",
+                "file": "MATH 2720-04/2022-09-08 hex.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -185,7 +185,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CSE 2010-12(83648)/Week 3/2022-09-07 - C++ Control Flow with if-else statements.md"
+                "file": "MATH 2720-04/2022-09-08 hex.md"
               }
             }
           },
@@ -207,13 +207,13 @@
   },
   "active": "cc3982f43eed958d",
   "lastOpenFiles": [
+    "MATH 2720-04/MATH 2720-04.md",
+    "CSE 2010-12(83648)/Week 3/2022-09-07 - C++ Control Flow with if-else statements.md",
     "CSE 2010-12(83648)/CSE 2010-12.md",
     "MATH 2720-04/Week 3/Week 3 Homework.md",
-    "MATH 2720-04/MATH 2720-04.md",
     "MATH 2720-04/Week 1/2022-08-23-1.md",
     "MATH 2210-12/2022-09-08.md",
     "MATH 2210-12/ZR.md",
-    "CSE 2010-12(83648)/Week 3/2022-09-07 - C++ Control Flow with if-else statements.md",
     "MATH 2210-12/2022-09-06.md",
     "MATH 2210-12/2022-08-30.md",
     "CSE 2010-12(83648)/Week 2/2022-08-31 - C++ Fundamental Data Types, Variables, Strings.md"
