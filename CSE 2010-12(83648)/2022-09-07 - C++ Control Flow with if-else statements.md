@@ -82,9 +82,9 @@ whether the previous condition(s) evaluates to TRUE or FALSE
 
 ```mermaid
 graph TD;
-    A([Start])-->B;
-    B[Take user Input]-->C;
-    C{{Is input greater than 0?}}-->D;
+    A([Start]):::Red-->B;
+    B[Take user Input]:::Green-->C;
+    C{{Is input greater than 0?}}:::Yellow-->D;
     C-->E;
     E-->F;
     E-->G;
@@ -92,6 +92,9 @@ graph TD;
     E-->H;
     D[bruh]-->H;
     G-->H;
+	classDef Red fill:#d05e56;
+	classDef Yellow fill:#d8a027, color:#000;
+	classDef Green fill:#448d7a;
 ```
 
 ```
