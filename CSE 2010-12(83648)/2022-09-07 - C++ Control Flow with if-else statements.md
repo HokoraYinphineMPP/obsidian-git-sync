@@ -58,7 +58,7 @@ int main()
 The condition of `if` statements typically compares values with one another.  
 To do this comparison, we use relational operators.
 |Operator Name|Operator|Example Expression|
-|-|-|-|
+|-|:-:|:-:|
 |Equal To|\=\=|a \=\= b|
 |Not Equal To|!=|a != b|
 |Less Than|<|a < b|
@@ -242,16 +242,45 @@ int main()
 - Combines two or more conditions where the overall result is true if and only if ALL conditions are true.  
 - You can combine as many conditions as you want.  
 - C++ Syntax for using the AND operator  
-	- Can user either && or and
+	- Can user either `&&` or `and`
 
 ```c++
 if(condition 1 && condition 2 &&...)
 	...
 ```
 ```c++
-if(condition) {
-	//multiple statements body
-}
-else{
-	//multiple statement body
+if(condition 1 and condition 2 and...)
+	...
 }```
+
+###### Logic Table for AND
+|A|B|A && B|
+|-|-|:-:|
+|True|True|True && True = True|
+|True|False|True && False = False|
+|False|True|False && True = False|
+|False|False|False && False = False|
+
+# || - OR Operator: Just ONE needs to be TRUE
+- Combines two or more conditions where the overall results is TRUE if AT LEAST ONE condition is true.
+- You can combine as many conditions as you want.  
+- C++ Syntax for using the OR operator  
+	- Can user either `&&` or `or`
+
+```c++
+if(condition 1 || condition 2 ||...)
+	...
+```
+```c++
+if(condition 1 or condition 2 or...)
+	...
+}```
+
+###### Logic Table for AND
+|A|B|A && B|
+|-|-|:-:|
+|True|True|True && True = True|
+|True|False|True && False = True|
+|False|True|False && True = True|
+|False|False|False && False = False|
+
