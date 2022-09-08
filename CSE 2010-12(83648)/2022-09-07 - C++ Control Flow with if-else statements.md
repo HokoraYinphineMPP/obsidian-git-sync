@@ -284,3 +284,16 @@ if(condition 1 or condition 2 or...)
 |False|True|False && True = True|
 |False|False|False && False = False|
 
+```mermaid
+gitGraph  
+commit
+   commit  
+   commit  
+   branch develop  
+   commit  
+   commit  
+   commit  
+   checkout main  
+   commit  
+   commit
+```
