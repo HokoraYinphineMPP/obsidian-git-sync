@@ -1,0 +1,88 @@
+__if.cpp__
+```c++
+/*
+ * Program Description: Example program for a simple if statement
+ */
+#include <iostream>  
+using namespace std;  
+int main()  
+{
+	//initialize variables
+	int num = 0;
+	//prompt user for a value
+	cout << "Please enter a number greater than zero:";
+	cin >> num;//store user input into variable
+	cout << "You entered: " << num << "\n";
+	//this if statement will check if the number
+	//entered is less than or equal to zero
+	//if, and only if, it is true, the body of the if statement will run
+	if(num <= 0)
+	cout << "You did not listen to my instructions!\n";
+	return 0;
+}
+```
+__if_else.cpp___
+```c++
+/*
+ * Program Description: Example program for a simple if-else statement
+ */ 
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	//initialize variables
+	int num = 0;
+	cout << "Please enter a number greater than zero:";
+	cin >> num;
+	cout << "You entered: " << num << "\n";
+	
+	//this if statement will check if the number
+	//entered is less than or equal to zero.
+	if(num <= 0)
+		cout << "You did not listed to my instructions!\n";
+	//this else will only run if the above if evaluates to false
+	else{
+		//if the number is greater than zero, the following
+		//if statement will check if it is divisible by 2
+		if(num % 2 == 0) // check if num is even
+			cout << num << " is even.\n";
+		else
+			cout << num << " is odd.\n";
+	}
+	//regardless of whether the if or the else above runs, the program will always end
+	return 0;
+}
+
+```
+
+```c++
+/*
+ * Program Description: Example program for a simple if-else statement
+ * that prints whether a number is negative, zero, or positive
+ */
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	//initialize variables
+	int num = 0;
+	//prompt the user for an integer
+	cout << "Enter an integer:";
+	cin >> num;
+
+	//the program will check the following conditions from top to bottom
+	//Once one evaluates to true, it will execute its body and ignore the remaining
+	//ones. If none are true, the final else will run
+	if (num == 0)
+		cout << "You entered zero.\n";
+	else if(num > 0)
+		cout << "You entered a positive integer.\n";
+	else 
+		cout << "You entered a negative integer.\n";
+
+	return 0;
+}
+
+```
