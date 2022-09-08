@@ -146,7 +146,7 @@ cout << richMan << "\n"; // will display "elon"
 ```
 
 ###### `.at(i)` - character in string
-`.at(i)`: returns the character at position #i
+`.at(i)`: returns the character at position \#i
 ```c++
 string fruit = "watermelon";
 int mid = fruit.length() / 2; //mid = 5

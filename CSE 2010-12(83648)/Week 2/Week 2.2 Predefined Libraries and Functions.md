@@ -27,9 +27,9 @@ Libraries
        that contain function that you can use in your
        code.
     - You have access to these libraries and can use
-       them in your program with the #include
+       them in your program with the \#include
        statement
-          #include <libraryName>
+          \#include <libraryName>
     - You can see a list of some here:
        [http://www.cplusplus.com/reference/](http://www.cplusplus.com/reference/)
 
@@ -65,8 +65,8 @@ numerics library
 http://www.cplusplus.com/reference/cmath/
 ```
 - To use functions in cmath, have the following line in your
-    program, right after #include <iostream>:
-       - #include <cmath>
+    program, right after \#include <iostream>:
+       - \#include <cmath>
 - Functions to compute trigonometry related calculations:
     - cos(x) //returns the cosine of the value x
     - sin(x) //returns the sine of the value x
@@ -87,8 +87,8 @@ http://www.cplusplus.com/reference/cmath/
 
 Program example of using pow(), where the function call is used in two different ways,
 but we would get the same output
-#include <iostream>
-#include <cmath>
+\#include <iostream>
+\#include <cmath>
 using namespace std;
 int main() {
 //function call as part of a cout statement
