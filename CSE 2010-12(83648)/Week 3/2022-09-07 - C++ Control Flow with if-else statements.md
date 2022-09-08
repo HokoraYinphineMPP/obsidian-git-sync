@@ -378,8 +378,8 @@ Write a program that calculates a shipping rate for a company based on the desti
 /*
 * Name: James Wibowo
 * File Name: Shipping.cpp
-* Program: This program will calculate
-* Date: 08/24/22
+* Program: This program will calculate shipping rates based on destination and weight.
+* Date: 09/07/22
 */
 
 #include <iostream>
@@ -387,11 +387,10 @@ using namespace std;
 
 int main()
 {
-	string name = "James";
-	int year;
-	cout << "Hello " << name << "! Welcome to CSE 2010!\nWhat year is it?\n";
-	cin >> year;
-	cout << "It is the year " << year << "\n";
+	//input weight and destination
+	cout << "Package Weight?\nLbs: ";
+	cin >> ;
+	cout << "It is the year";
 	return 0;
 }
 
