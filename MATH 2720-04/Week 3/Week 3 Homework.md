@@ -10,6 +10,8 @@
 
 - [x] [Learning Video: Examples Determining either Injective, Surjective, and/or Bijective (Assignment)](https://csusb.instructure.com/courses/15759/modules/items/1123680) `Sep 6` 1 pts
 
+- [ ] [Learning Video: Examples Determining either Injective, Surjective, and/or Bijective (Assignment)](temp) `Sep 6` 1 pts
+
 ## M3 Learning Activities
 
 - [ ] [Section 0.4: Functions](http://discrete.openmathbooks.org/dmoi3/sec_intro-functions.html)
