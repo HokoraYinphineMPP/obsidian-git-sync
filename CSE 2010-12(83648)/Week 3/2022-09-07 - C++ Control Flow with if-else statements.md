@@ -366,3 +366,33 @@ flowchart LR
 		- `if (TRUE || FALSE && TRUE) = FALSE`  
 		- `if((TRUE || FALSE) && TRUE) = TRUE`
 
+# Shipping Program Example  
+Write a program that calculates a shipping rate for a company based on the destination and weight of the package.  
+	- If the package is sent outside the U.S, shipping is $70.00.
+	- If the package is sent within the U.S and the weight is more than 10lbs, shipping is $25.00
+	- If the package is sent within the U.S and the weight is between 1-10lbs, shipping is $7.50
+	- If the package is sent within the U.S and the weight is less than 1 lb, shipping = $2.50.
+	- If the package is sent within the U.S to Alaska (AK) or Hawaii (HI), the shipping rate is $40.00, regardless of weight.
+
+```c++
+/*
+* Name: James Wibowo
+* File Name: Shipping.cpp
+* Program: This program will calculate
+* Date: 08/24/22
+*/
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	string name = "James";
+	int year;
+	cout << "Hello " << name << "! Welcome to CSE 2010!\nWhat year is it?\n";
+	cin >> year;
+	cout << "It is the year " << year << "\n";
+	return 0;
+}
+
+```
