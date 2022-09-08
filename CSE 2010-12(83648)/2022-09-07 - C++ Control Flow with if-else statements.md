@@ -20,11 +20,21 @@ if(condition) {
 
 - If there is more than one statement in the body, you MUST use curly braces.
 
+```mermaid
+graph TD;
+    A([Start]):::Red-->B;
+    B[Take user Input]:::Green-->C;
+    C{{Is input greater than 0?}}:::Yellow--No-->D;
+    C--Yes-->H([End]):::Red;
+    D[Output 'You did not listen...']:::Green-->H;
+	classDef Red fill:#d05e56;
+	classDef Yellow fill:#d8a027, color:#000;
+	classDef Green fill:#448d7a;
+```
+
 __if.cpp__
 ```c++
-/*
- * Program Description: Example program for a simple if statement
- */
+//Program Description: Example program for a simple if statement
 #include <iostream>  
 using namespace std;  
 int main()  
@@ -74,8 +84,6 @@ either TRUE or FALSE.
 	- Only ONE body will run.  
 	- C++ Syntax for if-else statements  
 
-
-
 - Note: an `else` does not have a condition associated with it. Its performance is based on  
 whether the previous condition(s) evaluates to TRUE or FALSE
 ###### Example
@@ -96,35 +104,10 @@ graph TD;
 	classDef Green fill:#448d7a;
 ```
 
-```
-__if.cpp__
-```c++
-/*
- * Program Description: Example program for a simple if statement
- */
-#include <iostream>  
-using namespace std;  
-int main()  
-{
-	//initialize variables
-	int num = 0;
-	//prompt user for a value
-	cout << "Please enter a number greater than zero:";
-	cin >> num;//store user input into variable
-	cout << "You entered: " << num << "\n";
-	//this if statement will check if the number
-	//entered is less than or equal to zero
-	//if, and only if, it is true, the body of the if statement will run
-	if(num <= 0)
-	cout << "You did not listen to my instructions!\n";
-	return 0;
-}
-```
 __if_else.cpp__
 ```c++
-/*
- * Program Description: Example program for a simple if-else statement
- */ 
+
+//Program Description: Example program for a simple if-else statement
 #include <iostream>
 using namespace std;
 
@@ -154,12 +137,20 @@ int main()
 }
 
 ```
+
+
+
+
+
+
+
+
+
+
 __if_else_if.cpp__
 ```c++
-/*
- * Program Description: Example program for a simple if-else statement
- * that prints whether a number is negative, zero, or positive
- */
+//Program Description: Example program for a simple if-else statement
+//that prints whether a number is negative, zero, or positive
 #include <iostream>
 using namespace std;
 
