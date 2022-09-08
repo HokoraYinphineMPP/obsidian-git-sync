@@ -1,3 +1,22 @@
+# Chapter 3: Control Flow: if-else, relational operators, boolean operators
+## Background 
+At this point in the course, the programs we have written have a very linear flow. There is a set of instructions we give the program for it to make it from point a to point b, and it does not veer off or go in different directions.
+
+But in many cases, we need to control what the program does based on user input, or the state of a variable. We want to control the flow of our program as it runs to give us multiple options for routes it can take.
+
+## The `if` Statement
+- The if statement is used to implement a decision in the program. It is made up of a condition and a body.
+	- The condition of an if statement is made up of an expression that evaluates to TRUE or FALSE. It typically compares values using relational operators.
+	- The body of an if statement is made up of either one statement or multiple statements. These statements will run ONLY if the condition evaluates to TRUE.
+
+###### C++ Syntax for if statements
+|`if(condition)`|`if(condition){`|
+|-|-|
+|`single statement body`|`//multiple statement bodies }`|
+
+
+
+
 __if.cpp__
 ```c++
 /*
@@ -21,7 +40,7 @@ int main()
 	return 0;
 }
 ```
-__if_else.cpp___
+__if_else.cpp__
 ```c++
 /*
  * Program Description: Example program for a simple if-else statement
@@ -55,7 +74,7 @@ int main()
 }
 
 ```
-
+__if_else_if.cpp__
 ```c++
 /*
  * Program Description: Example program for a simple if-else statement
@@ -71,7 +90,7 @@ int main()
 	//prompt the user for an integer
 	cout << "Enter an integer:";
 	cin >> num;
-
+	
 	//the program will check the following conditions from top to bottom
 	//Once one evaluates to true, it will execute its body and ignore the remaining
 	//ones. If none are true, the final else will run
@@ -81,7 +100,7 @@ int main()
 		cout << "You entered a positive integer.\n";
 	else 
 		cout << "You entered a negative integer.\n";
-
+	
 	return 0;
 }
 
