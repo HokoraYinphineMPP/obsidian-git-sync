@@ -151,31 +151,39 @@ the statements within that if, and does not
 check any other conditions.  
 - If none of the conditions are true, it will  
 run the body of the else.
+
 ###### Example
 ```c++
 if(condition 1){
-	Body
+	//Body
 }
 else if(condition 2){
-
+	//Body
+}
+else if(condition 3){
+	//Body
+}
+...
+else if(condition n){
+	//Body
+}
+else{
+	//Body will run if all else false
 }
 ```
 
-
-
-
-
+###### Example
 ```mermaid
 graph TD;
     A([Start]):::Red-->B;
     B[Take user Input]:::Green-->C;
-    C{{Is input greater than 0?}}:::Yellow--No-->D;
-    C--Yes-->E;
-    E{{Is Input divisible by 2}}:::Yellow--No-->F;
-	    E--Yes-->G;
-    F[Output 'Odd..']:::Green-->H([End]):::Red;
-    D[Output 'You did not listen...']:::Green-->H;
-    G[Output 'Even..']:::Green-->H;
+    C{{Is input equal than 0?}}:::Yellow--Yes-->D;
+    C--No-->E;
+    E{{Is Input positive?}}:::Yellow--No-->F;
+	E--Yes-->G;
+    F[Output 'Negative']:::Green-->H([End]):::Red;
+    D[Output 'Zero']:::Green-->H;
+    G[Output 'Positive']:::Green-->H;
 	classDef Red fill:#d05e56;
 	classDef Yellow fill:#d8a027, color:#000;
 	classDef Green fill:#448d7a;
@@ -209,3 +217,13 @@ int main()
 }
 
 ```
+# Boolean/Logical Operators  
+- There may be times in our programs when running certain code is dependent on  
+multiple conditions.  
+	- Sometimes all conditions need to be true.  
+	- Sometimes only one needs to be true.  
+- We can use Boolean operators to combine our conditions!  
+- Boolean operators combine conditions where the overall expression will result in  
+either TRUE or FALSE.  
+	- && - AND operator  
+	- || - OR operator
