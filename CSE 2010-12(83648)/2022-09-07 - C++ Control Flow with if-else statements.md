@@ -95,7 +95,7 @@ graph TD;
     C{{Is input greater than 0?}}:::Yellow--No-->D;
     C--Yes-->E;
     E{{Is Input divisible by 2}}:::Yellow--No-->F;
-    E--Yes-->G;
+	    E--Yes-->G;
     F[Output 'Odd..']:::Green-->H([End]):::Red;
     D[Output 'You did not listen...']:::Green-->H;
     G[Output 'Even..']:::Green-->H;
@@ -138,15 +138,48 @@ int main()
 
 ```
 
+# The `if(),else if()...else` statement
+-   When writing a program that has more  
+than 2 possible outcomes, we can use a  
+sequence of if/else if/else if/else  
+statements.  
+- When your program encounters an if-else  
+branch like this, the conditions will be  
+tested from top to bottom.  
+- As soon as one condition is true, it runs  
+the statements within that if, and does not  
+check any other conditions.  
+- If none of the conditions are true, it will  
+run the body of the else.
+###### Example
+```c++
+if(condition 1){
+	Body
+}
+else if(condition 2){
+
+}
+```
 
 
 
 
 
-
-
-
-
+```mermaid
+graph TD;
+    A([Start]):::Red-->B;
+    B[Take user Input]:::Green-->C;
+    C{{Is input greater than 0?}}:::Yellow--No-->D;
+    C--Yes-->E;
+    E{{Is Input divisible by 2}}:::Yellow--No-->F;
+	    E--Yes-->G;
+    F[Output 'Odd..']:::Green-->H([End]):::Red;
+    D[Output 'You did not listen...']:::Green-->H;
+    G[Output 'Even..']:::Green-->H;
+	classDef Red fill:#d05e56;
+	classDef Yellow fill:#d8a027, color:#000;
+	classDef Green fill:#448d7a;
+```
 __if_else_if.cpp__
 ```c++
 //Program Description: Example program for a simple if-else statement
