@@ -10,9 +10,14 @@ But in many cases, we need to control what the program does based on user input,
 	- The body of an `if` statement is made up of either one statement or multiple statements. These statements will run ONLY if the condition evaluates to TRUE.
 
 ###### C++ Syntax for if statements
-|`if(condition)`|`if(condition){`|
-|-|-|
-|`single statement body`|`//multiple statement bodies }`|
+```c++
+if(condition)
+	single statement body```
+```c++
+if(condition) {
+//multiple statements body
+}```
+
 - If there is more than one statement in the body, you MUST use curly braces.
 
 __if.cpp__
@@ -62,24 +67,18 @@ either TRUE or FALSE.
 |c % 2 \=\= 0|False|
 |b+2<=14|True|
 
-## The if-else statement  
-- You can also pair an if with an else.  
-	- If the condition following the if is TRUE, the body of the if will execute.  
-	- If the condition following the if is FALSE, the body of the else will execute.  
+## The `if-else` statement  
+- You can also pair an `if` with an `else`.  
+	- If the condition following the `if` is TRUE, the body of the `if` will execute.  
+		- If the condition following the `if` is FALSE, the body of the else will execute.  
 	- Only ONE body will run.  
-- C++ Syntax for if-else statements  
+	- C++ Syntax for if-else statements  
 
 
 
-- Note: an else does not have a condition associated with it. Its performance is based on  
+- Note: an `else` does not have a condition associated with it. Its performance is based on  
 whether the previous condition(s) evaluates to TRUE or FALSE
-
-
-
-
-
-
-
+###### Example
 
 __if.cpp__
 ```c++
