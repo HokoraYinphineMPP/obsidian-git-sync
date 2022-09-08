@@ -5,14 +5,37 @@ At this point in the course, the programs we have written have a very linear flo
 But in many cases, we need to control what the program does based on user input, or the state of a variable. We want to control the flow of our program as it runs to give us multiple options for routes it can take.
 
 ## The `if` Statement
-- The if statement is used to implement a decision in the program. It is made up of a condition and a body.
-	- The condition of an if statement is made up of an expression that evaluates to TRUE or FALSE. It typically compares values using relational operators.
-	- The body of an if statement is made up of either one statement or multiple statements. These statements will run ONLY if the condition evaluates to TRUE.
+- The `if` statement is used to implement a decision in the program. It is made up of a condition and a body.
+	- The condition of an `if` statement is made up of an expression that evaluates to TRUE or FALSE. It typically compares values using relational operators.
+	- The body of an `if` statement is made up of either one statement or multiple statements. These statements will run ONLY if the condition evaluates to TRUE.
 
 ###### C++ Syntax for if statements
 |`if(condition)`|`if(condition){`|
 |-|-|
 |`single statement body`|`//multiple statement bodies }`|
+- If there is more than one statement in the body, you MUST use curly braces.
+
+## Relational Operators
+The condition of `if` statements typically compares values with one another.  
+To do this comparison, we use relational operators.
+|Operator Name|Operator|Example Expression|
+|-|-|-|
+|Equal To|\=\=|a \=\= b|
+|Not Equal To|!=|a != b|
+|Less Than|<|a < b|
+|Greater Than|>|a > b|
+|Less Than or Equal To|<=|a <= b|
+|Greater Than or Equal To|>=|a >= b|
+
+These operators are used to compare the values between two expressions. The expression demonstrated can be  
+either TRUE or FALSE.
+
+
+
+
+
+
+
 
 
 
