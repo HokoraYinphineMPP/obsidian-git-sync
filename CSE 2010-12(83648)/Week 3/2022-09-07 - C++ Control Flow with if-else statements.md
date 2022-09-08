@@ -387,10 +387,13 @@ using namespace std;
 
 int main()
 {
+	//init
+	double PackWeig;
+	string PackDest,;
 	//input weight and destination
 	cout << "Package Weight?\nLbs: ";
-	cin >> ;
-	cout << "It is the year";
+	cin >> PackWeig;
+	cout << "Package Destination?";
 	return 0;
 }
 
