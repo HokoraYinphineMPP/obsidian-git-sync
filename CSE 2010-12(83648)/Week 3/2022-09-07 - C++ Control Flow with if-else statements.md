@@ -383,6 +383,7 @@ Write a program that calculates a shipping rate for a company based on the desti
 */
 
 #include <iostream>
+#include <string>
 using namespace std;
 
 int main()
@@ -394,7 +395,8 @@ int main()
 	//input weight and destination
 	cout << "Package Weight?\nLbs: ";
 	cin >> PackWeig;
-	cout << "Package Destination?";
+	cout << "Package Destination? (Enter Two Letter )";
+	cin >> PackDest;
 	return 0;
 }
 
