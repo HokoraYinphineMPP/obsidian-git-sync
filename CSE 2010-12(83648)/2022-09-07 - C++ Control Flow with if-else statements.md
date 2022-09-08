@@ -82,15 +82,15 @@ whether the previous condition(s) evaluates to TRUE or FALSE
 
 ```mermaid
 graph TD;
-    A-->B;
-    B-->C;
-    C-->D;
+    A([Start])-->B;
+    B[Take user Input]-->C;
+    C{{Is input greater than 0?}}-->D;
     C-->E;
     E-->F;
     E-->G;
     F-->H;
     E-->H;
-    D-->H;
+    D[bruh]-->H;
     G-->H;
 ```
 
