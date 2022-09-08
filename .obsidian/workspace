@@ -8,8 +8,12 @@
         "type": "leaf",
         "dimension": 61.73076923076923,
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "CSE 2010-12(83648)/Week 3/2022-09-07 - C++ Control Flow with if-else statements.md",
+            "mode": "source",
+            "source": false
+          }
         },
         "group": "2df6a850b37d4f6f"
       },
@@ -20,7 +24,7 @@
         "state": {
           "type": "localgraph",
           "state": {
-            "file": "CSE 2010-12(83648)/2022-09-07 - C++ Control Flow with if-else statements.md",
+            "file": "CSE 2010-12(83648)/Week 3/2022-09-07 - C++ Control Flow with if-else statements.md",
             "options": {
               "collapse-filter": false,
               "search": "",
@@ -64,15 +68,15 @@
               ],
               "collapse-display": false,
               "showArrow": true,
-              "textFadeMultiplier": 0,
+              "textFadeMultiplier": -1.3,
               "nodeSizeMultiplier": 1,
               "lineSizeMultiplier": 1,
               "collapse-forces": false,
-              "centerStrength": 0.518713248970312,
-              "repelStrength": 12.2442344813573,
+              "centerStrength": 0.467818199363119,
+              "repelStrength": 10.4680111936698,
               "linkStrength": 1,
               "linkDistance": 30,
-              "scale": 1.0000000000000049,
+              "scale": 1.00000000000001,
               "close": true
             }
           }
@@ -141,6 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "CSE 2010-12(83648)/Week 3/2022-09-07 - C++ Control Flow with if-else statements.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -157,6 +162,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "CSE 2010-12(83648)/Week 3/2022-09-07 - C++ Control Flow with if-else statements.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -178,7 +184,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "CSE 2010-12(83648)/Week 3/2022-09-07 - C++ Control Flow with if-else statements.md"
+              }
             }
           },
           {
@@ -197,9 +205,9 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "cc3982f43eed958d",
+  "active": "ce80bb250476dae4",
   "lastOpenFiles": [
-    "CSE 2010-12(83648)/2022-09-07 - C++ Control Flow with if-else statements.md",
+    "CSE 2010-12(83648)/Week 3/2022-09-07 - C++ Control Flow with if-else statements.md",
     "CSE 2010-12(83648)/CSE 2010-12.md",
     "CSE 2010-12(83648)/Week 2/Lab2/Lab 2 Submission.md",
     "CSE 2010-12(83648)/Week 2/2022-08-23 - C++ Ch 2 Numerical data types.md",
