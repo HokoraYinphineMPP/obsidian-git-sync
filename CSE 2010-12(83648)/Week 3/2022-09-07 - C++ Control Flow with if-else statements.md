@@ -395,8 +395,9 @@ int main()
 	//input weight and destination
 	cout << "Package Weight?\nLbs: ";
 	cin >> PackWeig;
-	cout << "Package Destination? (Enter Two Letter )";
+	cout << "Package Country Destination? (Enter Two Letter Code)";
 	cin >> PackDest;
+	if PackDest == US
 	return 0;
 }
 
