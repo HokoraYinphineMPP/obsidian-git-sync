@@ -389,15 +389,24 @@ using namespace std;
 int main()
 {
 	//init
-	double PackWeig;
-	string PackDest,AllDest;
-	AllDest = "AL,KY,OH,AK,LA,OK,AZ,ME,OR,AR,MD,PA,AS,MA,PR,CA,MI,RI,CO,MN,SC,CT,MS,SD,DE,MO,TN,DC,MT,TX,FL,NE,TT,GA,NV,UT,GU,NH,VT,HI,NJ,VA,ID,NM,VI,IL,NY,WA,IN,NC,WV,IA,ND,WI,KS,CM,WY"
+	double packWeig;
+	string packDest,packDestState;
+	AllDest = 
 	//input weight and destination
 	cout << "Package Weight?\nLbs: ";
-	cin >> PackWeig;
-	cout << "Package Country Destination? (Enter Two Letter Code)";
-	cin >> PackDest;
+	cin >> packWeig;
+	cout << "Package Country Destination? (Enter Two Letter Code): ";
+	cin >> packDest;
 	if PackDest == US
+	{
+		cout << "Package State Destination? (Enter Two Letter Code): ";
+		cin >> packDestState;
+		if packDestState
+	}
+	else
+	{
+		cout << "\n\nShipping Cost: $70.00";
+	}
 	return 0;
 }
 
