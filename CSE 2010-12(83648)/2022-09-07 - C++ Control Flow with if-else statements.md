@@ -357,4 +357,12 @@ flowchart LR
 ```
 - Condition 3: `if(x > -2 || x <= 1)`
 
-Combination of Boolean Operators
+# Combination of Boolean Operators
+### You can use any combination of && and || in a condition
+  
+- The && operator takes precedence over ||  
+	- ###### Examples:  
+		- if( TRUE || TRUE ) = TRUE  
+		- if (TRUE || FALSE && TRUE) = FALSE  
+		- if((TRUE || FALSE) && TRUE) = TRUE
+
