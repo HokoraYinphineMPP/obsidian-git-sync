@@ -284,8 +284,19 @@ if(condition 1 or condition 2 or...)
 |False|True|False && True = True|
 |False|False|False && False = False|
 
+# Representing ranges with Boolean Operators
+- You can use a combination of Boolean operators and conditions 
 ```mermaid
 flowchart LR  
-    A[...]:::Num-->B
-	classDef Num fill:#0000;
+    C[... -4]:::Num---D
+    D[-3]:::Num---E
+    E[-2]:::Num---F
+    F[-1]:::Num---G
+    G[0]:::Num---H
+    H[1]:::Num---I
+    I[2]:::Num---J
+    J[3]:::Num---K
+    K[4 ...]:::Num    
+	classDef Num fill:#0000,stroke-width:0px;
 ```
+
