@@ -286,26 +286,27 @@ if(condition 1 or condition 2 or...)
 
 # Representing ranges with Boolean Operators
 - You can use a combination of Boolean operators and conditions to make sure a value is within a range.
-- Consider the following number line. Where the red arrow show the values that we want to represent. An enclosed circle includes the value, and open circle excludes the value.
+- Consider the following number line. Where the red arrow show the values that we want to represent. An enclosed box includes the value, and open box excludes the value.
 ###### Number Line 1:
 ```mermaid
 flowchart LR  
     C[... -4]:::Num---D
     D[-3]:::Num---E
-    E[-2]:::Num---F
+    E[-2]:::Yes---F
     F[-1]:::Num---G
     G[0]:::Num---H
     H[1]:::Num---I
     I[2]:::Num---J
     J[3]:::Num---K
-    K[4 ...]:::Num    
+    K[4 ...]:::Num
 	classDef Num fill:#0000,stroke-width:0px;
-	classDef Num fill:#0000,stroke-width:0px;
-    linkStyle 0 stroke-width:2px,fill:none,stroke:blue;
-    linkStyle 1 stroke-width:2px,fill:none,stroke:green;
-    linkStyle 2 stroke-width:2px,fill:none,stroke:yellow;
-    linkStyle 3 stroke-width:2px,fill:none,stroke:pink;
-    linkStyle default stroke-width:2px,fill:none,stroke:red;
+	classDef Yes fill:#ff000090,stroke-width:0px;
+	classDef No fill:#0000,stroke-width:0px;
+    linkStyle 0 stroke-width:2px,fill:none,stroke:red;
+    linkStyle 1 stroke-width:2px,fill:none,stroke:red;
+    linkStyle 2 stroke-width:2px,fill:none,stroke:white;
+    linkStyle 3 stroke-width:2px,fill:none,stroke:white;
+    linkStyle default stroke-width:2px,fill:none,stroke:white;
 ```
 - Condition 1: `if(x <= -2 || x >= 1)`
 ```mermaid
