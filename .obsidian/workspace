@@ -8,8 +8,12 @@
         "type": "leaf",
         "dimension": 61.73076923076923,
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "MATH 2210-12/2022-09-08.md",
+            "mode": "source",
+            "source": false
+          }
         },
         "group": "2df6a850b37d4f6f"
       },
@@ -141,6 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "MATH 2210-12/2022-09-08.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -157,6 +162,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "MATH 2210-12/2022-09-08.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -178,7 +184,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "MATH 2210-12/2022-09-08.md"
+              }
             }
           },
           {
@@ -199,15 +207,15 @@
   },
   "active": "cc3982f43eed958d",
   "lastOpenFiles": [
-    "MATH 2210-12/2022-09-08.md",
     "MATH 2210-12/ZR.md",
+    "MATH 2210-12/Week 1/2210 Syllabus Markdown.md",
+    "MATH 2210-12/Week 1/2022-08-23.md",
+    "MATH 2210-12/2022-09-08.md",
     "MATH 2210-12/2022-09-06.md",
     "MATH 2210-12/Math 2210-12.md",
     "MATH 2210-12/2022-09-01.md",
     "Classes.md",
     "CSE 2010-12(83648)/Week 2/Lab2/Lab 2 Submission.md",
-    "CSE 2010-12(83648)/Week 3/2022-09-07 - C++ Control Flow with if-else statements.md",
-    "CSE 2010-12(83648)/CSE 2010-12.md",
-    "CSE 2010-12(83648)/Week 2/2022-08-31 - C++ Fundamental Data Types, Variables, Strings.md"
+    "CSE 2010-12(83648)/Week 3/2022-09-07 - C++ Control Flow with if-else statements.md"
   ]
 }

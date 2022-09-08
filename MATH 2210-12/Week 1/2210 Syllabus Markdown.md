@@ -571,7 +571,7 @@ Week Section # Topic
 ```
 4.4 Families of functions and modeling
 ```
-11 Recommended Review + Midterm Assessment 2
+#### 11 Recommended Review + Midterm Assessment 2
 
 #### 12
 
@@ -604,8 +604,8 @@ Week Section # Topic
 6.2 Constructing antiderivatives analytically
 ```
 
-15 Recommended Review
+#### 15 Recommended Review
 
-16 Final
+#### 16 Final
 
 
