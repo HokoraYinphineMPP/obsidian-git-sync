@@ -8,12 +8,8 @@
         "type": "leaf",
         "dimension": 61.73076923076923,
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "CSE 2010-12(83648)/CSE 2010-12.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "graph",
+          "state": {}
         },
         "group": "2df6a850b37d4f6f"
       },
@@ -24,7 +20,7 @@
         "state": {
           "type": "localgraph",
           "state": {
-            "file": "CSE 2010-12(83648)/CSE 2010-12.md",
+            "file": "CSE 2010-12(83648)/2022-09-07 - C++ Control Flow with if-else statements.md",
             "options": {
               "collapse-filter": false,
               "search": "",
@@ -76,7 +72,7 @@
               "repelStrength": 12.2442344813573,
               "linkStrength": 1,
               "linkDistance": 30,
-              "scale": 1.401982897776107,
+              "scale": 1.0000000000000049,
               "close": true
             }
           }
@@ -145,7 +141,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CSE 2010-12(83648)/CSE 2010-12.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +157,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CSE 2010-12(83648)/CSE 2010-12.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -184,9 +178,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "CSE 2010-12(83648)/CSE 2010-12.md"
-              }
+              "state": {}
             }
           },
           {
@@ -209,13 +201,13 @@
   "lastOpenFiles": [
     "CSE 2010-12(83648)/2022-09-07 - C++ Control Flow with if-else statements.md",
     "CSE 2010-12(83648)/CSE 2010-12.md",
+    "CSE 2010-12(83648)/Week 2/Lab2/Lab 2 Submission.md",
+    "CSE 2010-12(83648)/Week 2/2022-08-23 - C++ Ch 2 Numerical data types.md",
+    "CSE 2010-12(83648)/Week 2/2022-08-31 - C++ Fundamental Data Types, Variables, Strings.md",
     "MATH 2210-12/2022-09-06.md",
-    "MATH 2210-12/ZR.md",
-    "MATH 2720-04/Week 3/Week 3 Homework.md",
-    "MATH 2720-04/Week 2/Week 2 Homework.md",
-    "MATH 2210-12/Math 2210-12.md",
-    "MATH 2720-04/Week 3/M3 Overview & Objectives.md",
-    "MATH 2720-04/Week 3/M3 Wrap Up and Next Steps.md",
-    "MATH 2720-04/Week 2/M2 Wrap Up and Next Steps.md"
+    "MATH 2210-12/2022-08-30.md",
+    "MATH 2210-12/2022-09-01.md",
+    "2022-08-31.md",
+    "MATH 2210-12/ZR.md"
   ]
 }
