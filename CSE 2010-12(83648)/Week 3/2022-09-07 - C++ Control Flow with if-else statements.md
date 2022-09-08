@@ -397,15 +397,43 @@ int main()
 	cin >> packWeig;
 	cout << "Package Country Destination? (Enter Two Letter Code): ";
 	cin >> packDest;
-	if PackDest == US
+	if (packDest == "US")
 	{
 		cout << "Package State Destination? (Enter Two Letter Code): ";
 		cin >> packDestState;
-		if packDestState
+		if (packDestState == "AK")
+		{
+			cout << "\n\nShipping Cost: $40.00";
+			return 0
+		}
+		else if (packDestState == "HI")
+		{
+			cout << "\n\nShipping Cost: $40.00";
+			return 0
+		}
+		else
+		{
+			if (packWeig < 1)
+			{
+				cout << "\n\nShipping Cost: $2.50";
+				return 0;
+			}
+			else if (packWeig <= 10)
+			{
+				cout << "\n\nShipping Cost: $7.50";
+				return 0
+			}
+			else
+			{
+				cout << "\n\nShipping Cost: $25.00";
+				return 0
+			}
+		}
 	}
 	else
 	{
 		cout << "\n\nShipping Cost: $70.00";
+		return 0
 	}
 	return 0;
 }
