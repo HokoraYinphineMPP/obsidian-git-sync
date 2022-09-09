@@ -27,7 +27,7 @@
 
 - [ ] [Section 1.1: Additive and Multiplicative Principles](http://discrete.openmathbooks.org/dmoi3/sec_counting-addmult.html)
 
-- [ ] [Check Your Understanding 3](https://csusb.instructure.com/courses/15759/modules/items/1037434) (Assignment) `Sep 9` 5 pts
+- [x] [Check Your Understanding 3](https://csusb.instructure.com/courses/15759/modules/items/1037434) (Assignment) `Sep 9` 5 pts
 
 ## M3 Summary
 
