@@ -18,7 +18,7 @@
 
 - [x] [Learning Video: Counting with Hexadecimals](https://csusb.instructure.com/courses/15759/modules/items/1126686) `Sep 8` 1 pts
 
-- [ ] [  Learning Video: Cardinality of a Union of Three Sets](https://csusb.instructure.com/courses/15759/modules/items/1126936) `Sep 8` 1 pts
+- [x] [  Learning Video: Cardinality of a Union of Three Sets](https://csusb.instructure.com/courses/15759/modules/items/1126936) `Sep 8` 1 pts
 
 
 ## M3 Learning Activities
