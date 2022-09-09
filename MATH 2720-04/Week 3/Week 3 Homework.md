@@ -10,7 +10,16 @@
 
 - [x] [Learning Video: Examples Determining either Injective, Surjective, and/or Bijective (Assignment)](https://csusb.instructure.com/courses/15759/modules/items/1123680) `Sep 6` 1 pts
 
-- [ ] [Learning Video: Examples Determining either Injective, Surjective, and/or Bijective (Assignment)](temp) `Sep 6` 1 pts
+- [x] [Learning Video: Introduction to Counting Using Additive and Multiplicative Principles](https://csusb.instructure.com/courses/15759/modules/items/1126685) `Sep 8` 1 pts
+
+- [ ] [Learning Video: Introduction to Counting Using Additive and Multiplicative Principles](https://csusb.instructure.com/courses/15759/modules/items/1126685) `Sep 8` 1 pts
+
+- [ ] [Learning Video: Introduction to Counting Using Additive and Multiplicative Principles](https://csusb.instructure.com/courses/15759/modules/items/1126685) `Sep 8` 1 pts
+
+- [ ] [Learning Video: Introduction to Counting Using Additive and Multiplicative Principles](https://csusb.instructure.com/courses/15759/modules/items/1126685) `Sep 8` 1 pts
+
+- [ ] [Learning Video: Introduction to Counting Using Additive and Multiplicative Principles](https://csusb.instructure.com/courses/15759/modules/items/1126685) `Sep 8` 1 pts
+
 
 ## M3 Learning Activities
 
