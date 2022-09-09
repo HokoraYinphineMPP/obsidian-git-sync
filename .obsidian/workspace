@@ -8,8 +8,12 @@
         "type": "leaf",
         "dimension": 61.73076923076923,
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "MATH 2210-12/2022-09-09 - Quiz 2.md",
+            "mode": "source",
+            "source": false
+          }
         },
         "group": "2df6a850b37d4f6f"
       },
@@ -20,7 +24,7 @@
         "state": {
           "type": "localgraph",
           "state": {
-            "file": "MATH 2720-04/MATH 2720-04.md",
+            "file": "MATH 2210-12/2022-09-09 - Quiz 2.md",
             "options": {
               "collapse-filter": false,
               "search": "",
@@ -72,7 +76,7 @@
               "repelStrength": 10.4680111936698,
               "linkStrength": 1,
               "linkDistance": 30,
-              "scale": 1.4019828977761148,
+              "scale": 1.0000000000000102,
               "close": true
             }
           }
@@ -141,6 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "MATH 2210-12/2022-09-09 - Quiz 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -157,6 +162,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "MATH 2210-12/2022-09-09 - Quiz 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -178,7 +184,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "MATH 2210-12/2022-09-09 - Quiz 2.md"
+              }
             }
           },
           {
@@ -199,6 +207,7 @@
   },
   "active": "cc3982f43eed958d",
   "lastOpenFiles": [
+    "MATH 2210-12/ZR.md",
     "MATH 2720-04/MATH 2720-04.md",
     "Classes.md",
     "MATH 2720-04/Week 2/2022-09-01 WRKSHT2.md",
@@ -207,7 +216,6 @@
     "JAPN 3900-03/JAPN 3900-03.md",
     "MATH 2720-04/Week 3/Week 3 Homework.md",
     "CSE 2010-12(83648)/Week 3/2022-09-07 - C++ Control Flow with if-else statements.md",
-    "CSE 2010-12(83648)/CSE 2010-12.md",
-    "MATH 2720-04/Week 1/2022-08-23-1.md"
+    "CSE 2010-12(83648)/CSE 2010-12.md"
   ]
 }
