@@ -20,7 +20,7 @@
         "state": {
           "type": "localgraph",
           "state": {
-            "file": "JAPN 3900-03/2022-09-09.md",
+            "file": "MATH 2720-04/MATH 2720-04.md",
             "options": {
               "collapse-filter": false,
               "search": "",
@@ -199,15 +199,15 @@
   },
   "active": "cc3982f43eed958d",
   "lastOpenFiles": [
+    "MATH 2720-04/MATH 2720-04.md",
+    "Classes.md",
+    "MATH 2720-04/Week 2/2022-09-01 WRKSHT2.md",
+    "MATH 2720-04/Week 3/2022-09-08 Hex.md",
     "JAPN 3900-03/2022-09-09.md",
     "JAPN 3900-03/JAPN 3900-03.md",
     "MATH 2720-04/Week 3/Week 3 Homework.md",
-    "MATH 2720-04/MATH 2720-04.md",
-    "MATH 2720-04/2022-09-08 hex.md",
     "CSE 2010-12(83648)/Week 3/2022-09-07 - C++ Control Flow with if-else statements.md",
     "CSE 2010-12(83648)/CSE 2010-12.md",
-    "MATH 2720-04/Week 1/2022-08-23-1.md",
-    "MATH 2210-12/2022-09-08.md",
-    "MATH 2210-12/ZR.md"
+    "MATH 2720-04/Week 1/2022-08-23-1.md"
   ]
 }
