@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "MATH 2210-12/2022-09-08.md",
+            "file": "MATH 2210-12/2022-09-09 - Quiz 3.md",
             "mode": "source",
             "source": false
           }
@@ -24,7 +24,7 @@
         "state": {
           "type": "localgraph",
           "state": {
-            "file": "MATH 2210-12/2022-09-08.md",
+            "file": "MATH 2210-12/2022-09-09 - Quiz 3.md",
             "options": {
               "collapse-filter": false,
               "search": "",
@@ -145,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MATH 2210-12/2022-09-08.md",
+                "file": "MATH 2210-12/2022-09-09 - Quiz 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +162,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MATH 2210-12/2022-09-08.md",
+                "file": "MATH 2210-12/2022-09-09 - Quiz 3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -185,7 +185,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "MATH 2210-12/2022-09-08.md"
+                "file": "MATH 2210-12/2022-09-09 - Quiz 3.md"
               }
             }
           },
@@ -207,6 +207,7 @@
   },
   "active": "cc3982f43eed958d",
   "lastOpenFiles": [
+    "MATH 2210-12/Math 2210-12.md",
     "MATH 2210-12/2022-09-09 - Quiz 3.md",
     "MATH 2210-12/2022-09-08.md",
     "MATH 2210-12/ZR.md",
@@ -215,7 +216,6 @@
     "MATH 2720-04/Week 2/2022-09-01 WRKSHT2.md",
     "MATH 2720-04/Week 3/2022-09-08 Hex.md",
     "JAPN 3900-03/2022-09-09.md",
-    "JAPN 3900-03/JAPN 3900-03.md",
-    "MATH 2720-04/Week 3/Week 3 Homework.md"
+    "JAPN 3900-03/JAPN 3900-03.md"
   ]
 }
