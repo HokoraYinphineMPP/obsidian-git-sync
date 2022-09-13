@@ -1,6 +1,6 @@
  # Module 1: Settling In with Mathematical Statements (Week 1)
 - [x] [Edfinity Setup](https://csusb.instructure.com/courses/15759/modules/items/1037392) (Assignment)`Aug 25` 1pt
-- [[M1 Overview & Objectives]](https://csusb.instructure.com/courses/15759/modules/items/1037400) (Page)
+- [[M1 Overview & Objectives]] (Page)
 
 ## M1 Learning Activities
 - [Portfolio Platforms](https://csusb.instructure.com/courses/15759/modules/items/1037403 "Portfolio Platforms") (Page)

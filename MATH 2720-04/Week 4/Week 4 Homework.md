@@ -1,20 +1,17 @@
  # Module 4: Binomial Coefficients (Week 4)
 
-[M4 Overview & Objectives]
+- [[M4 Overview & Objectives]] (Page)
 
-## M1 Learning Activities
-- [Portfolio Platforms](https://csusb.instructure.com/courses/15759/modules/items/1037403 "Portfolio Platforms") (Page)
+## M4 Learning Videos
+- [ ] [Learning Video: Number of Elements in a Large Set](https://csusb.instructure.com/courses/15759/modules/items/1133614 "Learning Video: Number of Elements in a Large Set") (Assignment) `Sep 13` 1pt
+- [ ] [Learning Video: Conditional Statements and Truth Values](https://csusb.instructure.com/courses/15759/modules/items/1102317) (Assignment) `Aug 25` 1pt
+- [ ] [Learning Video: Contrapositive, Converse, and Inverse](https://csusb.instructure.com/courses/15759/modules/items/1102318) (Assignment) `Aug 25` 1pt
 
-## Learning Videos
-- [x] [Learning Video: Statements](https://csusb.instructure.com/courses/15759/modules/items/1037405) (Assignment) `Aug 25` 1pt
-- [x] [Learning Video: Conditional Statements and Truth Values](https://csusb.instructure.com/courses/15759/modules/items/1102317) (Assignment) `Aug 25` 1pt
-- [x] [Learning Video: Contrapositive, Converse, and Inverse](https://csusb.instructure.com/courses/15759/modules/items/1102318) (Assignment) `Aug 25` 1pt
-
-# Learning Activities
+## Learning Activities
 - [ ] [Read Section 0.2 Mathematical Statements](http://discrete.openmathbooks.org/dmoi3/sec_intro-statements.html "Read Section 0.2 Mathematical Statements")
 - [x] [Check Your Understanding 1](https://csusb.instructure.com/courses/15759/modules/items/1037408) (Assignment) `Aug 29` 4pts
 
-# M1 Summary
+## M1 Summary
 - [M1 Wrap Up and Next Steps](https://csusb.instructure.com/courses/15759/modules/items/1037411 "M1 Wrap Up and Next Steps") (Page)
  
  
@@ -24,21 +21,7 @@
  
  
  
- Module 4: Binomial Coefficients (Week 4)
 
--   [M4 Overview & Objectives]
-    
--   Context Module Sub Header
-    
-    M4 Learning Videos
-    
--   [Learning Video: Number of Elements in a Large Set](https://csusb.instructure.com/courses/15759/modules/items/1133614)Assignment
-    
-    [Learning Video: Number of Elements in a Large Set](https://csusb.instructure.com/courses/15759/modules/items/1133614 "Learning Video: Number of Elements in a Large Set")
-    
-    Sep 13
-    
-    1 pts
     
 -   [Learning Video: Counting Subsets of Specified Cardinality](https://csusb.instructure.com/courses/15759/modules/items/1133613)Assignment
     

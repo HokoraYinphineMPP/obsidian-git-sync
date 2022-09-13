@@ -1,4 +1,4 @@
-#  Module 3: Functions and Additive/Multiplicative Principles (Week 3)
+# Module 3: Functions and Additive/Multiplicative Principles (Week 3)
 
 - [[M3 Overview & Objectives]] (Page)
 
