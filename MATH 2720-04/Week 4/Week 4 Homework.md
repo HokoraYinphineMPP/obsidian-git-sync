@@ -4,8 +4,8 @@
 
 ## M4 Learning Videos
 - [x] [Learning Video: Number of Elements in a Large Set](https://csusb.instructure.com/courses/15759/modules/items/1133614 "Learning Video: Number of Elements in a Large Set") (Assignment) `Sep 13` 1pt
-- [ ] [Learning Video: Counting Subsets of Specified Cardinality](https://csusb.instructure.com/courses/15759/modules/items/1133613 "Learning Video: Counting Subsets of Specified Cardinality") (Assignment) `Sep 13` 1pt
-- [ ] [Learning Video: Contrapositive, Converse, and Inverse](https://csusb.instructure.com/courses/15759/modules/items/1102318) (Assignment) `Aug 25` 1pt
+- [x] [Learning Video: Counting Subsets of Specified Cardinality](https://csusb.instructure.com/courses/15759/modules/items/1133613 "Learning Video: Counting Subsets of Specified Cardinality") (Assignment) `Sep 13` 1pt
+- [ ] [Learning Video: Determining Number of Subsets](https://csusb.instructure.com/courses/15759/modules/items/1133611 "Learning Video: Determining Number of Subsets") (Assignment) `Sep 13` 1pt
 
 ## Learning Activities
 - [ ] [Read Section 0.2 Mathematical Statements](http://discrete.openmathbooks.org/dmoi3/sec_intro-statements.html "Read Section 0.2 Mathematical Statements")
