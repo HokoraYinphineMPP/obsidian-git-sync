@@ -8,12 +8,8 @@
         "type": "leaf",
         "dimension": 61.73076923076923,
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "MATH 2210-12/ZR.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "graph",
+          "state": {}
         },
         "group": "2df6a850b37d4f6f"
       },
@@ -24,7 +20,6 @@
         "state": {
           "type": "localgraph",
           "state": {
-            "file": "MATH 2210-12/ZR.md",
             "options": {
               "collapse-filter": false,
               "search": "",
@@ -145,7 +140,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "MATH 2210-12/ZR.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +156,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "MATH 2210-12/ZR.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -184,9 +177,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "MATH 2210-12/ZR.md"
-              }
+              "state": {}
             }
           },
           {
@@ -205,17 +196,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "cc3982f43eed958d",
+  "active": "77a2600f3f8f93f6",
   "lastOpenFiles": [
-    "MATH 2210-12/Week 4/2022-09-13.md",
+    "Not Cow's Milk.md",
     "MATH 2210-12/ZR.md",
+    "MATH 2210-12/Week 4/2022-09-13.md",
     "MATH 2720-04/Week 4/Week 4 Homework.md",
     "MATH 2720-04/Week 4/M4 Wrap Up and Next Steps.md",
     "MATH 2720-04/Week 4/M4 Overview & Objectives.md",
     "MATH 2210-12/Week 2/2022-09-01.md",
     "MATH 2210-12/Week 2/Pasted image 20220901152042.png",
     "MATH 2210-12/Week 2/Pasted image 20220901150705.png",
-    "MATH 2210-12/Week 4/Pasted image 20220913145904.png",
-    "MATH 2210-12/Week 2/Pasted image 20220901145206.png"
+    "MATH 2210-12/Week 4/Pasted image 20220913145904.png"
   ]
 }
