@@ -1,1 +1,2 @@
-![Alt text](/siggy.png "siggy")
+![Siggy](/siggy.png "siggy")
+Text Redirect: [[Week 4 Homework]]

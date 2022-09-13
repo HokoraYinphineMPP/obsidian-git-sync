@@ -8,8 +8,12 @@
         "type": "leaf",
         "dimension": 61.73076923076923,
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "README.md",
+            "mode": "source",
+            "source": false
+          }
         },
         "group": "2df6a850b37d4f6f"
       },
@@ -20,6 +24,7 @@
         "state": {
           "type": "localgraph",
           "state": {
+            "file": "README.md",
             "options": {
               "collapse-filter": false,
               "search": "",
@@ -140,6 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -156,6 +162,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -177,7 +184,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "README.md"
+              }
             }
           },
           {
@@ -196,7 +205,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "77a2600f3f8f93f6",
+  "active": "cc3982f43eed958d",
   "lastOpenFiles": [
     "Not Cow's Milk.md",
     "MATH 2210-12/ZR.md",
