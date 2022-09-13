@@ -5,7 +5,10 @@
 ## M4 Learning Videos
 - [x] [Learning Video: Number of Elements in a Large Set](https://csusb.instructure.com/courses/15759/modules/items/1133614 "Learning Video: Number of Elements in a Large Set") (Assignment) `Sep 13` 1pt
 - [x] [Learning Video: Counting Subsets of Specified Cardinality](https://csusb.instructure.com/courses/15759/modules/items/1133613 "Learning Video: Counting Subsets of Specified Cardinality") (Assignment) `Sep 13` 1pt
-- [ ] [Learning Video: Determining Number of Subsets](https://csusb.instructure.com/courses/15759/modules/items/1133611 "Learning Video: Determining Number of Subsets") (Assignment) `Sep 13` 1pt
+- [x] [Learning Video: Determining Number of Subsets](https://csusb.instructure.com/courses/15759/modules/items/1133611 "Learning Video: Determining Number of Subsets") (Assignment) `Sep 13` 1pt
+- [x] [Learning Video: Determining Subsets Having More than a Given Cardinality](https://csusb.instructure.com/courses/15759/modules/items/1133612 "Learning Video: Determining Subsets Having More than a Given Cardinality") (Assignment) `Sep 13` 1pt
+- [ ] [Learning Video: Introduction to Bit Strings](https://csusb.instructure.com/courses/15759/modules/items/1135052 "Learning Video: Introduction to Bit Strings") (Assignment) `Sep 15` 1pt
+- [ ] [Learning Video: Determining Subsets Having More than a Given Cardinality](https://csusb.instructure.com/courses/15759/modules/items/1133612 "Learning Video: Determining Subsets Having More than a Given Cardinality") (Assignment) `Sep 15` 1pt
 
 ## Learning Activities
 - [ ] [Read Section 0.2 Mathematical Statements](http://discrete.openmathbooks.org/dmoi3/sec_intro-statements.html "Read Section 0.2 Mathematical Statements")
@@ -23,22 +26,9 @@
  
 
     
--   [Learning Video: Determining Number of Subsets](https://csusb.instructure.com/courses/15759/modules/items/1133611)Assignment
+
     
-    [Learning Video: Determining Number of Subsets](https://csusb.instructure.com/courses/15759/modules/items/1133611 "Learning Video: Determining Number of Subsets")
-    
-    Sep 13
-    
-    1 pts
-    
--   [Learning Video: Determining Subsets Having More than a Given Cardinality](https://csusb.instructure.com/courses/15759/modules/items/1133612)Assignment
-    
-    [Learning Video: Determining Subsets Having More than a Given Cardinality](https://csusb.instructure.com/courses/15759/modules/items/1133612 "Learning Video: Determining Subsets Having More than a Given Cardinality")
-    
-    Sep 13
-    
-    1 pts
-    
+
 -   [Learning Video: Introduction to Bit Strings](https://csusb.instructure.com/courses/15759/modules/items/1135052)Assignment
     
     [Learning Video: Introduction to Bit Strings](https://csusb.instructure.com/courses/15759/modules/items/1135052 "Learning Video: Introduction to Bit Strings")
