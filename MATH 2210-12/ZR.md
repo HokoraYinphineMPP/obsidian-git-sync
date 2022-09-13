@@ -40,7 +40,7 @@ Quiz 2 (Excempt)
 
 ## Week 4
 ### Tue
-10
+75
 [[2022-09-13]]
 
 ### Thu
