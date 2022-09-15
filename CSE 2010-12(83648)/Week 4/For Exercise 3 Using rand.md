@@ -45,5 +45,15 @@ int main()
 
 Output:
 ```
-This p
+This program will print 10 random numbers between the range of 1 and 20
+Random Number 1:11
+Random Number 2:14
+Random Number 3:2
+Random Number 4:12
+Random Number 5:19
+Random Number 6:2
+Random Number 7:9
+Random Number 8:16
+Random Number 9:18
+Random Number 10:16
 ```
