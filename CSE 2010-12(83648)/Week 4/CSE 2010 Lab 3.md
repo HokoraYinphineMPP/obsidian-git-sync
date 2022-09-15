@@ -1,7 +1,7 @@
 ###### California State University, San Bernardino  
 ###### School of Computer Science & Engineering  
 ###### CSE 2010 Fall 2022  
-  
+
 # LAB 3: if/else statements, loops (45 points)  
 ## Due: 5:30pm, Monday September 26 on Canvas  
 
@@ -11,18 +11,22 @@ relational operators, and boolean expressions, and loops.
 Log into a workstation and navigate to your Lab3 directory. You should create all your files in this directory.  
 
 Remember to use the g++ command to compile your programs:  
-Example:  
-`g++ Ex1.cpp -o Ex1  `
+Example:
+```
+g++ Ex1.cpp -o Ex1
+```
 
 Then, to run your program:  
-`./Ex1  `
+```
+./Ex1
+```
 
 `Put your name in a block comment at the beginning of every exercise, followed by the file name, date, and a brief description of what the program does.`
 
 `Remember to include comments in your code. Source code with no comments will get no credit. `
 
 `Take screenshot(s) of all of the runs specified for each exercise.`
-  
+
 
 
 ## **Exercise 1 (5 points):**  
@@ -44,14 +48,14 @@ Finally, depending on the user input display a message that follows the followin
 *op1 (operator) op2 = solution*  
 
 - If the user selects to use the /(division) operator, and the second operand is 0 (zero), do not do the operation and display an error message.  
-  
+
 
 **Examples of runs:**
 
 Enter operator: +, -, \*, /**: +**  
 Enter two operands: **2.5 3.5**  
 2.5 + 3.5 = 6.0  
-  
+
 Enter operator: +, -, \*, /**: /**
 Enter two operands: **4 0**
 Sorry, we’re not allowed to divide by zero.  
@@ -91,7 +95,7 @@ Use the following formula (Welford’s method) to calculate the standard deviati
 # $$S=\sqrt{\frac{\sum{x^2_i}-\frac{1}{n}(\sum{x_i})^2}{n}}$$
 You can compute this quantity by keeping track of the count (number of tests), the sum, and the sum of  
 squares as you process the input values.  
-  
+
 Note: Although there are other ways to calculate the standard deviation, please use this method. This  
 method is used since it only requires one pass of the data. **Do not use arrays or vectors.**
 

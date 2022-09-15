@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "CSE 2010-12(83648)/Week 4/CSE 2010 Lab 3.md",
+            "file": "CSE 2010-12(83648)/Week 4/For Exercise 3 Using rand.md",
             "mode": "source",
             "source": false
           }
@@ -24,7 +24,7 @@
         "state": {
           "type": "localgraph",
           "state": {
-            "file": "CSE 2010-12(83648)/Week 4/CSE 2010 Lab 3.md",
+            "file": "CSE 2010-12(83648)/Week 4/For Exercise 3 Using rand.md",
             "options": {
               "collapse-filter": false,
               "search": "",
@@ -108,7 +108,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#include",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -125,7 +125,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -145,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CSE 2010-12(83648)/Week 4/CSE 2010 Lab 3.md",
+                "file": "CSE 2010-12(83648)/Week 4/For Exercise 3 Using rand.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CSE 2010-12(83648)/Week 4/CSE 2010 Lab 3.md",
+                "file": "CSE 2010-12(83648)/Week 4/For Exercise 3 Using rand.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -185,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CSE 2010-12(83648)/Week 4/CSE 2010 Lab 3.md"
+                "file": "CSE 2010-12(83648)/Week 4/For Exercise 3 Using rand.md"
               }
             }
           },
@@ -205,9 +206,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "cc3982f43eed958d",
+  "active": "250e691edbba8be9",
   "lastOpenFiles": [
     "CSE 2010-12(83648)/Week 4/Lab 3 Submission.md",
+    "CSE 2010-12(83648)/Week 4/CSE 2010 Lab 3.md",
     "CSE 2010-12(83648)/CSE 2010-12.md",
     "CSE 2010-12(83648)/Week 2/Lab2/Lab 2 Submission.md",
     "CSE 2010-12(83648)/Week 4/2022-09-14 Loops.md",
@@ -215,7 +217,6 @@
     "MATH 2210-12/Math 2210-12.md",
     "MATH 2210-12/Week 3/2022-09-06.md",
     "MATH 2210-12/Week 3/2022-09-08.md",
-    "MATH 2210-12/Week 3/2022-09-09 - Quiz 3.md",
-    "MATH 2720-04/Week 3/Week 3 Homework.md"
+    "MATH 2210-12/Week 3/2022-09-09 - Quiz 3.md"
   ]
 }

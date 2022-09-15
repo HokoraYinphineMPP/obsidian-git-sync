@@ -2,14 +2,7 @@
 ###### Due: Mon Sep 26, 2022 5:30pmDue: Mon Sep 26, 2022 5:30pm
 ###### Ungraded, 45 Possible Points
 Follow the instructions in the Lab 3 PDF: [[CSE 2010 Lab 3]]
-
-[![](https://csusb.instructure.com/images/svg-icons/svg_icon_download.svg)Actions](https://csusb.instructure.com/courses/14455/assignments/273702#)
-
--   [For Exercise 3: Using rand.pdf](https://csusb.instructure.com/courses/14455/files/2522603?wrap=1 "Using rand.pdf")
-    
-    [![](https://csusb.instructure.com/images/svg-icons/svg_icon_download.svg)Actions](https://csusb.instructure.com/courses/14455/assignments/273702#)
-    
-     
+-   [[For Exercise 3 Using rand]]
 
 Your submission for Lab 3 should include the following:
 
