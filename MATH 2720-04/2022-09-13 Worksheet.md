@@ -9,3 +9,5 @@ The number of subsets of a set of size $n$ each with cardinatily $k$
 Where $n$ is the number of elements in $A$
 
 
+A.B.C.D.E
+5*4=$\frac{5!}{(5-2)!}=5*4*3!$
