@@ -108,7 +108,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#include",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -125,8 +125,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -206,7 +205,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "250e691edbba8be9",
+  "active": "cc3982f43eed958d",
   "lastOpenFiles": [
     "CSE 2010-12(83648)/Week 4/Lab 3 Submission.md",
     "CSE 2010-12(83648)/Week 4/CSE 2010 Lab 3.md",
