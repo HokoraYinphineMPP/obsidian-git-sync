@@ -9,7 +9,10 @@
 - [x] [Learning Video: Determining Subsets Having More than a Given Cardinality](https://csusb.instructure.com/courses/15759/modules/items/1133612 "Learning Video: Determining Subsets Having More than a Given Cardinality") (Assignment) `Sep 13` 1pt
 - [x] [Learning Video: Introduction to Bit Strings](https://csusb.instructure.com/courses/15759/modules/items/1135052 "Learning Video: Introduction to Bit Strings") (Assignment) `Sep 15` 1pt
 - [x] [Learning Video: Introduction to Lattice Paths](https://csusb.instructure.com/courses/15759/modules/items/1135073 "Learning Video: Introduction to Lattice Paths") (Assignment) `Sep 15` 1pt
-- [x] [Learning Video: Introduction to Binomial Coefficients](https://csusb.instructure.com/courses/15759/modules/items/1135072 "Learning Video: Introduction to Binomial Coefficients")(Assignment) `Sep 15` 1pt
+- [x] [Learning Video: Introduction to Binomial Coefficients](https://csusb.instructure.com/courses/15759/modules/items/1135072 "Learning Video: Introduction to Binomial Coefficients") (Assignment) `Sep 15` 1pt
+- [ ] [Learning Video: 10-bit Strings](https://csusb.instructure.com/courses/15759/assignments/273795?module_item_id=1136446) (Assignment) `N/A` 0pt
+- [ ] [Learning Video: 9-bit Strings of Given Weight](https://csusb.instructure.com/courses/15759/assignments/273798?module_item_id=1136445) (Assignment) `N/A` 0pt
+- [ ] [Learning Video: Determine Coefficients in Binomial Expansion](https://csusb.instructure.com/courses/15759/modules/items/1136447 "Learning Video: Determine Coefficients in Binomial Expansion") (Assignment) `N/A` 0pt
 
 ## M4 Learning Activities
 - [ ] [Section 1.2 Binomial Coefficients](https://csusb.instructure.com/courses/15759/modules/items/1037445)
