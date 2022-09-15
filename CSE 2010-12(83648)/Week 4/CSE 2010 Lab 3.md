@@ -88,33 +88,31 @@ in decimal form to represent the percentage grade). Your program should only acc
 between 0.0-100.0 (we will assume no extra credit is possible). Once the user has finished entering the  
 test scores, print out the number of tests entered, the average of the tests, and the standard deviation.  
 Use the following formula (Welford’s method) to calculate the standard deviation:  
-$$S=\sqrt{\sum x^2_i}$$
+# $$S=\sqrt{\frac{\sum{x^2_i}-\frac{1}{n}(\sum{x_i})^2}{n}}$$
 You can compute this quantity by keeping track of the count (number of tests), the sum, and the sum of  
 squares as you process the input values.  
   
 Note: Although there are other ways to calculate the standard deviation, please use this method. This  
-method is used since it only requires one pass of the data. Do not use arrays or vectors.  
-  
-Run your program once using the following data (but your program should work for any data set):  
-  
-Test Score  
-1 67.8  
-2 95.6  
-3 89.5  
-4 76.7  
-5 71.3  
-6 83.2  
-7 90.6  
-8 56.1  
-9 98.6  
-10 85.2  
-  
-Number of  
-Scores 10  
-Average 81.46  
-Std. Deviation: 12.71  
-  
-  
-After you have completed all 5 programming exercises, take screenshots showing the error-free  
-compilation and test runs of all of the exercises. Submit all 5 .cpp source code files with their  
-corresponding screenshots to Canvas by 5:30pm on Monday September 26.
+method is used since it only requires one pass of the data. **Do not use arrays or vectors.**
+
+***Run your program once using the following data (but your program should work for any data set):***
+
+| |Test Score|
+|-|-|
+|1|67.8|
+|2|95.6|
+|3|89.5|
+|4|76.7|
+|5|71.3|
+|6|83.2|
+|7|90.6|
+|8|56.1|
+|9|98.6|
+|10|85.2|
+|||
+|**Number of Scores**|10|
+|**Average**|81.46|
+|**Std. Deviation**|12.71|
+
+
+`After you have completed all 5 programming exercises, take screenshots showing the error-free compilation and test runs of all of the exercises. Submit all 5 .cpp source code files with their corresponding screenshots to Canvas by 5:30pm on Monday September 26.`
