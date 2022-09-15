@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "CSE 2010-12(83648)/CSE 2010-12.md",
+            "file": "CSE 2010-12(83648)/2022-09-14.md",
             "mode": "source",
             "source": false
           }
@@ -24,7 +24,7 @@
         "state": {
           "type": "localgraph",
           "state": {
-            "file": "CSE 2010-12(83648)/CSE 2010-12.md",
+            "file": "CSE 2010-12(83648)/2022-09-14.md",
             "options": {
               "collapse-filter": false,
               "search": "",
@@ -145,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CSE 2010-12(83648)/CSE 2010-12.md",
+                "file": "CSE 2010-12(83648)/2022-09-14.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +162,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CSE 2010-12(83648)/CSE 2010-12.md",
+                "file": "CSE 2010-12(83648)/2022-09-14.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -185,7 +185,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CSE 2010-12(83648)/CSE 2010-12.md"
+                "file": "CSE 2010-12(83648)/2022-09-14.md"
               }
             }
           },
@@ -207,8 +207,8 @@
   },
   "active": "cc3982f43eed958d",
   "lastOpenFiles": [
-    "CSE 2010-12(83648)/Week 3/2022-09-07 - C++ Control Flow with if-else statements.md",
     "CSE 2010-12(83648)/CSE 2010-12.md",
+    "CSE 2010-12(83648)/Week 3/2022-09-07 - C++ Control Flow with if-else statements.md",
     "MATH 2210-12/Math 2210-12.md",
     "MATH 2210-12/Week 3/2022-09-06.md",
     "MATH 2210-12/Week 3/2022-09-08.md",
