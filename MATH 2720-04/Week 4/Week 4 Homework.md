@@ -8,7 +8,7 @@
 - [x] [Learning Video: Determining Number of Subsets](https://csusb.instructure.com/courses/15759/modules/items/1133611 "Learning Video: Determining Number of Subsets") (Assignment) `Sep 13` 1pt
 - [x] [Learning Video: Determining Subsets Having More than a Given Cardinality](https://csusb.instructure.com/courses/15759/modules/items/1133612 "Learning Video: Determining Subsets Having More than a Given Cardinality") (Assignment) `Sep 13` 1pt
 - [x] [Learning Video: Introduction to Bit Strings](https://csusb.instructure.com/courses/15759/modules/items/1135052 "Learning Video: Introduction to Bit Strings") (Assignment) `Sep 15` 1pt
-- [ ] [Learning Video: Introduction to Lattice Paths](https://csusb.instructure.com/courses/15759/modules/items/1135073 "Learning Video: Introduction to Lattice Paths") (Assignment) `Sep 15` 1pt
+- [x] [Learning Video: Introduction to Lattice Paths](https://csusb.instructure.com/courses/15759/modules/items/1135073 "Learning Video: Introduction to Lattice Paths") (Assignment) `Sep 15` 1pt
 - [ ] [Learning Video: Introduction to Binomial Coefficients](https://csusb.instructure.com/courses/15759/modules/items/1135072 "Learning Video: Introduction to Binomial Coefficients")(Assignment) `Sep 15` 1pt
 
 ## M4 Learning Activities
