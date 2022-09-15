@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "CSE 2010-12(83648)/2022-09-14.md",
+            "file": "CSE 2010-12(83648)/2022-09-14 Loops.md",
             "mode": "source",
             "source": false
           }
@@ -24,7 +24,7 @@
         "state": {
           "type": "localgraph",
           "state": {
-            "file": "CSE 2010-12(83648)/2022-09-14.md",
+            "file": "CSE 2010-12(83648)/2022-09-14 Loops.md",
             "options": {
               "collapse-filter": false,
               "search": "",
@@ -145,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CSE 2010-12(83648)/2022-09-14.md",
+                "file": "CSE 2010-12(83648)/2022-09-14 Loops.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +162,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CSE 2010-12(83648)/2022-09-14.md",
+                "file": "CSE 2010-12(83648)/2022-09-14 Loops.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -185,7 +185,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CSE 2010-12(83648)/2022-09-14.md"
+                "file": "CSE 2010-12(83648)/2022-09-14 Loops.md"
               }
             }
           },
