@@ -49,6 +49,7 @@ Quiz 2 (Excempt)
 
 ### Fri
 10
+[[2022-09-16 - Quiz 4]]
 
 ## Week 5
 ### Tue

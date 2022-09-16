@@ -76,7 +76,7 @@
               "repelStrength": 10.4680111936698,
               "linkStrength": 1,
               "linkDistance": 30,
-              "scale": 0.7132754626224509,
+              "scale": 0.713275462622451,
               "close": true
             }
           }
@@ -205,17 +205,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "cc3982f43eed958d",
+  "active": "ce80bb250476dae4",
   "lastOpenFiles": [
+    "MATH 2210-12/Math 2210-12.md",
+    "MATH 2210-12/ZR.md",
+    "MATH 2210-12/Week 4/2022-09-16 - Quiz 4.md",
     "MATH 2720-04/Week 4/Week 4 Homework.md",
     "MATH 2720-04/MATH 2720-04.md",
     "MATH 2720-04/2022-09-13 Worksheet.md",
     "CSE 2010-12(83648)/Week 3/2022-09-07 - C++ Control Flow with if-else statements.md",
     "CSE 2010-12(83648)/CSE 2010-12.md",
     "CSE 2010-12(83648)/Week 4/2022-09-14 Loops.md",
-    "MATH 2720-04/Discrete Mathematics.pdf",
-    "MATH 2720-04/Week 4/M4 Wrap Up and Next Steps.md",
-    "MATH 2720-04/Week 4/M4 Overview & Objectives.md",
-    "MATH 2210-12/2022-09-15.md"
+    "MATH 2720-04/Discrete Mathematics.pdf"
   ]
 }
