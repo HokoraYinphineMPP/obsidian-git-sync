@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "docs/CSE 2010-12(83648)/Week 4/Lab 3 Submission.md",
+            "file": "docs/index.md",
             "mode": "source",
             "source": false
           }
@@ -24,7 +24,7 @@
         "state": {
           "type": "localgraph",
           "state": {
-            "file": "docs/CSE 2010-12(83648)/Week 4/Lab 3 Submission.md",
+            "file": "docs/index.md",
             "options": {
               "collapse-filter": false,
               "search": "",
@@ -145,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/CSE 2010-12(83648)/Week 4/Lab 3 Submission.md",
+                "file": "docs/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +162,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/CSE 2010-12(83648)/Week 4/Lab 3 Submission.md",
+                "file": "docs/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -185,7 +185,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/CSE 2010-12(83648)/Week 4/Lab 3 Submission.md"
+                "file": "docs/index.md"
               }
             }
           },
@@ -207,6 +207,7 @@
   },
   "active": "cc3982f43eed958d",
   "lastOpenFiles": [
+    "docs/CSE 2010-12(83648)/Week 4/Lab 3 Submission.md",
     "docs/CSE 2010-12(83648)/CSE 2010-12.md",
     "CSE 2010-12(83648)/Week 4/Lab 3 Submission.md",
     "CSE 2010-12(83648)/Week 4/For Exercise 3 Using rand.md",
@@ -215,7 +216,6 @@
     "CSE 2010-12(83648)/CSE 2010-12.md",
     "CSE 2010-12(83648)/Week 5/2022-09-19 Functions.md",
     "CSE 2010-12(83648)/Week 5/2022-09-19 Loops Continued.md",
-    "CSE 2010-12(83648)/W.md",
-    "MATH 2720-04/Week 1/2022-08-25 - Statements.md"
+    "CSE 2010-12(83648)/W.md"
   ]
 }
