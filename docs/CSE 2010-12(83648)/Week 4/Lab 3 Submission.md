@@ -40,6 +40,7 @@ Write a C++ program that prompts the user to enter a number between 3 and 12, in
 
 ***Run with 4 different numbers: A number less than 3, an even number in the range, an odd number in the range, and a number greater than 12 (a total of 4 runs)***
 
+
 ## **Exercise 2 (7 points):**  
 Write a C++ program to simulate a simple calculator to add, subtract, multiple, or divide two operands that the user provides.
 
@@ -66,6 +67,7 @@ Sorry, we’re not allowed to divide by zero.
 
 ***Run with each operator, an invalid operator, and once where the second operand is zero (a total of 6 runs).***
 
+
 ## **Exercise 3 (8 points):**
 Write a C++ program that implements a “Guess-the-Number” game. First call the rand() function to get a  
 random number between 1 and 15 (I will post a pdf about rand() on Canvas). The program then enters a loop  
@@ -80,8 +82,6 @@ guesses.
 ***Run once (Make sure the number of guesses that is printed matches the number of guesses made)***  
 
 
-
-
 ## **Exercise 4 (10 points):**  
 Write a C++ program that prompts the user for a starting point and an ending point, then print out all of the prime numbers within the starting point and ending point.
 
@@ -89,6 +89,7 @@ For example, when the user enters 10 for their starting point and 35 for their e
 
 *The prime numbers between 10 and 35 are: 11 13 17 19 23 29  
 **Run once with the above example***
+
 
 ## **Exercise 5 (15 points):**
 Write a C++ program that reads in a set of test score data from the user. (Test scores should be entered  
