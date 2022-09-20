@@ -6,9 +6,9 @@ If you somehow don't have my Discord, [go ahead and friend me there](https://dis
 
 Best of luck with your work. Hopefully these notes can help ya! ![](https://static-cdn.jtvnw.net/jtv_user_pictures/chansub-global-emoticon-577ade91d46d7edc-24x18.png)
 
-`(oh and btw this site updates every 5 minutes so you can see me taking notes while in class lolol)`![](https://cdn.discordapp.com/emojis/348897065360949248.webp?width=10&height=10)
+`(oh and btw this site updates every 5 minutes so you can see me taking notes while in class lolol`![](https://cdn.discordapp.com/emojis/348897065360949248.webp?size=32&quality=lossless)`)`
 
-`
+
 
 # CSE 2010-12
 [[CSE 2010-12]]
