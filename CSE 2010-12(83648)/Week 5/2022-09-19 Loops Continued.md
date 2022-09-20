@@ -37,10 +37,10 @@ to functions that convert strings to
 other data types:
 https://www.cplusplus.com/reference/s
 tring/
-● stod(string str) :
-- string to double
+● `stod(string str)`:
+- `string` to `double`
 - This function returns the value
-of str as a double.
+of `str` as a `double`.
 
 
 Output:
