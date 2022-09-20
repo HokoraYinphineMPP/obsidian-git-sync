@@ -124,58 +124,39 @@ Aborted
 
 ## Exception Handling: `try`, `catch`, and `throw`
 
- ● Recall that compilers catch syntax errors (errors in the “grammar” of our code).
+ ● Recall that compilers catch syntax errors (errors in the “grammar” of our code). This is a compile-time error.
+ - When we run our code, we are susceptible to run-time errors.
+	- Logic errors that result in incorrect calculations or output
+	- Exceptions
+	- Run out of memory
 
- This is a compile-time error.
-
- ● When we run our code, we are susceptible to run-time errors.
-
-
-- Logic errors that result in incorrect calculations or output
-- Exceptions
-- Run out of memory
-
- ● A C++ exception is a response to an “exceptional” circumstance that makes your
-
- program run into an error.
-
- ● Exceptions provide a way to transfer control from one part of a program to
-
- another when an error is encountered so that we can properly handle it.
-
- ● This is referred to as exception handling, and with C++ we can use try, catch,
-
- and throw
+ ● A C++ exception is a response to an “exceptional” circumstance that makes your program run into an error.
+ ● Exceptions provide a way to transfer control from one part of a program to another when an error is encountered so that we can properly handle it.
+ ● This is referred to as **exception handling**, and with C++ we can use **`try`, `catch`, and `throw`**
 
 
-## throw
+## `throw`
 
  ● using namespace std gives us access to a list of standard exceptions:
+	- invalid_argument
+	- domain_error
+	- out_of_range
+	- https://www.cplusplus.com/reference/stdexcept/
+
+ ● Functions have the ability to **`throw`** these exceptions when an error is encountered.
+
+ ● Let’s look further at `stod()`: https://www.cplusplus.com/reference/string/stod/
+
+ ● What we have to do is **`catch`** these throws.
 
 
-- invalid_argument
-- domain_error
-- out_of_range
-- https://www.cplusplus.com/reference/stdexcept/
-
- ● Functions have the ability to throw these exceptions when an error is
-
- encountered.
-
- ● Let’s look further at stod():
-
- https://www.cplusplus.com/reference/string/stod/
-
- ● What we have to do is catch these throws.
-
-
-## try & catch
+## `try` & `catch`
 
 
 ● As the programmer, it is important to know when exceptions might be thrown, so when you are aware of this, you
 have to place your code within a try block.
 ● A try block identifies a block of code that MAY cause exceptions to be thrown.
-- Whenever you use functions that throw exceptions, make sure they are in try blocks.
+	- Whenever you use functions that throw exceptions, make sure they are in try blocks.
 ● try blocks are followed by a catch, which will only be activated if an exception is thrown.
 ```c++
 try{
