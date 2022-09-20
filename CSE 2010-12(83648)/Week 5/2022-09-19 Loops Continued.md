@@ -227,6 +227,28 @@ You can have a loop inside of a loop
 
 Let’s look at an example...
 
+```c++
+int loopCount = 0;
+for(int i = 0; 1 < 2; i++) {
+	cout << "Hello from"
+}
+```
+
+Lets call the yellow loop, Loop 1. And the blue loop, Loop 2. Notice that Loop 2 is inside of Loop 1.
+Loop I's initialization statement runs, then the condition is checked, if it is true, we go into the
+body of the loop.
+The cout statement inside Loop 1 is executed.
+We now reach Loop 2. Loop 2's initialization statement runs, then the condition is checked. If it is
+true, we go into the body of Loop 2.
+The cout statement inside of Loop 2 is executed. LoopCount is incremented by 1.
+At the end of Loop 2, the j+=2 update statement is executed.
+Loop 2's condition is checked again, if it is true, we go back to step 5. Repeat until Loop 2's
+condition is false.
+Once Loop 2's condition is false, the second cout statement of Loop 1 is executed and LoopCount is
+incremented by 1.
+At the end of Loop 1, the i++ statement is executed.
+Loop I's condition is checked again. If it is true, we go back to step 3.
+Repeat steps 3-10 until Loop I's condition is false.
 
 ## How can we use a loop to determine if a number is prime
 
