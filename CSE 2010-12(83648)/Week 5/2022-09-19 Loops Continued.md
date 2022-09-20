@@ -165,6 +165,60 @@ catch(ExceptionName){
 }
 ```
 
+```c++
+/*
+ * Program that takes a string as input, converts it to a double,
+ * and sums until the user enters Q
+ */
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+	//variable declarations
+	double sum = 0, num = 0;
+	int count = 0;//keep track of the number of integers entered
+	string input;//we will take all input as a string
+	cout << "Enter numbers to sum, enter \"Q\" or \"q\" to quit.\n";
+	//while loop that will run as long as the user doesn't enter Q
+	while(1){
+		cout << "Value #" << count + 1 << ":";
+		getline(cin,input);
+		//check if the input is "Q"
+		if(input == "Q" || input == "q")
+			break;//done with loop
+		else{
+			//if the input is NOT Q, we need to convert it to a #
+//--------------------------------------------------------------
+			//since we will be using stod(), we need to be ready to catch exceptions
+			try{
+				//the following call to stod will either throw an exception or not
+				num = stod(input);
+				//the following lines of code will ONLY be reached if no exception is thrown
+				count++;//increase count by 1
+				cout << "You entered: " << num << "\n";
+				sum+=num;
+				cout << "Current total sum: " << sum << "\n";
+			}
+			//if an exception is thrown, we need to catch it
+			catch(const invalid_argument&){
+				cerr << "Invalid value. Please enter a number to sum, or enter \"Q\" or \"q\" to quit.\n";
+			}
+			catch(const out_of_range&){
+				cerr << "Value entered is out of range of a double. Please try again.\n";
+			}
+//------------------------------------------------------------------
+		}
+	}
+	//we will exit the loop once the break statement above is reached
+	cout << "The final sum of the " << count << " values you entered is: " << sum << "\n";
+	
+	
+	return 0;
+}
+```
 
 
 ## Nested Loops
