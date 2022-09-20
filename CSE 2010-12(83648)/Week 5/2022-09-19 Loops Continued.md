@@ -42,6 +42,45 @@ tring/
 - This function returns the value
 of `str` as a `double`.
 
+```c++
+/*
+ * Program that takes a string as input, converts it to a double,
+ * and sums until the user enters Q
+ */
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+	//variable declarations
+	double sum = 0, num = 0;
+	int count = 0;//keep track of the number of integers entered
+	string input;//we will take all input as a string
+	cout << "Enter numbers to sum, enter \"Q\" or \"q\" to quit.\n";
+	//while loop that will run as long as the user doesn't enter Q
+	while(1){
+		cout << "Value #" << count + 1 << ":";
+		getline(cin,input);
+		//check if the input is "Q"
+		if(input == "Q" || input == "q")
+			break;//done with loop
+		else{
+			//stod will convert the string to a double
+			num = stod(input);
+			count++;//increase count by 1
+			cout << "You entered: " << num << "\n";
+			sum+=num;
+			cout << "Current total sum: " << sum << "\n";
+		}
+	}
+	//we will exit the loop once the break statement above is reached
+	cout << "The final sum of the " << count << " values you entered is: " << sum << "\n";
+	
+	return 0;
+}
+```
 
 Output:
 
