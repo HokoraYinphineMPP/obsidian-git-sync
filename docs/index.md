@@ -5,8 +5,10 @@ If you need help on figuring out how to set it up, go ahead and message me on [D
 If you somehow don't have my Discord, [go ahead and friend me there](https://discord.com/users/221417731776446467)!
 
 Best of luck with your work. Hopefully these notes can help ya! ![](https://static-cdn.jtvnw.net/jtv_user_pictures/chansub-global-emoticon-577ade91d46d7edc-24x18.png)
-(oh and btw this site updates every )
 
+`(oh and btw this site updates every 5 minutes so you can see me taking notes while in class lolol)`![](https://cdn.discordapp.com/emojis/348897065360949248.webp?width=10&height=10)
+
+`
 
 # CSE 2010-12
 [[CSE 2010-12]]
