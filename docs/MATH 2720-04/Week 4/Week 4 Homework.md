@@ -19,5 +19,5 @@
 - [ ] [Check Your Understanding 4](https://csusb.instructure.com/courses/15759/modules/items/1037446 "Check Your Understanding 4") (Assignment) `Sep 16` 5pts
 - [x] [Portfolio Submission 1](https://csusb.instructure.com/courses/15759/modules/items/1037436 "Portfolio Submission 1") (Assignment) `Sep 16` 10pts
 
-## M1 Summary
+## M4 Summary
 - [[M4 Wrap Up and Next Steps]] (Page)
