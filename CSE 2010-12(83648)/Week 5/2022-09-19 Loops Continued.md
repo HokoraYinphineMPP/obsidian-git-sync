@@ -5,7 +5,7 @@
 
 ## What we covered last week...
 
- ● Loops
+ - Loops
 - What they are
 - Different parts of a loop
 	- Initialization statement
@@ -21,9 +21,9 @@
 
 ## What this lecture will cover
 
- ● Another way of processing user input
+ - Another way of processing user input
 
- ● Nested Loops
+ - Nested Loops
 
 
 ## First let’s look at a more advanced method of processing user input with some exception/error handling
@@ -32,12 +32,12 @@
 ### String Conversion
 
 
-● `#include <string>` gives us access
+- `#include <string>` gives us access
 to functions that convert strings to
 other data types:
 https://www.cplusplus.com/reference/s
 tring/
-● `stod(string str)`:
+- `stod(string str)`:
 - `string` to `double`
 - This function returns the value
 of `str` as a `double`.
@@ -124,40 +124,37 @@ Aborted
 
 ## Exception Handling: `try`, `catch`, and `throw`
 
- ● Recall that compilers catch syntax errors (errors in the “grammar” of our code). This is a compile-time error.
+ - Recall that compilers catch syntax errors (errors in the “grammar” of our code). This is a compile-time error.
  - When we run our code, we are susceptible to run-time errors.
 	- Logic errors that result in incorrect calculations or output
 	- Exceptions
 	- Run out of memory
-
- ● A C++ exception is a response to an “exceptional” circumstance that makes your program run into an error.
- ● Exceptions provide a way to transfer control from one part of a program to another when an error is encountered so that we can properly handle it.
- ● This is referred to as **exception handling**, and with C++ we can use **`try`, `catch`, and `throw`**
+ - A C++ exception is a response to an “exceptional” circumstance that makes your program run into an error.
+ - Exceptions provide a way to transfer control from one part of a program to another when an error is encountered so that we can properly handle it.
+ - This is referred to as **exception handling**, and with C++ we can use **`try`, `catch`, and `throw`**
 
 
 ## `throw`
 
- ● using namespace std gives us access to a list of standard exceptions:
+ - `using namespace std` gives us access to a list of standard exceptions:
 	- invalid_argument
 	- domain_error
 	- out_of_range
 	- https://www.cplusplus.com/reference/stdexcept/
 
- ● Functions have the ability to **`throw`** these exceptions when an error is encountered.
+ - Functions have the ability to **`throw`** these exceptions when an error is encountered.
 
- ● Let’s look further at `stod()`: https://www.cplusplus.com/reference/string/stod/
+ - Let’s look further at `stod()`: https://www.cplusplus.com/reference/string/stod/
 
- ● What we have to do is **`catch`** these throws.
+ - What we have to do is **`catch`** these throws.
 
 
 ## `try` & `catch`
 
-
-● As the programmer, it is important to know when exceptions might be thrown, so when you are aware of this, you
-have to place your code within a try block.
-● A try block identifies a block of code that MAY cause exceptions to be thrown.
+- As the programmer, it is important to know when exceptions might be thrown, so when you are aware of this, you have to place your code within a `try` block.
+- A try block identifies a block of code that MAY cause exceptions to be thrown.
 	- Whenever you use functions that throw exceptions, make sure they are in try blocks.
-● try blocks are followed by a catch, which will only be activated if an exception is thrown.
+- `try` blocks are followed by a `catch`, which will only be activated if an exception is thrown.
 ```c++
 try{
 //block of code that could throw exception
@@ -183,8 +180,8 @@ Let’s look at an example...
 
 
 Definition of prime numbers:
-● A number greater than 1 with only two factors: 1 and itself
-● Examples : 2, 3, 5, 7, 11, 13, 17, 19
+- A number greater than 1 with only two factors: 1 and itself
+- Examples : 2, 3, 5, 7, 11, 13, 17, 19
 
 
 Given a number, n, how can we determined if it is prime? What characteristics does it
