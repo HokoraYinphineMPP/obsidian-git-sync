@@ -4,8 +4,6 @@ If you need help on figuring out how to set it up, go ahead and message me on [D
 
 If you somehow don't have my Discord, [go ahead and friend me there](https://discord.com/users/221417731776446467 "This should link you to my Discord profile page popup! Hopefully...")!
 
-[and this is me testing the automatic add friend link](https://discord.gg/KaEVuBqJ "hopefully it works...")
-
 Best of luck with your work. Hopefully these notes can help ya! [![<3](https://static-cdn.jtvnw.net/jtv_user_pictures/chansub-global-emoticon-577ade91d46d7edc-24x18.png)](https://static-cdn.jtvnw.net/jtv_user_pictures/chansub-global-emoticon-577ade91d46d7edc-24x18.png "<3")
 
 `(oh and btw this site updates every 5 minutes so you can see me taking notes while in class lolol)`
