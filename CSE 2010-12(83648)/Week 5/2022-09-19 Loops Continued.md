@@ -1,10 +1,7 @@
 # Chapter 3: Loops Continued
-
 ### CSE 2010, Week 5
 
-
 ## What we covered last week...
-
  - Loops
 - What they are
 - Different parts of a loop
@@ -20,18 +17,12 @@
 - When to use one loop over another
 
 ## What this lecture will cover
-
  - Another way of processing user input
-
  - Nested Loops
 
 
 ## First let’s look at a more advanced method of processing user input with some exception/error handling
-
-
 ### String Conversion
-
-
 - `#include <string>` gives us access
 to functions that convert strings to
 other data types:
@@ -99,7 +90,6 @@ The final sum of the 3 values you entered is: 23
 ```
 
 ### What happens if we enter a non-numerical value?
-
 Output:
 ```
 Enter numbers to sum, enter "Q" or "q" to quit.
@@ -123,7 +113,6 @@ Aborted
 
 
 ## Exception Handling: `try`, `catch`, and `throw`
-
  - Recall that compilers catch syntax errors (errors in the “grammar” of our code). This is a compile-time error.
  - When we run our code, we are susceptible to run-time errors.
 	- Logic errors that result in incorrect calculations or output
@@ -135,7 +124,6 @@ Aborted
 
 
 ## `throw`
-
  - `using namespace std` gives us access to a list of standard exceptions:
 	- invalid_argument
 	- domain_error
@@ -150,7 +138,6 @@ Aborted
 
 
 ## `try` & `catch`
-
 - As the programmer, it is important to know when exceptions might be thrown, so when you are aware of this, you have to place your code within a `try` block.
 - A try block identifies a block of code that MAY cause exceptions to be thrown.
 	- Whenever you use functions that throw exceptions, make sure they are in try blocks.
@@ -222,45 +209,39 @@ int main()
 
 
 ## Nested Loops
-
 You can have a loop inside of a loop
-
 Let’s look at an example...
 
+###### Example
 ```c++
-int loopCount = 0;
-for(int i = 0; 1 < 2; i++) {
-	cout << "Hello from"
-}
+1 | int loopCount = 0;
+2 | for(int i = 0; i < 2; i++) {
+3 | 	cout << "Hello from the first loop";
+4 | 	for(int j = 10; j < 16; j+=2){
+5 | 		cout << "\tHello from the second loop\n";
+6 | 		loopCount++;
+7 | 	}
+8 | 	loopCount++;
+9 | 	cout << "\n";
+10| }
 ```
-
-Lets call the yellow loop, Loop 1. And the blue loop, Loop 2. Notice that Loop 2 is inside of Loop 1.
-Loop I's initialization statement runs, then the condition is checked, if it is true, we go into the
-body of the loop.
-The cout statement inside Loop 1 is executed.
-We now reach Loop 2. Loop 2's initialization statement runs, then the condition is checked. If it is
-true, we go into the body of Loop 2.
-The cout statement inside of Loop 2 is executed. LoopCount is incremented by 1.
-At the end of Loop 2, the j+=2 update statement is executed.
-Loop 2's condition is checked again, if it is true, we go back to step 5. Repeat until Loop 2's
-condition is false.
-Once Loop 2's condition is false, the second cout statement of Loop 1 is executed and LoopCount is
-incremented by 1.
-At the end of Loop 1, the i++ statement is executed.
-Loop I's condition is checked again. If it is true, we go back to step 3.
-Repeat steps 3-10 until Loop I's condition is false.
-
-## How can we use a loop to determine if a number is prime
-
-## or not?
+1) Lets call the loop at lines (1-3,8-10), Loop 1. And the loop at lines (4-7), Loop 2. Notice that Loop 2 is inside of Loop 1. 
+2) Loop 1's statement runs, then the condition is checked, if it is true, we go into the body of the loop.
+3) The cout statement inside Loop 1. is executed.
+4) We now reach Loop 2. Loop 2's initialization statement runs, then the condition is checked. If it is true, we go into the body of Loop 2.
+5) The cout statement inside of Loop 2 is executed. LoopCount is incremented by 1.
+6) At the end of Loop 2, the j+=2 update statement is executed.
+7) Loop 2's condition is checked again, if it is true, we go back to step 5. Repeat until Loop 2's condition is false. 
+8) Once Loop 2's condition is false, the second cout statement of Loop 1 is executed and loopCount is incremented by 1
+9) At the end of Loop 1, the i++ statement Is executed.
+10) Loop 1's condition is checked again. If it is true, we go back to step 3.
+11) Repeat steps 3-10 until Loop condition is false. 
 
 
+## How can we use a loop to determine if a number is prime or not?
 Definition of prime numbers:
 - A number greater than 1 with only two factors: 1 and itself
 - Examples : 2, 3, 5, 7, 11, 13, 17, 19
 
-
 Given a number, n, how can we determined if it is prime? What characteristics does it
 need to have?
-
-
