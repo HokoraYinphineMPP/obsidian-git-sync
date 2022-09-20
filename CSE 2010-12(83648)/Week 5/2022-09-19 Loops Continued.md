@@ -13,9 +13,9 @@
 	- Body of the loop
 	- Update statement
 - Different types of loops
-	- while loop
-	- for loop
-	- do-while loop
+	- `while` loop
+	- `for` loop
+	- `do-while` loop
 - How to process user input with loops
 - When to use one loop over another
 
@@ -26,15 +26,13 @@
  ● Nested Loops
 
 
-## First let’s look at a more advanced method of processing
-
-## user input with some exception/error handling
+## First let’s look at a more advanced method of processing user input with some exception/error handling
 
 
 ### String Conversion
 
 
-● \#include \<string> gives us access
+● `#include <string>` gives us access
 to functions that convert strings to
 other data types:
 https://www.cplusplus.com/reference/s
