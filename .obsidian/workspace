@@ -8,12 +8,8 @@
         "type": "leaf",
         "dimension": 66.21794871794872,
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "docs/MATH 2720-04/Week 5/Week 5 Homework.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "graph",
+          "state": {}
         },
         "group": "2df6a850b37d4f6f"
       },
@@ -145,7 +141,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/MATH 2720-04/Week 5/Week 5 Homework.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +157,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/MATH 2720-04/Week 5/Week 5 Homework.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -184,9 +178,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "docs/MATH 2720-04/Week 5/Week 5 Homework.md"
-              }
+              "state": {}
             }
           },
           {
@@ -207,8 +199,8 @@
   },
   "active": "cc3982f43eed958d",
   "lastOpenFiles": [
-    "docs/MATH 2720-04/MATH 2720-04.md",
     "docs/MATH 2720-04/Week 5/Week 5 Homework.md",
+    "docs/MATH 2720-04/MATH 2720-04.md",
     "docs/MATH 2720-04/Week 4/Week 4 Homework.md",
     "docs/MATH 2720-04/Week 1/Week 1 Homework.md",
     "docs/MATH 2720-04/Week 2/Week 2 Homework.md",
