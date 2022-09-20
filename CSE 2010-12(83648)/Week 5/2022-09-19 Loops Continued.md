@@ -5,7 +5,7 @@
 
 ## What we covered last week...
 
-#### ● Loops
+ ● Loops
 - What they are
 - Different parts of a loop
 	- Initialization statement
@@ -21,9 +21,9 @@
 
 ## What this lecture will cover
 
-###### ● Another way of processing user input
+ ● Another way of processing user input
 
-###### ● Nested Loops
+ ● Nested Loops
 
 
 ## First let’s look at a more advanced method of processing
@@ -56,33 +56,33 @@ Output:
 
 ## Exception Handling: `try`, `catch`, and `throw`
 
-##### ● Recall that compilers catch syntax errors (errors in the “grammar” of our code).
+ ● Recall that compilers catch syntax errors (errors in the “grammar” of our code).
 
-##### This is a compile-time error.
+ This is a compile-time error.
 
-##### ● When we run our code, we are susceptible to run-time errors.
+ ● When we run our code, we are susceptible to run-time errors.
 
 
 - Logic errors that result in incorrect calculations or output
 - Exceptions
 - Run out of memory
 
-##### ● A C++ exception is a response to an “exceptional” circumstance that makes your
+ ● A C++ exception is a response to an “exceptional” circumstance that makes your
 
-##### program run into an error.
+ program run into an error.
 
-##### ● Exceptions provide a way to transfer control from one part of a program to
+ ● Exceptions provide a way to transfer control from one part of a program to
 
-##### another when an error is encountered so that we can properly handle it.
+ another when an error is encountered so that we can properly handle it.
 
-##### ● This is referred to as exception handling, and with C++ we can use try, catch,
+ ● This is referred to as exception handling, and with C++ we can use try, catch,
 
-##### and throw
+ and throw
 
 
 ## throw
 
-#### ● using namespace std gives us access to a list of standard exceptions:
+ ● using namespace std gives us access to a list of standard exceptions:
 
 
 - invalid_argument
@@ -90,15 +90,15 @@ Output:
 - out_of_range
 - https://www.cplusplus.com/reference/stdexcept/
 
-#### ● Functions have the ability to throw these exceptions when an error is
+ ● Functions have the ability to throw these exceptions when an error is
 
-#### encountered.
+ encountered.
 
-#### ● Let’s look further at stod():
+ ● Let’s look further at stod():
 
-#### https://www.cplusplus.com/reference/string/stod/
+ https://www.cplusplus.com/reference/string/stod/
 
-#### ● What we have to do is catch these throws.
+ ● What we have to do is catch these throws.
 
 
 ## try & catch
@@ -123,9 +123,7 @@ catch(ExceptionName){
 
 ## Nested Loops
 
-#### You can have a loop
-
-#### inside of a loop
+You can have a loop inside of a loop
 
 Let’s look at an example...
 
