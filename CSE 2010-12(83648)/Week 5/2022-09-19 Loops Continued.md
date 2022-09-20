@@ -83,7 +83,20 @@ int main()
 ```
 
 Output:
-
+```
+Enter numbers to sum, enter "Q" or "q" to quit.
+Value #1:6
+•You entered: 6
+Current total sum: 6
+Value #2:7
+•You entered: 7
+Current total sum: 13
+Value #3:10
+You entered: 10
+Current total sum: 23
+Value #4:Q
+The final sum of the 3 values you entered is: 23
+```
 
 ### What happens if we enter a non-numerical value?
 
