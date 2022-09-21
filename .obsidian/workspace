@@ -8,8 +8,12 @@
         "type": "leaf",
         "dimension": 66.21794871794872,
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "docs/MATH 2720-04/Week 5/Week 5 Homework.md",
+            "mode": "source",
+            "source": false
+          }
         },
         "group": "2df6a850b37d4f6f"
       },
@@ -141,6 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "docs/MATH 2720-04/Week 5/Week 5 Homework.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -157,6 +162,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "docs/MATH 2720-04/Week 5/Week 5 Homework.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -178,7 +184,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "docs/MATH 2720-04/Week 5/Week 5 Homework.md"
+              }
             }
           },
           {
