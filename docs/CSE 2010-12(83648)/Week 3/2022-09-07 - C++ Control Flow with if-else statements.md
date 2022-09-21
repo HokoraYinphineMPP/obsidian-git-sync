@@ -265,7 +265,7 @@ if(condition 1 and condition 2 and...)
 - Combines two or more conditions where the overall results is TRUE if AT LEAST ONE condition is true.
 - You can combine as many conditions as you want.  
 - C++ Syntax for using the OR operator  
-	- Can user either `&&` or `or`
+	- Can user either `||` or `or`
 
 ```c++
 if(condition 1 || condition 2 ||...)
