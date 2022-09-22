@@ -27,9 +27,15 @@ $$\boxed{A=A/2^t}$$
 
 ##### 2. a) By graphing, estimate $\lim_{x\rightarrow\infty}(1+\frac{1}{x})^x$. You should recognize the answer you get.
 
-b) Investigate (^) 𝑥lim→∞( 1 +^1 𝑥)
-𝑥
-numerically.
+![[Pasted image 20220922150255.png]]
+$$\boxed{y=e}$$
+
+
+##### b) Investigate $\lim_{x\rightarrow\infty}(1+\frac{1}{x})^x$ numerically.
+
+|x|1|5|10|100|1000|10000|
+|-|-|-|-|-|-|-|
+|y|2|2.48832|2.593725...|32.0|33.4|
 
 ## 3. a) lim
 
