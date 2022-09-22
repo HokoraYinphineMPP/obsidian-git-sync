@@ -11,7 +11,7 @@
 - [x] [Learning Video: Introduction to Stars and Bars](https://csusb.instructure.com/courses/15759/modules/items/1136432 "Learning Video: Introduction to Stars and Bars") (Assignment) `Sep 22` 1pt
 - [x] [Learning Video: Number of Ways of Putting Basketballs in Bins](https://csusb.instructure.com/courses/15759/modules/items/1136433 "Learning Video: Number of Ways of Putting Basketballs in Bins") (Assignment) `Sep 22` 1pt
 - [x] [Learning Video: Yahtzee!](https://csusb.instructure.com/courses/15759/modules/items/1136435 "Learning Video: Yahtzee!") (Assignment) `Sep 22` 1pt
-- [ ] [Learning Video: Integer Solutions](https://csusb.instructure.com/courses/15759/modules/items/1136434 "Learning Video: Integer Solutions") (Assignment) `Sep 22` 1pt
+- [x] [Learning Video: Integer Solutions](https://csusb.instructure.com/courses/15759/modules/items/1136434 "Learning Video: Integer Solutions") (Assignment) `Sep 22` 1pt
 
 ## M5 Learning Activities
 - [ ] [Section 1.2 Binomial Coefficients](https://csusb.instructure.com/courses/15759/modules/items/1037445)
