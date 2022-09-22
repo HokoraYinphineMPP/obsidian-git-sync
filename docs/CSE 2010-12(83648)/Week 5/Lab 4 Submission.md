@@ -39,30 +39,24 @@ After prompting the user for the action they wish to take, the program should th
 	- Prints the user’s account balance, where string parameter account is equal to “S” if they wish to see their savings balance, “C” if they wish to see their checking balance, or “B” to see both balances.  
   
 `void deposit(string account);`
-	- Prompts the user for the amount they wish to deposit into the desired account. The string parameter account is equal to “S” if they wish to deposit into their savings, or “C” if they wish to deposit into their checking.  
-	- After depositing the amount, this function calls print_balance() to show their account’s new balance.
+	- Prompts the user for the amount they wish to deposit into the desired account. The string parameter account is equal to “S” if they wish to deposit into their savings, or “C” if they wish to deposit into their checking.
+	- After depositing the amount, this function calls **print_balance()** to show their account’s new balance.
 
-void withdraw(string account);  
-• Prompts the user for the amount they wish to withdraw from the desired account. The string parameter account  
-is equal to “S” if they wish to withdraw from their savings, or “C” if they wish to withdraw from their checking.  
-• The function checks if the amount is valid (if it is less than or equal to what they have in their account).  
-o If it is valid, then the function withdraws the amount and calls print_balance() to show their account’s  
-new balance.  
-o If the withdrawal is not valid, then the function deducts a $3.00 penalty fee from their account, displays a  
-message relaying the deduction, and calls print_balance() to print their account’s new balance.  
+`void withdraw(string account);`
+	- Prompts the user for the amount they wish to withdraw from the desired account. The string parameter account is equal to “S” if they wish to withdraw from their savings, or “C” if they wish to withdraw from their checking.
+	- The function checks if the amount is valid (if it is less than or equal to what they have in their account).
+		- If it is valid, then the function withdraws the amount and calls **print_balance()** to show their account’s new balance.  
+		- If the withdrawal is not valid, then the function deducts a $3.00 penalty fee from their account, displays a message relaying the deduction, and calls **print_balance()** to print their account’s new balance.  
   
 Once the user has selected to quit, display the final balances for both accounts.  
   
-Declare global variables to represent your user’s savings and checking balances. Global variables are variables that are  
-declared outside of all functions (in the global namespace), and are accessible by all functions, including main. Using global  
-variables will allow you to use them inside any of the functions and allow you to make changes that will affect the global  
-variables.  
-  
-Be sure to test your program thoroughly to show that all functions work.  
-  
+Declare global variables to represent your user’s savings and checking balances. **Global variables** are variables that are declared outside of all functions (in the global namespace), and are accessible by all functions, including main. Using global variables will allow you to use them inside any of the functions and allow you to make changes that will affect the global variables.
+
+Be sure to test your program thoroughly to show that all functions work.
+
 Find sample output and sample code on following pages: You may use the provided code, or start from scratch
 
-EXAMPLE of what your output could look like: Black is program output, red is user input  
+**EXAMPLE of what your output could look like: Black is program output, red is user input**  
 Welcome to CSE Bank!  
 Please select from the following menu.  
 Enter “B” to check your balance.  
