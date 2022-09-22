@@ -19,24 +19,18 @@ Run your code once to show that it works when the user enters : 2 and 100
 ## **Exercise 2: Implementing Mathematical Equations with functions (10 points)**
 Write a program that prompts the user to enter whether they have a sphere or a cylinder. If the user enters “*sphere*”, the program then prompts the user to enter one value: radius. The program then sends radius to the functions *sphere_volume()* and *sphere_surface()*, and prints the results.  
   
-If the user enters “cylinder”, the program then prompts the user to enter two values: radius and height. The program then  
-sends radius and height to the functions cylinder_volume() and cylinder_surface(), and prints the results.  
+If the user enters “*cylinder*”, the program then prompts the user to enter two values: radius and height. The program then sends radius and height to the functions *cylinder_volume()* and *cylinder_surface()*, and prints the results.  
   
-If the user enters anything other than “sphere” or “cylinder”, print “invalid entry”.  
-Because the function does not need to change the function arguments, you should pass them into the function as const  
-references.  
-A const parameter will make sure the value of the parameter does not change, and passing a parameter by reference does  
-not make a copy of the value (so having const references makes it a bit more efficient).  
-You should have the following function declarations:  
+If the user enters anything other than “sphere” or “cylinder”, print “invalid entry”. Because the function does not need to change the function arguments, you should pass them into the function as const references. A const parameter will make sure the value of the parameter does not change, and passing a parameter by reference does not make a copy of the value (so having const references makes it a bit more efficient). You should have the following function declarations:  
   
-Run your code three times. Once where the user enters sphere, once where they enter cylinder, and finally when they make an invalid  
-entry.  
-double sphere_volume(const double & r);  
-double sphere_surface(const double & r);  
-double cylinder_volume(const double & r, const double & h);  
-double cylinder_surface(const double & r, const double & h);
 
-  
+`double sphere_volume(const double & r);`
+`double sphere_surface(const double & r);`
+`double cylinder_volume(const double & r, const double & h);`
+`double cylinder_surface(const double & r, const double & h);`
+
+Run your code three times. Once where the user enters sphere, once where they enter cylinder, and finally when they make an invalid entry.  
+
 Exercise 3: ATM (15 points)  
   
 For this exercise, we will implement an interactive ATM program that repeatedly allows the user to view their balance,  
