@@ -11,12 +11,13 @@ Last name: ***Wibowo***        First name: ***James***            Score:
 
 $$m=\frac{\Delta y}{\Delta x}=\frac{y_2-y_1}{x_2-x_1}$$
 $$\frac{y_2-y_1}{x_2-x_1}\Rightarrow\frac{33.4-27.8}{5.6-5.2}=14$$
+$$y=14x\Rightarrow y=14(5.2)=72.8\Rightarrow27.8-72.8=-45$$
+$$\boxed{y=14x-45}$$
 
+##### b) A 325 mg aspirin has a half-life of $H$ hours in a patient's body.
 
-##### b) A 325 mg aspirin has a half-life of H hours in a patient's body.
-
-
-##### i) How long does it take for the quantity of aspirin in the patient's body to be reduced to 162.5 mg? To 81.25 mg? To 40.625 mg? (Note that 162.5 = 325/2, etc. Your answers will involve H.)
+##### i) How long does it take for the quantity of aspirin in the patient's body to be reduced to 162.5 mg? To 81.25 mg? To 40.625 mg? (Note that $162.5 = 325/2$, etc. Your answers will involve $H$.)
+$$\boxed{}$$
 
 
 ##### ii) How many times does the quantity of aspirin, A mg, in the body halve in t hours? Use this to give a formula for A after t hours.
