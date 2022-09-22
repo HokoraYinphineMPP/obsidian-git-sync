@@ -25,10 +25,7 @@ $$\boxed{\textrm{Quantity (mg)}=325/2^H}$$
 The quantity halves every hour
 $$\boxed{A=A/2^t}$$
 
-##### 2. a) By graphing $y=(1+1/x)^x$, estimate $$\lim{x\rightarrow\infty}(1+\frac{1}{x})^x$$
-
-. You should recognize the answer
-you get.
+##### 2. a) By graphing, estimate $\lim_{x\rightarrow\infty}(1+\frac{1}{x})^x$. You should recognize the answer you get.
 
 b) Investigate (^) 𝑥lim→∞( 1 +^1 𝑥)
 𝑥
