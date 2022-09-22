@@ -56,7 +56,8 @@ Be sure to test your program thoroughly to show that all functions work.
 
 Find sample output and sample code on following pages: You may use the provided code, or start from scratch
 
-**EXAMPLE of what your output could look like: Black is program output, red is user input**  
+**EXAMPLE of what your output could look like:**
+```
 Welcome to CSE Bank!  
 Please select from the following menu.  
 Enter “B” to check your balance.  
@@ -107,6 +108,7 @@ Savings Account Balance: $3500.00
 Checking Account Balance: $900.00  
   
 Thank you for using the CSE Bank! Have a great day!
+```
 
 You may use the following code to get you started (TYPE IT OUT, DO NOT COPY AND PASTE), or feel free to come up with  
 your own implementation.  
