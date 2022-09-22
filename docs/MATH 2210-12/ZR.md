@@ -53,10 +53,11 @@ Quiz 2 (Excempt)
 
 ## Week 5
 ### Tue
-10
+115
 
 ### Thu
 10
+[[Math 2210 Midterm 1 Take Home]]
 
 ### Fri
 10
