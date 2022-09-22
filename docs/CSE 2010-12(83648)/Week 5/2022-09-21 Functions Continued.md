@@ -44,9 +44,14 @@ using namespace std;
 int main()
 {
 	//#1 store function return value into a new variable
-	return_type variableName = function_name
+	return_type variableName = function_name;
 	//#2 output the value in a cout statement
-	cout << "this is what the function returns: " << function_name(argument)
+	cout << "this is what the function returns: " << function_name(arguments);
+	//#3 use the value in an arithmetic expression
+	int var1 = 4 + function_name(arguments);
+	//#4 use the value as the argument for another function call
+	double var2 = function_name1(argument1, function_name2(arguments));
+	return 0;
 }
 ```
 
