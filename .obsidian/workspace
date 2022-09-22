@@ -6,7 +6,7 @@
       {
         "id": "cc3982f43eed958d",
         "type": "leaf",
-        "dimension": 66.21794871794872,
+        "dimension": 68.15642458100558,
         "state": {
           "type": "markdown",
           "state": {
@@ -20,7 +20,7 @@
       {
         "id": "ce80bb250476dae4",
         "type": "leaf",
-        "dimension": 33.782051282051285,
+        "dimension": 31.843575418994412,
         "state": {
           "type": "localgraph",
           "state": {
@@ -205,7 +205,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "77a2600f3f8f93f6",
+  "active": "cc3982f43eed958d",
   "lastOpenFiles": [
     "docs/MATH 2210-12/Week 4/2022-09-15.md",
     "docs/MATH 2210-12/Week 5/Math 2210 Midterm 1 Take Home.md",
