@@ -31,12 +31,15 @@ return__type function_name (parameter1, parameter2,...,parameter n)
 
 
 ## Function Arguments
-What is an argument and how is it different from a parameter?
-
+###### What is an argument and how is it different from a parameter?
 - Arguments are the values provided when calling a function.
 - Arguments provide the values for the function’s parameters.
 - The number of arguments should match the number of parameters.
 - The first argument goes to the first parameter , the second argument goes to the second parameter , and so on.
+
+```c++
+//Exa 
+```
 
 Example
 
