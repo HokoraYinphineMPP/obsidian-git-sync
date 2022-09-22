@@ -38,7 +38,16 @@ return__type function_name (parameter1, parameter2,...,parameter n)
 - The first argument goes to the first parameter , the second argument goes to the second parameter , and so on.
 
 ```c++
-//Exa 
+//Example of syntax for calling a function you define
+#include <iostream>
+using namespace std;
+int main()
+{
+	//#1 store function return value into a new variable
+	return_type variableName = function_name
+	//#2 output the value in a cout statement
+	cout << "this is what the function returns: " << function_name(argument)
+}
 ```
 
 Example
