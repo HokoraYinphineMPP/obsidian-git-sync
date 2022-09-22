@@ -61,9 +61,7 @@ int main()
 
 ###### Example
 
-Defining and calling a function called sum_three() which returns the sum of 3
-
-integers. (sum_three.cpp on Canvas)
+Defining and calling a function called sum_three() which returns the sum of 3 integers. (sum_three.cpp on Canvas)
 
 Output:
 
