@@ -37,7 +37,10 @@ $$\boxed{y=e}$$
 |-|-|-|-|-|-|-|
 |y|2|2.48832|2.593724601...|2.70481382942...|2.71692393224...|2.71814592683...|
 
-## 3. a) $$\lim_{h\rightarrow0}\frac{\sqrt{1+h}-1}{h}\textrm{, let }t=\sqrt{1}$$
+## 3. a) $$\lim_{h\rightarrow0}\frac{\sqrt{1+h}-1}{h}\textrm{, let }t=\sqrt{1+h}$$
+$$\lim_{h\rightarrow0}\frac{\sqrt{1+h}-1}{h}\textrm{, }t=\sqrt{1+h}\Rightarrow \lim_{h\rightarrow0}\frac{t-1}{h}\textrm{, }t^2=1+h\Rightarrow\lim_{h\rightarrow0}\frac{t-1}{t^2-1}\textrm{, }t^2=1+h\Downarrow$$
+$$\lim_{t^2\rightarrow0}\frac{t-1}{t^2-1}\Rightarrow\lim_{t^2\rightarrow0}\frac{t-1}{(t+1)(t-1))}\Rightarrow\lim_{t^2\rightarrow0}\frac{t-1}{(t+1)(t-1))}$$
+
 
 
 b) Explain what is wrong with the statement.
