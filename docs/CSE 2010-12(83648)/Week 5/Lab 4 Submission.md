@@ -23,7 +23,6 @@ If the user enters “*cylinder*”, the program then prompts the user to enter 
   
 If the user enters anything other than “sphere” or “cylinder”, print “invalid entry”. Because the function does not need to change the function arguments, you should pass them into the function as const references. A const parameter will make sure the value of the parameter does not change, and passing a parameter by reference does not make a copy of the value (so having const references makes it a bit more efficient). You should have the following function declarations:  
   
-
 `double sphere_volume(const double & r);`
 `double sphere_surface(const double & r);`
 `double cylinder_volume(const double & r, const double & h);`
@@ -31,25 +30,18 @@ If the user enters anything other than “sphere” or “cylinder”, print “
 
 Run your code three times. Once where the user enters sphere, once where they enter cylinder, and finally when they make an invalid entry.  
 
-Exercise 3: ATM (15 points)  
+## **Exercise 3: ATM (15 points)**
+For this exercise, we will implement an interactive ATM program that **repeatedly** allows the user to view their balance, make a deposit, make a withdrawal, or quit.  
   
-For this exercise, we will implement an interactive ATM program that repeatedly allows the user to view their balance,  
-make a deposit, make a withdrawal, or quit.  
+After prompting the user for the action they wish to take, the program should then ask the user which account they would like to perform that action on (Savings or Checking). After obtaining the desired action and account, your program should make a function call to one of the following functions:  
   
-After prompting the user for the action they wish to take, the program should then ask the user which account they would  
-like to perform that action on (Savings or Checking). After obtaining the desired action and account, your program should  
-make a function call to one of the following functions:  
+`void print_balance(string account);`
+	- Prints the user’s account balance, where string parameter account is equal to “S” if they wish to see their savings balance, “C” if they wish to see their checking balance, or “B” to see both balances.  
   
-void print_balance(string account);  
-• Prints the user’s account balance, where string parameter account is equal to “S” if they wish to see their  
-savings balance, “C” if they wish to see their checking balance, or “B” to see both balances.  
-  
-void deposit(string account);  
-• Prompts the user for the amount they wish to deposit into the desired account. The string parameter  
-account is equal to “S” if they wish to deposit into their savings, or “C” if they wish to deposit into their  
-checking.  
-• After depositing the amount, this function calls print_balance() to show their account’s new balance.  
-  
+`void deposit(string account);`
+	- Prompts the user for the amount they wish to deposit into the desired account. The string parameter account is equal to “S” if they wish to deposit into their savings, or “C” if they wish to deposit into their checking.  
+	- After depositing the amount, this function calls print_balance() to show their account’s new balance.
+
 void withdraw(string account);  
 • Prompts the user for the amount they wish to withdraw from the desired account. The string parameter account  
 is equal to “S” if they wish to withdraw from their savings, or “C” if they wish to withdraw from their checking.  
