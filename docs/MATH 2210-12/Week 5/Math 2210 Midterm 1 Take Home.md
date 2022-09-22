@@ -46,7 +46,7 @@ $$\lim_{t^2\rightarrow1}\frac{t-1}{t^2-1}\Rightarrow\lim_{t^2\rightarrow1}\frac{
 False, because $\frac{x^2-1}{x+1}$ where $x=-1$ will be undefined and $g(x)=x-1$ where $x=-1$ will be $-2$ 
 
 
-	1. A ball is tossed into the air from a bridge, and its height, y (in feet), above the
+	1. A ball is tossed into the air from a bridge, and its height, y (in feet), above thev
     ground t seconds after it is thrown is given by
        𝑦=𝑓(𝑡)=− 16 𝑡^2 + 50 𝑡+ 36
 
