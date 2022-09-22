@@ -17,14 +17,15 @@ $$\boxed{y=14x-45}$$
 ##### b) A 325 mg aspirin has a half-life of $H$ hours in a patient's body.
 
 ##### i) How long does it take for the quantity of aspirin in the patient's body to be reduced to 162.5 mg? To 81.25 mg? To 40.625 mg? (Note that $162.5 = 325/2$, etc. Your answers will involve $H$.)
-$$\boxed{}$$
+$$\boxed{\textrm{Quantity (mg)}=325/2^H}$$
 
 
 ##### ii) How many times does the quantity of aspirin, A mg, in the body halve in t hours? Use this to give a formula for A after t hours.
 
+The quantity halves every hour
+$$\boxed{A=A/2^t}$$
 
-##### 2. a) By graphing y = (1 + 1/x)x, estimate (^) 𝑥lim→∞( 1 +^1 𝑥)
-𝑥
+##### 2. a) By graphing $y=(1+1/x)^x$, estimate $$\lim{x\rightarrow\infty}(1+\frac{1}{x})^x$$
 
 . You should recognize the answer
 you get.
