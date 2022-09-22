@@ -76,7 +76,7 @@
               "repelStrength": 10.4680111936698,
               "linkStrength": 1,
               "linkDistance": 30,
-              "scale": 0.3628873693012166,
+              "scale": 0.7132754626224521,
               "close": true
             }
           }
@@ -205,7 +205,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "cc3982f43eed958d",
+  "active": "ce80bb250476dae4",
   "lastOpenFiles": [
     "docs/CSE 2010-12(83648)/CSE 2010-12.md",
     "docs/CSE 2010-12(83648)/Week 5/Lab 4/Lab 4 Submission.md",
