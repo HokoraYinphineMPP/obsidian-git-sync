@@ -110,8 +110,8 @@ Checking Account Balance: $900.00
 Thank you for using the CSE Bank! Have a great day!
 ```
 
-You may use the following code to get you started (TYPE IT OUT, DO NOT COPY AND PASTE), or feel free to come up with  
-your own implementation.  
+You may use the following code to get you started (TYPE IT OUT, DO NOT COPY AND PASTE), or feel free to come up with your own implementation.
+```c++
 /*  
 * YOUR NAME  
 * CSE 2010 Lab 4, Exercise 3  
@@ -180,6 +180,7 @@ cout << "Account not recognized" << endl; // case where account is not valid
 /*  
 * DEFINE REMAINING FUNCTIONS HERE  
 */
+```
 
 
 
