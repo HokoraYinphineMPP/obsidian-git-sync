@@ -4,23 +4,25 @@ Last name: ***Wibowo***        First name: ***James***            Score:
 
 ###### Instructions: Please answer each question carefully. Make sure to write legibly and always circle your answer. Remember: the correct answer is ONLY worth 1 point, and the correct work is worth up to 39 points.
 
-1. a) Find a linear function that generates the values in the table.
+##### 1. a) Find a linear function that generates the values in the table.
 |x|5.2|5.3|5.4|5.5|5.6|
 |-|-|-|-|-|-|
 |y|27.8|29.2|30.6|32.0|33.4|
 
 $$m=\frac{\Delta y}{\Delta x}=\frac{y_2-y_1}{x_2-x_1}$$
-
-	b) A 325 mg aspirin has a half-life of H hours in a patient's body.
-
-
-		i) How long does it take for the quantity of aspirin in the patient's body to be reduced to 162.5 mg? To 81.25 mg? To 40.625 mg? (Note that 162.5 = 325/2, etc. Your answers will involve H.)
+$$\frac{y_2-y_1}{x_2-x_1}\Rightarrow\frac{33.4-27.8}{5.6-5.2}=14$$
 
 
-		ii) How many times does the quantity of aspirin, A mg, in the body halve in t hours? Use this to give a formula for A after t hours.
+##### b) A 325 mg aspirin has a half-life of H hours in a patient's body.
 
 
-2. a) By graphing y = (1 + 1/x)x, estimate (^) 𝑥lim→∞( 1 +^1 𝑥)
+##### i) How long does it take for the quantity of aspirin in the patient's body to be reduced to 162.5 mg? To 81.25 mg? To 40.625 mg? (Note that 162.5 = 325/2, etc. Your answers will involve H.)
+
+
+##### ii) How many times does the quantity of aspirin, A mg, in the body halve in t hours? Use this to give a formula for A after t hours.
+
+
+##### 2. a) By graphing y = (1 + 1/x)x, estimate (^) 𝑥lim→∞( 1 +^1 𝑥)
 𝑥
 
 . You should recognize the answer
