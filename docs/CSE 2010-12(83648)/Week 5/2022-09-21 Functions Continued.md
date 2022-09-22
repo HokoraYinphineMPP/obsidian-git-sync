@@ -15,44 +15,28 @@
 - Create functions when you will need to perform a specific task over and over again.
 - Function Definition Syntax:
 ```c++
-return__type function_name(parameter1, parameter2,...,parameter n)
+return__type function_name (parameter1, parameter2,...,parameter n)
 {
 	//statements to complete a task
 	//functions have access to their parameters and new variables declared
 	return return_value;
 }
 ```
-● return__type : The data type of the value the function will return. Can be any data type (int, bool, string, char, double)
-○ If your function will not return any value, use “void”
+- return__type : The data type of the value the function will return. Can be any data type (int, bool, string, char, double)
+	- If your function will not return any value, use “void”
+- function_name : name that you choose to describe what the function does. Make sure it makes sense.
+- parameters : placeholders for the inputs that the function needs to perform its tasks. The parameters get their values from the respective arguments that are used to call the function (order of the arguments = order of the parameters).
+- return_value : At some point in your function, you should have at least one return statement that returns the value that the function was tasked to determine. The datatype of the return_value needs to match the data type of the return__type. As soon as the function reaches a return statement, the function stops and control of the program is returned to the calling function.
+	- If the function return type is void, don’t have a return statement
 
-● function_name : name that you choose to describe what the function does. Make sure it makes sense.
 
-● parameters : placeholders for the inputs that the function needs to perform its tasks. The parameters get their values from the respective arguments that are used to call
-the function (order of the arguments = order of the parameters).
-● return_value : At some point in your function, you should have at least one return statement that returns the value that the function was tasked to determine. The
-datatype of the return_value needs to match the data type of the return__type. As soon as the function reaches a return statement, the function stops and control of
-the program is returned to the calling function.
-○ If the function return type is void, don’t have a return statement
+## Function Arguments
+What is an argument and how is it different from a parameter?
 
-Function Arguments
-
-What is an argument and how is it
-different from a parameter?
-
-```
-● Arguments are the values
-provided when calling a
-function.
-● Arguments provide the values
-for the function’s parameters.
-● The number of arguments
-should match the number of
-parameters.
-● The first argument goes to the
-first parameter , the second
-argument goes to the second
-parameter , and so on.
-```
+- Arguments are the values provided when calling a function.
+- Arguments provide the values for the function’s parameters.
+- The number of arguments should match the number of parameters.
+- The first argument goes to the first parameter , the second argument goes to the second parameter , and so on.
 
 Example
 
