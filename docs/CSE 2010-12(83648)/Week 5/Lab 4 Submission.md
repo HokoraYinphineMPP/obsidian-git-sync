@@ -9,10 +9,10 @@
 
 ###### Please remember to indent your code properly and add descriptive comments explaining the logic of your code. **Failing to do this will result in points deducted.**
 
-Exercise 1: Listing Prime Numbers with functions (5 points)  
+## **Exercise 1: Listing Prime Numbers with functions (5 points)**  
   
 In Lab 3, we wrote a program that printed the prime numbers within a range provided by the user. Now we are going to write a similar program, but with a function that determines whether a number provided is prime or not.  
-Write a program that prompts the user to enter an int start and an int end. The program then loops and prints the prime numbers between start and end, inclusive, by calling a function isPrime(). You will send each value to isPrime() as the loop traverses through the range. isPrime() returns true if the number passed into it is a prime number, and returns false otherwise. (Hint: If this function returns true or false, how can we use it to control output of numbers?) The function should have the following declaration:  
+Write a program that prompts the user to enter an int *start* and an int *end*. The program then loops and prints the prime numbers between start and end, inclusive, by calling a function *isPrime()*. You will send each value to *isPrime()* as the loop traverses through the range. *isPrime()* returns *true* if the number passed into it is a prime number, and returns *false* otherwise. (Hint: If this function returns true or false, how can we use it to control output of numbers?) The function should have the following declaration:  
 
 `bool isPrime(int n);`
 Run your code once to show that it works when the user enters : 2 and 100  
