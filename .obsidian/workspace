@@ -6,7 +6,7 @@
       {
         "id": "cc3982f43eed958d",
         "type": "leaf",
-        "dimension": 68.15642458100558,
+        "dimension": 69.08752327746741,
         "state": {
           "type": "markdown",
           "state": {
@@ -20,7 +20,7 @@
       {
         "id": "ce80bb250476dae4",
         "type": "leaf",
-        "dimension": 31.84357541899441,
+        "dimension": 30.91247672253259,
         "state": {
           "type": "localgraph",
           "state": {
@@ -76,7 +76,7 @@
               "repelStrength": 10.4680111936698,
               "linkStrength": 1,
               "linkDistance": 30,
-              "scale": 0.7132754626224521,
+              "scale": 0.7132754626224523,
               "close": true
             }
           }
