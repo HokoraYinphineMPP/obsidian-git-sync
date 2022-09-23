@@ -23,8 +23,8 @@ $$f(x)=\frac{x^3-8}{x-2}\Rightarrow f(x+h)\frac{(x+h)^3-8}{x+h-2}\Rightarrow f'(
 $$\dfrac{3x^2}{x-2}-\frac{x^3-8}{\left(x-2\right)^2}\Rightarrow\boxed{f'(x)=2x+2}$$
 #### **5.** In your own words, explain your understanding of the derivative of a function. Such as:
 ##### (a) Is the derivative of a function of x also a function of x?
-yes.
+Yes.
 ##### (b) If it is, what type of function is it to the original function?
-It is a polynomial with one less power from the original function. Could also use the limit process $f'(x)=\lim_{h\rightarrow0}\frac{f(x+h)-f(x)}{h}$
+It is a polynomial with one less leading power from the original function. Could also use the limit process $f'(x)=\lim_{h\rightarrow0}\frac{f(x+h)-f(x)}{h}$
 ##### (c) The derivative function can also be used to determine what?
-the rate of chance of movement. ie: acceleration stating the rate of chance of velocity
+The derivative function is used to determine the rate of change of movement in the original function. *ie: acceleration stating the rate of chance of velocity*
