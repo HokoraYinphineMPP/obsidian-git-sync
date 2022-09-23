@@ -19,10 +19,12 @@ $$f(x)=3\cos{(x)}\Rightarrow f(x+h)=3\cos{(x+h)}\Rightarrow\lim_{h\rightarrow0}\
 $$\lim_{h\rightarrow0}\frac{2[(\cos{x}*\cos{h})-(\sin{x}*\sin{h})]-3\cos x}{h}\Rightarrow\lim_{h\rightarrow0}\frac{3\cos{x}[\cos{h}-3\sin{x}\sin{h}-1]}{h}\Downarrow$$
 	$$\lim_{h\rightarrow0}\frac{\cancel{3\cos{x}}[\cancel{\cos{h}}-3\sin{x}\cancel{\sin{h}-1}]}{\cancel{h}}\Rightarrow\boxed{-3\sin{x}}$$
 #### **4.** $$f(x)=\frac{x^3-8}{x-2}\textrm{, }x\ne2$$
+$$$$
+$$\dfrac{3x^2}{x-2}-\frac{x^3-8}{\left(x-2\right)^2}\Rightarrow\boxed{f'(x)=2x+2}$$
 #### **5.** In your own words, explain your understanding of the derivative of a function. Such as:
 ##### (a) Is the derivative of a function of x also a function of x?
 yes.
 ##### (b) If it is, what type of function is it to the original function?
-It is a polynomial with one less power from the original function. 
+It is a polynomial with one less power from the original function. Could also use the limit process $f'(x)=\lim_{h\rightarrow0}\frac{f(x+h)-f(x)}{h}$
 ##### (c) The derivative function can also be used to determine what?
 the rate of chance of movement. ie: acceleration stating the rate of chance of velocity
