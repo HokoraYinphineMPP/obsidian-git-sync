@@ -6,11 +6,12 @@
 Note: Limit Process: $$f'(x)=\lim_{h\rightarrow0}\frac{f(x+h)-f(x)}{h}$$
 
 #### **1.** $$f(x)=\frac{2}{x-2}$$
-$$f(x)=\frac{2}{x-2}\Rightarrow f(x+h)=\frac{2}{(x+h)-2}\Rightarrow f'(x)=\lim_{h\rightarrow0}\frac{(\frac{2}{(x+h)-2})-(\frac{2}{x-2})}{h}\Downarrow$$
-$$f'(x)=\lim_{h\rightarrow0}\frac{}{$$
+$$f(x)=\frac{2}{x-2}\Rightarrow f(x+h)=\frac{2}{(x+h)-2}\Rightarrow f'(x)=\lim_{h\rightarrow0}\frac{(\frac{2}{x+h-2})-(\frac{2}{x-2})}{h}\Downarrow$$
+$$f'(x)=\lim_{h\rightarrow0}\frac{-2(1+0)}{(x-2)^2}$$
 
 
 #### **2.** $$f(x)=\sqrt{x-5}$$
+$$f(x)=\sqrt{x-5}\Rightarrow f(x+h)=\sqrt{x+h-5}$$
 #### **3.** $$f(x)=3\cos{x}$$
 #### **4.** $$f(x)=\frac{x^3-8}{x-2}\textrm{, }x\ne2$$
 #### **5.** In your own words, explain your understanding of the derivative of a function. Such as:
