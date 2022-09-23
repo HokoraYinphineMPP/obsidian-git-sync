@@ -6,7 +6,9 @@
 Note: Limit Process: $$f'(x)=\lim_{h\rightarrow0}\frac{f(x+h)-f(x)}{h}$$
 
 #### **1.** $$f(x)=\frac{2}{x-2}$$
-$$f(x)=\frac{2}{x-2}\Rightarrow f(x+h)=\frac{2}{(x+h)-2}$$
+$$f(x)=\frac{2}{x-2}\Rightarrow f(x+h)=\frac{2}{(x+h)-2}\Rightarrow f'(x)=\lim_{h\rightarrow0}\frac{(\frac{2}{(x+h)-2})-(\frac{2}{x-2})}{h}\Downarrow$$
+$$$$
+
 
 #### **2.** $$f(x)=\sqrt{x-5}$$
 #### **3.** $$f(x)=3\cos{x}$$
