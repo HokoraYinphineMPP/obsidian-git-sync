@@ -12,14 +12,14 @@ $$f'(x)=\lim_{h\rightarrow0}\frac{-2(1+0)}{(x-2)^2}\Rightarrow \boxed{f'(x)=\lim
 
 #### **2.** $$f(x)=\sqrt{x-5}$$
 $$f(x)=\sqrt{x-5}\Rightarrow f(x+h)=\sqrt{x+h-5}\Rightarrow f'(x)=\lim_{h\rightarrow0}\frac{(\sqrt{x+h-5})-(\sqrt{x-5})}{h}\Downarrow$$
-$$\lim_{h\rightarrow0}\Rightarrow f'(x)=\frac{1}{2\sqrt{x-5}}$$
+$$\lim_{h\rightarrow0}\Rightarrow\boxed{f'(x)=\frac{1}{2\sqrt{x-5}}}$$
 
 #### **3.** $$f(x)=3\cos{x}$$
 $$f(x)=3\cos{(x)}\Rightarrow f(x+h)=3\cos{(x+h)}\Rightarrow\lim_{h\rightarrow0}\frac{(3\cos{(x+h)})-(3\cos{(x)})}{h}\Downarrow$$
 $$\lim_{h\rightarrow0}\frac{2[(\cos{x}*\cos{h})-(\sin{x}*\sin{h})]-3\cos x}{h}\Rightarrow\lim_{h\rightarrow0}\frac{3\cos{x}[\cos{h}-3\sin{x}\sin{h}-1]}{h}\Downarrow$$
 	$$\lim_{h\rightarrow0}\frac{\cancel{3\cos{x}}[\cancel{\cos{h}}-3\sin{x}\cancel{\sin{h}-1}]}{\cancel{h}}\Rightarrow\boxed{-3\sin{x}}$$
 #### **4.** $$f(x)=\frac{x^3-8}{x-2}\textrm{, }x\ne2$$
-$$$$
+$$f(x)=\frac{x^3-8}{x-2}\Rightarrow f(x+h)\frac{(x+h)^3-8}{x+h-2}\Rightarrow f'(x)=\lim_{h\rightarrow0}\frac{(\frac{x^3-8}{x-2})-(\frac{x^3-8}{x-2})}{h}$$
 $$\dfrac{3x^2}{x-2}-\frac{x^3-8}{\left(x-2\right)^2}\Rightarrow\boxed{f'(x)=2x+2}$$
 #### **5.** In your own words, explain your understanding of the derivative of a function. Such as:
 ##### (a) Is the derivative of a function of x also a function of x?
