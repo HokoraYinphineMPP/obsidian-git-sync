@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "docs/CSE 2010-12(83648)/Week 5/2022-09-21 Functions Continued.md",
+            "file": "docs/CSE 2010-12(83648)/CSE 2010-12.md",
             "mode": "source",
             "source": false
           }
@@ -24,7 +24,7 @@
         "state": {
           "type": "localgraph",
           "state": {
-            "file": "docs/CSE 2010-12(83648)/Week 5/2022-09-21 Functions Continued.md",
+            "file": "docs/CSE 2010-12(83648)/CSE 2010-12.md",
             "options": {
               "collapse-filter": false,
               "search": "",
@@ -76,7 +76,7 @@
               "repelStrength": 10.4680111936698,
               "linkStrength": 1,
               "linkDistance": 30,
-              "scale": 0.7132754626224523,
+              "scale": 0.3628873693012173,
               "close": true
             }
           }
@@ -145,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/CSE 2010-12(83648)/Week 5/2022-09-21 Functions Continued.md",
+                "file": "docs/CSE 2010-12(83648)/CSE 2010-12.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +162,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/CSE 2010-12(83648)/Week 5/2022-09-21 Functions Continued.md",
+                "file": "docs/CSE 2010-12(83648)/CSE 2010-12.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -185,7 +185,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/CSE 2010-12(83648)/Week 5/2022-09-21 Functions Continued.md"
+                "file": "docs/CSE 2010-12(83648)/CSE 2010-12.md"
               }
             }
           },
@@ -207,10 +207,10 @@
   },
   "active": "cc3982f43eed958d",
   "lastOpenFiles": [
-    "docs/CSE 2010-12(83648)/2022-09-26 Functions Continued Again.md",
+    "docs/CSE 2010-12(83648)/Week 6/2022-09-26 Functions Continued Again.md",
+    "docs/CSE 2010-12(83648)/CSE 2010-12.md",
     "docs/CSE 2010-12(83648)/Week 5/2022-09-21 Functions Continued.md",
     "docs/CSE 2010-12(83648)/Week 5/2022-09-19 Loops Continued.md",
-    "docs/CSE 2010-12(83648)/CSE 2010-12.md",
     "docs/MATH 2210-12/Week 5/Math 2210 Midterm.md",
     "docs/MATH 2210-12/Week 3/2022-09-06.md",
     "docs/MATH 2210-12/Week 3/2022-09-08.md",
