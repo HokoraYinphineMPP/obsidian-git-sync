@@ -1,6 +1,6 @@
  # Module 6: Introduction to Sequences and Arithmetic/Geometric Sequences (Week 6)
 
-- [[M5 Overview & Objectives]] (Page)
+- [[M6 Overview & Objectives]] (Page)
 
 ## M6 Learning Videos
 - [x] [Learning Video: Introduction to Sequences](https://csusb.instructure.com/courses/15759/modules/items/1147659 "Learning Video: Introduction to Sequences") (Assignment) `Sep 27` 1pt
