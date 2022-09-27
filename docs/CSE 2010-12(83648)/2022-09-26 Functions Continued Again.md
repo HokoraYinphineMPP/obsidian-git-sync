@@ -38,86 +38,62 @@ return__type function_name(parameter1, parameter2,...,parameter n)
 
 
 ### Function Arguments
-What is an argument and how is it
-different from a parameter?
+What is an argument and how is it different from a parameter?
 
-- Arguments are the values
-provided when calling a
-function.
-- Arguments provide the values
-for the function’s parameters.
-- The number of arguments
-should match the number of
-parameters.
-- The first argument goes to the first parameter , the second argument goes to the second parameter , 
-nd so on.
-
+- **Arguments** are the values provided when calling a function.
+- **Arguments** provide the values for the function’s **parameters**.
+- The number of **arguments** should match the number of **parameters**.
+- The first **argument** goes to the first **parameter** , the second **argument** goes to the second **parameter**, and so on.
 
 ###### Example
-
-Defining two functions that convert
-celsius to fahrenheit and fahrenheit to
-
-celsius.
+Defining two functions that convert celsius to fahrenheit and fahrenheit to celsius.
 
 
 ## Procedures
 
-```
-● It is possible to have functions that do not return anything.
-● Perhaps you want to implement a function that performs a specific task, but does not need to
-return any value to the calling function.
-● You can do this by using “void” as the return type.
-● Examples of when to use this:
-○ If you want a function to just print output
-○ If you pass values by reference and make the necessary modifications to the values in the function so it isn’t
-necessary to return anything.
-```
-```
+- It is possible to have functions that do not return anything.
+- Perhaps you want to implement a function that performs a specific task, but does not need to return any value to the calling function.
+- You can do this by using “void” as the return type.
+- Examples of when to use this:
+	- If you want a function to just print output
+	- If you pass values by reference and make the necessary modifications to the values in the function so it isn’t necessary to return anything.
+
+```c++
 void function_name(parameter1, parameter2,...,parameter n)
 {
-```
-```
-//statements to complete a task
-//no return statement
+	//statements to complete a task
+	//no return statement
 }
 ```
 
-### printSum()
+### `printSum()`
 
 Example of a procedure that prints the
 sum of two numbers.
 
-```
-● The return type of the
-procedure is “void”.
-● There is no return statement in
-the body of the function.
-● We must have standalone
-function calls with procedures.
-● (printSum.cpp on Canvas)
-```
+
+- The return type of the procedure is “void”.
+- There is no return statement in the body of the function.
+- We must have standalone function calls with procedures.
+- (printSum.cpp on Canvas)
+
 
 ## Exchange of Data Between Functions
 
 Pass by Value
 
-```
-● The values of arguments are sent to the calling function and copies of these values are created to
-initialize the parameters in the called function.
-● As long as they are not constant parameters, the value of parameters passed by value can be
-changed throughout the life of the function and changes to the parameter values WILL NOT affect the
-arguments from the calling function.
-● Arguments passed by value can be either variables or constant values.
-● Example of a function that accepts parameters passed by value
-○ void fun(int y)
-```
+
+- The values of arguments are sent to the calling function and copies of these values are created to initialize the parameters in the called function.
+- As long as they are not constant parameters, the value of parameters passed by value can be changed throughout the life of the function and changes to the parameter values WILL NOT affect the arguments from the calling function.
+- Arguments passed by value can be either variables or constant values.
+- Example of a function that accepts parameters passed by value
+	- `void fun(int y)`
+
 
 ## Exchange of Data Between Functions
 
 Pass by Reference
 
-```
 ● Instead of sending a value to a called function, we can also send a REFERENCE to an already existing value.
 ● This means that if parameters are passed by reference, the parameters will REFER to an already existing space in
 memory, where the arguments are stored.
@@ -127,8 +103,7 @@ calling function.
 ● Arguments passed by reference CANNOT be constant values (because the program needs a memory address to
 refer to).
 ● Example of a function that accepts a parameter passed by reference
-○ void fun( int& y )
-```
+
 
 ###### Let’s see some examples of using pass by
 
