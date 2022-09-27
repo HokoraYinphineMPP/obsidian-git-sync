@@ -1,10 +1,6 @@
 # Chapter 4: Functions part 2...again
-
 ## CSE 2010 - Week 6
-
-
 ## What this lecture covers
-
 - Review of functions
 - Procedures
 - Pass by Value vs. Pass by Reference
@@ -12,7 +8,6 @@
 
 
 ## Review: Functions
-
 - Functions are groups of statements that perform a specific task.
 - Functions can have multiple parameters (inputs), but only up to one return value (output)
 - Create functions when you will need to perform a specific task over and over again.
@@ -50,7 +45,6 @@ Defining two functions that convert celsius to fahrenheit and fahrenheit to cels
 
 
 ## Procedures
-
 - It is possible to have functions that do not return anything.
 - Perhaps you want to implement a function that performs a specific task, but does not need to return any value to the calling function.
 - You can do this by using “void” as the return type.
@@ -71,7 +65,6 @@ void function_name(parameter1, parameter2,...,parameter n)
 Example of a procedure that prints the
 sum of two numbers.
 
-
 - The return type of the procedure is “void”.
 - There is no return statement in the body of the function.
 - We must have standalone function calls with procedures.
@@ -79,9 +72,7 @@ sum of two numbers.
 
 
 ## Exchange of Data Between Functions
-
 Pass by Value
-
 
 - The values of arguments are sent to the calling function and copies of these values are created to initialize the parameters in the called function.
 - As long as they are not constant parameters, the value of parameters passed by value can be changed throughout the life of the function and changes to the parameter values WILL NOT affect the arguments from the calling function.
@@ -91,7 +82,6 @@ Pass by Value
 
 
 ## Exchange of Data Between Functions
-
 Pass by Reference
 
 - Instead of sending a value to a called function, we can also send a REFERENCE to an already existing value.
@@ -120,12 +110,10 @@ Pass by Reference
 
 #### Function Overloading
 ###### Example
-
 multi_max.cpp on Canvas
 
 
 ## Lecture Review
-
 -  We learned how to define our own functions.
 ```c++
 return__type function_name(parameter1, parameter2,...,parameter n)
@@ -140,12 +128,6 @@ return__type function_name(parameter1, parameter2,...,parameter n)
 - Function overloading allows us to have many functions with the same name.
 
 
-###### For lecture attendance today 9/26, on a piece of
-
-###### paper provide an implementation of the
-
-###### following function. Make sure your name is on
-
-###### the paper.
+###### For lecture attendance today 9/26, on a piece of paper provide an implementation of the following function. Make sure your name is on the paper.
 
 
