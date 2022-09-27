@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "docs/MATH 2720-04/Week 5/Week 5 Homework.md",
+            "file": "docs/MATH 2720-04/Week 6/Week 6 Homework.md",
             "mode": "source",
             "source": false
           }
@@ -24,7 +24,7 @@
         "state": {
           "type": "localgraph",
           "state": {
-            "file": "docs/MATH 2720-04/Week 5/Week 5 Homework.md",
+            "file": "docs/MATH 2720-04/Week 6/Week 6 Homework.md",
             "options": {
               "collapse-filter": false,
               "search": "",
@@ -145,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/MATH 2720-04/Week 5/Week 5 Homework.md",
+                "file": "docs/MATH 2720-04/Week 6/Week 6 Homework.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +162,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/MATH 2720-04/Week 5/Week 5 Homework.md",
+                "file": "docs/MATH 2720-04/Week 6/Week 6 Homework.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -185,7 +185,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/MATH 2720-04/Week 5/Week 5 Homework.md"
+                "file": "docs/MATH 2720-04/Week 6/Week 6 Homework.md"
               }
             }
           },
@@ -207,15 +207,15 @@
   },
   "active": "cc3982f43eed958d",
   "lastOpenFiles": [
-    "docs/MATH 2720-04/Week 6 Homework.md",
-    "docs/MATH 2720-04/MATH 2720-04.md",
     "docs/MATH 2720-04/Discrete Mathematics.pdf",
+    "docs/MATH 2720-04/Week 6/M6 Overview & Objectives.md",
+    "docs/MATH 2720-04/Week 6/Week 6 Homework.md",
+    "docs/MATH 2720-04/Week 5/Week 5 Homework.md",
+    "docs/MATH 2720-04/MATH 2720-04.md",
     "docs/CSE 2010-12(83648)/Week 6/2022-09-26 Classes.md",
     "docs/CSE 2010-12(83648)/Week 5/2022-09-21 Functions Continued.md",
     "docs/CSE 2010-12(83648)/Week 5/Lab 4/Lab 4 Submission.md",
     "docs/CSE 2010-12(83648)/Week 6/2022-09-26 Functions Continued Again.md",
-    "docs/CSE 2010-12(83648)/CSE 2010-12.md",
-    "docs/CSE 2010-12(83648)/Week 5/2022-09-19 Loops Continued.md",
-    "docs/MATH 2210-12/Week 5/Math 2210 Midterm.md"
+    "docs/CSE 2010-12(83648)/CSE 2010-12.md"
   ]
 }
