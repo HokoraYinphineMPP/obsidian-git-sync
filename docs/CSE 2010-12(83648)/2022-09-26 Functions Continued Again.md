@@ -94,75 +94,50 @@ Pass by Value
 
 Pass by Reference
 
-● Instead of sending a value to a called function, we can also send a REFERENCE to an already existing value.
-● This means that if parameters are passed by reference, the parameters will REFER to an already existing space in
-memory, where the arguments are stored.
-● As long as they are not constant parameters, the values of parameters passed by reference can change
-throughout the life of the function and changes to the parameter values WILL affect the arguments from the
-calling function.
-● Arguments passed by reference CANNOT be constant values (because the program needs a memory address to
-refer to).
-● Example of a function that accepts a parameter passed by reference
+- Instead of sending a value to a called function, we can also send a REFERENCE to an already existing value.
+- This means that if parameters are passed by reference, the parameters will REFER to an already existing space in memory, where the arguments are stored.
+- As long as they are not constant parameters, the values of parameters passed by reference can change throughout the life of the function and changes to the parameter values WILL affect the arguments from the calling function.
+- Arguments passed by reference CANNOT be constant values (because the program needs a memory address to refer to).
+- Example of a function that accepts a parameter passed by reference
+	- `void fun(int& y)`
 
 
-###### Let’s see some examples of using pass by
-
-###### reference....
-
-###### (check_this.cpp and swap.cpp on Canvas)
+###### Let’s see some examples of using pass by reference....
+(check_this.cpp and swap.cpp on Canvas)
 
 
 ## Function Overloading
-
-##### ● Is it possible to have multiple functions with the same name?
-
-##### ● Yup! This is referred to as function overloading
-
-##### ● Some conditions:
-
-```
-○ The parameter lists need to be different
-■ Different type
-■ Different number of parameters
-■ Or different order
-```
-##### ● The name of the function and the parameter lists make up the signature of a
-
-##### function.
-
-##### ● As long as the signature of the functions are different, the compiler will be able
-
-##### to tell which function to use.
+- Is it possible to have multiple functions with the same name?
+- Yup! This is referred to as function overloading
+- Some conditions:
+	- The parameter lists need to be different
+		- Different type
+		- Different number of parameters
+		- Or different order
+- The name of the function and the parameter lists make up the signature of a function.
+- As long as the signature of the functions are different, the compiler will be able to tell which function to use.
 
 
 #### Function Overloading
-
-#### Example
+###### Example
 
 multi_max.cpp on Canvas
 
 
 ## Lecture Review
 
-##### ● We learned how to define our own functions.
-
-##### ● return__type function_name(parameter1, parameter2,...,parameter n)
-
-```
+-  We learned how to define our own functions.
+```c++
+return__type function_name(parameter1, parameter2,...,parameter n)
 {
-//statements to complete a task
-return return_value;//unless void return type
+	//statements to complete a task
+	return return_value; //unless void return type
 }
 ```
-##### ● When we call our functions, we have to supply the correct type/amount of
-
-##### arguments.
-
-##### ● Procedures are functions with a void return type.
-
-##### ● Pass by value and pass by reference exchange memory differently.
-
-##### ● Function overloading allows us to have many functions with the same name.
+- When we call our functions, we have to supply the correct type/amount of arguments.
+- Procedures are functions with a void return type.
+- Pass by value and pass by reference exchange memory differently.
+- Function overloading allows us to have many functions with the same name.
 
 
 ###### For lecture attendance today 9/26, on a piece of
