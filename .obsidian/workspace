@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "docs/CSE 2010-12(83648)/Week 6/2022-09-26 Classes.md",
+            "file": "docs/CSE 2010-12(83648)/Week 6/2022-09-26 Functions Continued Again.md",
             "mode": "source",
             "source": false
           }
@@ -24,7 +24,7 @@
         "state": {
           "type": "localgraph",
           "state": {
-            "file": "docs/CSE 2010-12(83648)/Week 6/2022-09-26 Classes.md",
+            "file": "docs/CSE 2010-12(83648)/Week 6/2022-09-26 Functions Continued Again.md",
             "options": {
               "collapse-filter": false,
               "search": "",
@@ -76,7 +76,7 @@
               "repelStrength": 10.4680111936698,
               "linkStrength": 1,
               "linkDistance": 30,
-              "scale": 0.3628873693012173,
+              "scale": 0.5087618855792669,
               "close": true
             }
           }
@@ -145,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/CSE 2010-12(83648)/Week 6/2022-09-26 Classes.md",
+                "file": "docs/CSE 2010-12(83648)/Week 6/2022-09-26 Functions Continued Again.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +162,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/CSE 2010-12(83648)/Week 6/2022-09-26 Classes.md",
+                "file": "docs/CSE 2010-12(83648)/Week 6/2022-09-26 Functions Continued Again.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -185,7 +185,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/CSE 2010-12(83648)/Week 6/2022-09-26 Classes.md"
+                "file": "docs/CSE 2010-12(83648)/Week 6/2022-09-26 Functions Continued Again.md"
               }
             }
           },
@@ -205,8 +205,9 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "77a2600f3f8f93f6",
+  "active": "ce80bb250476dae4",
   "lastOpenFiles": [
+    "docs/CSE 2010-12(83648)/Week 6/2022-09-26 Classes.md",
     "docs/CSE 2010-12(83648)/CSE 2010-12.md",
     "docs/CSE 2010-12(83648)/Week 6/2022-09-26 Functions Continued Again.md",
     "docs/CSE 2010-12(83648)/Week 5/2022-09-21 Functions Continued.md",
@@ -215,7 +216,6 @@
     "docs/MATH 2210-12/Week 3/2022-09-06.md",
     "docs/MATH 2210-12/Week 3/2022-09-08.md",
     "docs/MATH 2720-04/Week 4/Week 4 Homework.md",
-    "docs/MATH 2720-04/Week 5/Week 5 Homework.md",
-    "docs/MATH 2210-12/Week 5/Math 2210 Midterm 1 Take Home.md"
+    "docs/MATH 2720-04/Week 5/Week 5 Homework.md"
   ]
 }
