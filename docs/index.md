@@ -23,4 +23,4 @@ Best of luck with your work. Hopefully these notes can help ya! [![<3](https://s
 
 
 # WabbitEmu
-If you're here for the TI Calculator emulator, you will need two files. The emulator (Wabbitemu.exe) a
+If you're here for the TI Calculator emulator, you will need two files. The emulator (Wabbitemu) and the calculator (.rom)
