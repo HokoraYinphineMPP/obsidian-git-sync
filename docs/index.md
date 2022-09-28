@@ -17,5 +17,10 @@ Best of luck with your work. Hopefully these notes can help ya! [![<3](https://s
 [[Math 2210-12]]
 # Math 2720-04
 [[MATH 2720-04]]
-# JAPN 3900-03  
+# ~~JAPN 3900-03~~
 [[JAPN 3900-03]]
+
+
+
+# WabbitEmu
+If you're here for the TI Calculator emulator, you will need two files. The emulator (Wabbitemu.exe) a
