@@ -8,12 +8,8 @@
         "type": "leaf",
         "dimension": 69.08752327746741,
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "docs/index.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "graph",
+          "state": {}
         },
         "group": "2df6a850b37d4f6f"
       },
@@ -145,7 +141,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +157,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -184,9 +178,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "docs/index.md"
-              }
+              "state": {}
             }
           },
           {
@@ -207,8 +199,8 @@
   },
   "active": "cc3982f43eed958d",
   "lastOpenFiles": [
-    "docs/Pasted image 20220927173040.png",
     "docs/index.md",
+    "docs/Pasted image 20220927173040.png",
     "docs/MATH 2720-04/Week 6/Week 6 Homework.md",
     "docs/MATH 2720-04/Discrete Mathematics.pdf",
     "docs/MATH 2720-04/Week 6/M6 Overview & Objectives.md",
