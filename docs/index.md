@@ -27,4 +27,5 @@ If you're here for the TI Calculator emulator, you will need two files. The emul
 
 |**WabbitEmu**|**WineBottler**|
 |-|-|
-|[![Download Wabbitemu for Windows 64-bit here](https://cdn.discordapp.com/attachments/803186540359450664/1024476094918828072/output-onlinepngtools.png)](https://github.com/sputt/wabbitemu/releases/download/v1.9.5.22/Wabbitemu.exe "Download Wabbitemu for Windows 64-bit here")|insrt 2nd image here|
+|[![Download Wabbitemu for Windows 64-bit here](https://cdn.discordapp.com/attachments/803186540359450664/1024476094918828072/output-onlinepngtools.png)](https://github.com/sputt/wabbitemu/releases/download/v1.9.5.22/Wabbitemu.exe "Download Wabbitemu for Windows 64-bit here")|[![Download WineBottler for macOS High Sierra, Sierra, El Capitan, Yosemite, Mavericks, Mountain Lion, Lion and Snow Leopard](https://cdn.discordapp.com/attachments/803186540359450664/1024476094918828072/output-onlinepngtools.png)](https://winebottler.kronenberg.org/combo/builds/WineBottlerCombo_1.8.6.dmg "Download WineBottler for macOS High Sierra, Sierra, El Capitan, Yosemite, Mavericks, Mountain Lion, Lion and Snow Leopard")|
+https://cdn.discordapp.com/attachments/803186540359450664/1024476940138184844/output-onlinepngtools_2.png
