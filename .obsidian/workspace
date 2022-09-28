@@ -8,8 +8,12 @@
         "type": "leaf",
         "dimension": 69.08752327746741,
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "docs/CSE 2010-12(83648)/Week 4/Lab 3/Lab 3 Submission.md",
+            "mode": "source",
+            "source": false
+          }
         },
         "group": "2df6a850b37d4f6f"
       },
@@ -20,7 +24,7 @@
         "state": {
           "type": "localgraph",
           "state": {
-            "file": "docs/index.md",
+            "file": "docs/CSE 2010-12(83648)/Week 4/Lab 3/Lab 3 Submission.md",
             "options": {
               "collapse-filter": false,
               "search": "",
@@ -141,6 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "docs/CSE 2010-12(83648)/Week 4/Lab 3/Lab 3 Submission.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -157,6 +162,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "docs/CSE 2010-12(83648)/Week 4/Lab 3/Lab 3 Submission.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -178,7 +184,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "docs/CSE 2010-12(83648)/Week 4/Lab 3/Lab 3 Submission.md"
+              }
             }
           },
           {
@@ -199,6 +207,7 @@
   },
   "active": "cc3982f43eed958d",
   "lastOpenFiles": [
+    "docs/CSE 2010-12(83648)/CSE 2010-12.md",
     "docs/index.md",
     "docs/Pasted image 20220927173040.png",
     "docs/MATH 2720-04/Week 6/Week 6 Homework.md",
@@ -207,7 +216,6 @@
     "docs/MATH 2720-04/Week 5/M5 Overview & Objectives.md",
     "docs/MATH 2720-04/MATH 2720-04.md",
     "docs/MATH 2720-04/Week 6/M6 Wrap Up and Next Steps.md",
-    "docs/MATH 2720-04/Week 5/Week 5 Homework.md",
-    "docs/CSE 2010-12(83648)/Week 6/2022-09-26 Classes.md"
+    "docs/MATH 2720-04/Week 5/Week 5 Homework.md"
   ]
 }
