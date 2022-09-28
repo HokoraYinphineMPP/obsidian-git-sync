@@ -25,3 +25,6 @@ Best of luck with your work. Hopefully these notes can help ya! [![<3](https://s
 # WabbitEmu
 If you're here for the TI Calculator emulator, you will need two files. The emulator (Wabbitemu.exe) and the calculator (.rom) (And if you're running MacOS, youll need an executable file parser. I reccomend WineBottler)
 
+|**WabbitEmu**|**WineBottler**|
+|-|-|
+|[![Download Wabbitemu for Windows 64-bit here](https://cdn.discordapp.com/attachments/803186540359450664/1024476094918828072/output-onlinepngtools.png)](https://github.com/sputt/wabbitemu/releases/download/v1.9.5.22/Wabbitemu.exe "Download Wabbitemu for Windows 64-bit here")|insrt 2nd image here|
