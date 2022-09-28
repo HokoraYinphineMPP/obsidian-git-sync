@@ -49,9 +49,7 @@
 
 ###### ■ This means it can return no value, or 1 value.
 
-###### ○ Unlike its return value, functions can have MULTIPLE parameters, or inputs. Parameters are the
-
-###### values provided to the function in order for it to do its job.
+###### ○ Unlike its return value, functions can have MULTIPLE parameters, or inputs. Parameters are the values provided to the function in order for it to do its job.
 
 ##### ● When you are defining a function, make sure it is clear what its job/task will be.
 
