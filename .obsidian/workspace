@@ -8,12 +8,8 @@
         "type": "leaf",
         "dimension": 69.08752327746741,
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "docs/MATH 2720-04/Week 6/Week 6 Homework.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "graph",
+          "state": {}
         },
         "group": "2df6a850b37d4f6f"
       },
@@ -145,7 +141,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/MATH 2720-04/Week 6/Week 6 Homework.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +157,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/MATH 2720-04/Week 6/Week 6 Homework.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -184,9 +178,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "docs/MATH 2720-04/Week 6/Week 6 Homework.md"
-              }
+              "state": {}
             }
           },
           {
@@ -207,8 +199,8 @@
   },
   "active": "cc3982f43eed958d",
   "lastOpenFiles": [
-    "docs/MATH 2720-04/MATH 2720-04.md",
     "docs/MATH 2720-04/Week 6/Week 6 Homework.md",
+    "docs/MATH 2720-04/MATH 2720-04.md",
     "docs/CSE 2010-12(83648)/Week 4/Lab 3/Lab 3 Submission.md",
     "docs/CSE 2010-12(83648)/CSE 2010-12.md",
     "docs/CSE 2010-12(83648)/Week 6/2022-09-26 Classes.md",
