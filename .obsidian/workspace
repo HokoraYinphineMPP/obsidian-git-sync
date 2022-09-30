@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "docs/MATH 2720-04/Week 6/Week 6 Homework.md",
+            "file": "docs/MATH 2720-04/Week 5/Week 5 Homework.md",
             "mode": "source",
             "source": false
           }
@@ -24,7 +24,7 @@
         "state": {
           "type": "localgraph",
           "state": {
-            "file": "docs/MATH 2720-04/Week 6/Week 6 Homework.md",
+            "file": "docs/MATH 2720-04/Week 5/Week 5 Homework.md",
             "options": {
               "collapse-filter": false,
               "search": "",
@@ -145,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/MATH 2720-04/Week 6/Week 6 Homework.md",
+                "file": "docs/MATH 2720-04/Week 5/Week 5 Homework.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +162,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/MATH 2720-04/Week 6/Week 6 Homework.md",
+                "file": "docs/MATH 2720-04/Week 5/Week 5 Homework.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -185,7 +185,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/MATH 2720-04/Week 6/Week 6 Homework.md"
+                "file": "docs/MATH 2720-04/Week 5/Week 5 Homework.md"
               }
             }
           },
@@ -208,14 +208,14 @@
   "active": "cc3982f43eed958d",
   "lastOpenFiles": [
     "docs/MATH 2720-04/MATH 2720-04.md",
+    "docs/MATH 2720-04/Week 4/Week 4 Homework.md",
+    "docs/MATH 2720-04/Week 6/Week 6 Homework.md",
     "docs/MATH 2210-12/Math 2210-12.md",
     "docs/MATH 2210-12/Week 4/2022-09-15.md",
     "docs/MATH 2210-12/ZR.md",
     "docs/MATH 2210-12/Week 5/Math 2210 Midterm 1 Take Home.md",
     "docs/MATH 2210-12/Week 4/2022-09-16 - Quiz 4.md",
     "docs/index.md",
-    "docs/MATH 2720-04/Week 6/Week 6 Homework.md",
-    "docs/CSE 2010-12(83648)/Week 4/Lab 3/Lab 3 Submission.md",
-    "docs/CSE 2010-12(83648)/CSE 2010-12.md"
+    "docs/CSE 2010-12(83648)/Week 4/Lab 3/Lab 3 Submission.md"
   ]
 }
