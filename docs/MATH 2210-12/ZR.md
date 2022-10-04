@@ -61,6 +61,7 @@ Quiz 2 (Excempt)
 
 ### Fri
 120
+[[Math 2210 Midterm]]
 
 ## Week 6
 ### Tue
@@ -79,10 +80,10 @@ Quiz 2 (Excempt)
 [[2022-10-04]]
 
 ### Thu
-95
+10
 
 ### Fri
-
+10
 
 
 
