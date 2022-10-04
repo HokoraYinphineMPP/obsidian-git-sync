@@ -8,12 +8,8 @@
         "type": "leaf",
         "dimension": 68.52564102564102,
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "docs/CSE 2010-12(83648)/Week 7/2022-10-03.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "graph",
+          "state": {}
         }
       },
       {
@@ -23,7 +19,6 @@
         "state": {
           "type": "localgraph",
           "state": {
-            "file": "docs/CSE 2010-12(83648)/Week 7/2022-10-03.md",
             "options": {
               "collapse-filter": false,
               "search": "",
@@ -143,7 +138,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/CSE 2010-12(83648)/Week 7/2022-10-03.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -160,7 +154,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/CSE 2010-12(83648)/Week 7/2022-10-03.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,9 +175,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "docs/CSE 2010-12(83648)/Week 7/2022-10-03.md"
-              }
+              "state": {}
             }
           },
           {
@@ -205,8 +196,8 @@
   },
   "active": "a8b067e361cdb75a",
   "lastOpenFiles": [
-    "docs/CSE 2010-12(83648)/CSE 2010-12.md",
     "docs/CSE 2010-12(83648)/Week 7/2022-10-03.md",
+    "docs/CSE 2010-12(83648)/CSE 2010-12.md",
     "docs/CSE 2010-12(83648)/Week 7/Lab 5 Submission.md",
     "docs/MATH 2210-12/Week 6/2022-09-30 - Quiz 6.md",
     "docs/MATH 2210-12/Week 4/2022-09-16 - Quiz 4.md",
