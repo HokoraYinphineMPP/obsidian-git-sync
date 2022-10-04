@@ -76,7 +76,7 @@ Quiz 2 (Excempt)
 
 ## Week 7
 ### Tue
-10
+160
 [[2022-10-04]]
 
 ### Thu
