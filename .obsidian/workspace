@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "docs/MATH 2210-12/Week 4/2022-09-13.md",
+            "file": "docs/MATH 2720-04/temp.md",
             "mode": "source",
             "source": false
           }
@@ -23,7 +23,7 @@
         "state": {
           "type": "localgraph",
           "state": {
-            "file": "docs/MATH 2210-12/Week 4/2022-09-13.md",
+            "file": "docs/MATH 2720-04/temp.md",
             "options": {
               "collapse-filter": false,
               "search": "",
@@ -143,7 +143,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/MATH 2210-12/Week 4/2022-09-13.md",
+                "file": "docs/MATH 2720-04/temp.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -160,7 +160,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/MATH 2210-12/Week 4/2022-09-13.md",
+                "file": "docs/MATH 2720-04/temp.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -183,7 +183,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/MATH 2210-12/Week 4/2022-09-13.md"
+                "file": "docs/MATH 2720-04/temp.md"
               }
             }
           },
@@ -205,15 +205,15 @@
   },
   "active": "a8b067e361cdb75a",
   "lastOpenFiles": [
-    "docs/MATH 2210-12/Week 4/2022-09-15.md",
+    "docs/MATH 2720-04/MATH 2720-04.md",
+    "docs/index.md",
     "docs/MATH 2210-12/Week 4/2022-09-13.md",
+    "docs/MATH 2210-12/Week 4/2022-09-15.md",
     "docs/MATH 2210-12/Week 7/2022-10-04.md",
     "docs/MATH 2210-12/ZR.md",
     "docs/MATH 2210-12/Math 2210-12.md",
     "docs/MATH 2210-12/Week 5/Math 2210 Midterm.md",
     "docs/CSE 2010-12(83648)/Week 4/Lab 3/Lab 3 Submission.md",
-    "docs/CSE 2010-12(83648)/CSE 2010-12.md",
-    "docs/CSE 2010-12(83648)/Week 5/Lab 4/Lab 4 Submission.md",
-    "docs/CSE 2010-12(83648)/Week 7/2022-10-03.md"
+    "docs/CSE 2010-12(83648)/CSE 2010-12.md"
   ]
 }
