@@ -97,7 +97,7 @@ in decimal form to represent the percentage grade). Your program should only acc
 between 0.0-100.0 (we will assume no extra credit is possible). Once the user has finished entering the  
 test scores, print out the number of tests entered, the average of the tests, and the standard deviation.  
 Use the following formula (Welford’s method) to calculate the standard deviation:  
-# $$S=\sqrt{\frac{\sum{x^2_i}-\frac{1}{n}(\sum{x_i})^2}{n}}$$
+# $$S=\sqrt{\frac{\sum{x^2_i}-\frac{1}{n}\left(\sum{x_i}\right)^2}{n}}$$
 You can compute this quantity by keeping track of the count (number of tests), the sum, and the sum of  
 squares as you process the input values.  
 
