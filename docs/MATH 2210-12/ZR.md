@@ -56,21 +56,36 @@ Quiz 2 (Excempt)
 115
 
 ### Thu
-10
+110
 [[Math 2210 Midterm 1 Take Home]]
 
 ### Fri
-10
+120
 
 ## Week 6
 ### Tue
-10
+90
 
 ### Thu
-10
+95
 
 ### Fri
+110
+[[2022-09-30 - Quiz 6]]
+
+## Week 7
+### Tue
 10
+[[2022-10-04]]
+
+### Thu
+95
+
+### Fri
+
+
+
+
 
 
 ## Goal
