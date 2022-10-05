@@ -8,8 +8,12 @@
         "type": "leaf",
         "dimension": 68.52564102564102,
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "docs/MATH 2720-04/matrix latex format.md",
+            "mode": "source",
+            "source": false
+          }
         }
       },
       {
@@ -19,6 +23,7 @@
         "state": {
           "type": "localgraph",
           "state": {
+            "file": "docs/MATH 2720-04/matrix latex format.md",
             "options": {
               "collapse-filter": false,
               "search": "",
@@ -138,6 +143,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "docs/MATH 2720-04/matrix latex format.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,6 +160,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "docs/MATH 2720-04/matrix latex format.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -175,7 +182,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "docs/MATH 2720-04/matrix latex format.md"
+              }
             }
           },
           {
