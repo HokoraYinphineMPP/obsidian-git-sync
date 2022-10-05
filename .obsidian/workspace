@@ -8,12 +8,8 @@
         "type": "leaf",
         "dimension": 68.52564102564102,
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "docs/MATH 2720-04/matrix latex format.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "graph",
+          "state": {}
         }
       },
       {
@@ -23,7 +19,6 @@
         "state": {
           "type": "localgraph",
           "state": {
-            "file": "docs/MATH 2720-04/matrix latex format.md",
             "options": {
               "collapse-filter": false,
               "search": "",
@@ -143,7 +138,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/MATH 2720-04/matrix latex format.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -160,7 +154,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/MATH 2720-04/matrix latex format.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,9 +175,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "docs/MATH 2720-04/matrix latex format.md"
-              }
+              "state": {}
             }
           },
           {
@@ -205,8 +196,8 @@
   },
   "active": "a8b067e361cdb75a",
   "lastOpenFiles": [
-    "docs/MATH 2720-04/MATH 2720-04.md",
     "docs/MATH 2720-04/matrix latex format.md",
+    "docs/MATH 2720-04/MATH 2720-04.md",
     "docs/index.md",
     "docs/MATH 2210-12/Week 4/2022-09-13.md",
     "docs/MATH 2210-12/Week 4/2022-09-15.md",
