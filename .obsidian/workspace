@@ -6,24 +6,21 @@
       {
         "id": "a8b067e361cdb75a",
         "type": "leaf",
-        "dimension": 87.17948717948718,
+        "dimension": 68.26923076923077,
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "docs/MATH 2720-04/matrix latex format.md",
-            "mode": "source",
-            "source": false
-          }
-        }
+          "type": "graph",
+          "state": {}
+        },
+        "group": "4a74e0d61637301e"
       },
       {
         "id": "ce80bb250476dae4",
         "type": "leaf",
-        "dimension": 12.82051282051282,
+        "dimension": 31.73076923076923,
         "state": {
           "type": "localgraph",
           "state": {
-            "file": "docs/MATH 2720-04/matrix latex format.md",
+            "file": "docs/MATH 2720-04/MATH 2720-04.md",
             "options": {
               "collapse-filter": false,
               "search": "",
@@ -75,11 +72,12 @@
               "repelStrength": 10.4680111936698,
               "linkStrength": 1,
               "linkDistance": 30,
-              "scale": 1.0000000000000182,
+              "scale": 1.0000000000000184,
               "close": true
             }
           }
-        }
+        },
+        "group": "4a74e0d61637301e"
       }
     ],
     "direction": "vertical"
@@ -143,7 +141,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/MATH 2720-04/matrix latex format.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -160,7 +157,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/MATH 2720-04/matrix latex format.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -182,9 +178,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "docs/MATH 2720-04/matrix latex format.md"
-              }
+              "state": {}
             }
           },
           {
@@ -206,8 +200,8 @@
   "active": "a8b067e361cdb75a",
   "lastOpenFiles": [
     "docs/MATH 2720-04/MATH 2720-04.md",
-    "docs/CSE 2010-12(83648)/CSE 2010-12.md",
     "docs/MATH 2720-04/matrix latex format.md",
+    "docs/CSE 2010-12(83648)/CSE 2010-12.md",
     "docs/index.md",
     "docs/MATH 2210-12/Week 4/2022-09-13.md",
     "docs/MATH 2210-12/Week 4/2022-09-15.md",
