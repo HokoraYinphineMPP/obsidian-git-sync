@@ -7,8 +7,12 @@
         "id": "a8b067e361cdb75a",
         "type": "leaf",
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "docs/CSE 2010-12(83648)/Week 4/Lab 3/Lab 3 Submission.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -73,6 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "docs/CSE 2010-12(83648)/Week 4/Lab 3/Lab 3 Submission.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "docs/CSE 2010-12(83648)/Week 4/Lab 3/Lab 3 Submission.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -110,7 +116,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "docs/CSE 2010-12(83648)/Week 4/Lab 3/Lab 3 Submission.md"
+              }
             }
           },
           {
@@ -131,9 +139,9 @@
   },
   "active": "a8b067e361cdb75a",
   "lastOpenFiles": [
+    "docs/CSE 2010-12(83648)/CSE 2010-12.md",
     "docs/MATH 2720-04/MATH 2720-04.md",
     "docs/MATH 2720-04/matrix latex format.md",
-    "docs/CSE 2010-12(83648)/CSE 2010-12.md",
     "docs/index.md",
     "docs/MATH 2210-12/Week 4/2022-09-13.md",
     "docs/MATH 2210-12/Week 4/2022-09-15.md",
