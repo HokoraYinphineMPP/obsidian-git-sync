@@ -6,78 +6,10 @@
       {
         "id": "a8b067e361cdb75a",
         "type": "leaf",
-        "dimension": 68.26923076923077,
         "state": {
           "type": "graph",
           "state": {}
-        },
-        "group": "4a74e0d61637301e"
-      },
-      {
-        "id": "ce80bb250476dae4",
-        "type": "leaf",
-        "dimension": 31.73076923076923,
-        "state": {
-          "type": "localgraph",
-          "state": {
-            "file": "docs/MATH 2720-04/MATH 2720-04.md",
-            "options": {
-              "collapse-filter": false,
-              "search": "",
-              "localJumps": 2,
-              "localBacklinks": true,
-              "localForelinks": true,
-              "localInterlinks": true,
-              "showTags": false,
-              "showAttachments": true,
-              "hideUnresolved": false,
-              "collapse-color-groups": false,
-              "colorGroups": [
-                {
-                  "query": "path:\"MATH 2720-04\"",
-                  "color": {
-                    "a": 1,
-                    "rgb": 14701138
-                  }
-                },
-                {
-                  "query": "path:\"MATH 2210-12\"",
-                  "color": {
-                    "a": 1,
-                    "rgb": 5431378
-                  }
-                },
-                {
-                  "query": "path:\"CSE 2010-12(83648)\"",
-                  "color": {
-                    "a": 1,
-                    "rgb": 5419488
-                  }
-                },
-                {
-                  "query": "path:/",
-                  "color": {
-                    "a": 1,
-                    "rgb": 16777215
-                  }
-                }
-              ],
-              "collapse-display": false,
-              "showArrow": true,
-              "textFadeMultiplier": -1.3,
-              "nodeSizeMultiplier": 1,
-              "lineSizeMultiplier": 1,
-              "collapse-forces": false,
-              "centerStrength": 0.467818199363119,
-              "repelStrength": 10.4680111936698,
-              "linkStrength": 1,
-              "linkDistance": 30,
-              "scale": 1.0000000000000184,
-              "close": true
-            }
-          }
-        },
-        "group": "4a74e0d61637301e"
+        }
       }
     ],
     "direction": "vertical"
