@@ -1,5 +1,6 @@
 {
   "cssTheme": "Discordian",
   "baseFontSize": 30,
-  "translucency": true
+  "translucency": true,
+  "accentColor": ""
 }
