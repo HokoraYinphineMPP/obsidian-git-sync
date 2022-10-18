@@ -1,10 +1,12 @@
 {
   "cssTheme": "Discordian",
-  "baseFontSize": 18,
+  "baseFontSize": 16,
   "translucency": true,
   "accentColor": "#aec6cf",
   "interfaceFontFamily": "CozetteVector",
   "textFontFamily": "CozetteVector",
   "monospaceFontFamily": "",
-  "baseFontSizeAction": true
+  "baseFontSizeAction": true,
+  "showViewHeader": true,
+  "nativeMenus": false
 }
