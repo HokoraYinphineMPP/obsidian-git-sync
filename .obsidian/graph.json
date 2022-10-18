@@ -5,7 +5,7 @@
   "showAttachments": true,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": true,
+  "collapse-color-groups": false,
   "colorGroups": [
     {
       "query": "path:\"MATH 2720-04\"",
@@ -46,6 +46,6 @@
   "repelStrength": 9.74358974358974,
   "linkStrength": 1,
   "linkDistance": 30,
-  "scale": 0.631604676290794,
-  "close": true
+  "scale": 0.4505081176758148,
+  "close": false
 }
