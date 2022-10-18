@@ -1,6 +1,10 @@
 {
   "cssTheme": "Ono Sendai",
-  "baseFontSize": 30,
+  "baseFontSize": 18,
   "translucency": true,
-  "accentColor": "#aec6cf"
+  "accentColor": "#aec6cf",
+  "interfaceFontFamily": "CozetteVector",
+  "textFontFamily": "CozetteVector",
+  "monospaceFontFamily": "",
+  "baseFontSizeAction": true
 }
