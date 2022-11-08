@@ -106,7 +106,7 @@ class DerivedClassName:public BaseClassName
 };
 ```
 
-###### Base Class: Person Derived Class: Student
+###### Base Class: Person
 ```c++
 /*
  * Filename: Person.h
@@ -120,10 +120,27 @@ class Person{
 	private:
 		string name;//a person's full name
 		string DOB;//a person's date of birth
-		long ID:
-}
+		long ID;//a person's ID #
+	public:
+		Person(string n, string d, long id);//constructor
+		~Person();//destructor
+		string get_name() const;//return name
+		string get_dob() const;//return DOB
+		long get_id() const;//return ID
+		void set_name(string newName);//update name
+};
+#endif
 ```
-###### Student inherits all member functions and data members of the Person class.
+###### Derived Class: Student
+```c++
+/*
+ * Filename: Student.h
+ * Definition of the Student class, which inherits the Person class
+ */
+#include "Person.h"
+#i
+```
+Student inherits all member functions and data members of the Person class.
 
 ## Defining the Derived Class Constructors
 
