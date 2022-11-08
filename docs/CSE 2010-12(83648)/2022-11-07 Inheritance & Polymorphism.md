@@ -290,7 +290,7 @@ Let’s run this to see what we get!
 - Overridden Member Functions:
 	- Functions with the same name and same parameters.
 	- Consider the following:
-Person Class Student Class
+Person Class Student Class6
 void print(); void print();
 ```
 ```
