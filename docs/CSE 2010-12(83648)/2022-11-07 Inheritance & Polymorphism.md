@@ -276,19 +276,20 @@ Person.o: Person.cpp Person.h
 Let’s run this to see what we get!
 
 ## Overloaded vs Overridden Member Functions
+- It is possible to have functions with the same name in the base class and its derived class(es).
+- Overloaded Member Functions:
+	- Functions with the same name, but different parameters.
+	- They can be used in the same or different classes without being confused with each other.
+	- Consider the following:
+|Person Class|Student Class|
+|-|-|
+|void set(long newID);|void set(string newMajor);|
+- A student object could use both functions, depending on what the parameter datatype is, the compiler would use the appropriate one.
+- A person object could only use it’s own set() function.
 
-● It is possible to have functions with the same name in the base class and its derived class(es).
-● Overloaded Member Functions:
-○ Functions with the same name, but different parameters.
-○ They can be used in the same or different classes without being confused with each other.
-○ Consider the following:
-Person Class Student Class
-void set(long newID); void set(string newMajor);
-● A student object could use both functions, depending on what the parameter datatype is, the compiler would use the
-● appropriate one.A person object could only use it’s own set() function.^
-● Overridden Member Functions:
-○ Functions with the same name and same parameters.
-○ Consider the following:
+- Overridden Member Functions:
+	- Functions with the same name and same parameters.
+	- Consider the following:
 Person Class Student Class
 void print(); void print();
 ```
