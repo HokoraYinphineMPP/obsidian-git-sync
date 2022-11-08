@@ -70,22 +70,21 @@ graph TD;
 protected inheritance, [read me.](https://isocpp.org/wiki/faq/private-inheritance)
 
 #### Consider the following classes...
+- Person
+	- A person has a name, date of birth (DOB), and ID #.
+- Student
+	- A student inherits the data members and member functions from Person.
+	- Additionally, a student has a major and GPA.
+- See a more extended UML Diagram to show the relationship between these classes 
+```mermaid
+classDiagram
+Person <-- Student
+Person : '-name: string'
+```
 
 
-● Person
-○ A person has a name, date of birth (DOB),
-and ID #.
-● Student
-○ A student inherits the data members and
-member functions from Person.
-○ Additionally, a student has a major and
-GPA.
-● See a more extended UML Diagram
-to show the relationship between
-these classes →
 ● The type of data members and member functions is shown after the member names separated by a colon.
 ● The minus signs define the visibility of data members as private; the plus signs define them as public.
-```
 
 ### Class Definitions
 
