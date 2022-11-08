@@ -253,16 +253,25 @@ int name()
 	Student student1("Bob Ross","10-29-1942",100005,"Art",4.0);
 	cout << "Student Name; " << student1.get_name() << "\n";
 	cout << "\tDOB: " << student1.get_dob() << "\n";
-	cout <<
+	cout << "\tID: " << student1.get_id() << "\n";
+	cout << "\tMajor: " << student1.get_major() << "\n";
+	cout << "\tGPA: " << student1.get_GPA() << "\n";
+	
+	return 0;
 }
 ```
 
-```
-makefile
-```
+###### makefile
+```makefile
+main: main.o Student.o Person.o
+	g++ -o main
+main.o: main.cpp Student.h
+	g++ -c main.cpp
+Student.o: Student.cpp Student.h
+	g++ -c Student.cpp
 ```
 Let’s run this to see what we get!
-```
+
 
 ## Overloaded vs Overridden Member Functions
 
