@@ -92,27 +92,38 @@ Student : -GPA﹕ double
 Student: +Student(n﹕string,d﹕string,id﹕long,m﹕string,g﹕double)
 Student: +set_GPA(gp﹕double) void
 Student: +get_GPA() double
-Student:
+Student: +get_major() string
 ```
--
-
-● The type of data members and member functions is shown after the member names separated by a colon.
-● The minus signs define the visibility of data members as private; the plus signs define them as public.
+- The type of data members and member functions is shown after the member names separated by a colon.
+- The minus signs define the visibility of data members as private; the plus signs define them as public.
 
 ### Class Definitions
-
 ```
 Syntax for a derived class definition:
+
 class DerivedClassName:public BaseClassName
 {
 };
 ```
+
+###### Base Class: Person Derived Class: Student
+```c++
+/*
+ * Filename: Person.h
+ * Definition of the Person class
+ */
+#include <string>
+using namespace std;
+#ifndef Person_H
+#define Person_H
+class Person{
+	private:
+		string name;//a person's full name
+		string DOB;//a person's date of birth
+		long ID:
+}
 ```
-Base Class: Person Derived Class: Student
-```
-```
-Student inherits all member functions and data members of the Person class.
-```
+###### Student inherits all member functions and data members of the Person class.
 
 ## Defining the Derived Class Constructors
 
