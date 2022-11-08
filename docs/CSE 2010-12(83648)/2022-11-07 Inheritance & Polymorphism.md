@@ -15,10 +15,7 @@ cats are animals, but not all animals are cats.
 
 This is the concept behind **_inheritance._**
 
-
 ## Inheritance
-
-
 - Inheritance in object-oriented programming derives a more specific concept from a more general one.
 - With inheritance, we have a base class and derived classes.
 - Base Class:
@@ -27,74 +24,54 @@ This is the concept behind **_inheritance._**
 		- Animal
 		- Shape
 		- Employee
-● Derived Class:
+- Derived Class:
 	- A class that inherits from a base class and is a more specialized case.
 		- Student
 		- Cat
 		- Circle
 		- Manager
 
-
 ## Unified Modeling Language (UML)
-
-
-● To show the relationship between
-inherited classes in C++, we can use the
-Unified Modeling Language (UML).
-
-● UML is a language that graphically
-shows the relationship between
-classes and objects.
-
-● Classes are shown in rectangular
-boxes, while the inheritance
-relationship is shown by a solid line
-ending in a hollow triangle that goes
-from the specific class to the general
-class.
-
+- To show the relationship between inherited classes in C++, we can use the Unified Modeling Language (UML).
+- UML is a language that graphically shows the relationship between classes and objects.
+- Classes are shown in rectangular boxes, while the inheritance relationship is shown by a solid line ending in a hollow triangle that goes from the specific class to the general class.
 ```mermaid
 graph TD;
-    subgraph raw_iot
-		a
-		d
-		f
-    end
+	subgraph UML Diagrams denoting inheritance
+	    subgraph Base Classes
+			A
+			D
+			F
+	    end
+	    subgraph Derived Classes
+		    B
+		    C
+		    E
+		end
+	end
     B[Horse]:::Green-->A[Animal]:::Yellow;
     C[Circle]:::Green-->D[Shape]:::Yellow;
     E[Student]:::Green-->F[Person]:::Yellow;
 	classDef Yellow fill:#d8a027, color:#000;
 	classDef Green fill:#448d7a;
 ```
-UML Diagrams denoting inheritance
-Bottom: Derived Classes
-Top: Base Classes
-
 
 ## Relationship between the base and derived class
+- A specific concept must have the characteristics of the general concept, but it can have more.
+- In C++, we say that a derived class extends its base class, meaning the derived class must have all of the data members and member functions of the base class, but it can add to the list.
+- There are 3 ways a derived class can inherit a base class:
+	- Private inheritance
+	- Protected inheritance
+	- **Public inheritance**
 
-```
-● A specific concept must have the characteristics of the general concept, but it
-can have more.
-● In C++, we say that a derived class extends its base class, meaning the derived
-class must have all of the data members and member functions of the base class,
-but it can add to the list.
-● There are 3 ways a derived class can inherit a base class:
-○ Private inheritance
-○ Protected inheritance
-○ Public inheritance
-```
-```
-● The default type of inheritance is private, but
-private and protected aren’t really used.
-● So in this class we will focus on public.
-● If you want to learn more about private and
-protected inheritance, read me.
-```
+- The default type of inheritance is private, but private and protected aren’t really used.
+- So in this class we will focus on public.
+- If you want to learn more about private and
+protected inheritance, [read me.](https://isocpp.org/wiki/faq/private-inheritance)
 
 #### Consider the following classes...
 
-```
+
 ● Person
 ○ A person has a name, date of birth (DOB),
 and ID #.
