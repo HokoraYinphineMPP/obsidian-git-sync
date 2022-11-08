@@ -225,9 +225,9 @@ void Student::set_GPA(double gp){
 }
 //getters to return private data members
 double Student::get_GPA()const{
-	return GPA
+	return GPA;
 string Student::get_major()const
-	return
+	return major;
 }
 ```
 
