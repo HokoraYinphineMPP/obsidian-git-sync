@@ -79,9 +79,13 @@ protected inheritance, [read me.](https://isocpp.org/wiki/faq/private-inheritanc
 ```mermaid
 classDiagram
 Person <-- Student
-Person : '-name: string'
+class Person{}
+Person : -name string
+Person : +DOB string
+Person : -ID long
+Person: +Person(nstring)
 ```
-
+-
 
 ● The type of data members and member functions is shown after the member names separated by a colon.
 ● The minus signs define the visibility of data members as private; the plus signs define them as public.
