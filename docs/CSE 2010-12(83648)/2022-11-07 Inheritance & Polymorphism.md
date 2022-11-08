@@ -78,12 +78,21 @@ protected inheritance, [read me.](https://isocpp.org/wiki/faq/private-inheritanc
 - See a more extended UML Diagram to show the relationship between these classes 
 ```mermaid
 classDiagram
-Person <-- Student
-class Person{}
-Person : -name string
-Person : +DOB string
-Person : -ID long
-Person: +Person(nstring)
+Person <|-- Student
+Person : -name﹕ string
+Person : -DOB﹕ string
+Person : -ID﹕ long
+Person: +Person(n﹕string,d﹕string,id﹕long)
+Person: get_name() string
+Person: get_dob() string
+Person: get_id() long
+Person: set_name(newName﹕string) void
+Student : -major﹕ string
+Student : -GPA﹕ double
+Student: +Student(n﹕string,d﹕string,id﹕long,m﹕string,g﹕double)
+Student: +set_GPA(gp﹕double) void
+Student: +get_GPA() double
+Student:
 ```
 -
 
