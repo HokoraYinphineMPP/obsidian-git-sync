@@ -240,6 +240,21 @@ string Student::get_major()const
 #include <iostream>
 #include "Student.h"
 using namespace std;
+
+int name()
+{
+	//Declare a Person object
+	Person person1("Fred Rodgers","03-20-1928",100003);
+	cout << "Person Name: " << person1.get_name() << "\n";
+	cout << "\tDOB: " << person1.get_dob() << "\n";
+	cout << "\tID: " << person1.get_id() << "\n";
+	
+	//Declare a Student object
+	Student student1("Bob Ross","10-29-1942",100005,"Art",4.0);
+	cout << "Student Name; " << student1.get_name() << "\n";
+	cout << "\tDOB: " << student1.get_dob() << "\n";
+	cout <<
+}
 ```
 
 ```
