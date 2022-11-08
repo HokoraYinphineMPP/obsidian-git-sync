@@ -232,6 +232,15 @@ string Student::get_major()const
 ```
 
 ## Main.cpp
+```c++
+/*
+ * Filename: main.cpp
+ * Program that uses the Person and Student classes
+ */
+#include <iostream>
+#include "Student.h"
+using namespace std;
+```
 
 ```
 makefile
