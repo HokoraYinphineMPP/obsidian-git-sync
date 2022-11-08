@@ -211,7 +211,24 @@ void Person::set_name(string newName){
  * Definition of the Student class member functions
  */
 #include "Student.h"
-//constructor
+//constructor that involves Base class constructor
+Student::Student(string n, string d, long id, string m, double g)
+	:Person(n,d,id), major(m),GPA(g){
+}
+//destructor
+Student::~Student(){
+	cout << "Destroying Student with name: " << get_name() << "\n";
+}
+//update GPA
+void Student::set_GPA(double gp){
+	GPA = gp;
+}
+//getters to return private data members
+double Student::get_GPA()const{
+	return GPA
+string Student::get_major()const
+	return
+}
 ```
 
 ## Main.cpp
