@@ -171,10 +171,24 @@ DerivedClassName::DerivedClassName(parameters)
 ```
 
 ## Class Member Function Definitions
+###### Base Class: Person
+```c++
+/*
+ * Filename: Person.cpp
+ * Definition of the Person class member functions
+ */
+#include "Person.h"
 
+//constructor
+Person::Person(string n, string d, long id):name(n),DOB(d),ID(id){
+}
+//destructor
+Person::~Person(){
+	cout
+}
 ```
-Base Class: Person Derived Class: Student
-```
+###### Derived Class: Student
+
 
 ## Main.cpp
 
