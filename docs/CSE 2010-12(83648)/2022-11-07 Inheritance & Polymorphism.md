@@ -138,25 +138,37 @@ class Person{
  * Definition of the Student class, which inherits the Person class
  */
 #include "Person.h"
-#i
+#ifndef STUDENT_H
+#define STUDENT_H
+class Student:public Person{
+	private:
+		string major;//student's major
+		double GPA;//student's gpa
+	public:
+		//note how many parameters the derived class contructor has
+		Student(string n, string d, long id, string m, double g);
+		~Student();
+		void set_GPA(double gp);
+		double get_GPA() const;
+		string get_major() const;
+};
+#endif 
 ```
 Student inherits all member functions and data members of the Person class.
 
 ## Defining the Derived Class Constructors
+- The constructor(s) of a derived class has two tasks:
+	- Initialize the base object
+	- Initialize its own data members
 
-```
-● The constructor(s) of a derived class has two tasks:
-○ Initialize the base object
-○ Initialize its own data members
-```
-##### Syntax:
-
+###### Syntax:
+```c++
 DerivedClassName::DerivedClassName(parameters)
 :BaseClassName(parameters for base class),initialization list for remaining data members
 {
 
 }
-
+```
 
 ## Class Member Function Definitions
 
