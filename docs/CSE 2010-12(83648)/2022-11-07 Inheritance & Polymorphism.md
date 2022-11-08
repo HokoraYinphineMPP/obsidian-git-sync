@@ -53,6 +53,19 @@ ending in a hollow triangle that goes
 from the specific class to the general
 class.
 
+```mermaid
+graph TD;
+    subgraph raw_iot
+		a
+		d
+		f
+    end
+    B[Horse]:::Green-->A[Animal]:::Yellow;
+    C[Circle]:::Green-->D[Shape]:::Yellow;
+    E[Student]:::Green-->F[Person]:::Yellow;
+	classDef Yellow fill:#d8a027, color:#000;
+	classDef Green fill:#448d7a;
+```
 UML Diagrams denoting inheritance
 Bottom: Derived Classes
 Top: Base Classes
