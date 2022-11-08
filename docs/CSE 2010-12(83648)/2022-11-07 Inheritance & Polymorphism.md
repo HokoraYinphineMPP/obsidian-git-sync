@@ -131,6 +131,7 @@ class Person{
 };
 #endif
 ```
+
 ###### Derived Class: Student
 ```c++
 /*
@@ -154,6 +155,7 @@ class Student:public Person{
 };
 #endif 
 ```
+
 Student inherits all member functions and data members of the Person class.
 
 ## Defining the Derived Class Constructors
@@ -184,11 +186,33 @@ Person::Person(string n, string d, long id):name(n),DOB(d),ID(id){
 }
 //destructor
 Person::~Person(){
-	cout
+	cout << "Destroying Person object with name: " << name << "\n";
+}
+//getters that return private data members
+string Person::get_name()const{
+	return name;
+}
+string Person get_dob()const{
+	return DOB;
+}
+long Person::get_id()const{
+	return ID;
+}
+//update person's name
+void Person::set_name(string newName){
+	name=newname;
 }
 ```
-###### Derived Class: Student
 
+###### Derived Class: Student
+```c++
+/*
+ * Filename: Student.cpp
+ * Definition of the Student class member functions
+ */
+#include "Student.h"
+//constructor
+```
 
 ## Main.cpp
 
