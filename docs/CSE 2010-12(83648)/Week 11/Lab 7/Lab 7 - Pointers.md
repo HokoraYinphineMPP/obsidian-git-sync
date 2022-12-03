@@ -16,15 +16,15 @@ heap memory (similar to newArrays.cpp example from lecture), based on the size t
 
 Once the user array has been created, call the following function to fill the array:
 
-void fillArray (int* a, int size);
+`void fillArray (int* a, int size);`
 
 - Function that prompts the user to enter values to fill an array. The int* a parameter refers to an
     array that we will be modifying. The size parameter represents the number of elements in the
-    array.
+    array.t
 
 Once the user has filled the array, call the following function:
 
-void print (const int* a, int size);
+`void print (const int* a, int size);`
 
 - Function that prints the elements in an array. The int* a parameter is passed as a constant
     because we will not be modifying the array. The size parameter represents the number of
@@ -32,7 +32,7 @@ void print (const int* a, int size);
 
 Finally, call the following function to determine the largest value in the array
 
-int max(const int* a, int size);
+`int max(const int* a, int size);`
 
 - Function that returns the largest value in the array. The int* a parameter is passed as a constant
     because we will not be modifying the array. The size parameter represents the number of
