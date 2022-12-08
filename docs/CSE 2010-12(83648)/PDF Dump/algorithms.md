@@ -221,3 +221,5 @@ Linear Search Binary Search
 **1,600,000** (^) 1,600,000 20
 
 
+
+![[Chapter 6 Algorithms.pdf]]

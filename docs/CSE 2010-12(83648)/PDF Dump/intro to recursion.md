@@ -151,3 +151,4 @@ Output
 ## Recursive Trace
 
 
+![[Chapter 10 Intro to Recursion.pdf]]

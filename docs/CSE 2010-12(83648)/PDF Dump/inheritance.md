@@ -246,3 +246,4 @@ But we can also use: objectName->functionName().
 ##### Now that we’ve defined all our classes, lets see a program that uses them.
 
 
+![[Chapter 8 Inheritance (1).pdf]]

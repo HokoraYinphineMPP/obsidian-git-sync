@@ -241,3 +241,4 @@ of that array. We cannot make changes to the array since it is a constant.
 ## (arrays.cpp on Canvas)
 
 
+![[Chapter 6 Arrays (1).pdf]]
