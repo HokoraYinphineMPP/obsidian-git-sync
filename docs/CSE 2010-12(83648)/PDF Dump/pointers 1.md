@@ -306,7 +306,7 @@ values to a random location in the vector, we can use insert().
 element at index i, and shift all elements to the right.
 ● Example:
 ```
-vector <int> vec1{33,10,11,9}; //vec1 = 33 10 11 9
+vector \<int> vec1{33,10,11,9}; //vec1 = 33 10 11 9
 
 vec1.insert(vec1.begin() + 2, 16); //vec1 = 33 10 16 11 9
 
@@ -335,3 +335,4 @@ method:
           next element.
 
 
+![[Chapter 7 - Pointers-2.pdf]]

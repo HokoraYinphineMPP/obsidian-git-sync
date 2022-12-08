@@ -113,11 +113,19 @@ Output:
 function.
 ● This can be very time and resource consuming, so whenever possible, pass your vectors by reference.
 Example:
-void fillVector(vector<int> & v);
+void fillVector(vector\<int> & v);
 If you don’t want to modify your vector, just add the const keyword
 Example:
-void printVector( **const** vector<int> & v);
+void printVector( **const** vector\<int> & v);
 Notice that for vectors, we don’t have to pass the size, since we always have access to the .size() function.
 Let’s look some functions with vectors and also user input into a vector. (vectors.cpp)
 
 
+
+
+
+
+
+
+
+![[Chapter 6 Vectors.pdf]]

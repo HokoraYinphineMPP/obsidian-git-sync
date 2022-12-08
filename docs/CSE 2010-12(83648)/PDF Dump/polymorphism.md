@@ -139,3 +139,7 @@ of pointers, gives our programs a great deal of flexibility and extensibility.
 sure that the appropriate functions are called each time.
 ```
 
+
+
+
+![[Chapter 8 Polymorphism.pdf]]

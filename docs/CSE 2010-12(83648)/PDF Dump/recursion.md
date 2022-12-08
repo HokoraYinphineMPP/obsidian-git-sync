@@ -601,3 +601,7 @@ In conclusion:
 ● “To iterate is human, to recurse is divine” - L. Peter Deutsch (Computer Scientist)
 ```
 
+
+
+
+![[Chapter 10 Recursion-1-1.pdf]]

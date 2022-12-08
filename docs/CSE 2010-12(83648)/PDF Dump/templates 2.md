@@ -212,3 +212,12 @@ Let’s look at the Student Learning Outcomes
 we looked at in Week 1 in the syllabus
 ```
 
+
+
+
+
+
+
+
+
+![[Chapter 16 Templates Part 2.pdf]]

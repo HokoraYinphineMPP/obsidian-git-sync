@@ -214,3 +214,9 @@ template.
 # Let’s look at an example: Pair Class
 
 
+
+
+
+
+
+![[Chapter 16 Templates.pdf]]

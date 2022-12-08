@@ -13,7 +13,7 @@
 
 ##### ● We have also been able to output messages to the user using cout <<
 
-##### ● To use cout and cin, we need to #include <iostream>, since cout
+##### ● To use cout and cin, we need to \#include \<iostream>, since cout
 
 ##### and cin are output and input streams, respectively.
 
@@ -211,7 +211,7 @@ objects are constantly changing.
 
 ##### ● We will now learn how we can read from files and write to files.
 
-##### ● Need to #include <fstream>
+##### ● Need to \#include \<fstream>
 
 ○ Since it inherits iostream, this will allow for both input and output.
 
@@ -416,3 +416,7 @@ streamName.close();
 Let’s look at an example! (read_write.cpp, read_write2.cpp)
 
 
+
+
+
+![[Chapter 9 Streams.pdf]]

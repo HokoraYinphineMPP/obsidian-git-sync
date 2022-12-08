@@ -343,3 +343,7 @@ specific addresses.
 ● Pointers are also used in class inheritance...which we will see next week!
 ```
 
+
+
+
+![[Chapter 7 - Pointers continued-1.pdf]]

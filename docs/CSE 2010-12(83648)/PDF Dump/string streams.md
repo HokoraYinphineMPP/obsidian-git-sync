@@ -191,3 +191,9 @@ it to be in a goodstate and usable.
 ○ We can also use them to parse through a string and place different values in different variables.
 ```
 
+
+
+
+
+
+![[Chapter 9 String Streams-1.pdf]]
