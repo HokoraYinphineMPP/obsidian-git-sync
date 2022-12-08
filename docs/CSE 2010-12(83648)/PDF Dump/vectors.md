@@ -126,6 +126,4 @@ Let’s look some functions with vectors and also user input into a vector. (vec
 
 
 
-
-
 ![[Chapter 6 Vectors.pdf]]
