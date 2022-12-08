@@ -168,16 +168,16 @@ Now consider that we need a class with the same data members and overall functio
 data types.
 ```
 We can accomplish this with a class template! (^) Syntax for function definitions:
-template <typename T>className<T>::className(T init):data(init) (^)
+template <\typename T>className\<T>::className(T init):data(init) (^)
 {
 }
-template <typename T>T className <T>::get()const (^)
+template \<typename T>T className \<T>::get()const (^)
 {
 } return data;^
-template <typename T>void className <T>::set(T d) (^)
+template \<typename T>void className \<T>::set(T d) (^)
 } data = d;^
 Syntax:
-template <typename T>//you can have multiple generic types
+template \<typename T>//you can have multiple generic types
 class className
 {
 private:
