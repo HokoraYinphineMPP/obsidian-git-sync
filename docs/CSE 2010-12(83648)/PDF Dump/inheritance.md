@@ -1,6 +1,4 @@
-# Chapter 8:
-
-# Inheritance
+# Chapter 8: Inheritance
 
 ```
 CSE 2010 - Week 12

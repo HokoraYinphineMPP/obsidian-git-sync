@@ -1,6 +1,4 @@
-# Chapter 16:
-
-# Templates
+# Chapter 16: Templates
 
 ### CSE 2010
 

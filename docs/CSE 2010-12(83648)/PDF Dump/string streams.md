@@ -1,21 +1,4 @@
-# Reminders/Announcements
-
-```
-● Lab 8 is due this Friday by 8:30pm
-```
-```
-● Homework 3 is due next Monday November 21 by 8:30pm
-```
-```
-● Makeup Submission for Lab 5 is now open. Will be due next Wednesday,
-23 by 8:30pm.
-```
-```
-● See Canvas Announcement for information on a summer internship
-opportunity with the Department of Defense.
-```
-
-### Chapter 9: String Streams
+# Chapter 9: String Streams
 
 #### CSE 2010 - Week 13
 

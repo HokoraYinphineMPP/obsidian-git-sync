@@ -1,6 +1,4 @@
-# Chapter 9:
-
-# Streams
+# Chapter 9: Streams
 
 ## CSE 2010 - Week 13
 

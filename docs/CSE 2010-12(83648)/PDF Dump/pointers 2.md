@@ -1,4 +1,4 @@
-# Chapter 7 - Pointers
+# Chapter 7 - Pointers 2
 
 ## CSE 2010
 

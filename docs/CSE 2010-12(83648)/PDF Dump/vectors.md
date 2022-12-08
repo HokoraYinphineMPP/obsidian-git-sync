@@ -1,6 +1,4 @@
-# Chapter 6:
-
-# Vectors
+# Chapter 6: Vectors
 
 ## CSE 2010 Week 9
 
