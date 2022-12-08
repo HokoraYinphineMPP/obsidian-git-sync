@@ -1,0 +1,1919 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="../../../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.4.2, mkdocs-material-8.5.10" name="generator"/>
+<title>Chapter 6: Algorithms - Hokora Yinphine</title>
+<link href="../../../assets/stylesheets/main.975780f9.min.css" rel="stylesheet"/>
+<link href="../../../assets/stylesheets/palette.2505c338.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="indigo" data-md-color-primary="blue" data-md-color-scheme="default" dir="ltr">
+<script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#chapter-6-algorithms">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="Hokora Yinphine" class="md-header__button md-logo" data-md-component="logo" href="../../.." title="Hokora Yinphine">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            Hokora Yinphine
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Chapter 6: Algorithms
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="indigo" data-md-color-media="(prefers-color-scheme: light)" data-md-color-primary="blue" data-md-color-scheme="default" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"></path></svg>
+</label>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="pink" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="blue" data-md-color-scheme="slate" id="__palette_2" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"></path></svg>
+</label>
+</form>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="Hokora Yinphine" class="md-nav__button md-logo" data-md-component="logo" href="../../.." title="Hokora Yinphine">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+    Hokora Yinphine
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../..">
+        Hey!
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2">
+          CSE 2010 12(83648)
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="CSE 2010 12(83648)" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+          CSE 2010 12(83648)
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../CSE%202010-12/">
+        CSE 2010-12
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" id="__nav_2_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_2">
+          PDF Dump
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="PDF Dump" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_2">
+<span class="md-nav__icon md-icon"></span>
+          PDF Dump
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          Chapter 6: Algorithms
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+        Chapter 6: Algorithms
+      </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cse-2010">
+    CSE 2010
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#week-9">
+    Week 9
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-is-an-algorithm">
+    What is an algorithm?
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#algorithms">
+    Algorithms
+  </a>
+<nav aria-label="Algorithms" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#we-use-algorithms-in-everyday-life-without-even-thinking-about-it">
+    ● We use algorithms in everyday life, without even thinking about it.
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#for-example-lets-say-you-have-to-do-laundry-one-load-of-laundry-needs-to-go">
+    ● For example, let’s say you have to do laundry. One load of laundry needs to go
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#in-the-washer-30-minutes-and-dryer-30-minutes">
+    in the washer (30 minutes), and dryer (30 minutes).
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#given-5-loads-of-laundry-we-can-take-two-different-approaches">
+    ● Given 5 loads of laundry, we can take two different approaches:
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#both-approaches-take-care-of-the-laundry-problem-but-one-is-obviously-faster">
+    ● Both approaches take care of the laundry problem, but one is obviously faster
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#than-the-other">
+    than the other.
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#search-algorithms">
+    Search Algorithms
+  </a>
+<nav aria-label="Search Algorithms" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#search-algorithms-are-used-to-search-for-a-given-value-in-a-container-of">
+    ● Search algorithms are used to search for a given value in a container of
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#elements-array-vector-other-data-structures">
+    elements (array, vector, other data structures).
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#for-instance-we-may-want-to-know-whether-or-not-a-specific-value-is">
+    ● For instance, we may want to know whether or not a specific value is
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#stored-in-the-container-or-how-many-times-a-specific-value-appears-in-a">
+    stored in the container, or how many times a specific value appears in a
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#container">
+    container.
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#for-this-class-we-will-examine-two-basic-search-algorithms-which-you-will">
+    ● For this class, we will examine two basic search algorithms (which you will
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#see-later-on-in-your-cse-journey">
+    see later on in your CSE journey):
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#linear-search">
+    Linear Search
+  </a>
+<nav aria-label="Linear Search" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#given-a-container-that-stores-an-indexed-sequence-of-n-elements-we">
+    ● Given a container that stores an indexed sequence of n elements, we
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#want-to-search-for-a-value-x-by-starting-from-the-first-element-and">
+    want to search for a value, x, by starting from the first element, and
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#sequentially-checking-every-element-until-one-of-the-following-happens">
+    sequentially checking every element until one of the following happens:
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-are-some-real-life-applications-of-this">
+    ● What are some real life applications of this....
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#linear-search-algorithm-steps">
+    Linear Search Algorithm Steps
+  </a>
+<nav aria-label="Linear Search Algorithm Steps" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1-start-from-the-first-element-index-0">
+    1. Start from the first element (index 0).
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#2-compare-that-element-to-x">
+    2. Compare that element to x
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#3-move-to-the-next-element-and-repeat-step-2">
+    3. Move to the next element, and repeat Step 2.
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#4-if-youve-reached-the-end-of-the-container-and-have-not-found-x-then-we">
+    4. If you’ve reached the end of the container and have not found x, then we
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#know-for-certain-that-x-is-not-in-the-container">
+    know for certain that x is not in the container.
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#lets-take-a-closer-look-at-an-example">
+    Let’s take a closer look at an example....
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#linear-search-summary">
+    Linear Search Summary
+  </a>
+<nav aria-label="Linear Search Summary" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#given-a-container-of-n-elements">
+    ● Given a container of n elements:
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#time-complexity-takes-into-consideration-the-best-worse-and-average-case-of">
+    ● Time complexity takes into consideration the best, worse, and average case of
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#linear-search-so-for-reasons-that-some-of-you-will-learn-in-cse-4310-the-time">
+    linear search, so for reasons that some of you will learn in CSE 4310, the time
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#complexity-of-linear-search-is-on">
+    complexity of linear search is O(n).
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#pros">
+    ● Pros:
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cons">
+    ● Cons:
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#binary-search">
+    Binary Search
+  </a>
+<nav aria-label="Binary Search" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#given-a-sorted-container-that-stores-an-indexed-sequence-of-n">
+    ● Given a SORTED container that stores an indexed sequence of n
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#elements-we-want-to-search-for-a-value-x-by-repeatedly-dividing-the">
+    elements, we want to search for a value, x, by repeatedly dividing the
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#search-interval-in-half">
+    search interval in half.
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-are-some-real-life-applications-of-this_1">
+    ● What are some real life applications of this....
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#binary-search-algorithm-steps">
+    Binary Search Algorithm Steps
+  </a>
+<nav aria-label="Binary Search Algorithm Steps" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1-set-your-first-search-interval-low-index-0-high-index-n-">
+    1. Set your first search interval: low index = 0, high index = n-
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#2-the-first-element-to-check-is-the-middle-element-which-is-lowhigh">
+    2. The first element to check is the middle element which is (low+high)/
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#3-compare-the-mid-element-to-x">
+    3. Compare the mid element to x
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#4-set-new-mid-lowhigh2-and-repeat-step-3">
+    4. Set new mid, (low+high)/2, and repeat Step 3.
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#5-if-there-is-no-more-search-interval-and-you-still-have-not-found-x-we-know">
+    5. If there is no more search interval and you still have not found x, we know
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#for-certain-x-is-not-in-the-container">
+    for certain x is not in the container.
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#lets-take-a-closer-look-at-an-example_1">
+    Let’s take a closer look at an example....
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#binary-search-summary">
+    Binary Search Summary
+  </a>
+<nav aria-label="Binary Search Summary" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#given-a-container-of-n-elements_1">
+    ● Given a container of n elements:
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#the-time-complexity-of-binary-search-is-olog-2-n">
+    ● The time complexity of binary search is O(log 2 n).
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#pros_1">
+    ● Pros:
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cons_1">
+    ● Cons:
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#linear-vs-binary-search-examples">
+    Linear vs Binary Search Examples
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../arrays/">
+        Chapter 6: Arrays
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../inheritance/">
+        Chapter 8: Inheritance
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../intro%20to%20recursion/">
+        Chapter 10: Intro to Recursion
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pointers%201/">
+        Chapter 7 - Pointers
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pointers%202/">
+        Chapter 7 - Pointers 2
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../polymorphism/">
+        Chapter 8: Polymorphism
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../recursion/">
+        Chapter 10: Recursion
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../streams/">
+        Chapter 9: Streams
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../string%20streams/">
+        Chapter 9: String Streams
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../templates%201/">
+        Chapter 16: Templates
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../templates%202/">
+        Templates part 2
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../vectors/">
+        Chapter 6: Vectors
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" id="__nav_2_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_3">
+          Week 1
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 1" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_3">
+<span class="md-nav__icon md-icon"></span>
+          Week 1
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%201/2022-08-22%20-%20Syllabus%20Overview/">
+        will be coding in C++
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%201/2022-08-24%20-%20C%2B%2B%20Overview/">
+        2022 08 24   C++ Overview
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3_3" id="__nav_2_3_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_3_3">
+          Lab1
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Lab1" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_3_3">
+<span class="md-nav__icon md-icon"></span>
+          Lab1
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%201/Lab1/Lab%201%20Submission/">
+        Part A
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%201/Lab1/Lab%201-A/">
+        Lab 1 A
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%201/Lab1/Lab%201-B/">
+        Lab 1 B
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" id="__nav_2_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_4">
+          Week 11
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 11" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_4">
+<span class="md-nav__icon md-icon"></span>
+          Week 11
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4_1" id="__nav_2_4_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_4_1">
+          Lab 7
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Lab 7" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_4_1">
+<span class="md-nav__icon md-icon"></span>
+          Lab 7
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%2011/Lab%207/Lab%207%20-%20Pointers/">
+        Lab 7 Pointers (15 points total)
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_5" id="__nav_2_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_5">
+          Week 2
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 2" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_5">
+<span class="md-nav__icon md-icon"></span>
+          Week 2
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%202/2022-08-23%20-%20C%2B%2B%20Ch%202%20Numerical%20data%20types/">
+        Chapter 2: Numerical Data Types
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%202/2022-08-31%20-%20C%2B%2B%20Fundamental%20Data%20Types%2C%20Variables%2C%20Strings/">
+        Week 2 (August 29, 31): Fundamental Data Types, Variables, Strings
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%202/Week%202.1%20Numerical%20Data%20Types%20and%20Variables/">
+        PDF
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%202/Week%202.2%20Predefined%20Libraries%20and%20Functions/">
+        PDF
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_5_5" id="__nav_2_5_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_5_5">
+          Lab2
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Lab2" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_5_5">
+<span class="md-nav__icon md-icon"></span>
+          Lab2
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%202/Lab2/Lab%202%20PDF%20Markdown/">
+        CSE 2010 Fall 2022
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%202/Lab2/Lab%202%20Submission/">
+        Lab 2
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_6" id="__nav_2_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_6">
+          Week 3
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 3" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_6">
+<span class="md-nav__icon md-icon"></span>
+          Week 3
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%203/2022-09-07%20-%20C%2B%2B%20Control%20Flow%20with%20if-else%20statements/">
+        Chapter 3: Control Flow: if-else, relational operators, boolean operators
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_7" id="__nav_2_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_7">
+          Week 4
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 4" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_7">
+<span class="md-nav__icon md-icon"></span>
+          Week 4
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%204/2022-09-14%20Loops/">
+        Chapter 3: Loops, loops, and more loops
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%204/For%20Exercise%203%20Using%20rand/">
+        Using the rand() Function to Generate Random Numbers
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_7_3" id="__nav_2_7_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_7_3">
+          Lab 3
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Lab 3" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_7_3">
+<span class="md-nav__icon md-icon"></span>
+          Lab 3
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%204/Lab%203/Lab%203%20Submission/">
+        Lab 03: Control Flow with if-else and Loops (Due **9/26** BEFORE lecture)
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_8" id="__nav_2_8" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_8">
+          Week 5
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 5" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_8">
+<span class="md-nav__icon md-icon"></span>
+          Week 5
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%205/2022-09-19%20Functions/">
+        Chapter 4: Functions
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%205/2022-09-19%20Loops%20Continued/">
+        Chapter 3: Loops Continued
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%205/2022-09-21%20Functions%20Continued/">
+        Chapter 4: Functions part 2
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_8_4" id="__nav_2_8_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_8_4">
+          Lab 4
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Lab 4" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_8_4">
+<span class="md-nav__icon md-icon"></span>
+          Lab 4
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%205/Lab%204/Lab%204%20Submission/">
+        Lab 4 Submission
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_9" id="__nav_2_9" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_9">
+          Week 6
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 6" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_9">
+<span class="md-nav__icon md-icon"></span>
+          Week 6
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%206/2022-09-26%20Classes/">
+        Chapter 5: Classes
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%206/2022-09-26%20Functions%20Continued%20Again/">
+        Chapter 4: Functions part 2...again
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%206/2022-09-28%20Classes%20Continued/">
+        Chapter 5: Classes
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_10" id="__nav_2_10" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_10">
+          Week 7
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 7" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_10">
+<span class="md-nav__icon md-icon"></span>
+          Week 7
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%207/2022-10-03/">
+        2022 10 03
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_10_2" id="__nav_2_10_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_10_2">
+          Lab 5
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Lab 5" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_10_2">
+<span class="md-nav__icon md-icon"></span>
+          Lab 5
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%207/Lab%205/Lab%205%20Submission/">
+        Lab 5 Submission
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_11" id="__nav_2_11" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_11">
+          Week 9
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 9" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_11">
+<span class="md-nav__icon md-icon"></span>
+          Week 9
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%209/2022-10-17%20Arrays/">
+        Chapter 6: Arrays
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%209/2022-11-07%20Inheritance%20%26%20Polymorphism/">
+        Chapter 8: Inheritance
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%209/2022-11-07%20Reading%2C%20Writing%20Files%3B%20Streams/">
+        2022 11 07 Reading, Writing Files; Streams
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3">
+          JAPN 3900 03
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="JAPN 3900 03" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+          JAPN 3900 03
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../JAPN%203900-03/2022-09-09/">
+        Das Cabinet des Dr. Caligari (The Cabinet of Dr. Caligari) (1920)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../JAPN%203900-03/JAPN%203900-03/">
+        JAPN 3900-03
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" id="__nav_3_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_3">
+          Week 1
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 1" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_3">
+<span class="md-nav__icon md-icon"></span>
+          Week 1
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../JAPN%203900-03/Week%201/2022-08-26%20-%20JPN%20Syllabus%20Overview/">
+        Writing Center
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4">
+          MATH 2210 12
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="MATH 2210 12" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+          MATH 2210 12
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Math%202210-12/">
+        Math 2210 12
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/ZR/">
+        ZR Points
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3" id="__nav_4_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_3">
+          Week 1
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 1" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_3">
+<span class="md-nav__icon md-icon"></span>
+          Week 1
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%201/2022-08-23/">
+        Syllabus
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%201/2022-08-25%20-%20Folded%20Paper/">
+        Yesterday Review
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%201/2022-08-26%20-%20Work%20Together%20Exam/">
+        *1.1* Function And Change
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%201/2210%20Syllabus%20Markdown/">
+        Calculus 1 - Differentiation
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4" id="__nav_4_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_4">
+          Week 2
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 2" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_4">
+<span class="md-nav__icon md-icon"></span>
+          Week 2
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%202/2022-08-30/">
+        Announcements
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%202/2022-09-01/">
+        Section 1.4
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_5" id="__nav_4_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_5">
+          Week 3
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 3" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_5">
+<span class="md-nav__icon md-icon"></span>
+          Week 3
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%203/2022-09-06/">
+        Limits
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%203/2022-09-08/">
+        Section 2.1
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%203/2022-09-09%20-%20Quiz%203/">
+        2022 09 09   Quiz 3
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_6" id="__nav_4_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_6">
+          Week 4
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 4" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_6">
+<span class="md-nav__icon md-icon"></span>
+          Week 4
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%204/2022-09-13/">
+        2022 09 13
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%204/2022-09-15/">
+        $$v=\frac{3}{2}\pi r^{5}b\textrm{ , assume b is a constant}$$
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%204/2022-09-16%20-%20Quiz%204/">
+        Quiz #4     Math 2210-12     James Wibowo
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_7" id="__nav_4_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_7">
+          Week 5
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 5" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_7">
+<span class="md-nav__icon md-icon"></span>
+          Week 5
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%205/Math%202210%20Midterm%201%20Take%20Home/">
+        Math 2210 - 01 Calculus I Midterm 1 Zadock Reid
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%205/Math%202210%20Midterm/">
+        Math 2210 - Calculus 1 Midterm 1 - In Class Z. Reid - James Wibowo
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_8" id="__nav_4_8" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_8">
+          Week 6
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 6" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_8">
+<span class="md-nav__icon md-icon"></span>
+          Week 6
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%206/2022-09-30%20-%20Quiz%206/">
+        Quiz #6     Math 2210-12     James Wibowo
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_9" id="__nav_4_9" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_9">
+          Week 7
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 7" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_9">
+<span class="md-nav__icon md-icon"></span>
+          Week 7
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%207/2022-10-04/">
+        2022 10 04
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5">
+          MATH 2720 04
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="MATH 2720 04" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+          MATH 2720 04
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/MATH%202720-04/">
+        Discrete Mathmatics
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/matrix%20latex%20format/">
+        Matrix latex format
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_3" id="__nav_5_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5_3">
+          Week 1
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 1" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_3">
+<span class="md-nav__icon md-icon"></span>
+          Week 1
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%201/2022-08-23-1/">
+        2022 08 23 1
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%201/2022-08-25%20-%20Statements/">
+        Warm up
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%201/2720%20Syllabus%20Markdown/">
+        MathematicsDepartment
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%201/M1%20Overview%20%26%20Objectives/">
+        [M1 Overview &amp; Objectives](https://csusb.instructure.com/courses/15759/pages/m1-overview-and-objectives?module_item_id=1037400)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%201/Week%201%20Homework/">
+        Module 1: Settling In with Mathematical Statements (Week 1)
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_4" id="__nav_5_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5_4">
+          Week 2
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 2" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_4">
+<span class="md-nav__icon md-icon"></span>
+          Week 2
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%202/2022-08-30-1/">
+        Warmup
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%202/2022-09-01%20WRKSHT2/">
+        2022 09 01 WRKSHT2
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%202/M2%20Overview%20%26%20Objectives/">
+        [M2 Overview &amp; Objectives](https://csusb.instructure.com/courses/15759/modules/items/1037412)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%202/M2%20Wrap%20Up%20and%20Next%20Steps/">
+        [M2 Wrap Up and Next Steps](https://csusb.instructure.com/courses/15759/modules/items/1037424)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%202/Week%202%20Homework/">
+        Module 2: Sets and Functions (Week 2)
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_5" id="__nav_5_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5_5">
+          Week 3
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 3" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_5">
+<span class="md-nav__icon md-icon"></span>
+          Week 3
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%203/2022-09-08%20Hex/">
+        2022 09 08 Hex
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%203/M3%20Overview%20%26%20Objectives/">
+        M3 Overview &amp; Objectives
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%203/M3%20Wrap%20Up%20and%20Next%20Steps/">
+        M3 Wrap Up and Next Steps
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%203/Week%203%20Homework/">
+        Module 3: Functions and Additive/Multiplicative Principles (Week 3)
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_6" id="__nav_5_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5_6">
+          Week 4
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 4" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_6">
+<span class="md-nav__icon md-icon"></span>
+          Week 4
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%204/2022-09-13%20Worksheet/">
+        2022 09 13 Worksheet
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%204/M4%20Overview%20%26%20Objectives/">
+        M4 Overview &amp; Objectives
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%204/M4%20Wrap%20Up%20and%20Next%20Steps/">
+        M4 Wrap Up and Next Steps
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%204/Week%204%20Homework/">
+        Module 4: Binomial Coefficients (Week 4)
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_7" id="__nav_5_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5_7">
+          Week 5
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 5" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_7">
+<span class="md-nav__icon md-icon"></span>
+          Week 5
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%205/M5%20Overview%20%26%20Objectives/">
+        M5 Overview &amp; Objectives
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%205/M5%20Wrap%20Up%20and%20Next%20Steps/">
+        M5 Wrap Up and Next Steps
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%205/Week%205%20Homework/">
+        Module 5: Combinations, Permutations, and Stars and Bars (Week 5)
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_8" id="__nav_5_8" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5_8">
+          Week 6
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 6" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_8">
+<span class="md-nav__icon md-icon"></span>
+          Week 6
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%206/M6%20Overview%20%26%20Objectives/">
+        M6 Overview &amp; Objectives
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%206/M6%20Wrap%20Up%20and%20Next%20Steps/">
+        M6 Wrap Up and Next Steps
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%206/Week%206%20Homework/">
+        Module 6: Introduction to Sequences and Arithmetic/Geometric Sequences (Week 6)
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cse-2010">
+    CSE 2010
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#week-9">
+    Week 9
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-is-an-algorithm">
+    What is an algorithm?
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#algorithms">
+    Algorithms
+  </a>
+<nav aria-label="Algorithms" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#we-use-algorithms-in-everyday-life-without-even-thinking-about-it">
+    ● We use algorithms in everyday life, without even thinking about it.
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#for-example-lets-say-you-have-to-do-laundry-one-load-of-laundry-needs-to-go">
+    ● For example, let’s say you have to do laundry. One load of laundry needs to go
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#in-the-washer-30-minutes-and-dryer-30-minutes">
+    in the washer (30 minutes), and dryer (30 minutes).
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#given-5-loads-of-laundry-we-can-take-two-different-approaches">
+    ● Given 5 loads of laundry, we can take two different approaches:
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#both-approaches-take-care-of-the-laundry-problem-but-one-is-obviously-faster">
+    ● Both approaches take care of the laundry problem, but one is obviously faster
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#than-the-other">
+    than the other.
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#search-algorithms">
+    Search Algorithms
+  </a>
+<nav aria-label="Search Algorithms" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#search-algorithms-are-used-to-search-for-a-given-value-in-a-container-of">
+    ● Search algorithms are used to search for a given value in a container of
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#elements-array-vector-other-data-structures">
+    elements (array, vector, other data structures).
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#for-instance-we-may-want-to-know-whether-or-not-a-specific-value-is">
+    ● For instance, we may want to know whether or not a specific value is
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#stored-in-the-container-or-how-many-times-a-specific-value-appears-in-a">
+    stored in the container, or how many times a specific value appears in a
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#container">
+    container.
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#for-this-class-we-will-examine-two-basic-search-algorithms-which-you-will">
+    ● For this class, we will examine two basic search algorithms (which you will
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#see-later-on-in-your-cse-journey">
+    see later on in your CSE journey):
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#linear-search">
+    Linear Search
+  </a>
+<nav aria-label="Linear Search" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#given-a-container-that-stores-an-indexed-sequence-of-n-elements-we">
+    ● Given a container that stores an indexed sequence of n elements, we
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#want-to-search-for-a-value-x-by-starting-from-the-first-element-and">
+    want to search for a value, x, by starting from the first element, and
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#sequentially-checking-every-element-until-one-of-the-following-happens">
+    sequentially checking every element until one of the following happens:
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-are-some-real-life-applications-of-this">
+    ● What are some real life applications of this....
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#linear-search-algorithm-steps">
+    Linear Search Algorithm Steps
+  </a>
+<nav aria-label="Linear Search Algorithm Steps" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1-start-from-the-first-element-index-0">
+    1. Start from the first element (index 0).
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#2-compare-that-element-to-x">
+    2. Compare that element to x
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#3-move-to-the-next-element-and-repeat-step-2">
+    3. Move to the next element, and repeat Step 2.
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#4-if-youve-reached-the-end-of-the-container-and-have-not-found-x-then-we">
+    4. If you’ve reached the end of the container and have not found x, then we
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#know-for-certain-that-x-is-not-in-the-container">
+    know for certain that x is not in the container.
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#lets-take-a-closer-look-at-an-example">
+    Let’s take a closer look at an example....
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#linear-search-summary">
+    Linear Search Summary
+  </a>
+<nav aria-label="Linear Search Summary" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#given-a-container-of-n-elements">
+    ● Given a container of n elements:
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#time-complexity-takes-into-consideration-the-best-worse-and-average-case-of">
+    ● Time complexity takes into consideration the best, worse, and average case of
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#linear-search-so-for-reasons-that-some-of-you-will-learn-in-cse-4310-the-time">
+    linear search, so for reasons that some of you will learn in CSE 4310, the time
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#complexity-of-linear-search-is-on">
+    complexity of linear search is O(n).
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#pros">
+    ● Pros:
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cons">
+    ● Cons:
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#binary-search">
+    Binary Search
+  </a>
+<nav aria-label="Binary Search" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#given-a-sorted-container-that-stores-an-indexed-sequence-of-n">
+    ● Given a SORTED container that stores an indexed sequence of n
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#elements-we-want-to-search-for-a-value-x-by-repeatedly-dividing-the">
+    elements, we want to search for a value, x, by repeatedly dividing the
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#search-interval-in-half">
+    search interval in half.
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-are-some-real-life-applications-of-this_1">
+    ● What are some real life applications of this....
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#binary-search-algorithm-steps">
+    Binary Search Algorithm Steps
+  </a>
+<nav aria-label="Binary Search Algorithm Steps" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1-set-your-first-search-interval-low-index-0-high-index-n-">
+    1. Set your first search interval: low index = 0, high index = n-
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#2-the-first-element-to-check-is-the-middle-element-which-is-lowhigh">
+    2. The first element to check is the middle element which is (low+high)/
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#3-compare-the-mid-element-to-x">
+    3. Compare the mid element to x
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#4-set-new-mid-lowhigh2-and-repeat-step-3">
+    4. Set new mid, (low+high)/2, and repeat Step 3.
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#5-if-there-is-no-more-search-interval-and-you-still-have-not-found-x-we-know">
+    5. If there is no more search interval and you still have not found x, we know
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#for-certain-x-is-not-in-the-container">
+    for certain x is not in the container.
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#lets-take-a-closer-look-at-an-example_1">
+    Let’s take a closer look at an example....
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#binary-search-summary">
+    Binary Search Summary
+  </a>
+<nav aria-label="Binary Search Summary" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#given-a-container-of-n-elements_1">
+    ● Given a container of n elements:
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#the-time-complexity-of-binary-search-is-olog-2-n">
+    ● The time complexity of binary search is O(log 2 n).
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#pros_1">
+    ● Pros:
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cons_1">
+    ● Cons:
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#linear-vs-binary-search-examples">
+    Linear vs Binary Search Examples
+  </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="chapter-6-algorithms">Chapter 6: Algorithms<a class="headerlink" href="#chapter-6-algorithms" title="Permanent link">¶</a></h1>
+<h3 id="cse-2010">CSE 2010<a class="headerlink" href="#cse-2010" title="Permanent link">¶</a></h3>
+<h3 id="week-9">Week 9<a class="headerlink" href="#week-9" title="Permanent link">¶</a></h3>
+<h3 id="what-is-an-algorithm">What is an algorithm?<a class="headerlink" href="#what-is-an-algorithm" title="Permanent link">¶</a></h3>
+<pre><code>● Given a problem, an algorithm is a specific
+procedure for solving that problem.
+● The development of efficient algorithms is
+essential to all areas of computer science (artificial
+intelligence, security, networking, operating
+systems, etc), and even other fields such as
+physics and math (root-finding algorithms, definite
+integral estimation algorithms, etc).
+● We can develop many algorithms to solve one
+problem, but they will vary in efficiency and
+complexity.
+● In computer science, we care about time
+complexity (how long it takes to run the
+algorithm), and we usually use Big-O notation to
+represent this.
+</code></pre>
+<h2 id="algorithms">Algorithms<a class="headerlink" href="#algorithms" title="Permanent link">¶</a></h2>
+<h5 id="we-use-algorithms-in-everyday-life-without-even-thinking-about-it">● We use algorithms in everyday life, without even thinking about it.<a class="headerlink" href="#we-use-algorithms-in-everyday-life-without-even-thinking-about-it" title="Permanent link">¶</a></h5>
+<h5 id="for-example-lets-say-you-have-to-do-laundry-one-load-of-laundry-needs-to-go">● For example, let’s say you have to do laundry. One load of laundry needs to go<a class="headerlink" href="#for-example-lets-say-you-have-to-do-laundry-one-load-of-laundry-needs-to-go" title="Permanent link">¶</a></h5>
+<h5 id="in-the-washer-30-minutes-and-dryer-30-minutes">in the washer (30 minutes), and dryer (30 minutes).<a class="headerlink" href="#in-the-washer-30-minutes-and-dryer-30-minutes" title="Permanent link">¶</a></h5>
+<h5 id="given-5-loads-of-laundry-we-can-take-two-different-approaches">● Given 5 loads of laundry, we can take two different approaches:<a class="headerlink" href="#given-5-loads-of-laundry-we-can-take-two-different-approaches" title="Permanent link">¶</a></h5>
+<pre><code>○ Algorithm 1: Completing one load before moving on to the next
+■ Put load in the washer. Once complete, put it in the dryer. Once the dryer is complete, load
+the second load into the washer. Repeat until all laundry is done.
+● Approximately 5 hours.
+○ Algorithm 2: Overlapping of loads
+■ Put load in the washer. Once complete, put it in the dryer and also put the second load into
+the washer. Repeat until all laundry is done.
+● Approximately 3 hours.
+</code></pre>
+<h5 id="both-approaches-take-care-of-the-laundry-problem-but-one-is-obviously-faster">● Both approaches take care of the laundry problem, but one is obviously faster<a class="headerlink" href="#both-approaches-take-care-of-the-laundry-problem-but-one-is-obviously-faster" title="Permanent link">¶</a></h5>
+<h5 id="than-the-other">than the other.<a class="headerlink" href="#than-the-other" title="Permanent link">¶</a></h5>
+<h2 id="search-algorithms">Search Algorithms<a class="headerlink" href="#search-algorithms" title="Permanent link">¶</a></h2>
+<h4 id="search-algorithms-are-used-to-search-for-a-given-value-in-a-container-of">● Search algorithms are used to search for a given value in a container of<a class="headerlink" href="#search-algorithms-are-used-to-search-for-a-given-value-in-a-container-of" title="Permanent link">¶</a></h4>
+<h4 id="elements-array-vector-other-data-structures">elements (array, vector, other data structures).<a class="headerlink" href="#elements-array-vector-other-data-structures" title="Permanent link">¶</a></h4>
+<h4 id="for-instance-we-may-want-to-know-whether-or-not-a-specific-value-is">● For instance, we may want to know whether or not a specific value is<a class="headerlink" href="#for-instance-we-may-want-to-know-whether-or-not-a-specific-value-is" title="Permanent link">¶</a></h4>
+<h4 id="stored-in-the-container-or-how-many-times-a-specific-value-appears-in-a">stored in the container, or how many times a specific value appears in a<a class="headerlink" href="#stored-in-the-container-or-how-many-times-a-specific-value-appears-in-a" title="Permanent link">¶</a></h4>
+<h4 id="container">container.<a class="headerlink" href="#container" title="Permanent link">¶</a></h4>
+<h4 id="for-this-class-we-will-examine-two-basic-search-algorithms-which-you-will">● For this class, we will examine two basic search algorithms (which you will<a class="headerlink" href="#for-this-class-we-will-examine-two-basic-search-algorithms-which-you-will" title="Permanent link">¶</a></h4>
+<h4 id="see-later-on-in-your-cse-journey">see later on in your CSE journey):<a class="headerlink" href="#see-later-on-in-your-cse-journey" title="Permanent link">¶</a></h4>
+<pre><code>○ Linear Search
+○ Binary Search
+</code></pre>
+<h2 id="linear-search">Linear Search<a class="headerlink" href="#linear-search" title="Permanent link">¶</a></h2>
+<h4 id="given-a-container-that-stores-an-indexed-sequence-of-n-elements-we">● Given a container that stores an indexed sequence of n elements, we<a class="headerlink" href="#given-a-container-that-stores-an-indexed-sequence-of-n-elements-we" title="Permanent link">¶</a></h4>
+<h4 id="want-to-search-for-a-value-x-by-starting-from-the-first-element-and">want to search for a value, x, by starting from the first element, and<a class="headerlink" href="#want-to-search-for-a-value-x-by-starting-from-the-first-element-and" title="Permanent link">¶</a></h4>
+<h4 id="sequentially-checking-every-element-until-one-of-the-following-happens">sequentially checking every element until one of the following happens:<a class="headerlink" href="#sequentially-checking-every-element-until-one-of-the-following-happens" title="Permanent link">¶</a></h4>
+<pre><code>○ We find x
+○ We check every element in the container and we don’t find x
+</code></pre>
+<h4 id="what-are-some-real-life-applications-of-this">● What are some real life applications of this....<a class="headerlink" href="#what-are-some-real-life-applications-of-this" title="Permanent link">¶</a></h4>
+<h2 id="linear-search-algorithm-steps">Linear Search Algorithm Steps<a class="headerlink" href="#linear-search-algorithm-steps" title="Permanent link">¶</a></h2>
+<h4 id="1-start-from-the-first-element-index-0">1. Start from the first element (index 0).<a class="headerlink" href="#1-start-from-the-first-element-index-0" title="Permanent link">¶</a></h4>
+<h4 id="2-compare-that-element-to-x">2. Compare that element to x<a class="headerlink" href="#2-compare-that-element-to-x" title="Permanent link">¶</a></h4>
+<pre><code>a. If element == x, then you found it! You can stop here.
+b. If element != x, AND there are still more elements to check go to to Step 3.
+c. If element != x, AND there are no more elements to check, go to Step 4.
+</code></pre>
+<h4 id="3-move-to-the-next-element-and-repeat-step-2">3. Move to the next element, and repeat Step 2.<a class="headerlink" href="#3-move-to-the-next-element-and-repeat-step-2" title="Permanent link">¶</a></h4>
+<h4 id="4-if-youve-reached-the-end-of-the-container-and-have-not-found-x-then-we">4. If you’ve reached the end of the container and have not found x, then we<a class="headerlink" href="#4-if-youve-reached-the-end-of-the-container-and-have-not-found-x-then-we" title="Permanent link">¶</a></h4>
+<h4 id="know-for-certain-that-x-is-not-in-the-container">know for certain that x is not in the container.<a class="headerlink" href="#know-for-certain-that-x-is-not-in-the-container" title="Permanent link">¶</a></h4>
+<h4 id="lets-take-a-closer-look-at-an-example">Let’s take a closer look at an example....<a class="headerlink" href="#lets-take-a-closer-look-at-an-example" title="Permanent link">¶</a></h4>
+<h2 id="linear-search-summary">Linear Search Summary<a class="headerlink" href="#linear-search-summary" title="Permanent link">¶</a></h2>
+<h5 id="given-a-container-of-n-elements">● Given a container of n elements:<a class="headerlink" href="#given-a-container-of-n-elements" title="Permanent link">¶</a></h5>
+<pre><code>○ The least # of checks that we would have to use with linear search is 1, in the case that the first
+element is the element we are searching for.
+○ The most # of checks that we would have to use with linear search is n, in the cases where the
+value we are searching for is not in the container OR it is the last element.
+</code></pre>
+<h5 id="time-complexity-takes-into-consideration-the-best-worse-and-average-case-of">● Time complexity takes into consideration the best, worse, and average case of<a class="headerlink" href="#time-complexity-takes-into-consideration-the-best-worse-and-average-case-of" title="Permanent link">¶</a></h5>
+<h5 id="linear-search-so-for-reasons-that-some-of-you-will-learn-in-cse-4310-the-time">linear search, so for reasons that some of you will learn in CSE 4310, the time<a class="headerlink" href="#linear-search-so-for-reasons-that-some-of-you-will-learn-in-cse-4310-the-time" title="Permanent link">¶</a></h5>
+<h5 id="complexity-of-linear-search-is-on">complexity of linear search is O(n).<a class="headerlink" href="#complexity-of-linear-search-is-on" title="Permanent link">¶</a></h5>
+<h5 id="pros">● Pros:<a class="headerlink" href="#pros" title="Permanent link">¶</a></h5>
+<pre><code>○ Easy to understand and implement
+○ Can be applied on an unsorted container
+</code></pre>
+<h5 id="cons">● Cons:<a class="headerlink" href="#cons" title="Permanent link">¶</a></h5>
+<pre><code>○ Not very efficient at all.
+○ If n is large enough, linear search would take forever.
+</code></pre>
+<h2 id="binary-search">Binary Search<a class="headerlink" href="#binary-search" title="Permanent link">¶</a></h2>
+<h4 id="given-a-sorted-container-that-stores-an-indexed-sequence-of-n">● Given a SORTED container that stores an indexed sequence of n<a class="headerlink" href="#given-a-sorted-container-that-stores-an-indexed-sequence-of-n" title="Permanent link">¶</a></h4>
+<h4 id="elements-we-want-to-search-for-a-value-x-by-repeatedly-dividing-the">elements, we want to search for a value, x, by repeatedly dividing the<a class="headerlink" href="#elements-we-want-to-search-for-a-value-x-by-repeatedly-dividing-the" title="Permanent link">¶</a></h4>
+<h4 id="search-interval-in-half">search interval in half.<a class="headerlink" href="#search-interval-in-half" title="Permanent link">¶</a></h4>
+<pre><code>○ The first search interval is the entire container (index 0 → n-1).
+○ We first check the middle element.
+■ If the middle element is equal to x, woohoo, we found it!
+■ If the middle element is greater than x, then we change the search interval to the
+first half of the container.
+■ If the middle element is less than x, then we change the search interval to the
+second half of the container.
+○ We repeat his until:
+■ We find x
+■ There is no longer anywhere left to search and we don’t find x
+</code></pre>
+<h4 id="what-are-some-real-life-applications-of-this_1">● What are some real life applications of this....<a class="headerlink" href="#what-are-some-real-life-applications-of-this_1" title="Permanent link">¶</a></h4>
+<h2 id="binary-search-algorithm-steps">Binary Search Algorithm Steps<a class="headerlink" href="#binary-search-algorithm-steps" title="Permanent link">¶</a></h2>
+<h4 id="1-set-your-first-search-interval-low-index-0-high-index-n-">1. Set your first search interval: low index = 0, high index = n-<a class="headerlink" href="#1-set-your-first-search-interval-low-index-0-high-index-n-" title="Permanent link">¶</a></h4>
+<h4 id="2-the-first-element-to-check-is-the-middle-element-which-is-lowhigh">2. The first element to check is the middle element which is (low+high)/<a class="headerlink" href="#2-the-first-element-to-check-is-the-middle-element-which-is-lowhigh" title="Permanent link">¶</a></h4>
+<h4 id="3-compare-the-mid-element-to-x">3. Compare the mid element to x<a class="headerlink" href="#3-compare-the-mid-element-to-x" title="Permanent link">¶</a></h4>
+<pre><code>a. If mid element == x, then you found it! You can stop here.
+b. If mid element != x and there is still a search interval
+i. If the mid element is greater than x, then high = mid - 1, and go to step 4.
+ii. If the mid element is less than x, then lo = mid + 1, and go to step 4.
+c. If mid element !=x and there is no more search interval, go to step 5.
+</code></pre>
+<h4 id="4-set-new-mid-lowhigh2-and-repeat-step-3">4. Set new mid, (low+high)/2, and repeat Step 3.<a class="headerlink" href="#4-set-new-mid-lowhigh2-and-repeat-step-3" title="Permanent link">¶</a></h4>
+<h4 id="5-if-there-is-no-more-search-interval-and-you-still-have-not-found-x-we-know">5. If there is no more search interval and you still have not found x, we know<a class="headerlink" href="#5-if-there-is-no-more-search-interval-and-you-still-have-not-found-x-we-know" title="Permanent link">¶</a></h4>
+<h4 id="for-certain-x-is-not-in-the-container">for certain x is not in the container.<a class="headerlink" href="#for-certain-x-is-not-in-the-container" title="Permanent link">¶</a></h4>
+<h4 id="lets-take-a-closer-look-at-an-example_1">Let’s take a closer look at an example....<a class="headerlink" href="#lets-take-a-closer-look-at-an-example_1" title="Permanent link">¶</a></h4>
+<h2 id="binary-search-summary">Binary Search Summary<a class="headerlink" href="#binary-search-summary" title="Permanent link">¶</a></h2>
+<h4 id="given-a-container-of-n-elements_1">● Given a container of n elements:<a class="headerlink" href="#given-a-container-of-n-elements_1" title="Permanent link">¶</a></h4>
+<pre><code>○ The least # of checks that we would have to use with binary search is 1, in the case that
+the first middle element is the element we are searching for.
+○ The most # of checks that we would have to use with linear search is log 2 (n), in the cases
+where the value we are searching for is not in the container or in the last search interval.
+</code></pre>
+<h4 id="the-time-complexity-of-binary-search-is-olog-2-n">● The time complexity of binary search is O(log 2 n).<a class="headerlink" href="#the-time-complexity-of-binary-search-is-olog-2-n" title="Permanent link">¶</a></h4>
+<h4 id="pros_1">● Pros:<a class="headerlink" href="#pros_1" title="Permanent link">¶</a></h4>
+<pre><code>○ MUCH faster than Linear Search
+○ Potential for recursion (we will see in Chapter 10)
+</code></pre>
+<h4 id="cons_1">● Cons:<a class="headerlink" href="#cons_1" title="Permanent link">¶</a></h4>
+<pre><code>○ Has the precondition of needing to be sorted
+</code></pre>
+<h2 id="linear-vs-binary-search-examples">Linear vs Binary Search Examples<a class="headerlink" href="#linear-vs-binary-search-examples" title="Permanent link">¶</a></h2>
+<pre><code>Number of elements (n) Maximum Number of Comparisons / Checks
+</code></pre>
+<pre><code>Linear Search Binary Search
+</code></pre>
+<p><strong>100,000</strong> (^) 100,000 16
+<strong>200,000</strong> (^) 200,000 17
+<strong>400,000</strong> (^) 400,000 18
+<strong>800,000</strong> (^) 800,000 19
+<strong>1,600,000</strong> (^) 1,600,000 20</p>
+<p><img alt="Chapter 6 Algorithms.pdf" src="../Chapter%206%20Algorithms.pdf"/></p>
+</article>
+</div>
+</div>
+</main>
+<footer class="md-footer">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Previous: CSE 2010-12" class="md-footer__link md-footer__link--prev" href="../../CSE%202010-12/" rel="prev">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</div>
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Previous
+              </span>
+              CSE 2010-12
+            </div>
+</div>
+</a>
+<a aria-label="Next: Chapter 6: Arrays" class="md-footer__link md-footer__link--next" href="../arrays/" rel="next">
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Next
+              </span>
+              Chapter 6: Arrays
+            </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+<script src="../../../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
+<script src="../../../javascripts/mathjax.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</body>
+</html>

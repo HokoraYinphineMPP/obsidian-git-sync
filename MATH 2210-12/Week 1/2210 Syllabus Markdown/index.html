@@ -1,0 +1,2257 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="../../../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.4.2, mkdocs-material-8.5.10" name="generator"/>
+<title>Calculus 1 - Differentiation - Hokora Yinphine</title>
+<link href="../../../assets/stylesheets/main.975780f9.min.css" rel="stylesheet"/>
+<link href="../../../assets/stylesheets/palette.2505c338.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="indigo" data-md-color-primary="blue" data-md-color-scheme="default" dir="ltr">
+<script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#calculus-1-differentiation">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="Hokora Yinphine" class="md-header__button md-logo" data-md-component="logo" href="../../.." title="Hokora Yinphine">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            Hokora Yinphine
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Calculus 1 - Differentiation
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="indigo" data-md-color-media="(prefers-color-scheme: light)" data-md-color-primary="blue" data-md-color-scheme="default" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"></path></svg>
+</label>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="pink" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="blue" data-md-color-scheme="slate" id="__palette_2" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"></path></svg>
+</label>
+</form>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="Hokora Yinphine" class="md-nav__button md-logo" data-md-component="logo" href="../../.." title="Hokora Yinphine">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+    Hokora Yinphine
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../..">
+        Hey!
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2">
+          CSE 2010 12(83648)
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="CSE 2010 12(83648)" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+          CSE 2010 12(83648)
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../CSE%202010-12%2883648%29/CSE%202010-12/">
+        CSE 2010-12
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" id="__nav_2_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_2">
+          PDF Dump
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="PDF Dump" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_2">
+<span class="md-nav__icon md-icon"></span>
+          PDF Dump
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../CSE%202010-12%2883648%29/PDF%20Dump/algorithms/">
+        Chapter 6: Algorithms
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../CSE%202010-12%2883648%29/PDF%20Dump/arrays/">
+        Chapter 6: Arrays
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../CSE%202010-12%2883648%29/PDF%20Dump/inheritance/">
+        Chapter 8: Inheritance
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../CSE%202010-12%2883648%29/PDF%20Dump/intro%20to%20recursion/">
+        Chapter 10: Intro to Recursion
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../CSE%202010-12%2883648%29/PDF%20Dump/pointers%201/">
+        Chapter 7 - Pointers
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../CSE%202010-12%2883648%29/PDF%20Dump/pointers%202/">
+        Chapter 7 - Pointers 2
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../CSE%202010-12%2883648%29/PDF%20Dump/polymorphism/">
+        Chapter 8: Polymorphism
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../CSE%202010-12%2883648%29/PDF%20Dump/recursion/">
+        Chapter 10: Recursion
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../CSE%202010-12%2883648%29/PDF%20Dump/streams/">
+        Chapter 9: Streams
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../CSE%202010-12%2883648%29/PDF%20Dump/string%20streams/">
+        Chapter 9: String Streams
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../CSE%202010-12%2883648%29/PDF%20Dump/templates%201/">
+        Chapter 16: Templates
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../CSE%202010-12%2883648%29/PDF%20Dump/templates%202/">
+        Templates part 2
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../CSE%202010-12%2883648%29/PDF%20Dump/vectors/">
+        Chapter 6: Vectors
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" id="__nav_2_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_3">
+          Week 1
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 1" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_3">
+<span class="md-nav__icon md-icon"></span>
+          Week 1
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../CSE%202010-12%2883648%29/Week%201/2022-08-22%20-%20Syllabus%20Overview/">
+        will be coding in C++
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../CSE%202010-12%2883648%29/Week%201/2022-08-24%20-%20C%2B%2B%20Overview/">
+        2022 08 24   C++ Overview
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3_3" id="__nav_2_3_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_3_3">
+          Lab1
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Lab1" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_3_3">
+<span class="md-nav__icon md-icon"></span>
+          Lab1
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../CSE%202010-12%2883648%29/Week%201/Lab1/Lab%201%20Submission/">
+        Part A
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../CSE%202010-12%2883648%29/Week%201/Lab1/Lab%201-A/">
+        Lab 1 A
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../CSE%202010-12%2883648%29/Week%201/Lab1/Lab%201-B/">
+        Lab 1 B
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" id="__nav_2_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_4">
+          Week 11
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 11" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_4">
+<span class="md-nav__icon md-icon"></span>
+          Week 11
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4_1" id="__nav_2_4_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_4_1">
+          Lab 7
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Lab 7" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_4_1">
+<span class="md-nav__icon md-icon"></span>
+          Lab 7
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../CSE%202010-12%2883648%29/Week%2011/Lab%207/Lab%207%20-%20Pointers/">
+        Lab 7 Pointers (15 points total)
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_5" id="__nav_2_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_5">
+          Week 2
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 2" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_5">
+<span class="md-nav__icon md-icon"></span>
+          Week 2
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../CSE%202010-12%2883648%29/Week%202/2022-08-23%20-%20C%2B%2B%20Ch%202%20Numerical%20data%20types/">
+        Chapter 2: Numerical Data Types
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../CSE%202010-12%2883648%29/Week%202/2022-08-31%20-%20C%2B%2B%20Fundamental%20Data%20Types%2C%20Variables%2C%20Strings/">
+        Week 2 (August 29, 31): Fundamental Data Types, Variables, Strings
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../CSE%202010-12%2883648%29/Week%202/Week%202.1%20Numerical%20Data%20Types%20and%20Variables/">
+        PDF
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../CSE%202010-12%2883648%29/Week%202/Week%202.2%20Predefined%20Libraries%20and%20Functions/">
+        PDF
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_5_5" id="__nav_2_5_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_5_5">
+          Lab2
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Lab2" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_5_5">
+<span class="md-nav__icon md-icon"></span>
+          Lab2
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../CSE%202010-12%2883648%29/Week%202/Lab2/Lab%202%20PDF%20Markdown/">
+        CSE 2010 Fall 2022
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../CSE%202010-12%2883648%29/Week%202/Lab2/Lab%202%20Submission/">
+        Lab 2
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_6" id="__nav_2_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_6">
+          Week 3
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 3" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_6">
+<span class="md-nav__icon md-icon"></span>
+          Week 3
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../CSE%202010-12%2883648%29/Week%203/2022-09-07%20-%20C%2B%2B%20Control%20Flow%20with%20if-else%20statements/">
+        Chapter 3: Control Flow: if-else, relational operators, boolean operators
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_7" id="__nav_2_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_7">
+          Week 4
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 4" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_7">
+<span class="md-nav__icon md-icon"></span>
+          Week 4
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../CSE%202010-12%2883648%29/Week%204/2022-09-14%20Loops/">
+        Chapter 3: Loops, loops, and more loops
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../CSE%202010-12%2883648%29/Week%204/For%20Exercise%203%20Using%20rand/">
+        Using the rand() Function to Generate Random Numbers
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_7_3" id="__nav_2_7_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_7_3">
+          Lab 3
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Lab 3" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_7_3">
+<span class="md-nav__icon md-icon"></span>
+          Lab 3
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../CSE%202010-12%2883648%29/Week%204/Lab%203/Lab%203%20Submission/">
+        Lab 03: Control Flow with if-else and Loops (Due **9/26** BEFORE lecture)
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_8" id="__nav_2_8" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_8">
+          Week 5
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 5" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_8">
+<span class="md-nav__icon md-icon"></span>
+          Week 5
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../CSE%202010-12%2883648%29/Week%205/2022-09-19%20Functions/">
+        Chapter 4: Functions
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../CSE%202010-12%2883648%29/Week%205/2022-09-19%20Loops%20Continued/">
+        Chapter 3: Loops Continued
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../CSE%202010-12%2883648%29/Week%205/2022-09-21%20Functions%20Continued/">
+        Chapter 4: Functions part 2
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_8_4" id="__nav_2_8_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_8_4">
+          Lab 4
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Lab 4" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_8_4">
+<span class="md-nav__icon md-icon"></span>
+          Lab 4
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../CSE%202010-12%2883648%29/Week%205/Lab%204/Lab%204%20Submission/">
+        Lab 4 Submission
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_9" id="__nav_2_9" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_9">
+          Week 6
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 6" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_9">
+<span class="md-nav__icon md-icon"></span>
+          Week 6
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../CSE%202010-12%2883648%29/Week%206/2022-09-26%20Classes/">
+        Chapter 5: Classes
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../CSE%202010-12%2883648%29/Week%206/2022-09-26%20Functions%20Continued%20Again/">
+        Chapter 4: Functions part 2...again
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../CSE%202010-12%2883648%29/Week%206/2022-09-28%20Classes%20Continued/">
+        Chapter 5: Classes
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_10" id="__nav_2_10" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_10">
+          Week 7
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 7" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_10">
+<span class="md-nav__icon md-icon"></span>
+          Week 7
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../CSE%202010-12%2883648%29/Week%207/2022-10-03/">
+        2022 10 03
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_10_2" id="__nav_2_10_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_10_2">
+          Lab 5
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Lab 5" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_10_2">
+<span class="md-nav__icon md-icon"></span>
+          Lab 5
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../CSE%202010-12%2883648%29/Week%207/Lab%205/Lab%205%20Submission/">
+        Lab 5 Submission
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_11" id="__nav_2_11" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_11">
+          Week 9
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 9" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_11">
+<span class="md-nav__icon md-icon"></span>
+          Week 9
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../CSE%202010-12%2883648%29/Week%209/2022-10-17%20Arrays/">
+        Chapter 6: Arrays
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../CSE%202010-12%2883648%29/Week%209/2022-11-07%20Inheritance%20%26%20Polymorphism/">
+        Chapter 8: Inheritance
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../CSE%202010-12%2883648%29/Week%209/2022-11-07%20Reading%2C%20Writing%20Files%3B%20Streams/">
+        2022 11 07 Reading, Writing Files; Streams
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3">
+          JAPN 3900 03
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="JAPN 3900 03" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+          JAPN 3900 03
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../JAPN%203900-03/2022-09-09/">
+        Das Cabinet des Dr. Caligari (The Cabinet of Dr. Caligari) (1920)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../JAPN%203900-03/JAPN%203900-03/">
+        JAPN 3900-03
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" id="__nav_3_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_3">
+          Week 1
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 1" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_3">
+<span class="md-nav__icon md-icon"></span>
+          Week 1
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../JAPN%203900-03/Week%201/2022-08-26%20-%20JPN%20Syllabus%20Overview/">
+        Writing Center
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4">
+          MATH 2210 12
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="MATH 2210 12" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+          MATH 2210 12
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Math%202210-12/">
+        Math 2210 12
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../ZR/">
+        ZR Points
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3" id="__nav_4_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_3">
+          Week 1
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 1" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_3">
+<span class="md-nav__icon md-icon"></span>
+          Week 1
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../2022-08-23/">
+        Syllabus
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../2022-08-25%20-%20Folded%20Paper/">
+        Yesterday Review
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../2022-08-26%20-%20Work%20Together%20Exam/">
+        *1.1* Function And Change
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          Calculus 1 - Differentiation
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+        Calculus 1 - Differentiation
+      </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#math-2210-section-12-fall-2022-syllabus">
+    Math 2210, Section 12, Fall 2022 Syllabus
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#welcome-to-calculus-1-differentiation">
+    Welcome to Calculus 1 - Differentiation!
+  </a>
+<nav aria-label="Welcome to Calculus 1 - Differentiation!" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#this-course-develops-differentiation-of-functions-in-one-variable-with-an-emphasis-on-conceptual">
+    This course develops differentiation of functions in one variable with an emphasis on conceptual
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#understanding-problem-solving-multidisciplinary-applications-and-use-of-technology-activities">
+    understanding, problem solving, multidisciplinary applications, and use of technology. Activities
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#will-be-centered-around-opportunities-for-us-to-practice-explaining-visualizing-justifying">
+    will be centered around opportunities for us to practice explaining, visualizing, justifying,
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#computing-modeling-and-interpreting-we-will-explore-problems-that-cover-diverse-applications">
+    computing, modeling, and interpreting. We will explore problems that cover diverse applications
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#such-as-motion-and-speed-of-objects-linear-dimensions-and-volume-sale-prices-and-investment">
+    such as motion and speed of objects, linear dimensions and volume, sale prices and investment
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#growth-population-growth-daily-temperature-and-more">
+    growth, population growth, daily temperature, and more.
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#course-information">
+    Course Information
+  </a>
+<nav aria-label="Course Information" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#communication">
+    Communication
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#canvas">
+    ● Canvas.
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#email">
+    Email.
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#prerequisites">
+    Prerequisites
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#course-content-overview">
+    Course Content Overview
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#course-goalsobjectives-and-student-learning-objectivesoutcomes">
+    Course Goals/Objectives and Student Learning Objectives/Outcomes
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#textbook">
+    Textbook
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#your-responsibilities">
+    Your responsibilities
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-constitutes-class-participation">
+    What constitutes “class participation”?
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#how-much-time-should-i-expect-to-spend-on-this-class">
+    How much time should I expect to spend on this class?
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#extra-help">
+    Extra Help
+  </a>
+<nav aria-label="Extra Help" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#i-love-talking-about-math-and-i-am-more-than-happy-to-help-you-develop-your-full-potential-please-feel-free-to-ask-questions-during-before-or-after-class-every-question-is-a-good-question-i-am-also-available-through-email-and-i-have-office-hours-by-appointment-working-with-peers-can-both-help-clear-up-any-possible-confusion-and-provide-perspectives-that-may-help-you-see-connections-and-deepen-your-understanding-of-the-content-here-are-some-ways-in-which-you-are-encouraged-to-support-your-studies">
+    I love talking about math, and I am more than happy to help you develop your full potential. Please feel free to ask questions during, before, or after class. Every question is a good question! I am also available through email and I have office hours by appointment. Working with peers can both help clear up any possible confusion and provide perspectives that may help you see connections and deepen your understanding of the content. Here are some ways in which you are encouraged to support your studies:
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#commitments-to-inclusion-equity-and-social-justice">
+    Commitments to Inclusion, Equity, and Social Justice
+  </a>
+<nav aria-label="Commitments to Inclusion, Equity, and Social Justice" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#csusb-aspires-to-be-a-model-for-transforming-lives-this-is-manifest-in-our-core-values-throughout-the-syllabus-you-will-read-a-number-of-comments-regarding-creating-a-positive-and-productive-class-culture-these-are-meant-to-support-our-values-of-inclusion-we-affirm-and-are-committed-to-the-value-of-all-kinds-of-differences-among-students-faculty-and-staff-inclusivity-that-is-broad-and-deep-makes-us-a-healthier-and-more-productive-organization-and-builds-a-culture-that-fosters-engagement-and-diverse-perspectives-and-equity-and-social-justice-we-believe-in-affirm-and-are-committed-to-the-equal-value-and-dignity-of-all-people-fairness-and-equity-are-more-than-equality-we-actively-seek-to-eliminate-barriers-for-those-who-are-disadvantaged-and-disempowered-so-they-may-participate-fully-in-university-life">
+    CSUSB aspires to be a model for transforming lives. This is manifest in our Core Values. Throughout the syllabus you will read a number of comments regarding creating a positive and productive class culture; these are meant to support our values of inclusion: “We affirm and are committed to the value of all kinds of differences among students, faculty and staff. Inclusivity that is broad and deep makes us a healthier and more productive organization and builds a culture that fosters engagement and diverse perspectives,” and equity and social justice: “We believe in, affirm, and are committed to the equal value and dignity of all people. Fairness and equity are more than equality. We actively seek to eliminate barriers for those who are disadvantaged and disempowered so they may participate fully in university life.”
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#covid-information-and-protocols">
+    COVID Information and Protocols
+  </a>
+<nav aria-label="COVID Information and Protocols" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#classroom-safety">
+    Classroom Safety
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#covid-attendance-policy">
+    COVID Attendance Policy
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-happens-if">
+    What Happens If...
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#assessment-overview">
+    Assessment Overview
+  </a>
+<nav aria-label="Assessment Overview" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#final-course-grade">
+    Final Course Grade
+  </a>
+<nav aria-label="Final Course Grade" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#95-100-a-83-86-b-73-76-c">
+    95 - 100% A 83 - 86% B 73 - 76% C
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#90-94-a-80-82-b-70-72-c-">
+    90 - 94% A- 80 - 82% B- 70 - 72% C-
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#87-89-b-77-79-c-70-nc">
+    87 - 89% B+ 77 - 79% C+ &lt;70% NC
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#online-homework-webwork">
+    Online Homework (WeBWorK)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#written-homework">
+    Written Homework
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#attendance-and-participation">
+    Attendance and Participation
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#quizzes">
+    Quizzes
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#midterm-exams">
+    Midterm Exams
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#common-final-exam">
+    Common Final Exam
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#gateway-masteries">
+    Gateway Masteries
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#intellectual-honesty">
+    Intellectual Honesty
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#university-policies">
+    University Policies
+  </a>
+<nav aria-label="University Policies" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#in-case-of-emergencies">
+    In Case of Emergencies
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#plagiarism-and-cheating">
+    Plagiarism and Cheating
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#dropping-and-adding">
+    Dropping and Adding
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#support-for-students-with-disabilities">
+    Support for Students with Disabilities
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#course-schedule">
+    Course Schedule
+  </a>
+<nav aria-label="Course Schedule" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1">
+    1
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#2">
+    2
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#3">
+    3
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#4">
+    4
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#7">
+    7
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#8">
+    8
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#9">
+    9
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#10">
+    10
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#11-recommended-review-midterm-assessment-2">
+    11 Recommended Review + Midterm Assessment 2
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#12">
+    12
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#13">
+    13
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#14">
+    14
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#15-recommended-review">
+    15 Recommended Review
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#16-final">
+    16 Final
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4" id="__nav_4_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_4">
+          Week 2
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 2" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_4">
+<span class="md-nav__icon md-icon"></span>
+          Week 2
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%202/2022-08-30/">
+        Announcements
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%202/2022-09-01/">
+        Section 1.4
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_5" id="__nav_4_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_5">
+          Week 3
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 3" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_5">
+<span class="md-nav__icon md-icon"></span>
+          Week 3
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%203/2022-09-06/">
+        Limits
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%203/2022-09-08/">
+        Section 2.1
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%203/2022-09-09%20-%20Quiz%203/">
+        2022 09 09   Quiz 3
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_6" id="__nav_4_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_6">
+          Week 4
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 4" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_6">
+<span class="md-nav__icon md-icon"></span>
+          Week 4
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%204/2022-09-13/">
+        2022 09 13
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%204/2022-09-15/">
+        $$v=\frac{3}{2}\pi r^{5}b\textrm{ , assume b is a constant}$$
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%204/2022-09-16%20-%20Quiz%204/">
+        Quiz #4     Math 2210-12     James Wibowo
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_7" id="__nav_4_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_7">
+          Week 5
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 5" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_7">
+<span class="md-nav__icon md-icon"></span>
+          Week 5
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%205/Math%202210%20Midterm%201%20Take%20Home/">
+        Math 2210 - 01 Calculus I Midterm 1 Zadock Reid
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%205/Math%202210%20Midterm/">
+        Math 2210 - Calculus 1 Midterm 1 - In Class Z. Reid - James Wibowo
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_8" id="__nav_4_8" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_8">
+          Week 6
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 6" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_8">
+<span class="md-nav__icon md-icon"></span>
+          Week 6
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%206/2022-09-30%20-%20Quiz%206/">
+        Quiz #6     Math 2210-12     James Wibowo
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_9" id="__nav_4_9" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_9">
+          Week 7
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 7" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_9">
+<span class="md-nav__icon md-icon"></span>
+          Week 7
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%207/2022-10-04/">
+        2022 10 04
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5">
+          MATH 2720 04
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="MATH 2720 04" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+          MATH 2720 04
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/MATH%202720-04/">
+        Discrete Mathmatics
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/matrix%20latex%20format/">
+        Matrix latex format
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_3" id="__nav_5_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5_3">
+          Week 1
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 1" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_3">
+<span class="md-nav__icon md-icon"></span>
+          Week 1
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%201/2022-08-23-1/">
+        2022 08 23 1
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%201/2022-08-25%20-%20Statements/">
+        Warm up
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%201/2720%20Syllabus%20Markdown/">
+        MathematicsDepartment
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%201/M1%20Overview%20%26%20Objectives/">
+        [M1 Overview &amp; Objectives](https://csusb.instructure.com/courses/15759/pages/m1-overview-and-objectives?module_item_id=1037400)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%201/Week%201%20Homework/">
+        Module 1: Settling In with Mathematical Statements (Week 1)
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_4" id="__nav_5_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5_4">
+          Week 2
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 2" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_4">
+<span class="md-nav__icon md-icon"></span>
+          Week 2
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%202/2022-08-30-1/">
+        Warmup
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%202/2022-09-01%20WRKSHT2/">
+        2022 09 01 WRKSHT2
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%202/M2%20Overview%20%26%20Objectives/">
+        [M2 Overview &amp; Objectives](https://csusb.instructure.com/courses/15759/modules/items/1037412)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%202/M2%20Wrap%20Up%20and%20Next%20Steps/">
+        [M2 Wrap Up and Next Steps](https://csusb.instructure.com/courses/15759/modules/items/1037424)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%202/Week%202%20Homework/">
+        Module 2: Sets and Functions (Week 2)
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_5" id="__nav_5_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5_5">
+          Week 3
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 3" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_5">
+<span class="md-nav__icon md-icon"></span>
+          Week 3
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%203/2022-09-08%20Hex/">
+        2022 09 08 Hex
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%203/M3%20Overview%20%26%20Objectives/">
+        M3 Overview &amp; Objectives
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%203/M3%20Wrap%20Up%20and%20Next%20Steps/">
+        M3 Wrap Up and Next Steps
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%203/Week%203%20Homework/">
+        Module 3: Functions and Additive/Multiplicative Principles (Week 3)
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_6" id="__nav_5_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5_6">
+          Week 4
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 4" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_6">
+<span class="md-nav__icon md-icon"></span>
+          Week 4
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%204/2022-09-13%20Worksheet/">
+        2022 09 13 Worksheet
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%204/M4%20Overview%20%26%20Objectives/">
+        M4 Overview &amp; Objectives
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%204/M4%20Wrap%20Up%20and%20Next%20Steps/">
+        M4 Wrap Up and Next Steps
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%204/Week%204%20Homework/">
+        Module 4: Binomial Coefficients (Week 4)
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_7" id="__nav_5_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5_7">
+          Week 5
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 5" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_7">
+<span class="md-nav__icon md-icon"></span>
+          Week 5
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%205/M5%20Overview%20%26%20Objectives/">
+        M5 Overview &amp; Objectives
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%205/M5%20Wrap%20Up%20and%20Next%20Steps/">
+        M5 Wrap Up and Next Steps
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%205/Week%205%20Homework/">
+        Module 5: Combinations, Permutations, and Stars and Bars (Week 5)
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_8" id="__nav_5_8" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5_8">
+          Week 6
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 6" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_8">
+<span class="md-nav__icon md-icon"></span>
+          Week 6
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%206/M6%20Overview%20%26%20Objectives/">
+        M6 Overview &amp; Objectives
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%206/M6%20Wrap%20Up%20and%20Next%20Steps/">
+        M6 Wrap Up and Next Steps
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%206/Week%206%20Homework/">
+        Module 6: Introduction to Sequences and Arithmetic/Geometric Sequences (Week 6)
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#math-2210-section-12-fall-2022-syllabus">
+    Math 2210, Section 12, Fall 2022 Syllabus
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#welcome-to-calculus-1-differentiation">
+    Welcome to Calculus 1 - Differentiation!
+  </a>
+<nav aria-label="Welcome to Calculus 1 - Differentiation!" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#this-course-develops-differentiation-of-functions-in-one-variable-with-an-emphasis-on-conceptual">
+    This course develops differentiation of functions in one variable with an emphasis on conceptual
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#understanding-problem-solving-multidisciplinary-applications-and-use-of-technology-activities">
+    understanding, problem solving, multidisciplinary applications, and use of technology. Activities
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#will-be-centered-around-opportunities-for-us-to-practice-explaining-visualizing-justifying">
+    will be centered around opportunities for us to practice explaining, visualizing, justifying,
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#computing-modeling-and-interpreting-we-will-explore-problems-that-cover-diverse-applications">
+    computing, modeling, and interpreting. We will explore problems that cover diverse applications
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#such-as-motion-and-speed-of-objects-linear-dimensions-and-volume-sale-prices-and-investment">
+    such as motion and speed of objects, linear dimensions and volume, sale prices and investment
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#growth-population-growth-daily-temperature-and-more">
+    growth, population growth, daily temperature, and more.
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#course-information">
+    Course Information
+  </a>
+<nav aria-label="Course Information" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#communication">
+    Communication
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#canvas">
+    ● Canvas.
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#email">
+    Email.
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#prerequisites">
+    Prerequisites
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#course-content-overview">
+    Course Content Overview
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#course-goalsobjectives-and-student-learning-objectivesoutcomes">
+    Course Goals/Objectives and Student Learning Objectives/Outcomes
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#textbook">
+    Textbook
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#your-responsibilities">
+    Your responsibilities
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-constitutes-class-participation">
+    What constitutes “class participation”?
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#how-much-time-should-i-expect-to-spend-on-this-class">
+    How much time should I expect to spend on this class?
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#extra-help">
+    Extra Help
+  </a>
+<nav aria-label="Extra Help" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#i-love-talking-about-math-and-i-am-more-than-happy-to-help-you-develop-your-full-potential-please-feel-free-to-ask-questions-during-before-or-after-class-every-question-is-a-good-question-i-am-also-available-through-email-and-i-have-office-hours-by-appointment-working-with-peers-can-both-help-clear-up-any-possible-confusion-and-provide-perspectives-that-may-help-you-see-connections-and-deepen-your-understanding-of-the-content-here-are-some-ways-in-which-you-are-encouraged-to-support-your-studies">
+    I love talking about math, and I am more than happy to help you develop your full potential. Please feel free to ask questions during, before, or after class. Every question is a good question! I am also available through email and I have office hours by appointment. Working with peers can both help clear up any possible confusion and provide perspectives that may help you see connections and deepen your understanding of the content. Here are some ways in which you are encouraged to support your studies:
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#commitments-to-inclusion-equity-and-social-justice">
+    Commitments to Inclusion, Equity, and Social Justice
+  </a>
+<nav aria-label="Commitments to Inclusion, Equity, and Social Justice" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#csusb-aspires-to-be-a-model-for-transforming-lives-this-is-manifest-in-our-core-values-throughout-the-syllabus-you-will-read-a-number-of-comments-regarding-creating-a-positive-and-productive-class-culture-these-are-meant-to-support-our-values-of-inclusion-we-affirm-and-are-committed-to-the-value-of-all-kinds-of-differences-among-students-faculty-and-staff-inclusivity-that-is-broad-and-deep-makes-us-a-healthier-and-more-productive-organization-and-builds-a-culture-that-fosters-engagement-and-diverse-perspectives-and-equity-and-social-justice-we-believe-in-affirm-and-are-committed-to-the-equal-value-and-dignity-of-all-people-fairness-and-equity-are-more-than-equality-we-actively-seek-to-eliminate-barriers-for-those-who-are-disadvantaged-and-disempowered-so-they-may-participate-fully-in-university-life">
+    CSUSB aspires to be a model for transforming lives. This is manifest in our Core Values. Throughout the syllabus you will read a number of comments regarding creating a positive and productive class culture; these are meant to support our values of inclusion: “We affirm and are committed to the value of all kinds of differences among students, faculty and staff. Inclusivity that is broad and deep makes us a healthier and more productive organization and builds a culture that fosters engagement and diverse perspectives,” and equity and social justice: “We believe in, affirm, and are committed to the equal value and dignity of all people. Fairness and equity are more than equality. We actively seek to eliminate barriers for those who are disadvantaged and disempowered so they may participate fully in university life.”
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#covid-information-and-protocols">
+    COVID Information and Protocols
+  </a>
+<nav aria-label="COVID Information and Protocols" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#classroom-safety">
+    Classroom Safety
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#covid-attendance-policy">
+    COVID Attendance Policy
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-happens-if">
+    What Happens If...
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#assessment-overview">
+    Assessment Overview
+  </a>
+<nav aria-label="Assessment Overview" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#final-course-grade">
+    Final Course Grade
+  </a>
+<nav aria-label="Final Course Grade" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#95-100-a-83-86-b-73-76-c">
+    95 - 100% A 83 - 86% B 73 - 76% C
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#90-94-a-80-82-b-70-72-c-">
+    90 - 94% A- 80 - 82% B- 70 - 72% C-
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#87-89-b-77-79-c-70-nc">
+    87 - 89% B+ 77 - 79% C+ &lt;70% NC
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#online-homework-webwork">
+    Online Homework (WeBWorK)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#written-homework">
+    Written Homework
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#attendance-and-participation">
+    Attendance and Participation
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#quizzes">
+    Quizzes
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#midterm-exams">
+    Midterm Exams
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#common-final-exam">
+    Common Final Exam
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#gateway-masteries">
+    Gateway Masteries
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#intellectual-honesty">
+    Intellectual Honesty
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#university-policies">
+    University Policies
+  </a>
+<nav aria-label="University Policies" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#in-case-of-emergencies">
+    In Case of Emergencies
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#plagiarism-and-cheating">
+    Plagiarism and Cheating
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#dropping-and-adding">
+    Dropping and Adding
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#support-for-students-with-disabilities">
+    Support for Students with Disabilities
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#course-schedule">
+    Course Schedule
+  </a>
+<nav aria-label="Course Schedule" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1">
+    1
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#2">
+    2
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#3">
+    3
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#4">
+    4
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#7">
+    7
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#8">
+    8
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#9">
+    9
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#10">
+    10
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#11-recommended-review-midterm-assessment-2">
+    11 Recommended Review + Midterm Assessment 2
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#12">
+    12
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#13">
+    13
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#14">
+    14
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#15-recommended-review">
+    15 Recommended Review
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#16-final">
+    16 Final
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="calculus-1-differentiation">Calculus 1 - Differentiation<a class="headerlink" href="#calculus-1-differentiation" title="Permanent link">¶</a></h1>
+<h2 id="math-2210-section-12-fall-2022-syllabus">Math 2210, Section 12, Fall 2022 Syllabus<a class="headerlink" href="#math-2210-section-12-fall-2022-syllabus" title="Permanent link">¶</a></h2>
+<h2 id="welcome-to-calculus-1-differentiation">Welcome to Calculus 1 - Differentiation!<a class="headerlink" href="#welcome-to-calculus-1-differentiation" title="Permanent link">¶</a></h2>
+<h3 id="this-course-develops-differentiation-of-functions-in-one-variable-with-an-emphasis-on-conceptual">This course develops differentiation of functions in one variable with an emphasis on conceptual<a class="headerlink" href="#this-course-develops-differentiation-of-functions-in-one-variable-with-an-emphasis-on-conceptual" title="Permanent link">¶</a></h3>
+<h3 id="understanding-problem-solving-multidisciplinary-applications-and-use-of-technology-activities">understanding, problem solving, multidisciplinary applications, and use of technology. Activities<a class="headerlink" href="#understanding-problem-solving-multidisciplinary-applications-and-use-of-technology-activities" title="Permanent link">¶</a></h3>
+<h3 id="will-be-centered-around-opportunities-for-us-to-practice-explaining-visualizing-justifying">will be centered around opportunities for us to practice explaining, visualizing, justifying,<a class="headerlink" href="#will-be-centered-around-opportunities-for-us-to-practice-explaining-visualizing-justifying" title="Permanent link">¶</a></h3>
+<h3 id="computing-modeling-and-interpreting-we-will-explore-problems-that-cover-diverse-applications">computing, modeling, and interpreting. We will explore problems that cover diverse applications<a class="headerlink" href="#computing-modeling-and-interpreting-we-will-explore-problems-that-cover-diverse-applications" title="Permanent link">¶</a></h3>
+<h3 id="such-as-motion-and-speed-of-objects-linear-dimensions-and-volume-sale-prices-and-investment">such as motion and speed of objects, linear dimensions and volume, sale prices and investment<a class="headerlink" href="#such-as-motion-and-speed-of-objects-linear-dimensions-and-volume-sale-prices-and-investment" title="Permanent link">¶</a></h3>
+<h3 id="growth-population-growth-daily-temperature-and-more">growth, population growth, daily temperature, and more.<a class="headerlink" href="#growth-population-growth-daily-temperature-and-more" title="Permanent link">¶</a></h3>
+<h2 id="course-information">Course Information<a class="headerlink" href="#course-information" title="Permanent link">¶</a></h2>
+<p>Instructor: Zadock Reid, Ph. D.
+Office location: JB 530
+Email: zreid@csusb.edu
+Office hours: By Appointment
+Office hour link: https://csusb.zoom.us/j/
+Class days/time: Tuesday, Thursday, Friday 2:00 PM – 3:45 PM
+Class link: https://csusb.zoom.us/j/
+Classroom: PL 263</p>
+<h3 id="communication">Communication<a class="headerlink" href="#communication" title="Permanent link">¶</a></h3>
+<p>Clear and efficient communication is essential this term. To this end, I will use Canvas and Email to send out messages.</p>
+<h3 id="canvas">● Canvas.<a class="headerlink" href="#canvas" title="Permanent link">¶</a></h3>
+<p>Materials for the course and links to relevant sites will be provided for you on Canvas. To access our Canvas course, go to csusb.instructure.com (or go to MyCoyote&gt;Canvas) and click on your Math 2210 course link. You should be sure to check into the Canvas course at least a couple of times a week and check Announcements for any course updates.</p>
+<h3 id="email">Email.<a class="headerlink" href="#email" title="Permanent link">¶</a></h3>
+<p>Regularly check your university emails as I and the University will often send you important messages through email. When sending me an email, make sure to write “Math 2210” in the subject line so your email will stand out in the queue.</p>
+<h3 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">¶</a></h3>
+<p>Semester Prerequisite: MATH 1401 or satisfactory score on department placement exam. Quarter
+Prerequisite: Satisfactory score on the Entry Level Mathematics examination or passage of MATH 120</p>
+<h3 id="course-content-overview">Course Content Overview<a class="headerlink" href="#course-content-overview" title="Permanent link">¶</a></h3>
+<p>Differentiation of functions in one variable with an emphasis on conceptual understanding, problem
+solving, multidisciplinary applications, and use of technology for numerical methods and graphical
+representation. Topics will include limits, continuity, derivatives, modeling, optimization, and related
+rates. Additional topics may include definite and indefinite integrals and basic techniques of integration.</p>
+<p>Mathematics is more than computation. It is meaning making, explaining, interpreting, justifying,
+problem solving and so much more. In this course, you will not only learn about differentiation, but
+practice and develop this essential mathematical actions.</p>
+<h3 id="course-goalsobjectives-and-student-learning-objectivesoutcomes">Course Goals/Objectives and Student Learning Objectives/Outcomes<a class="headerlink" href="#course-goalsobjectives-and-student-learning-objectivesoutcomes" title="Permanent link">¶</a></h3>
+<p>Math 2210 is a general education (GE) course and is designated GE Category B4. This means we have the
+following GE student learning outcomes (GLOs):</p>
+<ol>
+<li>Learning How to Learn/Metacognition. Develop awareness of their learning processes,
+    becoming reflective, self-directed learners who are able to apply and adapt their processes of
+    learning in new contexts.</li>
+<li>Critical Literacy - (Quantitative Reasoning and Technological Literacy). Analyze the ways that
+    quantitative and technological information both shape and are shaped by social contexts.</li>
+</ol>
+<p>As a course in the math department, we have the following Program Student Learning Outcomes (PLOs).
+Upon successful completion of this course, you will:</p>
+<p>1.1. Demonstrate an understanding of fundamental concepts, algorithms, operations, and relations
+1.2. Make connections between mathematical ideas verbally, numerically, analytically, visually, and
+graphically.
+2.1. Correctly apply mathematical theorems, properties and definitions.
+3.1. Justify solutions using a variety of strategies and representations.</p>
+<h3 id="textbook">Textbook<a class="headerlink" href="#textbook" title="Permanent link">¶</a></h3>
+<p>The required textbook is Calculus: Single Variable, 8th ed. by Hughes-Hallet et al.
+ISBN: 978-1-119-78384-</p>
+<p>Math 2210 is part of the Inclusive Access (IA) Program, which is a collaboration between the publisher
+Wiley and the bookstore, and allows you to access the digital textbook immediately via WileyPlus. You
+may opt out of IA any time before census. If you remain in IA, at that time you will be charged $48. This
+price is for 1 term of WileyPlus access.</p>
+<h3 id="your-responsibilities">Your responsibilities<a class="headerlink" href="#your-responsibilities" title="Permanent link">¶</a></h3>
+<ol>
+<li>Attend all synchronous class sessions and contribute to class discussions in whole-group and
+    small-group formats</li>
+<li>If you must miss a session, you are still responsible for all material covered in that session and for
+    all announcements made therein. Ask a classmate to take notes for you in case of absence.</li>
+<li>Check Canvas before each class meeting for any announcements or course materials.</li>
+<li>For each session, be prepared with:
+    a. Your Calculus text
+    b. Notebook with paper, graph paper, pencils, erasers, etc
+    c. A graphing utility, preferably Desmos or GeoGebra</li>
+<li>Try the homework as soon as it is assigned. Ask questions during the next class so that you can
+    finish your homework on time.</li>
+<li>Visit office hours or arrange another time to obtain additional support.</li>
+</ol>
+<h3 id="what-constitutes-class-participation">What constitutes “class participation”?<a class="headerlink" href="#what-constitutes-class-participation" title="Permanent link">¶</a></h3>
+<p>This class will meet synchronously three times per week, for one hour and fifteen minutes. We will need
+to: (a) be very efficient in use of the time, and (b) remember that much of the course work takes place
+outside of class. Appropriate participation involves:</p>
+<pre><code>● Being prompt in joining any synchronous sessions ready to work immediately,
+● Being active in small-group and whole-class discussions in class and in discussion boards
+● Collaborating with your class-mates in outside-of-class activities, including online discussions and
+in-person collaboration (where appropriate), and
+● Completing assignments on time and thoroughly.
+</code></pre>
+<h3 id="how-much-time-should-i-expect-to-spend-on-this-class">How much time should I expect to spend on this class?<a class="headerlink" href="#how-much-time-should-i-expect-to-spend-on-this-class" title="Permanent link">¶</a></h3>
+<p>Per the University Catalog, students are expected to complete a minimum 2 hours of homework for every hour of classwork. As this is a 4 credit hour course, I expect you to work a minimum of 8 hours per week outside of class. Please make sure you schedule this time into your week! If you are unable to structure your schedule accordingly, you put yourself at a high risk of falling behind, which can have serious consequences.</p>
+<h3 id="extra-help">Extra Help<a class="headerlink" href="#extra-help" title="Permanent link">¶</a></h3>
+<h6 id="i-love-talking-about-math-and-i-am-more-than-happy-to-help-you-develop-your-full-potential-please-feel-free-to-ask-questions-during-before-or-after-class-every-question-is-a-good-question-i-am-also-available-through-email-and-i-have-office-hours-by-appointment-working-with-peers-can-both-help-clear-up-any-possible-confusion-and-provide-perspectives-that-may-help-you-see-connections-and-deepen-your-understanding-of-the-content-here-are-some-ways-in-which-you-are-encouraged-to-support-your-studies">I love talking about math, and I am more than happy to help you develop your full potential. Please feel free to ask questions during, before, or after class. Every question is a good question! I am also available through email and I have office hours by appointment. Working with peers can both help clear up any possible confusion and provide perspectives that may help you see connections and deepen your understanding of the content. Here are some ways in which you are encouraged to support your studies:<a class="headerlink" href="#i-love-talking-about-math-and-i-am-more-than-happy-to-help-you-develop-your-full-potential-please-feel-free-to-ask-questions-during-before-or-after-class-every-question-is-a-good-question-i-am-also-available-through-email-and-i-have-office-hours-by-appointment-working-with-peers-can-both-help-clear-up-any-possible-confusion-and-provide-perspectives-that-may-help-you-see-connections-and-deepen-your-understanding-of-the-content-here-are-some-ways-in-which-you-are-encouraged-to-support-your-studies" title="Permanent link">¶</a></h6>
+<p>● Join/form a study group
+● Stop by my (Zoom) office hours or make an appointment for a different time
+● “Visit” the Math Gym.
+● “Visit” LSAMP Workshops.</p>
+<h3 id="commitments-to-inclusion-equity-and-social-justice">Commitments to Inclusion, Equity, and Social Justice<a class="headerlink" href="#commitments-to-inclusion-equity-and-social-justice" title="Permanent link">¶</a></h3>
+<h4 id="csusb-aspires-to-be-a-model-for-transforming-lives-this-is-manifest-in-our-core-values-throughout-the-syllabus-you-will-read-a-number-of-comments-regarding-creating-a-positive-and-productive-class-culture-these-are-meant-to-support-our-values-of-inclusion-we-affirm-and-are-committed-to-the-value-of-all-kinds-of-differences-among-students-faculty-and-staff-inclusivity-that-is-broad-and-deep-makes-us-a-healthier-and-more-productive-organization-and-builds-a-culture-that-fosters-engagement-and-diverse-perspectives-and-equity-and-social-justice-we-believe-in-affirm-and-are-committed-to-the-equal-value-and-dignity-of-all-people-fairness-and-equity-are-more-than-equality-we-actively-seek-to-eliminate-barriers-for-those-who-are-disadvantaged-and-disempowered-so-they-may-participate-fully-in-university-life">CSUSB aspires to be a model for transforming lives. This is manifest in our Core Values. Throughout the syllabus you will read a number of comments regarding creating a positive and productive class culture; these are meant to support our values of inclusion: “We affirm and are committed to the value of all kinds of differences among students, faculty and staff. Inclusivity that is broad and deep makes us a healthier and more productive organization and builds a culture that fosters engagement and diverse perspectives,” and equity and social justice: “We believe in, affirm, and are committed to the equal value and dignity of all people. Fairness and equity are more than equality. We actively seek to eliminate barriers for those who are disadvantaged and disempowered so they may participate fully in university life.”<a class="headerlink" href="#csusb-aspires-to-be-a-model-for-transforming-lives-this-is-manifest-in-our-core-values-throughout-the-syllabus-you-will-read-a-number-of-comments-regarding-creating-a-positive-and-productive-class-culture-these-are-meant-to-support-our-values-of-inclusion-we-affirm-and-are-committed-to-the-value-of-all-kinds-of-differences-among-students-faculty-and-staff-inclusivity-that-is-broad-and-deep-makes-us-a-healthier-and-more-productive-organization-and-builds-a-culture-that-fosters-engagement-and-diverse-perspectives-and-equity-and-social-justice-we-believe-in-affirm-and-are-committed-to-the-equal-value-and-dignity-of-all-people-fairness-and-equity-are-more-than-equality-we-actively-seek-to-eliminate-barriers-for-those-who-are-disadvantaged-and-disempowered-so-they-may-participate-fully-in-university-life" title="Permanent link">¶</a></h4>
+<h2 id="covid-information-and-protocols">COVID Information and Protocols<a class="headerlink" href="#covid-information-and-protocols" title="Permanent link">¶</a></h2>
+<p>We will work together to make our classroom a safe space.</p>
+<p>Please keep in mind that we are all in uncharted territory together. We are trying our best to balance
+best practices for teaching and best practices for COVID safety. We will need to be flexible and patient as
+we adjust the course throughout the term to our ever changing situation.</p>
+<p>Check Canvas / Email announcements before every class in case.</p>
+<h3 id="classroom-safety">Classroom Safety<a class="headerlink" href="#classroom-safety" title="Permanent link">¶</a></h3>
+<p>Students, Faculty and Staff are subject to the Interim COVID-19 Vaccination Policy. Beginning Monday,
+August 15 and continuing through Friday, September 16, 2022 face coverings will be required to be worn
+when indoors on campus. Those experiencing symptoms of COVID-19 should not report to campus and
+should follow normal absence reporting procedures</p>
+<p>Those without will be asked to return upon obtaining one. Limited exceptions can be obtained by
+contacting the Office of Services for Students with Disabilities. Students unwilling to wear a mask will be
+asked to leave immediately and appropriate security protocol (including class cancellation) may occur at
+the discretion of the faculty, who may then assign additional work due to non-compliance.</p>
+<p>COVID protocols are subject to change depending on appropriate guidance from the California
+Department of Public Health, local County public health departments, or COVID prevalence in the region.</p>
+<p>For additional details please check the Return of the Pack website.</p>
+<h3 id="covid-attendance-policy">COVID Attendance Policy<a class="headerlink" href="#covid-attendance-policy" title="Permanent link">¶</a></h3>
+<p>When we return to campus, this class will be taught in a Next-Generation Smart Classroom, upgraded with
+cameras, microphones, and other equipment to enhance remote teaching and learning. If you can't attend
+class in person due to illness, child care, parent care, or other reasonable grounds which need to be
+approved by me, please observe the class meeting via Zoom during the scheduled class time, using the
+link found under Zoom in the Canvas course site. Please, note that I will take attendance at every class
+meeting and tally both on-site and remote students. Remote students are encouraged to engage fully
+with all class lectures and activities ---- attend from a quiet location and free of distractions, and devote
+their full attention to class during the scheduled time. Remote students are also encouraged to keep their
+webcams on throughout lectures (but to mute their audio unless speaking) and submit questions via Zoom
+chat.</p>
+<p>Your learning is centered around group work. You will get the best experience if you come to class. If you
+are healthy and able, you should always attend. Recordings will be made of lecture and class discussion
+(not group work) and posted to Canvas. These technologies enable us to remain flexible and to maintain
+our classroom as a safespace.</p>
+<h3 id="what-happens-if">What Happens If...<a class="headerlink" href="#what-happens-if" title="Permanent link">¶</a></h3>
+<ol>
+<li>If you feel any symptoms before coming to class that could be a sign of COVID infection, stay
+    home. From your home, log into the Zoom meeting and attend remotely.</li>
+<li>If you have been in close contact with someone who has tested positive for COVID, then stay
+    home for the CDC recommended time of quarantine. From your home, you may then log into the
+    Zoom meeting and attend remotely.</li>
+<li>If you have tested positive for COVID and do not feel too sick, then stay home and log into the
+    Zoom meeting and attend remotely.</li>
+<li>If you have tested positive for COVID and feel very ill, then stay home, rest, focus on recovering.
+    Regularly message me with your status and when you are feeling better, you can watch the
+    classroom recordings to catch up. If you fall very behind, message me and we can discuss your
+    options.</li>
+<li>
+<p>If the whole class must quarantine or the university goes entirely remote, then class will be
+    entirely remote via our Zoom room.</p>
+</li>
+<li>
+<p>If I cannot come to class due to COVID but still feel reasonably well, then class will be entirely
+    remote via our Zoom room.</p>
+</li>
+<li>If I cannot come to class due to COVID and feel very ill, then I will try to find a replacement
+    instructor, but if I cannot, class will be cancelled.</li>
+</ol>
+<h2 id="assessment-overview">Assessment Overview<a class="headerlink" href="#assessment-overview" title="Permanent link">¶</a></h2>
+<p>In this course, you have multiple types of assessment, as outlined in the table below.</p>
+<pre><code>Assessment Percent
+</code></pre>
+<pre><code>Attendance and Participation 10
+</code></pre>
+<pre><code>WeBWorK homework (by section) 20
+</code></pre>
+<pre><code>Written homework (weekly) 20
+</code></pre>
+<pre><code>Gateway Masteries (2) 5 (2.5 each)
+</code></pre>
+<pre><code>Quizzes (weekly) 15
+</code></pre>
+<pre><code>Midterms (2) 20 (10 each)
+</code></pre>
+<pre><code>Common Final 10
+</code></pre>
+<pre><code>Total 100
+</code></pre>
+<pre><code>● Grading is not competitive - so please share your knowledge and thoughts with your classmates
+in class and out!
+● Most of your homework will be submitted via WeBWorK.
+● Written homework will be submitted via email or Canvas depending on the assignment. Form of
+submission will be discussed for each assignment prior to or at the time it is given.
+● All mathematical content will be graded both on mathematical correctness and on clarity of
+exposition. Some assignments may have rubrics posted on Canvas, please use these to support
+self-assessment before submission.
+</code></pre>
+<h3 id="final-course-grade">Final Course Grade<a class="headerlink" href="#final-course-grade" title="Permanent link">¶</a></h3>
+<p>Your course grade will correspond to the appropriate percent in the table below. No “extra credit” will be
+awarded, since extra credit is built into the table itself. You’ll need to submit work regularly throughout
+the quarter. If you procrastinate, you may miss key deadlines. Late work is not accepted.</p>
+<pre><code>Percent Grade Percent Grade Percent Grade
+</code></pre>
+<h4 id="95-100-a-83-86-b-73-76-c">95 - 100% A 83 - 86% B 73 - 76% C<a class="headerlink" href="#95-100-a-83-86-b-73-76-c" title="Permanent link">¶</a></h4>
+<h4 id="90-94-a-80-82-b-70-72-c-">90 - 94% A- 80 - 82% B- 70 - 72% C-<a class="headerlink" href="#90-94-a-80-82-b-70-72-c-" title="Permanent link">¶</a></h4>
+<h4 id="87-89-b-77-79-c-70-nc">87 - 89% B+ 77 - 79% C+ &lt;70% NC<a class="headerlink" href="#87-89-b-77-79-c-70-nc" title="Permanent link">¶</a></h4>
+<h3 id="online-homework-webwork">Online Homework (WeBWorK)<a class="headerlink" href="#online-homework-webwork" title="Permanent link">¶</a></h3>
+<p>Sufficient experience with problem solving is crucial for success in this class. Online homework will be
+assigned for each section covered in class. Online homework will be assigned on WeBWorK. If you are
+enrolled in the class, you will be able to sign in with your CoyoteID and password.</p>
+<p>I expect you to read the WeBWorK documentation and watch the associated video.</p>
+<p>Why? WeBWorK is an excellent system for letting you practice procedural skills, and Rule of 4 reasoning.
+Furthermore, you get instantaneous feedback. One deficiency is that it does not allow you to practice
+carefully explaining your thinking and interpreting results. That is where your written work comes in.</p>
+<h3 id="written-homework">Written Homework<a class="headerlink" href="#written-homework" title="Permanent link">¶</a></h3>
+<p>Each week you will be assigned written homework in which you are to write up carefully solutions to
+certain problems, which are to be submitted through Canvas/Gradescope. You must ensure that
+assignments are submitted as a pdf. It will be graded and returned to you with feedback. You may redo,
+addressing all feedback, and resubmit it, to earn back any missed points.</p>
+<p>Why? It is essential to give opportunities to practice, get feedback on, and refine the activities of modeling,
+explaining, justifying and other critical mathematical actions.</p>
+<p>I encourage you to type up your written assignments and they are to be formatted appropriately. Some
+possible word processors:</p>
+<pre><code>a. Google Docs (permanently free to all, and easy to use for collaboration)
+b. Open Office (permanently free to all)
+c. Microsoft Office 365 (free for CSUSB students and employees)
+d. LaTeX (a free mathematical typesetting language)
+</code></pre>
+<p>Late homework will not be accepted, since much of it is preparatory for class, and therefore required to
+support your learning in the following class.</p>
+<p>You are encouraged to make use of Grammar and Spell checkers, such as those available within Google
+Docs, Open Office, MS Word, or an online tool like Grammarly. Regarding citations, you may use any style
+(e.g. Chicago, MLA, APA, etc.) as long as you are consistent in applying that style and you always include
+all the information needed to find the source cited. Explore the Zotero app (the library has workshops)–
+Zotero will format citations for you!</p>
+<p>When submitting typed work, mathematics must be typed using appropriate mathematics formatting. All
+of the word processing tools listed in the previous paragraph are equipped with mathematics formatting
+tools, and the article “Don’t just do the math - type it!” provides some typing tips as well as some reasons
+why this is important for you.</p>
+<p>I am happy to review with you any questions or problems that you like. Please either come to office
+hours or set up an appointment at another time if you are unable to come to office hours.</p>
+<h3 id="attendance-and-participation">Attendance and Participation<a class="headerlink" href="#attendance-and-participation" title="Permanent link">¶</a></h3>
+<p>It is critical that you attend every class session^1. Your success in this class is dependent on active
+participation in all lecture and collaborative work. Bring your textbook to class and record your thinking
+and solutions to problems that are assigned and worked during class. Homework will be conceptually
+similar to problems worked in class, so it will be helpful to review your class notes before beginning your
+homework. You receive participation points during each class session for completing the in-class activities
+and participating productively in class discussions.</p>
+<p>This class relies strongly on a collaborative approach to learning. To reflect the importance of
+collaboration, 10% of the available points are given for participation. This will be judged by the quality
+and quantity of your participation both in class and online via Slack.</p>
+<p>If missing a class session is unavoidable, it is your responsibility to find out what you missed and arrange
+to do the work on your own before the next class period. More than two absences will result in an
+overall grade reduction of 2 percentage points per class missed. Persistent tardiness and early departures
+will count as absences as well.</p>
+<h3 id="quizzes">Quizzes<a class="headerlink" href="#quizzes" title="Permanent link">¶</a></h3>
+<p>Quizzes will be once a week in class and cover the material from the previous few days of class. You will
+be allowed to use a writing utensil and nothing else unless told explicitly otherwise.</p>
+<h3 id="midterm-exams">Midterm Exams<a class="headerlink" href="#midterm-exams" title="Permanent link">¶</a></h3>
+<p>There will be two midterm exams in person in class. You will be allowed a writing utensil, a graphing
+utility, and 3x5 notecard in which you can put any information you wish. Nothing else will be allowed
+unless told otherwise.</p>
+<p>(^1) See COVID Information and Protocols Section for clarification.</p>
+<h3 id="common-final-exam">Common Final Exam<a class="headerlink" href="#common-final-exam" title="Permanent link">¶</a></h3>
+<p>The common final exam is cumulative and must be taken in person on the Saturday of final week from 9-
+11am. This term, that is December 10th. You will be allowed a writing utensil, a graphing utility, and 3x
+notecard in which you can put any information you wish. Nothing else will be allowed unless told
+otherwise. You will need to bring your student ID and display it when turning in your exam. The room
+will be assigned and distributed later in the term.</p>
+<p>Make appropriate plans now to attend the final. That means arrange your work schedules, travel
+arrangements, and family obligations now. Special accommodations require documentation and must be
+provided to me as soon as possible.</p>
+<p>The final will be cumulative and is a summative assessment designed to reflect your ability to use
+differential calculus to model real-world situations, and use those models to explain, interpret, justify, and
+predict outcomes. The Rule of 4 will be central. You may view old common finals at the following link:
+Old Final Exams.</p>
+<h3 id="gateway-masteries">Gateway Masteries<a class="headerlink" href="#gateway-masteries" title="Permanent link">¶</a></h3>
+<p>Procedural fluency with algebra (1.1-1.6) and differentiation (3.1-3.6) is essential for success in the course
+(and most applications of calculus). Gateways of this nature have been shown to be a highly effective,
+flexible, and lower-stress means for helping you achieve these important masteries.</p>
+<p>Practice. You can take the practice gateway on WeBWorK as many times as you want. We encourage
+you to take that over and over until you are consistently getting perfect scores. Then, when you are ready,
+go take the proctored gateway.</p>
+<p>What you can use. Just a writing utensil and blank scratch paper. Nothing else.</p>
+<p>Location. The proctored gateways can be taken at the testing center in University Hall (UH-347). The
+testing center hours are 9am-4:30pm. (Note: Location of the testing center may move, so check in for
+updates once they open.)</p>
+<p>Frequency. You can take the proctored gateway (on WeBWorK) as many times as you want during testing
+center hours.</p>
+<p>Topics.</p>
+<pre><code>● Weeks 2-3 - Algebra (10 questions)
+Covering algebraic simplification, fractions, exponents, logarithms, and trigonometry.
+● Weeks 9-10 - Differentiation (7 questions)
+Covering elementary function rules (power, exponent, trig, etc) and decomposition rules (sum,
+product, quotient, chain, and inverse)
+</code></pre>
+<p>Mastery. You need to achieve mastery of each. To have mastered the skill, you will need to take the
+gateway and miss no more than 1 question on it.</p>
+<p>Do not wait until the last minute. Each of you can achieve mastery if you practice and do not wait until
+the last minute.</p>
+<h3 id="intellectual-honesty">Intellectual Honesty<a class="headerlink" href="#intellectual-honesty" title="Permanent link">¶</a></h3>
+<p>The University has strict guidelines regarding the issues of plagiarism and cheating. Plagiarism and
+cheating are violations of the Standards for Student Conduct (Title 5, §41301, California Code of
+Regulations). Plagiarism is the act of presenting the ideas and writing of another as one’s own. Cheating
+is the act of obtaining or attempting to obtain credit for academic work through the use of any dishonest,
+deceptive, or fraudulent means.</p>
+<p>I take intellectual honesty very seriously. Students guilty of plagiarism or cheating will incur the following
+penalties:</p>
+<pre><code>● First offense on homework or quiz: Entire assignment will receive a 0 and the incident will be
+reported to the Office of Student Conduct and Ethical Development.
+● Second offense on homework or quiz: Student will fail the course and incident will be reported to
+the Office of Student Conduct and Ethical Development.
+● Cheating on an exam: Student will earn a NC in the course, and incident will be reported to the
+Office of Student Conduct and Ethical Development.
+</code></pre>
+<p>Using the internet to find solutions is strongly discouraged. The only way to learn the material deeply is
+to work thoughtfully and engage your brain by doing mathematics. Reading someone else’s work (even if
+you understand it item by item) gives a false impression of true understanding, and does not translate
+well to exams or to applying the content to future courses. You are certainly encouraged to work with
+classmates - but once the collaboration is done, make sure you understand and are submitting your own
+work by writing up a solution from scratch by yourself and in your own words. If you use outside resources,
+you must give credit, and preferably also explain how you used the resource. You may or may not receive
+full credit for the assignment (depending on how much of the work is your own), but is surely better than
+submitting dishonest work (and incurring the penalty involved)!</p>
+<h2 id="university-policies">University Policies<a class="headerlink" href="#university-policies" title="Permanent link">¶</a></h2>
+<h3 id="in-case-of-emergencies">In Case of Emergencies<a class="headerlink" href="#in-case-of-emergencies" title="Permanent link">¶</a></h3>
+<p>Please refer to the Office of Emergency Management and Business Continuity for information regarding
+emergency management and safety guidelines.</p>
+<h3 id="plagiarism-and-cheating">Plagiarism and Cheating<a class="headerlink" href="#plagiarism-and-cheating" title="Permanent link">¶</a></h3>
+<p>Students are expected to be familiar with the University’s Policy on cheating and plagiarism. Please review
+this in the “Academic Regulations” section of the CSUSB Bulletin. Plagiarism and cheating are violations
+of the Standards for Student Conduct (Title 5, §41301, California Code of Regulations). Definitions and
+procedures for addressing cheating and plagiarism are found in the Faculty Senate's Policies and
+Procedures Concerning Academic Dishonesty (FAM 803.5) and Executive Order 1098-Revised 3/29/</p>
+<ul>
+<li>Student Conduct Procedures, and may be addressed by both the instructor and the Student Conduct
+Administrator.</li>
+</ul>
+<p>Instances of academic dishonesty will not be tolerated. Cheating on exams or plagiarism (presenting the
+work of another as your own, or the use of another person’s ideas without giving proper credit) will result
+in a failing grade and sanctions by the University. For this class, all assignments are to be completed by
+the individual student unless otherwise specified.</p>
+<h3 id="dropping-and-adding">Dropping and Adding<a class="headerlink" href="#dropping-and-adding" title="Permanent link">¶</a></h3>
+<p>You are responsible for understanding the policies and procedures about add/drops, academic renewal,
+etc. found in the CSUSB Bulletin.</p>
+<h3 id="support-for-students-with-disabilities">Support for Students with Disabilities<a class="headerlink" href="#support-for-students-with-disabilities" title="Permanent link">¶</a></h3>
+<p>If you are in need of an accommodation for a disability in order to participate in this class, it is your
+responsibility to seek academic accommodations for a verified disability in a timely manner. Please
+contact the instructor during the first week of the term and contact Services to Students with Disabilities
+(SSD) at (909) 537-5238. SSD must provide documentation to the instructor in order for special
+accommodations to be made.</p>
+<p>If you require assistance in the event of an emergency, you are advised to establish a buddy system with
+a buddy and an alternate buddy in the class. Individuals with disabilities should prepare for an emergency
+ahead of time by instructing a classmate and the instructor.</p>
+<h2 id="course-schedule">Course Schedule<a class="headerlink" href="#course-schedule" title="Permanent link">¶</a></h2>
+<p>(Note: subject to change with fair notice.) Here is the anticipated agenda for the semester. All section
+numbers reference the text, Calculus by Hughes-Hallett et al.</p>
+<pre><code>Week Section # Topic
+</code></pre>
+<h4 id="1">1<a class="headerlink" href="#1" title="Permanent link">¶</a></h4>
+<pre><code>1.1 Function and change
+</code></pre>
+<pre><code>1.2 Exponential functions
+</code></pre>
+<pre><code>1.3 New functions from old
+</code></pre>
+<pre><code>1.4 Logarithmic functions
+</code></pre>
+<pre><code>1.5 Trigonometric functions
+</code></pre>
+<pre><code>1.6 Powers, polynomials, and rational functions
+</code></pre>
+<h4 id="2">2<a class="headerlink" href="#2" title="Permanent link">¶</a></h4>
+<pre><code>1.7 Intro to limits
+</code></pre>
+<pre><code>1.8 Extending the idea of a limit
+</code></pre>
+<pre><code>1.9 Further limit calculations
+</code></pre>
+<h4 id="3">3<a class="headerlink" href="#3" title="Permanent link">¶</a></h4>
+<pre><code>2.1 How do we measure speed?
+</code></pre>
+<pre><code>2.2 The derivative at a point
+</code></pre>
+<pre><code>2.3 The derivative function
+</code></pre>
+<h4 id="4">4<a class="headerlink" href="#4" title="Permanent link">¶</a></h4>
+<pre><code>2.4 Interpretations of the derivative
+</code></pre>
+<pre><code>2.5 The second derivative
+</code></pre>
+<pre><code>2.6 Differentiability
+</code></pre>
+<pre><code>5 Recommended Review + Midterm Assessment 1
+</code></pre>
+<pre><code>6 3.1 Powers and polynomials
+</code></pre>
+<pre><code>3.2 The exponential function
+</code></pre>
+<pre><code>3.3 The product and quotient rules
+</code></pre>
+<h4 id="7">7<a class="headerlink" href="#7" title="Permanent link">¶</a></h4>
+<pre><code>3.4 The chain rule
+</code></pre>
+<pre><code>3.5 The trigonometric functions
+</code></pre>
+<pre><code>3.6 The chain rule and inverse functions
+</code></pre>
+<h4 id="8">8<a class="headerlink" href="#8" title="Permanent link">¶</a></h4>
+<pre><code>3.7 Implicit functions
+</code></pre>
+<pre><code>3.9 Linear approximation
+</code></pre>
+<pre><code>3.10 Theorems about differentiable functions
+</code></pre>
+<h4 id="9">9<a class="headerlink" href="#9" title="Permanent link">¶</a></h4>
+<pre><code>4.1 Using first and second derivatives
+</code></pre>
+<pre><code>4.2 Optimization
+</code></pre>
+<h4 id="10">10<a class="headerlink" href="#10" title="Permanent link">¶</a></h4>
+<pre><code>4.3 Optimization and modeling
+</code></pre>
+<pre><code>4.4 Families of functions and modeling
+</code></pre>
+<h4 id="11-recommended-review-midterm-assessment-2">11 Recommended Review + Midterm Assessment 2<a class="headerlink" href="#11-recommended-review-midterm-assessment-2" title="Permanent link">¶</a></h4>
+<h4 id="12">12<a class="headerlink" href="#12" title="Permanent link">¶</a></h4>
+<pre><code>4.5 Applications to marginality
+</code></pre>
+<pre><code>4.6 Rates and related rates
+</code></pre>
+<h4 id="13">13<a class="headerlink" href="#13" title="Permanent link">¶</a></h4>
+<pre><code>5.1 How do we measure distance traveled?
+</code></pre>
+<pre><code>5.2 The definite integral
+</code></pre>
+<pre><code>5.3 The fundamental theorem and interpretations
+</code></pre>
+<h4 id="14">14<a class="headerlink" href="#14" title="Permanent link">¶</a></h4>
+<pre><code>5.4 Theorems about finite integrals
+</code></pre>
+<pre><code>6.1 Antiderivatives graphically and numerically
+</code></pre>
+<pre><code>6.2 Constructing antiderivatives analytically
+</code></pre>
+<h4 id="15-recommended-review">15 Recommended Review<a class="headerlink" href="#15-recommended-review" title="Permanent link">¶</a></h4>
+<h4 id="16-final">16 Final<a class="headerlink" href="#16-final" title="Permanent link">¶</a></h4>
+</article>
+</div>
+</div>
+</main>
+<footer class="md-footer">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Previous: *1.1* Function And Change" class="md-footer__link md-footer__link--prev" href="../2022-08-26%20-%20Work%20Together%20Exam/" rel="prev">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</div>
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Previous
+              </span>
+              *1.1* Function And Change
+            </div>
+</div>
+</a>
+<a aria-label="Next: Announcements" class="md-footer__link md-footer__link--next" href="../../Week%202/2022-08-30/" rel="next">
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Next
+              </span>
+              Announcements
+            </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+<script src="../../../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
+<script src="../../../javascripts/mathjax.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,1435 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="../../../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.4.2, mkdocs-material-8.5.10" name="generator"/>
+<title>Chapter 9: Streams - Hokora Yinphine</title>
+<link href="../../../assets/stylesheets/main.975780f9.min.css" rel="stylesheet"/>
+<link href="../../../assets/stylesheets/palette.2505c338.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="indigo" data-md-color-primary="blue" data-md-color-scheme="default" dir="ltr">
+<script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#chapter-9-streams">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="Hokora Yinphine" class="md-header__button md-logo" data-md-component="logo" href="../../.." title="Hokora Yinphine">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            Hokora Yinphine
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Chapter 9: Streams
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="indigo" data-md-color-media="(prefers-color-scheme: light)" data-md-color-primary="blue" data-md-color-scheme="default" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"></path></svg>
+</label>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="pink" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="blue" data-md-color-scheme="slate" id="__palette_2" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"></path></svg>
+</label>
+</form>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="Hokora Yinphine" class="md-nav__button md-logo" data-md-component="logo" href="../../.." title="Hokora Yinphine">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+    Hokora Yinphine
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../..">
+        Hey!
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2">
+          CSE 2010 12(83648)
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="CSE 2010 12(83648)" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+          CSE 2010 12(83648)
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../CSE%202010-12/">
+        CSE 2010-12
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" id="__nav_2_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_2">
+          PDF Dump
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="PDF Dump" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_2">
+<span class="md-nav__icon md-icon"></span>
+          PDF Dump
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../algorithms/">
+        Chapter 6: Algorithms
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../arrays/">
+        Chapter 6: Arrays
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../inheritance/">
+        Chapter 8: Inheritance
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../intro%20to%20recursion/">
+        Chapter 10: Intro to Recursion
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pointers%201/">
+        Chapter 7 - Pointers
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../pointers%202/">
+        Chapter 7 - Pointers 2
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../polymorphism/">
+        Chapter 8: Polymorphism
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../recursion/">
+        Chapter 10: Recursion
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          Chapter 9: Streams
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+        Chapter 9: Streams
+      </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cse-2010-week-13">
+    CSE 2010 - Week 13
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../string%20streams/">
+        Chapter 9: String Streams
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../templates%201/">
+        Chapter 16: Templates
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../templates%202/">
+        Templates part 2
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../vectors/">
+        Chapter 6: Vectors
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" id="__nav_2_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_3">
+          Week 1
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 1" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_3">
+<span class="md-nav__icon md-icon"></span>
+          Week 1
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%201/2022-08-22%20-%20Syllabus%20Overview/">
+        will be coding in C++
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%201/2022-08-24%20-%20C%2B%2B%20Overview/">
+        2022 08 24   C++ Overview
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3_3" id="__nav_2_3_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_3_3">
+          Lab1
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Lab1" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_3_3">
+<span class="md-nav__icon md-icon"></span>
+          Lab1
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%201/Lab1/Lab%201%20Submission/">
+        Part A
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%201/Lab1/Lab%201-A/">
+        Lab 1 A
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%201/Lab1/Lab%201-B/">
+        Lab 1 B
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" id="__nav_2_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_4">
+          Week 11
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 11" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_4">
+<span class="md-nav__icon md-icon"></span>
+          Week 11
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4_1" id="__nav_2_4_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_4_1">
+          Lab 7
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Lab 7" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_4_1">
+<span class="md-nav__icon md-icon"></span>
+          Lab 7
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%2011/Lab%207/Lab%207%20-%20Pointers/">
+        Lab 7 Pointers (15 points total)
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_5" id="__nav_2_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_5">
+          Week 2
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 2" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_5">
+<span class="md-nav__icon md-icon"></span>
+          Week 2
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%202/2022-08-23%20-%20C%2B%2B%20Ch%202%20Numerical%20data%20types/">
+        Chapter 2: Numerical Data Types
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%202/2022-08-31%20-%20C%2B%2B%20Fundamental%20Data%20Types%2C%20Variables%2C%20Strings/">
+        Week 2 (August 29, 31): Fundamental Data Types, Variables, Strings
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%202/Week%202.1%20Numerical%20Data%20Types%20and%20Variables/">
+        PDF
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%202/Week%202.2%20Predefined%20Libraries%20and%20Functions/">
+        PDF
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_5_5" id="__nav_2_5_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_5_5">
+          Lab2
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Lab2" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_5_5">
+<span class="md-nav__icon md-icon"></span>
+          Lab2
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%202/Lab2/Lab%202%20PDF%20Markdown/">
+        CSE 2010 Fall 2022
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%202/Lab2/Lab%202%20Submission/">
+        Lab 2
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_6" id="__nav_2_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_6">
+          Week 3
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 3" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_6">
+<span class="md-nav__icon md-icon"></span>
+          Week 3
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%203/2022-09-07%20-%20C%2B%2B%20Control%20Flow%20with%20if-else%20statements/">
+        Chapter 3: Control Flow: if-else, relational operators, boolean operators
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_7" id="__nav_2_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_7">
+          Week 4
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 4" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_7">
+<span class="md-nav__icon md-icon"></span>
+          Week 4
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%204/2022-09-14%20Loops/">
+        Chapter 3: Loops, loops, and more loops
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%204/For%20Exercise%203%20Using%20rand/">
+        Using the rand() Function to Generate Random Numbers
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_7_3" id="__nav_2_7_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_7_3">
+          Lab 3
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Lab 3" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_7_3">
+<span class="md-nav__icon md-icon"></span>
+          Lab 3
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%204/Lab%203/Lab%203%20Submission/">
+        Lab 03: Control Flow with if-else and Loops (Due **9/26** BEFORE lecture)
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_8" id="__nav_2_8" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_8">
+          Week 5
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 5" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_8">
+<span class="md-nav__icon md-icon"></span>
+          Week 5
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%205/2022-09-19%20Functions/">
+        Chapter 4: Functions
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%205/2022-09-19%20Loops%20Continued/">
+        Chapter 3: Loops Continued
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%205/2022-09-21%20Functions%20Continued/">
+        Chapter 4: Functions part 2
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_8_4" id="__nav_2_8_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_8_4">
+          Lab 4
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Lab 4" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_8_4">
+<span class="md-nav__icon md-icon"></span>
+          Lab 4
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%205/Lab%204/Lab%204%20Submission/">
+        Lab 4 Submission
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_9" id="__nav_2_9" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_9">
+          Week 6
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 6" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_9">
+<span class="md-nav__icon md-icon"></span>
+          Week 6
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%206/2022-09-26%20Classes/">
+        Chapter 5: Classes
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%206/2022-09-26%20Functions%20Continued%20Again/">
+        Chapter 4: Functions part 2...again
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%206/2022-09-28%20Classes%20Continued/">
+        Chapter 5: Classes
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_10" id="__nav_2_10" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_10">
+          Week 7
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 7" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_10">
+<span class="md-nav__icon md-icon"></span>
+          Week 7
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%207/2022-10-03/">
+        2022 10 03
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_10_2" id="__nav_2_10_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_10_2">
+          Lab 5
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Lab 5" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_10_2">
+<span class="md-nav__icon md-icon"></span>
+          Lab 5
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%207/Lab%205/Lab%205%20Submission/">
+        Lab 5 Submission
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_11" id="__nav_2_11" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_11">
+          Week 9
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 9" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_11">
+<span class="md-nav__icon md-icon"></span>
+          Week 9
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%209/2022-10-17%20Arrays/">
+        Chapter 6: Arrays
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%209/2022-11-07%20Inheritance%20%26%20Polymorphism/">
+        Chapter 8: Inheritance
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%209/2022-11-07%20Reading%2C%20Writing%20Files%3B%20Streams/">
+        2022 11 07 Reading, Writing Files; Streams
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3">
+          JAPN 3900 03
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="JAPN 3900 03" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+          JAPN 3900 03
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../JAPN%203900-03/2022-09-09/">
+        Das Cabinet des Dr. Caligari (The Cabinet of Dr. Caligari) (1920)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../JAPN%203900-03/JAPN%203900-03/">
+        JAPN 3900-03
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" id="__nav_3_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_3">
+          Week 1
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 1" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_3">
+<span class="md-nav__icon md-icon"></span>
+          Week 1
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../JAPN%203900-03/Week%201/2022-08-26%20-%20JPN%20Syllabus%20Overview/">
+        Writing Center
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4">
+          MATH 2210 12
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="MATH 2210 12" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+          MATH 2210 12
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Math%202210-12/">
+        Math 2210 12
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/ZR/">
+        ZR Points
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3" id="__nav_4_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_3">
+          Week 1
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 1" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_3">
+<span class="md-nav__icon md-icon"></span>
+          Week 1
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%201/2022-08-23/">
+        Syllabus
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%201/2022-08-25%20-%20Folded%20Paper/">
+        Yesterday Review
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%201/2022-08-26%20-%20Work%20Together%20Exam/">
+        *1.1* Function And Change
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%201/2210%20Syllabus%20Markdown/">
+        Calculus 1 - Differentiation
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4" id="__nav_4_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_4">
+          Week 2
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 2" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_4">
+<span class="md-nav__icon md-icon"></span>
+          Week 2
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%202/2022-08-30/">
+        Announcements
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%202/2022-09-01/">
+        Section 1.4
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_5" id="__nav_4_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_5">
+          Week 3
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 3" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_5">
+<span class="md-nav__icon md-icon"></span>
+          Week 3
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%203/2022-09-06/">
+        Limits
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%203/2022-09-08/">
+        Section 2.1
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%203/2022-09-09%20-%20Quiz%203/">
+        2022 09 09   Quiz 3
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_6" id="__nav_4_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_6">
+          Week 4
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 4" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_6">
+<span class="md-nav__icon md-icon"></span>
+          Week 4
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%204/2022-09-13/">
+        2022 09 13
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%204/2022-09-15/">
+        $$v=\frac{3}{2}\pi r^{5}b\textrm{ , assume b is a constant}$$
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%204/2022-09-16%20-%20Quiz%204/">
+        Quiz #4     Math 2210-12     James Wibowo
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_7" id="__nav_4_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_7">
+          Week 5
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 5" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_7">
+<span class="md-nav__icon md-icon"></span>
+          Week 5
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%205/Math%202210%20Midterm%201%20Take%20Home/">
+        Math 2210 - 01 Calculus I Midterm 1 Zadock Reid
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%205/Math%202210%20Midterm/">
+        Math 2210 - Calculus 1 Midterm 1 - In Class Z. Reid - James Wibowo
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_8" id="__nav_4_8" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_8">
+          Week 6
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 6" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_8">
+<span class="md-nav__icon md-icon"></span>
+          Week 6
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%206/2022-09-30%20-%20Quiz%206/">
+        Quiz #6     Math 2210-12     James Wibowo
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_9" id="__nav_4_9" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_9">
+          Week 7
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 7" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_9">
+<span class="md-nav__icon md-icon"></span>
+          Week 7
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%207/2022-10-04/">
+        2022 10 04
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5">
+          MATH 2720 04
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="MATH 2720 04" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+          MATH 2720 04
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/MATH%202720-04/">
+        Discrete Mathmatics
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/matrix%20latex%20format/">
+        Matrix latex format
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_3" id="__nav_5_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5_3">
+          Week 1
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 1" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_3">
+<span class="md-nav__icon md-icon"></span>
+          Week 1
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%201/2022-08-23-1/">
+        2022 08 23 1
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%201/2022-08-25%20-%20Statements/">
+        Warm up
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%201/2720%20Syllabus%20Markdown/">
+        MathematicsDepartment
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%201/M1%20Overview%20%26%20Objectives/">
+        [M1 Overview &amp; Objectives](https://csusb.instructure.com/courses/15759/pages/m1-overview-and-objectives?module_item_id=1037400)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%201/Week%201%20Homework/">
+        Module 1: Settling In with Mathematical Statements (Week 1)
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_4" id="__nav_5_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5_4">
+          Week 2
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 2" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_4">
+<span class="md-nav__icon md-icon"></span>
+          Week 2
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%202/2022-08-30-1/">
+        Warmup
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%202/2022-09-01%20WRKSHT2/">
+        2022 09 01 WRKSHT2
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%202/M2%20Overview%20%26%20Objectives/">
+        [M2 Overview &amp; Objectives](https://csusb.instructure.com/courses/15759/modules/items/1037412)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%202/M2%20Wrap%20Up%20and%20Next%20Steps/">
+        [M2 Wrap Up and Next Steps](https://csusb.instructure.com/courses/15759/modules/items/1037424)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%202/Week%202%20Homework/">
+        Module 2: Sets and Functions (Week 2)
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_5" id="__nav_5_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5_5">
+          Week 3
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 3" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_5">
+<span class="md-nav__icon md-icon"></span>
+          Week 3
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%203/2022-09-08%20Hex/">
+        2022 09 08 Hex
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%203/M3%20Overview%20%26%20Objectives/">
+        M3 Overview &amp; Objectives
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%203/M3%20Wrap%20Up%20and%20Next%20Steps/">
+        M3 Wrap Up and Next Steps
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%203/Week%203%20Homework/">
+        Module 3: Functions and Additive/Multiplicative Principles (Week 3)
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_6" id="__nav_5_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5_6">
+          Week 4
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 4" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_6">
+<span class="md-nav__icon md-icon"></span>
+          Week 4
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%204/2022-09-13%20Worksheet/">
+        2022 09 13 Worksheet
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%204/M4%20Overview%20%26%20Objectives/">
+        M4 Overview &amp; Objectives
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%204/M4%20Wrap%20Up%20and%20Next%20Steps/">
+        M4 Wrap Up and Next Steps
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%204/Week%204%20Homework/">
+        Module 4: Binomial Coefficients (Week 4)
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_7" id="__nav_5_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5_7">
+          Week 5
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 5" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_7">
+<span class="md-nav__icon md-icon"></span>
+          Week 5
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%205/M5%20Overview%20%26%20Objectives/">
+        M5 Overview &amp; Objectives
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%205/M5%20Wrap%20Up%20and%20Next%20Steps/">
+        M5 Wrap Up and Next Steps
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%205/Week%205%20Homework/">
+        Module 5: Combinations, Permutations, and Stars and Bars (Week 5)
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_8" id="__nav_5_8" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5_8">
+          Week 6
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 6" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_8">
+<span class="md-nav__icon md-icon"></span>
+          Week 6
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%206/M6%20Overview%20%26%20Objectives/">
+        M6 Overview &amp; Objectives
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%206/M6%20Wrap%20Up%20and%20Next%20Steps/">
+        M6 Wrap Up and Next Steps
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%206/Week%206%20Homework/">
+        Module 6: Introduction to Sequences and Arithmetic/Geometric Sequences (Week 6)
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cse-2010-week-13">
+    CSE 2010 - Week 13
+  </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="chapter-9-streams">Chapter 9: Streams<a class="headerlink" href="#chapter-9-streams" title="Permanent link">¶</a></h1>
+<h2 id="cse-2010-week-13">CSE 2010 - Week 13<a class="headerlink" href="#cse-2010-week-13" title="Permanent link">¶</a></h2>
+<h1 id="background">Background<a class="headerlink" href="#background" title="Permanent link">¶</a></h1>
+<h5 id="the-programs-that-we-have-written-up-until-now-can-take-input-from-the">● The programs that we have written up until now can take input from the<a class="headerlink" href="#the-programs-that-we-have-written-up-until-now-can-take-input-from-the" title="Permanent link">¶</a></h5>
+<h5 id="user-through-the-keyboard-and-processes-it-accordingly-using-cin-or">user through the keyboard and processes it accordingly using cin&gt;&gt; or<a class="headerlink" href="#user-through-the-keyboard-and-processes-it-accordingly-using-cin-or" title="Permanent link">¶</a></h5>
+<h5 id="getline">getline().<a class="headerlink" href="#getline" title="Permanent link">¶</a></h5>
+<h5 id="we-have-also-been-able-to-output-messages-to-the-user-using-cout">● We have also been able to output messages to the user using cout &lt;&lt;<a class="headerlink" href="#we-have-also-been-able-to-output-messages-to-the-user-using-cout" title="Permanent link">¶</a></h5>
+<h5 id="to-use-cout-and-cin-we-need-to-include-since-cout">● To use cout and cin, we need to #include \<iostream>, since cout<a class="headerlink" href="#to-use-cout-and-cin-we-need-to-include-since-cout" title="Permanent link">¶</a></iostream></h5>
+<h5 id="and-cin-are-output-and-input-streams-respectively">and cin are output and input streams, respectively.<a class="headerlink" href="#and-cin-are-output-and-input-streams-respectively" title="Permanent link">¶</a></h5>
+<h5 id="streams-in-c-are-an-abstraction-that-represent-a-device-on-which-input">● Streams in C++ are an abstraction that represent a device on which input<a class="headerlink" href="#streams-in-c-are-an-abstraction-that-represent-a-device-on-which-input" title="Permanent link">¶</a></h5>
+<h5 id="and-output-operations-are-performed">and output operations are performed.<a class="headerlink" href="#and-output-operations-are-performed" title="Permanent link">¶</a></h5>
+<h5 id="streams-are-essential-in-programming-because-they-allow-for-interaction">● Streams are essential in programming because they allow for interaction<a class="headerlink" href="#streams-are-essential-in-programming-because-they-allow-for-interaction" title="Permanent link">¶</a></h5>
+<h5 id="between-the-program-users-and-outside-data">between the program, users, and outside data.<a class="headerlink" href="#between-the-program-users-and-outside-data" title="Permanent link">¶</a></h5>
+<h1 id="background_1">Background<a class="headerlink" href="#background_1" title="Permanent link">¶</a></h1>
+<h5 id="we-have-already-been-working-with-streams-cin-cout-stream-functions">● We have already been working with streams (cin, cout), stream functions<a class="headerlink" href="#we-have-already-been-working-with-streams-cin-cout-stream-functions" title="Permanent link">¶</a></h5>
+<h5 id="cinfail-cinclearetc">(cin.fail(), cin.clear()...etc).<a class="headerlink" href="#cinfail-cinclearetc" title="Permanent link">¶</a></h5>
+<h5 id="this-chapter-we-are-going-to-take-a-much-closer-look-at-streams">● This chapter we are going to take a much closer look at streams<a class="headerlink" href="#this-chapter-we-are-going-to-take-a-much-closer-look-at-streams" title="Permanent link">¶</a></h5>
+<pre><code>○ What are streams?
+○ Different stream classes
+</code></pre>
+<pre><code>○ Stream states
+○ Reading and writing from/to files (file streams)
+○ Formatting streams
+</code></pre>
+<h1 id="what-is-a-stream">What is a stream?<a class="headerlink" href="#what-is-a-stream" title="Permanent link">¶</a></h1>
+<h5 id="when-we-run-our-programs-data-must-be-stored-in-memory">● When we run our programs, data must be stored in memory.<a class="headerlink" href="#when-we-run-our-programs-data-must-be-stored-in-memory" title="Permanent link">¶</a></h5>
+<h5 id="the-data-stored-in-memory-for-processing-comes-from-an-external-source">● The data stored in memory for processing comes from an external source<a class="headerlink" href="#the-data-stored-in-memory-for-processing-comes-from-an-external-source" title="Permanent link">¶</a></h5>
+<h5 id="and-goes-to-an-external-sink">and goes to an external sink.<a class="headerlink" href="#and-goes-to-an-external-sink" title="Permanent link">¶</a></h5>
+<h5 id="so-far-we-have-used-the-keyboard-as-the-source-and-the-monitor-as-the">● So far, we have used the keyboard (as the source) and the monitor (as the<a class="headerlink" href="#so-far-we-have-used-the-keyboard-as-the-source-and-the-monitor-as-the" title="Permanent link">¶</a></h5>
+<h5 id="link-for-data">link) for data.<a class="headerlink" href="#link-for-data" title="Permanent link">¶</a></h5>
+<h5 id="a-source-and-a-sink-cannot-be-directly-connected-to-a-program-so-we">● A source and a sink cannot be directly connected to a program, so we<a class="headerlink" href="#a-source-and-a-sink-cannot-be-directly-connected-to-a-program-so-we" title="Permanent link">¶</a></h5>
+<h5 id="have-streams">have streams.<a class="headerlink" href="#have-streams" title="Permanent link">¶</a></h5>
+<pre><code>○ An input stream stands between a source and the program
+○ An output stream stands between a program and a sink.
+</code></pre>
+<h5 id="basic-definition-is-that-a-stream-is-a-sequence-of-bytes-flowing-in-or-out-of">● Basic definition is that a stream is a sequence of bytes flowing in or out of<a class="headerlink" href="#basic-definition-is-that-a-stream-is-a-sequence-of-bytes-flowing-in-or-out-of" title="Permanent link">¶</a></h5>
+<h5 id="a-program">a program.<a class="headerlink" href="#a-program" title="Permanent link">¶</a></h5>
+<h1 id="stream-classes">Stream Classes<a class="headerlink" href="#stream-classes" title="Permanent link">¶</a></h1>
+<h5 id="c-defines-a-hierarchy-of-classes-that-allow-us-to-use-streams">C++ defines a hierarchy of classes that allow us to use streams<a class="headerlink" href="#c-defines-a-hierarchy-of-classes-that-allow-us-to-use-streams" title="Permanent link">¶</a></h5>
+<pre><code>ios class: virtual base class
+● The base class for all
+input/output streams.
+● Defines data members and
+member functions that are
+inherited by all input/output
+stream classes.
+● It is never instantiated, which
+means it never uses its own
+data members or functions.
+● They are used by other
+stream classes.
+</code></pre>
+<h1 id="stream-classes_1">Stream Classes<a class="headerlink" href="#stream-classes_1" title="Permanent link">¶</a></h1>
+<h5 id="c-defines-a-hierarchy-of-classes-that-allow-us-to-use-streams_1">C++ defines a hierarchy of classes that allow us to use streams<a class="headerlink" href="#c-defines-a-hierarchy-of-classes-that-allow-us-to-use-streams_1" title="Permanent link">¶</a></h5>
+<pre><code>istream, ostream, iostream :
+● Console classes.
+● istream defines a class that
+allows us to read data from
+the keyboard.
+● ostream defines a class that
+allows us to write data to the
+monitor.
+● iostream inherits both
+</code></pre>
+<h1 id="stream-classes_2">Stream Classes<a class="headerlink" href="#stream-classes_2" title="Permanent link">¶</a></h1>
+<h5 id="c-defines-a-hierarchy-of-classes-that-allow-us-to-use-streams_2">C++ defines a hierarchy of classes that allow us to use streams<a class="headerlink" href="#c-defines-a-hierarchy-of-classes-that-allow-us-to-use-streams_2" title="Permanent link">¶</a></h5>
+<pre><code>ifstream, ofstream, fstream :
+● File streams that connects
+our programs to files.
+● ifstream allows for input
+from files (inherits istream)
+● ofstream allows for output
+to files (inherits ostream)
+● fstream allows for file
+input/output (inherits
+iostream)
+</code></pre>
+<h1 id="stream-classes_3">Stream Classes<a class="headerlink" href="#stream-classes_3" title="Permanent link">¶</a></h1>
+<h5 id="c-defines-a-hierarchy-of-classes-that-allow-us-to-use-streams_3">C++ defines a hierarchy of classes that allow us to use streams<a class="headerlink" href="#c-defines-a-hierarchy-of-classes-that-allow-us-to-use-streams_3" title="Permanent link">¶</a></h5>
+<pre><code>istringstream,
+ostringstream, stringstream :
+● String streams used to input
+data from or output data to
+strings.
+● istringstream allows for
+input from strings (inherits
+istream)
+● ostringstream allows for
+output to strings (inherits
+ostream)
+● fstream allows for string
+input/output (inherits
+iostream)
+</code></pre>
+<h1 id="stream-states">Stream States<a class="headerlink" href="#stream-states" title="Permanent link">¶</a></h1>
+<pre><code>● When we are inputting our outputting data, it is important for a stream to keep track of its
+state.
+● The stream state is stored in a data member called iostate that shows the status of the
+stream object (included in ios class).
+● iostate is a type made up of 3 constants
+○ eofbit - For input streams, means no more characters to extract (end of buffer)
+○ failbit - For input streams, invalid read operation. For output streams, incalid write operation.
+○ badbit - For input/output streams, stream integrity is lost.
+○ If all of the above bits are not set, then the stream is in a goodstate and can be used.
+</code></pre>
+<h1 id="stream-states_1">Stream States<a class="headerlink" href="#stream-states_1" title="Permanent link">¶</a></h1>
+<h6 id="the-ios-class-also-provides-member-functions-to-check-the-condition-of-the-state">The ios class also provides member functions to check the condition of the state.<a class="headerlink" href="#the-ios-class-also-provides-member-functions-to-check-the-condition-of-the-state" title="Permanent link">¶</a></h6>
+<h6 id="bool-eof-returns-true-if-eofbit-is-set-false-otherwise">● bool eof() - returns true if eofbit is set, false otherwise.<a class="headerlink" href="#bool-eof-returns-true-if-eofbit-is-set-false-otherwise" title="Permanent link">¶</a></h6>
+<h6 id="bool-fail-returns-true-if-failbit-is-set-false-otherwise">● bool fail() - returns true if failbit is set, false otherwise.<a class="headerlink" href="#bool-fail-returns-true-if-failbit-is-set-false-otherwise" title="Permanent link">¶</a></h6>
+<h6 id="bool-bad-returns-true-if-badbit-or-failbit-is-set-false-otherwise">● bool bad() - returns true if badbit OR failbit is set, false otherwise.<a class="headerlink" href="#bool-bad-returns-true-if-badbit-or-failbit-is-set-false-otherwise" title="Permanent link">¶</a></h6>
+<h6 id="bool-good-returns-true-if-iostate-is-in-a-good-state-all-bits-not-set">● bool good() - returns true if iostate is in a good state (all bits not set),<a class="headerlink" href="#bool-good-returns-true-if-iostate-is-in-a-good-state-all-bits-not-set" title="Permanent link">¶</a></h6>
+<h6 id="returns-false-otherwise">returns false otherwise.<a class="headerlink" href="#returns-false-otherwise" title="Permanent link">¶</a></h6>
+<h6 id="clear-it-clears-all-bits-sets-all-to-zero">● clear() - It clears all bits (sets all to zero).<a class="headerlink" href="#clear-it-clears-all-bits-sets-all-to-zero" title="Permanent link">¶</a></h6>
+<h6 id="weve-used-cinfail-to-check-if-an-input-is-in-a-failed-state">We’ve used cin.fail() to check if an input is in a failed state.<a class="headerlink" href="#weve-used-cinfail-to-check-if-an-input-is-in-a-failed-state" title="Permanent link">¶</a></h6>
+<h6 id="weve-used-whilecinx-which-continues-until-one-of-the-3-bits-is-set">We’ve used while(cin&gt;&gt;x) which continues until one of the 3 bits is set.<a class="headerlink" href="#weve-used-whilecinx-which-continues-until-one-of-the-3-bits-is-set" title="Permanent link">¶</a></h6>
+<h3 id="two-more-things-before-we-get-into-using-file-streams">Two more things before we get into using file streams.......<a class="headerlink" href="#two-more-things-before-we-get-into-using-file-streams" title="Permanent link">¶</a></h3>
+<h6 id="when-we-use-any-streams-there-is-typically-5-things-we-need-to-make-sure-we">● When we use any streams, there is typically 5 things we need to make sure we<a class="headerlink" href="#when-we-use-any-streams-there-is-typically-5-things-we-need-to-make-sure-we" title="Permanent link">¶</a></h6>
+<h6 id="do">do:<a class="headerlink" href="#do" title="Permanent link">¶</a></h6>
+<pre><code>○ Construct the stream
+○ Connect the stream to the source or sink
+○ Read or write from the stream
+○ Disconnect the source or the sink
+○ Destroy the stream
+</code></pre>
+<h6 id="when-we-work-with-streams-its-important-to-note-that-none-of-the-classes-in">● When we work with streams, it’s important to note that none of the classes in<a class="headerlink" href="#when-we-work-with-streams-its-important-to-note-that-none-of-the-classes-in" title="Permanent link">¶</a></h6>
+<h6 id="the-hierarchy-have-provided-a-copy-constructor-or-assignment-operators">the hierarchy have provided a copy constructor or assignment operators.<a class="headerlink" href="#the-hierarchy-have-provided-a-copy-constructor-or-assignment-operators" title="Permanent link">¶</a></h6>
+<pre><code>○ We can never pass an object of any stream class to a function by value, so we need to pass there
+by reference.
+○ We can never return an object of any stream class from a function by value, so we need to do so
+by reference.
+○ We cannot pass or return an object of any stream class using a constant modifier, since these
+objects are constantly changing.
+</code></pre>
+<h1 id="reading-and-writing-fromto-files">Reading and Writing From/To Files<a class="headerlink" href="#reading-and-writing-fromto-files" title="Permanent link">¶</a></h1>
+<h5 id="so-far-our-programs-use-the-keyboard-to-take-user-input-and-the-monitor">● So far, our programs use the keyboard to take user input and the monitor<a class="headerlink" href="#so-far-our-programs-use-the-keyboard-to-take-user-input-and-the-monitor" title="Permanent link">¶</a></h5>
+<h5 id="to-output-data-once-the-program-ends-this-data-no-longer-exists">to output data. Once the program ends, this data no longer exists.<a class="headerlink" href="#to-output-data-once-the-program-ends-this-data-no-longer-exists" title="Permanent link">¶</a></h5>
+<h5 id="we-will-now-learn-how-we-can-read-from-files-and-write-to-files">● We will now learn how we can read from files and write to files.<a class="headerlink" href="#we-will-now-learn-how-we-can-read-from-files-and-write-to-files" title="Permanent link">¶</a></h5>
+<h5 id="need-to-include">● Need to #include \<fstream><a class="headerlink" href="#need-to-include" title="Permanent link">¶</a></fstream></h5>
+<p>○ Since it inherits iostream, this will allow for both input and output.</p>
+<h1 id="reading-from-files">Reading From Files<a class="headerlink" href="#reading-from-files" title="Permanent link">¶</a></h1>
+<pre><code>● Make sure to #include &lt;fstream&gt;
+● Step 1: Constructing a stream to read files.
+</code></pre>
+<p>ifstream streamName;</p>
+<pre><code>● Step 2: Connect the stream to the source. Always double check that it opened properly
+streamName.open(filename);
+if(streamName.fail())
+Cout &lt;&lt; “Error opening file with name.\n”;
+● Step 3: Read from the stream;
+</code></pre>
+<pre><code>datatype var;//declare variable for what you want to read
+streamName &gt;&gt; var;//will read in data, and store into var until
+//white space or newline is reached
+</code></pre>
+<p>● Step 4: Disconnect the source</p>
+<p>streamName.close();</p>
+<p>● Step 5: Destroy stream....is done automatically :)</p>
+<pre><code>input1.txt
+</code></pre>
+<p>Output:</p>
+<h4 id="ifstreamistream-as-parameters">ifstream/istream as parameters<a class="headerlink" href="#ifstreamistream-as-parameters" title="Permanent link">¶</a></h4>
+<h6 id="it-is-good-practice-to-designate-a-function-to-read-in-files-especially-if-you-need">● It is good practice to designate a function to read in files, especially if you need<a class="headerlink" href="#it-is-good-practice-to-designate-a-function-to-read-in-files-especially-if-you-need" title="Permanent link">¶</a></h6>
+<h6 id="to-store-multiple-values-into-a-vector-or-array">to store multiple values into a vector or array.<a class="headerlink" href="#to-store-multiple-values-into-a-vector-or-array" title="Permanent link">¶</a></h6>
+<h6 id="you-can-either-declare-a-file-object-in-the-function-if-you-dont-need-it-elsewhere">● You can either declare a file object in the function if you don’t need it elsewhere,<a class="headerlink" href="#you-can-either-declare-a-file-object-in-the-function-if-you-dont-need-it-elsewhere" title="Permanent link">¶</a></h6>
+<h6 id="or-pass-it-as-a-parameter-by-reference">or pass it as a parameter (by reference)<a class="headerlink" href="#or-pass-it-as-a-parameter-by-reference" title="Permanent link">¶</a></h6>
+<h6 id="if-you-pass-it-as-a-parameter-use-istream-as-the-parameter-type">● If you pass it as a parameter, use istream as the parameter type<a class="headerlink" href="#if-you-pass-it-as-a-parameter-use-istream-as-the-parameter-type" title="Permanent link">¶</a></h6>
+<p>○ This will allow you to send not only ifstream, but also cin</p>
+<p>Example: void read_data(istream&amp; in);</p>
+<pre><code>● The istream object needs to be passed by reference for two reasons:
+● The object is modified with every input, so we need to allow it to change.
+● Passing by reference will ensure that we do not “slice” away any info if we send an
+ifstream object as the argument.
+○ Remember that ifstream inherits istream, so it is valid to send an ifstream
+object to an istream parameter.
+</code></pre>
+<h1 id="lets-look-at-some-examples">Let’s look at some examples!<a class="headerlink" href="#lets-look-at-some-examples" title="Permanent link">¶</a></h1>
+<h2 id="max_filecpp-file_veccpp-on-canvas">max_file.cpp &amp; file_vec.cpp on Canvas<a class="headerlink" href="#max_filecpp-file_veccpp-on-canvas" title="Permanent link">¶</a></h2>
+<h1 id="writing-to-files">Writing to Files<a class="headerlink" href="#writing-to-files" title="Permanent link">¶</a></h1>
+<pre><code>● Make sure to #include &lt;fstream&gt;
+● Step 1: Constructing a stream to write to files.
+</code></pre>
+<pre><code>ofstream streamName;
+</code></pre>
+<pre><code>● Step 2: Connect the stream to the sink. Always double check that it opened properly
+● If the file doesn’t exist, the program will simply create a new file with the name you provide.
+● Output files will fail to open if it already exists and is in use, or if the file is marked as read-only.
+streamName.open(filename);
+if(streamName.fail())
+Cout &lt;&lt; “Error opening file with name.\n”;
+● Step 3: Write to the stream;
+</code></pre>
+<pre><code>datatype var;//declare variable for what you want to write
+//give variable some value
+streamName &lt;&lt; var;//will write the value to the stream/file
+</code></pre>
+<pre><code>● Step 4: Disconnect the sink
+</code></pre>
+<pre><code>streamName.close();
+</code></pre>
+<pre><code>● Step 5: Destroy stream....is done automatically :)
+</code></pre>
+<h1 id="lets-look-at-some-examples_1">Let’s look at some examples!<a class="headerlink" href="#lets-look-at-some-examples_1" title="Permanent link">¶</a></h1>
+<h2 id="write_randomcpp-file_vec2cpp-on-canvas">write_random.cpp &amp; file_vec2.cpp on Canvas<a class="headerlink" href="#write_randomcpp-file_vec2cpp-on-canvas" title="Permanent link">¶</a></h2>
+<h1 id="important-note-for-writing-to-files">Important note for writing to files...<a class="headerlink" href="#important-note-for-writing-to-files" title="Permanent link">¶</a></h1>
+<h5 id="if-you-open-a-file-that-already-exists-and-has-data-in-it-your-program-will">● If you open a file that already exists and has data in it, your program will<a class="headerlink" href="#if-you-open-a-file-that-already-exists-and-has-data-in-it-your-program-will" title="Permanent link">¶</a></h5>
+<h5 id="overwrite-the-file">OVERWRITE the file.<a class="headerlink" href="#overwrite-the-file" title="Permanent link">¶</a></h5>
+<h5 id="there-are-ways-to-prevent-this-by-selecting-different-opening-modes">● There are ways to prevent this by selecting different opening modes.<a class="headerlink" href="#there-are-ways-to-prevent-this-by-selecting-different-opening-modes" title="Permanent link">¶</a></h5>
+<h1 id="opening-modes">Opening Modes<a class="headerlink" href="#opening-modes" title="Permanent link">¶</a></h1>
+<h6 id="the-default-opening-mode-for-file-streams-puts-the-stream-marker-at-the">● The default opening mode for file streams puts the stream marker at the<a class="headerlink" href="#the-default-opening-mode-for-file-streams-puts-the-stream-marker-at-the" title="Permanent link">¶</a></h6>
+<h6 id="beginning-of-the-file-and-will-read-from-or-write-to-starting-there">beginning of the file and will read from or write to starting there.<a class="headerlink" href="#beginning-of-the-file-and-will-read-from-or-write-to-starting-there" title="Permanent link">¶</a></h6>
+<h6 id="we-have-other-opening-models-available-to-us-when-we-are-readingwriting">● We have other opening models available to us when we are reading/writing.<a class="headerlink" href="#we-have-other-opening-models-available-to-us-when-we-are-readingwriting" title="Permanent link">¶</a></h6>
+<h6 id="ios-iostream-class">● ios = iostream class<a class="headerlink" href="#ios-iostream-class" title="Permanent link">¶</a></h6>
+<h6 id="iosin-open-for-input">○ ios::in – open for input<a class="headerlink" href="#iosin-open-for-input" title="Permanent link">¶</a></h6>
+<h6 id="iosout-open-for-output-contents-are-destroyed">○ ios::out – open for output; contents are destroyed<a class="headerlink" href="#iosout-open-for-output-contents-are-destroyed" title="Permanent link">¶</a></h6>
+<h6 id="iosapp-open-for-output-and-write-at-the-end-append">○ ios::app – open for output and write at the end (append)<a class="headerlink" href="#iosapp-open-for-output-and-write-at-the-end-append" title="Permanent link">¶</a></h6>
+<h6 id="iosate-move-to-the-end-immediately-after-opening-at-end">○ ios::ate – move to the end immediately after opening (at end)<a class="headerlink" href="#iosate-move-to-the-end-immediately-after-opening-at-end" title="Permanent link">¶</a></h6>
+<h6 id="iostrunc-truncate-the-file-to-zero-length">○ ios::trunc – truncate the file to zero length<a class="headerlink" href="#iostrunc-truncate-the-file-to-zero-length" title="Permanent link">¶</a></h6>
+<h6 id="ios-binary-read-and-write-in-binary-mode">○ ios:: binary – read and write in binary mode<a class="headerlink" href="#ios-binary-read-and-write-in-binary-mode" title="Permanent link">¶</a></h6>
+<h6 id="syntax-for-opening-modes">● Syntax for opening modes:<a class="headerlink" href="#syntax-for-opening-modes" title="Permanent link">¶</a></h6>
+<pre><code>○ streamName.open(filename,open mode);
+output_data.open(“out.txt”, ios::app);//will append to file without overwriting
+</code></pre>
+<h1 id="opening-modes_1">Opening Modes<a class="headerlink" href="#opening-modes_1" title="Permanent link">¶</a></h1>
+<p>Opening modes for input (reading)</p>
+<pre><code>● ios::in - open for input
+○ Will open the file for input and puts the marker at the first
+byte of the buffer.
+○ This allows us to start reading the files from the first byte.
+○ With each read, the marker moves to the next byte, until
+we reach an empty position.
+○ At the end of reading, the eof bit is set.
+● (ios::in|ios::ate) - open for input at the end
+○ The file is open for reading , but the marker goes to the
+position after the last byte.
+○ We can use this if we want to read the bytes in reverse or
+we can check the size of the file.
+</code></pre>
+<p>Opening modes for output (writing)</p>
+<pre><code>● ios::out - open for output
+○ Will open the file for output.
+○ If the file contains any data, they are deleted.
+● (ios::out|ios::app) - open for output | append
+○ The file is open for writing, but the marker goes to the
+position after the last byte and will append to it.
+○ The existing data is preserved.
+</code></pre>
+<h2 id="reading-from-and-writing-to-the-same-file-or-different-files">Reading from and writing to the same file, or different files<a class="headerlink" href="#reading-from-and-writing-to-the-same-file-or-different-files" title="Permanent link">¶</a></h2>
+<pre><code>● Make sure to #include &lt;fstream&gt;
+● Step 1: Constructing a stream to read &amp; write files.
+</code></pre>
+<pre><code>fstream streamName;
+</code></pre>
+<pre><code>● Step 2: Connect the stream to the source. Always double check that it opened properly
+streamName.open(filename,ios::in|ios::out);
+if(streamName.fail())
+Cout &lt;&lt; “Error opening file with name.\n”;
+● Step 3: Depending on what you want to do, use the appropriate operator;
+streamName &gt;&gt; var;//will read
+streamName &lt;&lt; var; // will write
+//white space or newline is reached
+● Step 3.1: If you expect to write after reading, you will have to also use the clear function to clear the stream and set the
+eof bit to false, allowing for input at the end of the file. (streamName.clear())
+● Step 4: Disconnect the source
+</code></pre>
+<pre><code>streamName.close();
+</code></pre>
+<pre><code>● Step 5: Destroy stream....is done automatically :)
+</code></pre>
+<p>Let’s look at an example! (read_write.cpp, read_write2.cpp)</p>
+<p><img alt="Chapter 9 Streams.pdf" src="../Chapter%209%20Streams.pdf"/></p>
+</article>
+</div>
+</div>
+</main>
+<footer class="md-footer">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Previous: Chapter 10: Recursion" class="md-footer__link md-footer__link--prev" href="../recursion/" rel="prev">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</div>
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Previous
+              </span>
+              Chapter 10: Recursion
+            </div>
+</div>
+</a>
+<a aria-label="Next: Chapter 9: String Streams" class="md-footer__link md-footer__link--next" href="../string%20streams/" rel="next">
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Next
+              </span>
+              Chapter 9: String Streams
+            </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+<script src="../../../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
+<script src="../../../javascripts/mathjax.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</body>
+</html>

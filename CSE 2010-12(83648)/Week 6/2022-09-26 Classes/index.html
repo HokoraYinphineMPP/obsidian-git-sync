@@ -1,0 +1,1789 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="../../../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.4.2, mkdocs-material-8.5.10" name="generator"/>
+<title>Chapter 5: Classes - Hokora Yinphine</title>
+<link href="../../../assets/stylesheets/main.975780f9.min.css" rel="stylesheet"/>
+<link href="../../../assets/stylesheets/palette.2505c338.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="indigo" data-md-color-primary="blue" data-md-color-scheme="default" dir="ltr">
+<script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#chapter-5-classes">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="Hokora Yinphine" class="md-header__button md-logo" data-md-component="logo" href="../../.." title="Hokora Yinphine">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            Hokora Yinphine
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Chapter 5: Classes
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="indigo" data-md-color-media="(prefers-color-scheme: light)" data-md-color-primary="blue" data-md-color-scheme="default" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"></path></svg>
+</label>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="pink" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="blue" data-md-color-scheme="slate" id="__palette_2" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"></path></svg>
+</label>
+</form>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="Hokora Yinphine" class="md-nav__button md-logo" data-md-component="logo" href="../../.." title="Hokora Yinphine">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+    Hokora Yinphine
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../..">
+        Hey!
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2">
+          CSE 2010 12(83648)
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="CSE 2010 12(83648)" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+          CSE 2010 12(83648)
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../CSE%202010-12/">
+        CSE 2010-12
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" id="__nav_2_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_2">
+          PDF Dump
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="PDF Dump" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_2">
+<span class="md-nav__icon md-icon"></span>
+          PDF Dump
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../PDF%20Dump/algorithms/">
+        Chapter 6: Algorithms
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../PDF%20Dump/arrays/">
+        Chapter 6: Arrays
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../PDF%20Dump/inheritance/">
+        Chapter 8: Inheritance
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../PDF%20Dump/intro%20to%20recursion/">
+        Chapter 10: Intro to Recursion
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../PDF%20Dump/pointers%201/">
+        Chapter 7 - Pointers
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../PDF%20Dump/pointers%202/">
+        Chapter 7 - Pointers 2
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../PDF%20Dump/polymorphism/">
+        Chapter 8: Polymorphism
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../PDF%20Dump/recursion/">
+        Chapter 10: Recursion
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../PDF%20Dump/streams/">
+        Chapter 9: Streams
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../PDF%20Dump/string%20streams/">
+        Chapter 9: String Streams
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../PDF%20Dump/templates%201/">
+        Chapter 16: Templates
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../PDF%20Dump/templates%202/">
+        Templates part 2
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../PDF%20Dump/vectors/">
+        Chapter 6: Vectors
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" id="__nav_2_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_3">
+          Week 1
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 1" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_3">
+<span class="md-nav__icon md-icon"></span>
+          Week 1
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%201/2022-08-22%20-%20Syllabus%20Overview/">
+        will be coding in C++
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%201/2022-08-24%20-%20C%2B%2B%20Overview/">
+        2022 08 24   C++ Overview
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3_3" id="__nav_2_3_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_3_3">
+          Lab1
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Lab1" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_3_3">
+<span class="md-nav__icon md-icon"></span>
+          Lab1
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%201/Lab1/Lab%201%20Submission/">
+        Part A
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%201/Lab1/Lab%201-A/">
+        Lab 1 A
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%201/Lab1/Lab%201-B/">
+        Lab 1 B
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" id="__nav_2_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_4">
+          Week 11
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 11" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_4">
+<span class="md-nav__icon md-icon"></span>
+          Week 11
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4_1" id="__nav_2_4_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_4_1">
+          Lab 7
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Lab 7" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_4_1">
+<span class="md-nav__icon md-icon"></span>
+          Lab 7
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%2011/Lab%207/Lab%207%20-%20Pointers/">
+        Lab 7 Pointers (15 points total)
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_5" id="__nav_2_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_5">
+          Week 2
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 2" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_5">
+<span class="md-nav__icon md-icon"></span>
+          Week 2
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%202/2022-08-23%20-%20C%2B%2B%20Ch%202%20Numerical%20data%20types/">
+        Chapter 2: Numerical Data Types
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%202/2022-08-31%20-%20C%2B%2B%20Fundamental%20Data%20Types%2C%20Variables%2C%20Strings/">
+        Week 2 (August 29, 31): Fundamental Data Types, Variables, Strings
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%202/Week%202.1%20Numerical%20Data%20Types%20and%20Variables/">
+        PDF
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%202/Week%202.2%20Predefined%20Libraries%20and%20Functions/">
+        PDF
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_5_5" id="__nav_2_5_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_5_5">
+          Lab2
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Lab2" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_5_5">
+<span class="md-nav__icon md-icon"></span>
+          Lab2
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%202/Lab2/Lab%202%20PDF%20Markdown/">
+        CSE 2010 Fall 2022
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%202/Lab2/Lab%202%20Submission/">
+        Lab 2
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_6" id="__nav_2_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_6">
+          Week 3
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 3" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_6">
+<span class="md-nav__icon md-icon"></span>
+          Week 3
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%203/2022-09-07%20-%20C%2B%2B%20Control%20Flow%20with%20if-else%20statements/">
+        Chapter 3: Control Flow: if-else, relational operators, boolean operators
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_7" id="__nav_2_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_7">
+          Week 4
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 4" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_7">
+<span class="md-nav__icon md-icon"></span>
+          Week 4
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%204/2022-09-14%20Loops/">
+        Chapter 3: Loops, loops, and more loops
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%204/For%20Exercise%203%20Using%20rand/">
+        Using the rand() Function to Generate Random Numbers
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_7_3" id="__nav_2_7_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_7_3">
+          Lab 3
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Lab 3" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_7_3">
+<span class="md-nav__icon md-icon"></span>
+          Lab 3
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%204/Lab%203/Lab%203%20Submission/">
+        Lab 03: Control Flow with if-else and Loops (Due **9/26** BEFORE lecture)
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_8" id="__nav_2_8" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_8">
+          Week 5
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 5" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_8">
+<span class="md-nav__icon md-icon"></span>
+          Week 5
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%205/2022-09-19%20Functions/">
+        Chapter 4: Functions
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%205/2022-09-19%20Loops%20Continued/">
+        Chapter 3: Loops Continued
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%205/2022-09-21%20Functions%20Continued/">
+        Chapter 4: Functions part 2
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_8_4" id="__nav_2_8_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_8_4">
+          Lab 4
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Lab 4" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_8_4">
+<span class="md-nav__icon md-icon"></span>
+          Lab 4
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%205/Lab%204/Lab%204%20Submission/">
+        Lab 4 Submission
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_9" id="__nav_2_9" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_9">
+          Week 6
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 6" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_9">
+<span class="md-nav__icon md-icon"></span>
+          Week 6
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          Chapter 5: Classes
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+        Chapter 5: Classes
+      </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cse-2010-week-6">
+    CSE 2010: Week 6
+  </a>
+<nav aria-label="CSE 2010: Week 6" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-this-lecture-will-cover">
+    What this lecture will cover...
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#background-types-and-instances">
+    Background: Types and Instances
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#background-attributes-and-behaviors">
+    Background: Attributes and Behaviors
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#classes-and-objects-in-programs">
+    Classes and Objects in Programs
+  </a>
+<nav aria-label="Classes and Objects in Programs" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#definitions">
+    Definitions:
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#using-classes-in-c">
+    Using Classes in C++
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-1-designing-a-class">
+    Step 1: Designing a class
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-12-deciding-on-class-accessibility">
+    Step 1.2: Deciding on Class Accessibility
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-2-defining-the-class">
+    Step 2: Defining the Class
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-2-defining-the-class_1">
+    Step 2: Defining the Class
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-2-defining-the-class_2">
+    Step 2: Defining the Class
+  </a>
+<nav aria-label="Step 2: Defining the Class" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#example-of-a-circle-class-definition">
+    Example of a Circle class Definition.
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-3-defining-class-member-functions">
+    Step 3: Defining Class Member Functions
+  </a>
+<nav aria-label="Step 3: Defining Class Member Functions" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#example-of-circle-class-member-function-definitions">
+    Example of Circle class member function definitions
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#example-of-circle-class-member-function-definitions_1">
+    Example of Circle class member function definitions
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-4-using-your-class-by-declaring-objects">
+    Step 4: Using your class by declaring OBJECTS
+  </a>
+<nav aria-label="Step 4: Using your class by declaring OBJECTS" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#example-program-that-uses-the-circle-class">
+    Example program that uses the Circle class
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#compiling-all-of-our-separate-files">
+    Compiling all of our separate files
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../2022-09-26%20Functions%20Continued%20Again/">
+        Chapter 4: Functions part 2...again
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../2022-09-28%20Classes%20Continued/">
+        Chapter 5: Classes
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_10" id="__nav_2_10" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_10">
+          Week 7
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 7" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_10">
+<span class="md-nav__icon md-icon"></span>
+          Week 7
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%207/2022-10-03/">
+        2022 10 03
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_10_2" id="__nav_2_10_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_10_2">
+          Lab 5
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Lab 5" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_10_2">
+<span class="md-nav__icon md-icon"></span>
+          Lab 5
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%207/Lab%205/Lab%205%20Submission/">
+        Lab 5 Submission
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_11" id="__nav_2_11" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_11">
+          Week 9
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 9" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_11">
+<span class="md-nav__icon md-icon"></span>
+          Week 9
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%209/2022-10-17%20Arrays/">
+        Chapter 6: Arrays
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%209/2022-11-07%20Inheritance%20%26%20Polymorphism/">
+        Chapter 8: Inheritance
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%209/2022-11-07%20Reading%2C%20Writing%20Files%3B%20Streams/">
+        2022 11 07 Reading, Writing Files; Streams
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3">
+          JAPN 3900 03
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="JAPN 3900 03" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+          JAPN 3900 03
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../JAPN%203900-03/2022-09-09/">
+        Das Cabinet des Dr. Caligari (The Cabinet of Dr. Caligari) (1920)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../JAPN%203900-03/JAPN%203900-03/">
+        JAPN 3900-03
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" id="__nav_3_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_3">
+          Week 1
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 1" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_3">
+<span class="md-nav__icon md-icon"></span>
+          Week 1
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../JAPN%203900-03/Week%201/2022-08-26%20-%20JPN%20Syllabus%20Overview/">
+        Writing Center
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4">
+          MATH 2210 12
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="MATH 2210 12" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+          MATH 2210 12
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Math%202210-12/">
+        Math 2210 12
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/ZR/">
+        ZR Points
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3" id="__nav_4_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_3">
+          Week 1
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 1" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_3">
+<span class="md-nav__icon md-icon"></span>
+          Week 1
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%201/2022-08-23/">
+        Syllabus
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%201/2022-08-25%20-%20Folded%20Paper/">
+        Yesterday Review
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%201/2022-08-26%20-%20Work%20Together%20Exam/">
+        *1.1* Function And Change
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%201/2210%20Syllabus%20Markdown/">
+        Calculus 1 - Differentiation
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4" id="__nav_4_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_4">
+          Week 2
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 2" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_4">
+<span class="md-nav__icon md-icon"></span>
+          Week 2
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%202/2022-08-30/">
+        Announcements
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%202/2022-09-01/">
+        Section 1.4
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_5" id="__nav_4_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_5">
+          Week 3
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 3" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_5">
+<span class="md-nav__icon md-icon"></span>
+          Week 3
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%203/2022-09-06/">
+        Limits
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%203/2022-09-08/">
+        Section 2.1
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%203/2022-09-09%20-%20Quiz%203/">
+        2022 09 09   Quiz 3
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_6" id="__nav_4_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_6">
+          Week 4
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 4" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_6">
+<span class="md-nav__icon md-icon"></span>
+          Week 4
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%204/2022-09-13/">
+        2022 09 13
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%204/2022-09-15/">
+        $$v=\frac{3}{2}\pi r^{5}b\textrm{ , assume b is a constant}$$
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%204/2022-09-16%20-%20Quiz%204/">
+        Quiz #4     Math 2210-12     James Wibowo
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_7" id="__nav_4_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_7">
+          Week 5
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 5" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_7">
+<span class="md-nav__icon md-icon"></span>
+          Week 5
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%205/Math%202210%20Midterm%201%20Take%20Home/">
+        Math 2210 - 01 Calculus I Midterm 1 Zadock Reid
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%205/Math%202210%20Midterm/">
+        Math 2210 - Calculus 1 Midterm 1 - In Class Z. Reid - James Wibowo
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_8" id="__nav_4_8" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_8">
+          Week 6
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 6" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_8">
+<span class="md-nav__icon md-icon"></span>
+          Week 6
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%206/2022-09-30%20-%20Quiz%206/">
+        Quiz #6     Math 2210-12     James Wibowo
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_9" id="__nav_4_9" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_9">
+          Week 7
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 7" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_9">
+<span class="md-nav__icon md-icon"></span>
+          Week 7
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%207/2022-10-04/">
+        2022 10 04
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5">
+          MATH 2720 04
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="MATH 2720 04" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+          MATH 2720 04
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/MATH%202720-04/">
+        Discrete Mathmatics
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/matrix%20latex%20format/">
+        Matrix latex format
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_3" id="__nav_5_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5_3">
+          Week 1
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 1" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_3">
+<span class="md-nav__icon md-icon"></span>
+          Week 1
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%201/2022-08-23-1/">
+        2022 08 23 1
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%201/2022-08-25%20-%20Statements/">
+        Warm up
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%201/2720%20Syllabus%20Markdown/">
+        MathematicsDepartment
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%201/M1%20Overview%20%26%20Objectives/">
+        [M1 Overview &amp; Objectives](https://csusb.instructure.com/courses/15759/pages/m1-overview-and-objectives?module_item_id=1037400)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%201/Week%201%20Homework/">
+        Module 1: Settling In with Mathematical Statements (Week 1)
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_4" id="__nav_5_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5_4">
+          Week 2
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 2" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_4">
+<span class="md-nav__icon md-icon"></span>
+          Week 2
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%202/2022-08-30-1/">
+        Warmup
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%202/2022-09-01%20WRKSHT2/">
+        2022 09 01 WRKSHT2
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%202/M2%20Overview%20%26%20Objectives/">
+        [M2 Overview &amp; Objectives](https://csusb.instructure.com/courses/15759/modules/items/1037412)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%202/M2%20Wrap%20Up%20and%20Next%20Steps/">
+        [M2 Wrap Up and Next Steps](https://csusb.instructure.com/courses/15759/modules/items/1037424)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%202/Week%202%20Homework/">
+        Module 2: Sets and Functions (Week 2)
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_5" id="__nav_5_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5_5">
+          Week 3
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 3" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_5">
+<span class="md-nav__icon md-icon"></span>
+          Week 3
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%203/2022-09-08%20Hex/">
+        2022 09 08 Hex
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%203/M3%20Overview%20%26%20Objectives/">
+        M3 Overview &amp; Objectives
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%203/M3%20Wrap%20Up%20and%20Next%20Steps/">
+        M3 Wrap Up and Next Steps
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%203/Week%203%20Homework/">
+        Module 3: Functions and Additive/Multiplicative Principles (Week 3)
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_6" id="__nav_5_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5_6">
+          Week 4
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 4" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_6">
+<span class="md-nav__icon md-icon"></span>
+          Week 4
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%204/2022-09-13%20Worksheet/">
+        2022 09 13 Worksheet
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%204/M4%20Overview%20%26%20Objectives/">
+        M4 Overview &amp; Objectives
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%204/M4%20Wrap%20Up%20and%20Next%20Steps/">
+        M4 Wrap Up and Next Steps
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%204/Week%204%20Homework/">
+        Module 4: Binomial Coefficients (Week 4)
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_7" id="__nav_5_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5_7">
+          Week 5
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 5" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_7">
+<span class="md-nav__icon md-icon"></span>
+          Week 5
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%205/M5%20Overview%20%26%20Objectives/">
+        M5 Overview &amp; Objectives
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%205/M5%20Wrap%20Up%20and%20Next%20Steps/">
+        M5 Wrap Up and Next Steps
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%205/Week%205%20Homework/">
+        Module 5: Combinations, Permutations, and Stars and Bars (Week 5)
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_8" id="__nav_5_8" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5_8">
+          Week 6
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 6" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_8">
+<span class="md-nav__icon md-icon"></span>
+          Week 6
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%206/M6%20Overview%20%26%20Objectives/">
+        M6 Overview &amp; Objectives
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%206/M6%20Wrap%20Up%20and%20Next%20Steps/">
+        M6 Wrap Up and Next Steps
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%206/Week%206%20Homework/">
+        Module 6: Introduction to Sequences and Arithmetic/Geometric Sequences (Week 6)
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cse-2010-week-6">
+    CSE 2010: Week 6
+  </a>
+<nav aria-label="CSE 2010: Week 6" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#what-this-lecture-will-cover">
+    What this lecture will cover...
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#background-types-and-instances">
+    Background: Types and Instances
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#background-attributes-and-behaviors">
+    Background: Attributes and Behaviors
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#classes-and-objects-in-programs">
+    Classes and Objects in Programs
+  </a>
+<nav aria-label="Classes and Objects in Programs" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#definitions">
+    Definitions:
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#using-classes-in-c">
+    Using Classes in C++
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-1-designing-a-class">
+    Step 1: Designing a class
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-12-deciding-on-class-accessibility">
+    Step 1.2: Deciding on Class Accessibility
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-2-defining-the-class">
+    Step 2: Defining the Class
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-2-defining-the-class_1">
+    Step 2: Defining the Class
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-2-defining-the-class_2">
+    Step 2: Defining the Class
+  </a>
+<nav aria-label="Step 2: Defining the Class" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#example-of-a-circle-class-definition">
+    Example of a Circle class Definition.
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-3-defining-class-member-functions">
+    Step 3: Defining Class Member Functions
+  </a>
+<nav aria-label="Step 3: Defining Class Member Functions" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#example-of-circle-class-member-function-definitions">
+    Example of Circle class member function definitions
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#example-of-circle-class-member-function-definitions_1">
+    Example of Circle class member function definitions
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-4-using-your-class-by-declaring-objects">
+    Step 4: Using your class by declaring OBJECTS
+  </a>
+<nav aria-label="Step 4: Using your class by declaring OBJECTS" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#example-program-that-uses-the-circle-class">
+    Example program that uses the Circle class
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#compiling-all-of-our-separate-files">
+    Compiling all of our separate files
+  </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="chapter-5-classes">Chapter 5: Classes<a class="headerlink" href="#chapter-5-classes" title="Permanent link">¶</a></h1>
+<h2 id="cse-2010-week-6">CSE 2010: Week 6<a class="headerlink" href="#cse-2010-week-6" title="Permanent link">¶</a></h2>
+<h3 id="what-this-lecture-will-cover">What this lecture will cover...<a class="headerlink" href="#what-this-lecture-will-cover" title="Permanent link">¶</a></h3>
+<ul>
+<li>So far, we have been using C++ as a procedural language, meaning we have a program that has a bunch of different statements (lines of code) that do something in a specific order.</li>
+<li>This week we will look at how we can use C++ as an object-oriented <strong>language</strong>.</li>
+<li>This lecture will discuss the following:<ul>
+<li>Classes in C++</li>
+<li>Designing, implementing, and using classes.</li>
+</ul>
+</li>
+</ul>
+<h3 id="background-types-and-instances">Background: Types and Instances<a class="headerlink" href="#background-types-and-instances" title="Permanent link">¶</a></h3>
+<p>In real life, a type is a concept from which an instance is created.
+For example, the word circle is a type. We can have different instances of circles, some with different radii.</p>
+<h3 id="background-attributes-and-behaviors">Background: Attributes and Behaviors<a class="headerlink" href="#background-attributes-and-behaviors" title="Permanent link">¶</a></h3>
+<ul>
+<li>Any instance of a type that we encounter has a set of attributes and a set of behaviors.</li>
+<li><strong>Attributes:</strong><ul>
+<li>An attribute is a characteristic ascribed to an instance.</li>
+<li>Examples:
+|Instance Type|Attributes|
+|-|-|
+|<em>circle</em>|radius, perimeter, area|
+|<em>employee</em>|name, address, position, salary|
+|<em>student</em>|name, year, gpa, grades|</li>
+</ul>
+</li>
+<li><strong>Behaviors:</strong><ul>
+<li>A behavior is an operation that an instance can perform on itself.</li>
+<li>For example, if an instance is an employee, we assume they can give their name, give their address, give their position, etc.</li>
+</ul>
+</li>
+</ul>
+<h3 id="classes-and-objects-in-programs">Classes and Objects in Programs<a class="headerlink" href="#classes-and-objects-in-programs" title="Permanent link">¶</a></h3>
+<p>In object oriented programming, we still use terms like <em>type</em> and <em>instances.</em></p>
+<h6 id="definitions"><strong>Definitions:</strong><a class="headerlink" href="#definitions" title="Permanent link">¶</a></h6>
+<ul>
+<li><strong>Class:</strong> A USER DEFINED data type that represents a general concept or idea.</li>
+<li><strong>Object:</strong> An instance of a class.</li>
+</ul>
+<p>In programming, attributes and behaviors of an object are represented by
+- Data members: A variable whose value represents an attribute or characteristic of an object.
+- Member functions: A function that simulates one of the behaviors of an object.</p>
+<h3 id="using-classes-in-c">Using Classes in C++<a class="headerlink" href="#using-classes-in-c" title="Permanent link">¶</a></h3>
+<ul>
+<li>Steps to using classes in C++<ol>
+<li><strong>Design</strong> the class.</li>
+<li><strong>Define</strong> a class by providing the <strong>class name</strong> , <strong>declaring</strong> its data members, and <strong>declaring</strong> its member functions.</li>
+<li><strong>Define</strong> the class member functions.</li>
+<li>Use the class by <strong>instantiating/declaring</strong> objects of that class type and applying member functions on those objects.
+For this course, we will show you how to separate your files when using classes.</li>
+</ol>
+</li>
+<li>Interface file: will have the class definition (class.h)</li>
+<li>Implementation file: will have the class member function definitions (class.cpp)</li>
+<li>Application file: Will have the program that uses the class (.cpp file where your main() function will be).</li>
+</ul>
+<h3 id="step-1-designing-a-class">Step 1: Designing a class<a class="headerlink" href="#step-1-designing-a-class" title="Permanent link">¶</a></h3>
+<p>When you are designing a class, think about the following:</p>
+<ul>
+<li>
+<p>What idea or concept do you want to represent? <code>(class name)</code></p>
+<ul>
+<li>Circle</li>
+<li>Person</li>
+<li>Car</li>
+</ul>
+</li>
+<li>
+<p>What “attributes” or “characteristics” do you need to properly represent this type? <code>(class data members)</code></p>
+<ul>
+<li>Circle<ul>
+<li>Radius</li>
+</ul>
+</li>
+<li>Person<ul>
+<li>Name</li>
+<li>Age</li>
+<li>Salary</li>
+<li>Job</li>
+</ul>
+</li>
+<li>Car<ul>
+<li>Make</li>
+<li>Model</li>
+<li>Color</li>
+<li>Year</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>What “behavior” do you want instances of these types to do? <code>(class member functions)</code></p>
+<ul>
+<li>Access its attributes</li>
+<li>Change its attributes</li>
+</ul>
+</li>
+</ul>
+<h3 id="step-12-deciding-on-class-accessibility">Step 1.2: Deciding on Class Accessibility<a class="headerlink" href="#step-12-deciding-on-class-accessibility" title="Permanent link">¶</a></h3>
+<p>Access modifiers determine how a class can be accessed from within or from outside of the class.
+<code>Going to stick with these for now</code>
+- <em>Public</em>:
+    - Available to anyone outside/within the class
+- <em>Private</em>:
+    - Available only within the class
+- <em>Protected</em>:
+    - Available only within the class and in derived classes (will learn more about this in Chapter 8).</p>
+<p>Some rules of thumb:
+- Make all of your class data members private. You do not want their values to be erroneously accessed or changed.
+    - This is the main idea behind encapsulation.
+- Your class will have public “setter” and “getter” functions to access/change their private data members.
+- Make member functions private only if you don’t want the outside world to access them.
+    - They can still be called from fellow class functions.</p>
+<h2 id="step-2-defining-the-class">Step 2: Defining the Class<a class="headerlink" href="#step-2-defining-the-class" title="Permanent link">¶</a></h2>
+<ul>
+<li>Class definitions are stored in a header file, typically named the same as the class: className.h</li>
+<li>Within that file you have the following:</li>
+</ul>
+<pre><code class="language-c++">//any include statements of other libraries or classes your class might need
+
+#ifndef CLASSNAME_H //These are pre-processor directives, aka header guards.
+#define CLASSNAME_H //These are pre-processor directives, aka header guards.
+class ClassName
+{
+    public:
+        Default Constructor
+        Overload Constructor
+        Destructor
+        Other member functions (setters, getters, etc)
+    private:
+        data members
+        member functions you want to be private
+};
+
+#endif //Used so that the compiler doesn’t get confused about multiple class definitions with the same name.
+</code></pre>
+<h2 id="step-2-defining-the-class_1">Step 2: Defining the Class<a class="headerlink" href="#step-2-defining-the-class_1" title="Permanent link">¶</a></h2>
+<ul>
+<li>Class definitions are stored in a header file, typically named the same as the class: className.h</li>
+<li>Within that file you have the following:</li>
+</ul>
+<pre><code class="language-c++">//any include statements of other libraries or classes your class might need
+
+#ifndef CLASSNAME_H
+#define CLASSNAME_H
+
+class ClassName
+{
+    public: //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^&gt;
+        Default Constructor //                               see   &gt;
+        Overload Constructor //                             notes  &gt;
+        Destructor //                                       below  &gt;
+        Other member functions (setters, getters, etc) //vvvvvvvvvv&gt;
+    private:
+        data members
+        member functions you want to be private
+};
+
+#endif
+</code></pre>
+<ul>
+<li>The “public” section contains member functions, constructors, and destructors that outside functions have access to.<ul>
+<li>Constructors:<ul>
+<li>A member function that creates an object when it is called and initializes the data members of an object.</li>
+<li>Constructors have the same name as your class.</li>
+<li>Default constructors have no parameters and they initialize data members to default values.</li>
+<li>Overload constructors use given parameter values to initialize data members.</li>
+</ul>
+</li>
+<li>Destructors:<ul>
+<li>A destructor is automatically called and executed by the system when the object instantiated goes out of scope.</li>
+<li>The name of the destructor is the same as the class but has a (~) before it.</li>
+</ul>
+</li>
+<li>Member Functions:<ul>
+<li>Class member functions that have direct access to data members and other member functions.</li>
+<li>Setters/Mutator functions are functions that modify an object’s attributes aka change the state of an object.</li>
+<li>Getters/Accessor functions simply “access” the data of an object, but do not modify it at all.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Use the const keyword when defining accessor functions.</li>
+</ul>
+<h2 id="step-2-defining-the-class_2">Step 2: Defining the Class<a class="headerlink" href="#step-2-defining-the-class_2" title="Permanent link">¶</a></h2>
+<ul>
+<li>Class definitions are stored in a header file, typically named the same as the class: className.h<ul>
+<li>Within that file you have the following:</li>
+</ul>
+</li>
+</ul>
+<pre><code class="language-c++">//any include statements of other libraries or classes your class might need
+
+#ifndef CLASSNAME_H
+#define CLASSNAME_H
+
+class ClassName
+{
+    public:
+        Default Constructor
+        Overload Constructor
+        Destructor
+        Other member functions (setters, getters, etc)
+    private: //^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^&gt;
+        data members //                            see notes below &gt;
+        member functions you want to be private //vvvvvvvvvvvvvvvvv&gt;
+};
+
+#endif
+</code></pre>
+<ul>
+<li>The “private” section is where you place all data members or private functions that will make up our class.</li>
+<li>Only class member functions have access to these data members and private functions, meaning outside functions cannot directly access them without using a member function.</li>
+</ul>
+<h6 id="example-of-a-circle-class-definition">Example of a Circle class Definition.<a class="headerlink" href="#example-of-a-circle-class-definition" title="Permanent link">¶</a></h6>
+<p><code>Stored in “Circle.h”</code></p>
+<pre><code class="language-c++">/*
+ * File name: Circle.h
+ * Header file containing the Circle class interface/definition
+ * This interface:
+ *    - Defines the class
+ *    - Declares the class data members
+ *    - Declares the class member functions
+ */
+#ifndef CIRCLE_H
+#define CIRCLE_H
+
+class Circle
+{
+    private:
+        double radius; //attribute representing the radius
+    public:
+        Circle(); //default constructor
+        Circle(double r); //overload constructor
+        ~Circle(); //destructor
+        void setRadius(double Radius); //mutator
+        double getRadius() const; //accessor
+        double getArea() const; //accessor
+        double getPerimeter() const; //accessor
+};
+#endif 
+</code></pre>
+<h3 id="step-3-defining-class-member-functions">Step 3: Defining Class Member Functions<a class="headerlink" href="#step-3-defining-class-member-functions" title="Permanent link">¶</a></h3>
+<ul>
+<li>Ok, so we have our class defined, but now we need to actually write the code for the member functions.</li>
+<li>At the top of the implementation file, you MUST have the following:<ul>
+<li><strong><code>#include “className.h”</code></strong></li>
+</ul>
+</li>
+<li>Then define all the functions using the following format:<ul>
+<li><strong><code>return_type className::functionName()</code></strong>
+<strong><code>{</code></strong>
+<strong><code>}</code></strong></li>
+</ul>
+</li>
+<li>Define every single function, constructor, and destructor that you’ve declared.</li>
+<li>All class member functions have direct access to the private data members, so this means that they can use parameter values, data members, and any new variables they declare in order to complete their task.</li>
+</ul>
+<h4 id="example-of-circle-class-member-function-definitions">Example of Circle class member function definitions<a class="headerlink" href="#example-of-circle-class-member-function-definitions" title="Permanent link">¶</a></h4>
+<p>Defining the constructors and destructors.</p>
+<p>Note that constructors have the special ability of using an initialization list to define data member values.</p>
+<pre><code class="language-c++">class Circle
+{
+    private:
+        double radius; //attribute representing the radius
+    public:
+        Circle(); //default constructor
+        Circle(double r); //overload constructor
+        ~Circle(); //destructor
+}
+</code></pre>
+<pre><code class="language-c++">/*
+ * File name Circle.cpp
+ * Implementation file containing the Circle class member function definition
+ */
+#include "Circle.h" //include interface file
+#include &lt;iostream&gt;
+#include &lt;cmath&gt;
+using namespace std;
+
+//Default constructor that just sets radius to a default value
+Circle::Circle():radius(0.0){
+    cout &lt;&lt; "The default constructor was called.\n";
+}
+
+//overload constructor that sets radius to provided value
+Circle::Circle(double r):radius(r){
+    cout &lt;&lt; "The overload constructor was called.\n";
+}
+
+//the desctructor that is called when the objects no longer exist
+Circle::~Circle(){
+    cout &lt;&lt; "The destructor was called for circle with radius: " &lt;&lt; radius &lt;&lt; "\n";
+}
+</code></pre>
+<h4 id="example-of-circle-class-member-function-definitions_1">Example of Circle class member function definitions<a class="headerlink" href="#example-of-circle-class-member-function-definitions_1" title="Permanent link">¶</a></h4>
+<p>Defining the rest of the functions</p>
+<pre><code class="language-c++">        void setRadius(double radius); //mutator
+        double getRadius() const; //accessor
+        double getArea() const; //accessor
+        double getPerimeter() const; //accessor
+
+};
+#endif
+</code></pre>
+<pre><code class="language-c++">// set radius for the circle
+void Circle::setRadius(double radius){
+    // this-&gt;radius will refer to the data member radius
+    // radius will refer to the parameter radius
+    this-&gt;radius = radius;
+}
+// return the value of the private data member
+double Circle::getRadius() const{
+    return radius;
+}
+// return the area of the circle
+double Circle::getArea() const{
+    return M_PI*radius*radius;
+}
+//return the perimeter of the circle
+double Circle::getPerimeter() const{
+    return 2*M_PI*radius;
+}
+</code></pre>
+<h3 id="step-4-using-your-class-by-declaring-objects">Step 4: Using your class by declaring OBJECTS<a class="headerlink" href="#step-4-using-your-class-by-declaring-objects" title="Permanent link">¶</a></h3>
+<ul>
+<li>Once you have defined your class and all of its member functions, you can finally use your class!</li>
+<li>Use a class by declaring objects.</li>
+<li>Need: <code>#include “className.h”</code></li>
+<li>To declare a new object, can use either default or overload constructor:<ul>
+<li><code>className objectName; //will use default constructor</code></li>
+<li><code>className objectName(arguments); //will use overload constructor</code></li>
+</ul>
+</li>
+</ul>
+<p>Once you’ve declared an object, you can use it to invoke/call member functions
+    <code>objectName.functionName(arguments);</code></p>
+<h4 id="example-program-that-uses-the-circle-class">Example program that uses the Circle class<a class="headerlink" href="#example-program-that-uses-the-circle-class" title="Permanent link">¶</a></h4>
+<pre><code class="language-c++">/*
+ * File name Circle.cpp
+ * Application file that uses the Circle class
+ */
+#include "Circle.h"
+#include &lt;iostream&gt;
+#include &lt;cmath&gt;
+using namespace std;
+
+int main()
+{
+    //declare a Circle object using the default constructor
+    Circle circ1;
+    cout &lt;&lt; "circ1 radius: " &lt;&lt; circ1.getRadius() &lt;&lt; "\n";
+    double radius;
+    cout &lt; "Enter a radius: ";
+    cin &gt;&gt; radius;
+    //setting a new radius
+    circ1.setRadius(radius);
+    cout &lt;&lt; "circ1 new radius: " &lt;&lt; circ1.getRadius() &lt;&lt; "\n\n";
+
+    //declaring a Circle object with overload constructor
+    Circle circ2(5.2);
+    cout &lt;&lt; "circ2 radius: " &lt;&lt; circ2.getRadius() &lt;&lt; "\n";
+    cout &lt;&lt; "circ2 area: " &lt;&lt; circ2.getArea() &lt;&lt; "\n";
+    cout &lt;&lt; "circ2 perimeter: " &lt;&lt; circ2.getPerimeter() &lt;&lt; "\n\n";
+
+    //declaring a Circle object with overload constructor
+    Circle circ3(2.5);
+    cout &lt;&lt; "circ3 radius: " &lt;&lt; cir3.getRadius() &lt;&lt; "\n";
+    cout &lt;&lt; "Enter a radius: ";
+    cin &gt;&gt; radius;
+    //setting a new radius
+    circ3.setRadius(radius);
+    cout &lt;&lt; "circ3 new radius: " &lt;&lt; circ3.getRadius(); &lt;&lt; "\n\n";
+
+    //calls to destructors happen here without us calling them
+    return 0;
+}
+</code></pre>
+<h2 id="compiling-all-of-our-separate-files">Compiling all of our separate files<a class="headerlink" href="#compiling-all-of-our-separate-files" title="Permanent link">¶</a></h2>
+<ul>
+<li>At this point we have the following 3 files:<ul>
+<li>Circle.h //definition of Circle class</li>
+<li>Circle.cpp //member function definitions</li>
+<li>Circle_main.cpp //program that uses Circle class</li>
+</ul>
+</li>
+<li>We can compile all files together using a makefile</li>
+<li>In the makefile, we list all of our target
+files/executables, and the commands we would use
+to create them.</li>
+<li>Steps to create a makefile for the Person class:</li>
+<li>vi makefile</li>
+<li>Type every pair of lines that has the following
+format:</li>
+</ul>
+<p>target: source(s)</p>
+<p><tab char=""> rule/command</tab></p>
+<ol>
+<li>Now to compile and link the program, simply
+    type</li>
+</ol>
+<p>make</p>
+</article>
+</div>
+</div>
+</main>
+<footer class="md-footer">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Previous: Lab 4 Submission" class="md-footer__link md-footer__link--prev" href="../../Week%205/Lab%204/Lab%204%20Submission/" rel="prev">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</div>
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Previous
+              </span>
+              Lab 4 Submission
+            </div>
+</div>
+</a>
+<a aria-label="Next: Chapter 4: Functions part 2...again" class="md-footer__link md-footer__link--next" href="../2022-09-26%20Functions%20Continued%20Again/" rel="next">
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Next
+              </span>
+              Chapter 4: Functions part 2...again
+            </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+<script src="../../../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
+<script src="../../../javascripts/mathjax.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</body>
+</html>

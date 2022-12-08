@@ -1,0 +1,1676 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="../../../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.4.2, mkdocs-material-8.5.10" name="generator"/>
+<title>Chapter 3: Control Flow: if-else, relational operators, boolean operators - Hokora Yinphine</title>
+<link href="../../../assets/stylesheets/main.975780f9.min.css" rel="stylesheet"/>
+<link href="../../../assets/stylesheets/palette.2505c338.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="indigo" data-md-color-primary="blue" data-md-color-scheme="default" dir="ltr">
+<script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#chapter-3-control-flow-if-else-relational-operators-boolean-operators">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="Hokora Yinphine" class="md-header__button md-logo" data-md-component="logo" href="../../.." title="Hokora Yinphine">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            Hokora Yinphine
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Chapter 3: Control Flow: if-else, relational operators, boolean operators
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="indigo" data-md-color-media="(prefers-color-scheme: light)" data-md-color-primary="blue" data-md-color-scheme="default" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"></path></svg>
+</label>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="pink" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="blue" data-md-color-scheme="slate" id="__palette_2" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"></path></svg>
+</label>
+</form>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="Hokora Yinphine" class="md-nav__button md-logo" data-md-component="logo" href="../../.." title="Hokora Yinphine">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+    Hokora Yinphine
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../..">
+        Hey!
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2">
+          CSE 2010 12(83648)
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="CSE 2010 12(83648)" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+          CSE 2010 12(83648)
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../CSE%202010-12/">
+        CSE 2010-12
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" id="__nav_2_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_2">
+          PDF Dump
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="PDF Dump" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_2">
+<span class="md-nav__icon md-icon"></span>
+          PDF Dump
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../PDF%20Dump/algorithms/">
+        Chapter 6: Algorithms
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../PDF%20Dump/arrays/">
+        Chapter 6: Arrays
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../PDF%20Dump/inheritance/">
+        Chapter 8: Inheritance
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../PDF%20Dump/intro%20to%20recursion/">
+        Chapter 10: Intro to Recursion
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../PDF%20Dump/pointers%201/">
+        Chapter 7 - Pointers
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../PDF%20Dump/pointers%202/">
+        Chapter 7 - Pointers 2
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../PDF%20Dump/polymorphism/">
+        Chapter 8: Polymorphism
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../PDF%20Dump/recursion/">
+        Chapter 10: Recursion
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../PDF%20Dump/streams/">
+        Chapter 9: Streams
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../PDF%20Dump/string%20streams/">
+        Chapter 9: String Streams
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../PDF%20Dump/templates%201/">
+        Chapter 16: Templates
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../PDF%20Dump/templates%202/">
+        Templates part 2
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../PDF%20Dump/vectors/">
+        Chapter 6: Vectors
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" id="__nav_2_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_3">
+          Week 1
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 1" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_3">
+<span class="md-nav__icon md-icon"></span>
+          Week 1
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%201/2022-08-22%20-%20Syllabus%20Overview/">
+        will be coding in C++
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%201/2022-08-24%20-%20C%2B%2B%20Overview/">
+        2022 08 24   C++ Overview
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3_3" id="__nav_2_3_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_3_3">
+          Lab1
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Lab1" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_3_3">
+<span class="md-nav__icon md-icon"></span>
+          Lab1
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%201/Lab1/Lab%201%20Submission/">
+        Part A
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%201/Lab1/Lab%201-A/">
+        Lab 1 A
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%201/Lab1/Lab%201-B/">
+        Lab 1 B
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" id="__nav_2_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_4">
+          Week 11
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 11" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_4">
+<span class="md-nav__icon md-icon"></span>
+          Week 11
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4_1" id="__nav_2_4_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_4_1">
+          Lab 7
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Lab 7" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_4_1">
+<span class="md-nav__icon md-icon"></span>
+          Lab 7
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%2011/Lab%207/Lab%207%20-%20Pointers/">
+        Lab 7 Pointers (15 points total)
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_5" id="__nav_2_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_5">
+          Week 2
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 2" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_5">
+<span class="md-nav__icon md-icon"></span>
+          Week 2
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%202/2022-08-23%20-%20C%2B%2B%20Ch%202%20Numerical%20data%20types/">
+        Chapter 2: Numerical Data Types
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%202/2022-08-31%20-%20C%2B%2B%20Fundamental%20Data%20Types%2C%20Variables%2C%20Strings/">
+        Week 2 (August 29, 31): Fundamental Data Types, Variables, Strings
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%202/Week%202.1%20Numerical%20Data%20Types%20and%20Variables/">
+        PDF
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%202/Week%202.2%20Predefined%20Libraries%20and%20Functions/">
+        PDF
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_5_5" id="__nav_2_5_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_5_5">
+          Lab2
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Lab2" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_5_5">
+<span class="md-nav__icon md-icon"></span>
+          Lab2
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%202/Lab2/Lab%202%20PDF%20Markdown/">
+        CSE 2010 Fall 2022
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%202/Lab2/Lab%202%20Submission/">
+        Lab 2
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_6" id="__nav_2_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_6">
+          Week 3
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 3" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_6">
+<span class="md-nav__icon md-icon"></span>
+          Week 3
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          Chapter 3: Control Flow: if-else, relational operators, boolean operators
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+        Chapter 3: Control Flow: if-else, relational operators, boolean operators
+      </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#background">
+    Background
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#the-if-statement">
+    The if Statement
+  </a>
+<nav aria-label="The if Statement" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#c-syntax-for-if-statements">
+    C++ Syntax for if statements
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#relational-operators">
+    Relational Operators
+  </a>
+<nav aria-label="Relational Operators" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#example">
+    Example
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#the-if-else-statement">
+    The if-else statement
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_7" id="__nav_2_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_7">
+          Week 4
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 4" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_7">
+<span class="md-nav__icon md-icon"></span>
+          Week 4
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%204/2022-09-14%20Loops/">
+        Chapter 3: Loops, loops, and more loops
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%204/For%20Exercise%203%20Using%20rand/">
+        Using the rand() Function to Generate Random Numbers
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_7_3" id="__nav_2_7_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_7_3">
+          Lab 3
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Lab 3" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_7_3">
+<span class="md-nav__icon md-icon"></span>
+          Lab 3
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%204/Lab%203/Lab%203%20Submission/">
+        Lab 03: Control Flow with if-else and Loops (Due **9/26** BEFORE lecture)
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_8" id="__nav_2_8" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_8">
+          Week 5
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 5" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_8">
+<span class="md-nav__icon md-icon"></span>
+          Week 5
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%205/2022-09-19%20Functions/">
+        Chapter 4: Functions
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%205/2022-09-19%20Loops%20Continued/">
+        Chapter 3: Loops Continued
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%205/2022-09-21%20Functions%20Continued/">
+        Chapter 4: Functions part 2
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_8_4" id="__nav_2_8_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_8_4">
+          Lab 4
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Lab 4" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_8_4">
+<span class="md-nav__icon md-icon"></span>
+          Lab 4
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%205/Lab%204/Lab%204%20Submission/">
+        Lab 4 Submission
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_9" id="__nav_2_9" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_9">
+          Week 6
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 6" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_9">
+<span class="md-nav__icon md-icon"></span>
+          Week 6
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%206/2022-09-26%20Classes/">
+        Chapter 5: Classes
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%206/2022-09-26%20Functions%20Continued%20Again/">
+        Chapter 4: Functions part 2...again
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%206/2022-09-28%20Classes%20Continued/">
+        Chapter 5: Classes
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_10" id="__nav_2_10" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_10">
+          Week 7
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 7" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_10">
+<span class="md-nav__icon md-icon"></span>
+          Week 7
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%207/2022-10-03/">
+        2022 10 03
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_10_2" id="__nav_2_10_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_10_2">
+          Lab 5
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Lab 5" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_10_2">
+<span class="md-nav__icon md-icon"></span>
+          Lab 5
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%207/Lab%205/Lab%205%20Submission/">
+        Lab 5 Submission
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_11" id="__nav_2_11" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_11">
+          Week 9
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 9" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_11">
+<span class="md-nav__icon md-icon"></span>
+          Week 9
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%209/2022-10-17%20Arrays/">
+        Chapter 6: Arrays
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%209/2022-11-07%20Inheritance%20%26%20Polymorphism/">
+        Chapter 8: Inheritance
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Week%209/2022-11-07%20Reading%2C%20Writing%20Files%3B%20Streams/">
+        2022 11 07 Reading, Writing Files; Streams
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3">
+          JAPN 3900 03
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="JAPN 3900 03" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+          JAPN 3900 03
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../JAPN%203900-03/2022-09-09/">
+        Das Cabinet des Dr. Caligari (The Cabinet of Dr. Caligari) (1920)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../JAPN%203900-03/JAPN%203900-03/">
+        JAPN 3900-03
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" id="__nav_3_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_3">
+          Week 1
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 1" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_3">
+<span class="md-nav__icon md-icon"></span>
+          Week 1
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../JAPN%203900-03/Week%201/2022-08-26%20-%20JPN%20Syllabus%20Overview/">
+        Writing Center
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4">
+          MATH 2210 12
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="MATH 2210 12" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+          MATH 2210 12
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Math%202210-12/">
+        Math 2210 12
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/ZR/">
+        ZR Points
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3" id="__nav_4_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_3">
+          Week 1
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 1" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_3">
+<span class="md-nav__icon md-icon"></span>
+          Week 1
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%201/2022-08-23/">
+        Syllabus
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%201/2022-08-25%20-%20Folded%20Paper/">
+        Yesterday Review
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%201/2022-08-26%20-%20Work%20Together%20Exam/">
+        *1.1* Function And Change
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%201/2210%20Syllabus%20Markdown/">
+        Calculus 1 - Differentiation
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_4" id="__nav_4_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_4">
+          Week 2
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 2" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_4">
+<span class="md-nav__icon md-icon"></span>
+          Week 2
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%202/2022-08-30/">
+        Announcements
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%202/2022-09-01/">
+        Section 1.4
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_5" id="__nav_4_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_5">
+          Week 3
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 3" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_5">
+<span class="md-nav__icon md-icon"></span>
+          Week 3
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%203/2022-09-06/">
+        Limits
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%203/2022-09-08/">
+        Section 2.1
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%203/2022-09-09%20-%20Quiz%203/">
+        2022 09 09   Quiz 3
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_6" id="__nav_4_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_6">
+          Week 4
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 4" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_6">
+<span class="md-nav__icon md-icon"></span>
+          Week 4
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%204/2022-09-13/">
+        2022 09 13
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%204/2022-09-15/">
+        $$v=\frac{3}{2}\pi r^{5}b\textrm{ , assume b is a constant}$$
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%204/2022-09-16%20-%20Quiz%204/">
+        Quiz #4     Math 2210-12     James Wibowo
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_7" id="__nav_4_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_7">
+          Week 5
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 5" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_7">
+<span class="md-nav__icon md-icon"></span>
+          Week 5
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%205/Math%202210%20Midterm%201%20Take%20Home/">
+        Math 2210 - 01 Calculus I Midterm 1 Zadock Reid
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%205/Math%202210%20Midterm/">
+        Math 2210 - Calculus 1 Midterm 1 - In Class Z. Reid - James Wibowo
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_8" id="__nav_4_8" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_8">
+          Week 6
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 6" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_8">
+<span class="md-nav__icon md-icon"></span>
+          Week 6
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%206/2022-09-30%20-%20Quiz%206/">
+        Quiz #6     Math 2210-12     James Wibowo
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_9" id="__nav_4_9" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4_9">
+          Week 7
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 7" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_9">
+<span class="md-nav__icon md-icon"></span>
+          Week 7
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202210-12/Week%207/2022-10-04/">
+        2022 10 04
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5">
+          MATH 2720 04
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="MATH 2720 04" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+          MATH 2720 04
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/MATH%202720-04/">
+        Discrete Mathmatics
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/matrix%20latex%20format/">
+        Matrix latex format
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_3" id="__nav_5_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5_3">
+          Week 1
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 1" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_3">
+<span class="md-nav__icon md-icon"></span>
+          Week 1
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%201/2022-08-23-1/">
+        2022 08 23 1
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%201/2022-08-25%20-%20Statements/">
+        Warm up
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%201/2720%20Syllabus%20Markdown/">
+        MathematicsDepartment
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%201/M1%20Overview%20%26%20Objectives/">
+        [M1 Overview &amp; Objectives](https://csusb.instructure.com/courses/15759/pages/m1-overview-and-objectives?module_item_id=1037400)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%201/Week%201%20Homework/">
+        Module 1: Settling In with Mathematical Statements (Week 1)
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_4" id="__nav_5_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5_4">
+          Week 2
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 2" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_4">
+<span class="md-nav__icon md-icon"></span>
+          Week 2
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%202/2022-08-30-1/">
+        Warmup
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%202/2022-09-01%20WRKSHT2/">
+        2022 09 01 WRKSHT2
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%202/M2%20Overview%20%26%20Objectives/">
+        [M2 Overview &amp; Objectives](https://csusb.instructure.com/courses/15759/modules/items/1037412)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%202/M2%20Wrap%20Up%20and%20Next%20Steps/">
+        [M2 Wrap Up and Next Steps](https://csusb.instructure.com/courses/15759/modules/items/1037424)
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%202/Week%202%20Homework/">
+        Module 2: Sets and Functions (Week 2)
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_5" id="__nav_5_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5_5">
+          Week 3
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 3" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_5">
+<span class="md-nav__icon md-icon"></span>
+          Week 3
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%203/2022-09-08%20Hex/">
+        2022 09 08 Hex
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%203/M3%20Overview%20%26%20Objectives/">
+        M3 Overview &amp; Objectives
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%203/M3%20Wrap%20Up%20and%20Next%20Steps/">
+        M3 Wrap Up and Next Steps
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%203/Week%203%20Homework/">
+        Module 3: Functions and Additive/Multiplicative Principles (Week 3)
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_6" id="__nav_5_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5_6">
+          Week 4
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 4" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_6">
+<span class="md-nav__icon md-icon"></span>
+          Week 4
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%204/2022-09-13%20Worksheet/">
+        2022 09 13 Worksheet
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%204/M4%20Overview%20%26%20Objectives/">
+        M4 Overview &amp; Objectives
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%204/M4%20Wrap%20Up%20and%20Next%20Steps/">
+        M4 Wrap Up and Next Steps
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%204/Week%204%20Homework/">
+        Module 4: Binomial Coefficients (Week 4)
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_7" id="__nav_5_7" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5_7">
+          Week 5
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 5" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_7">
+<span class="md-nav__icon md-icon"></span>
+          Week 5
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%205/M5%20Overview%20%26%20Objectives/">
+        M5 Overview &amp; Objectives
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%205/M5%20Wrap%20Up%20and%20Next%20Steps/">
+        M5 Wrap Up and Next Steps
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%205/Week%205%20Homework/">
+        Module 5: Combinations, Permutations, and Stars and Bars (Week 5)
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_8" id="__nav_5_8" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5_8">
+          Week 6
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Week 6" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_8">
+<span class="md-nav__icon md-icon"></span>
+          Week 6
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%206/M6%20Overview%20%26%20Objectives/">
+        M6 Overview &amp; Objectives
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%206/M6%20Wrap%20Up%20and%20Next%20Steps/">
+        M6 Wrap Up and Next Steps
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../MATH%202720-04/Week%206/Week%206%20Homework/">
+        Module 6: Introduction to Sequences and Arithmetic/Geometric Sequences (Week 6)
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#background">
+    Background
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#the-if-statement">
+    The if Statement
+  </a>
+<nav aria-label="The if Statement" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#c-syntax-for-if-statements">
+    C++ Syntax for if statements
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#relational-operators">
+    Relational Operators
+  </a>
+<nav aria-label="Relational Operators" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#example">
+    Example
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#the-if-else-statement">
+    The if-else statement
+  </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="chapter-3-control-flow-if-else-relational-operators-boolean-operators">Chapter 3: Control Flow: if-else, relational operators, boolean operators<a class="headerlink" href="#chapter-3-control-flow-if-else-relational-operators-boolean-operators" title="Permanent link">¶</a></h1>
+<h2 id="background">Background<a class="headerlink" href="#background" title="Permanent link">¶</a></h2>
+<p>At this point in the course, the programs we have written have a very linear flow. There is a set of instructions we give the program for it to make it from point a to point b, and it does not veer off or go in different directions.</p>
+<p>But in many cases, we need to control what the program does based on user input, or the state of a variable. We want to control the flow of our program as it runs to give us multiple options for routes it can take.</p>
+<h2 id="the-if-statement">The <code>if</code> Statement<a class="headerlink" href="#the-if-statement" title="Permanent link">¶</a></h2>
+<ul>
+<li>The <code>if</code> statement is used to implement a decision in the program. It is made up of a condition and a body.<ul>
+<li>The condition of an <code>if</code> statement is made up of an expression that evaluates to TRUE or FALSE. It typically compares values using relational operators.</li>
+<li>The body of an <code>if</code> statement is made up of either one statement or multiple statements. These statements will run ONLY if the condition evaluates to TRUE.</li>
+</ul>
+</li>
+</ul>
+<h6 id="c-syntax-for-if-statements">C++ Syntax for if statements<a class="headerlink" href="#c-syntax-for-if-statements" title="Permanent link">¶</a></h6>
+<pre><code class="language-c++">if(condition)
+    single statement body```
+```c++
+if(condition) {
+//multiple statements body
+}```
+
+- If there is more than one statement in the body, you MUST use curly braces.
+
+```mermaid
+graph TD;
+    A([Start]):::Red--&gt;B;
+    B[Take user Input]:::Green--&gt;C;
+    C{{Is input greater than 0?}}:::Yellow--No--&gt;D;
+    C--Yes--&gt;H([End]):::Red;
+    D[Output 'You did not listen...']:::Green--&gt;H;
+    classDef Red fill:#d05e56;
+    classDef Yellow fill:#d8a027, color:#000;
+    classDef Green fill:#448d7a;
+</code></pre>
+<p><strong>if.cpp</strong></p>
+<pre><code class="language-c++">//Program Description: Example program for a simple if statement
+#include &lt;iostream&gt;  
+using namespace std;  
+int main()  
+{
+    //initialize variables
+    int num = 0;
+    //prompt user for a value
+    cout &lt;&lt; "Please enter a number greater than zero:";
+    cin &gt;&gt; num;//store user input into variable
+    cout &lt;&lt; "You entered: " &lt;&lt; num &lt;&lt; "\n";
+    //this if statement will check if the number
+    //entered is less than or equal to zero
+    //if, and only if, it is true, the body of the if statement will run
+    if(num &lt;= 0)
+    cout &lt;&lt; "You did not listen to my instructions!\n";
+    return 0;
+}
+</code></pre>
+<h2 id="relational-operators">Relational Operators<a class="headerlink" href="#relational-operators" title="Permanent link">¶</a></h2>
+<p>The condition of <code>if</code> statements typically compares values with one another.<br/>
+To do this comparison, we use relational operators.
+|Operator Name|Operator|Example Expression|
+|-|:-:|:-:|
+|Equal To|==|a == b|
+|Not Equal To|!=|a != b|
+|Less Than|&lt;|a &lt; b|
+|Greater Than|&gt;|a &gt; b|
+|Less Than or Equal To|&lt;=|a &lt;= b|
+|Greater Than or Equal To|&gt;=|a &gt;= b|</p>
+<p>These operators are used to compare the values between two expressions. The expression demonstrated can be<br/>
+either TRUE or FALSE.</p>
+<h6 id="example">Example<a class="headerlink" href="#example" title="Permanent link">¶</a></h6>
+<p><code>int a = 10, b = 12, c = 5;</code>
+|Expression|True or False?|
+|-|-|
+|a == b|False|
+|a+5 &gt; b|True|
+|c % 2 == 0|False|
+|b+2&lt;=14|True|</p>
+<h2 id="the-if-else-statement">The <code>if-else</code> statement<a class="headerlink" href="#the-if-else-statement" title="Permanent link">¶</a></h2>
+<ul>
+<li>You can also pair an <code>if</code> with an <code>else</code>.  <ul>
+<li>If the condition following the <code>if</code> is TRUE, the body of the <code>if</code> will execute.  <ul>
+<li>If the condition following the <code>if</code> is FALSE, the body of the else will execute.  </li>
+</ul>
+</li>
+<li>Only ONE body will run.  </li>
+<li>C++ Syntax for if-else statements  </li>
+</ul>
+</li>
+</ul>
+<pre><code class="language-c++">if(condition)
+    //single statement body
+else
+    //single statement body
+    ```
+```c++
+if(condition) {
+    //multiple statements body
+}
+else{
+    //multiple statement body
+}```
+- Note: an `else` does not have a condition associated with it. Its performance is based on  
+whether the previous condition(s) evaluates to TRUE or FALSE
+###### Example
+
+```mermaid
+graph TD;
+    A([Start]):::Red--&gt;B;
+    B[Take user Input]:::Green--&gt;C;
+    C{{Is input greater than 0?}}:::Yellow--No--&gt;D;
+    C--Yes--&gt;E;
+    E{{Is Input divisible by 2}}:::Yellow--No--&gt;F;
+        E--Yes--&gt;G;
+    F[Output 'Odd..']:::Green--&gt;H([End]):::Red;
+    D[Output 'You did not listen...']:::Green--&gt;H;
+    G[Output 'Even..']:::Green--&gt;H;
+    classDef Red fill:#d05e56;
+    classDef Yellow fill:#d8a027, color:#000;
+    classDef Green fill:#448d7a;
+</code></pre>
+<p><strong>if_else.cpp</strong></p>
+<pre><code class="language-c++">
+//Program Description: Example program for a simple if-else statement
+#include &lt;iostream&gt;
+using namespace std;
+
+int main()
+{
+    //initialize variables
+    int num = 0;
+    cout &lt;&lt; "Please enter a number greater than zero:";
+    cin &gt;&gt; num;
+    cout &lt;&lt; "You entered: " &lt;&lt; num &lt;&lt; "\n";
+
+    //this if statement will check if the number
+    //entered is less than or equal to zero.
+    if(num &lt;= 0)
+        cout &lt;&lt; "You did not listed to my instructions!\n";
+    //this else will only run if the above if evaluates to false
+    else{
+        //if the number is greater than zero, the following
+        //if statement will check if it is divisible by 2
+        if(num % 2 == 0) // check if num is even
+            cout &lt;&lt; num &lt;&lt; " is even.\n";
+        else
+            cout &lt;&lt; num &lt;&lt; " is odd.\n";
+    }
+    //regardless of whether the if or the else above runs, the program will always end
+    return 0;
+}
+
+</code></pre>
+<h1 id="the-ifelse-ifelse-statement">The <code>if(),else if()...else</code> statement<a class="headerlink" href="#the-ifelse-ifelse-statement" title="Permanent link">¶</a></h1>
+<ul>
+<li>When writing a program that has more<br/>
+than 2 possible outcomes, we can use a<br/>
+sequence of if/else if/else if/else<br/>
+statements.  </li>
+<li>When your program encounters an if-else<br/>
+branch like this, the conditions will be<br/>
+tested from top to bottom.  </li>
+<li>As soon as one condition is true, it runs<br/>
+the statements within that if, and does not<br/>
+check any other conditions.  </li>
+<li>If none of the conditions are true, it will<br/>
+run the body of the else.</li>
+</ul>
+<h6 id="example_1">Example<a class="headerlink" href="#example_1" title="Permanent link">¶</a></h6>
+<pre><code class="language-c++">if(condition 1){
+    //Body
+}
+else if(condition 2){
+    //Body
+}
+else if(condition 3){
+    //Body
+}
+...
+else if(condition n){
+    //Body
+}
+else{
+    //Body will run if all else false
+}
+</code></pre>
+<h6 id="example_2">Example<a class="headerlink" href="#example_2" title="Permanent link">¶</a></h6>
+<div class="mermaid">graph TD;
+    A([Start]):::Red--&gt;B;
+    B[Take user Input]:::Green--&gt;C;
+    C{{Is input equal than 0?}}:::Yellow--Yes--&gt;D;
+    C--No--&gt;E;
+    E{{Is Input positive?}}:::Yellow--No--&gt;F;
+    E--Yes--&gt;G;
+    F[Output 'Negative']:::Green--&gt;H([End]):::Red;
+    D[Output 'Zero']:::Green--&gt;H;
+    G[Output 'Positive']:::Green--&gt;H;
+    classDef Red fill:#d05e56;
+    classDef Yellow fill:#d8a027, color:#000;
+    classDef Green fill:#448d7a;
+</div>
+<p><strong>if_else_if.cpp</strong></p>
+<pre><code class="language-c++">//Program Description: Example program for a simple if-else statement
+//that prints whether a number is negative, zero, or positive
+#include &lt;iostream&gt;
+using namespace std;
+
+int main()
+{
+    //initialize variables
+    int num = 0;
+    //prompt the user for an integer
+    cout &lt;&lt; "Enter an integer:";
+    cin &gt;&gt; num;
+
+    //the program will check the following conditions from top to bottom
+    //Once one evaluates to true, it will execute its body and ignore the remaining
+    //ones. If none are true, the final else will run
+    if (num == 0)
+        cout &lt;&lt; "You entered zero.\n";
+    else if(num &gt; 0)
+        cout &lt;&lt; "You entered a positive integer.\n";
+    else 
+        cout &lt;&lt; "You entered a negative integer.\n";
+
+    return 0;
+}
+
+</code></pre>
+<h1 id="booleanlogical-operators">Boolean/Logical Operators<a class="headerlink" href="#booleanlogical-operators" title="Permanent link">¶</a></h1>
+<ul>
+<li>There may be times in our programs when running certain code is dependent on multiple conditions.<ul>
+<li>Sometimes all conditions need to be true.  </li>
+<li>Sometimes only one needs to be true.  </li>
+</ul>
+</li>
+<li>We can use Boolean operators to combine our conditions!  </li>
+<li>Boolean operators combine conditions where the overall expression will result in either TRUE or FALSE.  <ul>
+<li><code>&amp;&amp;</code> - AND operator  </li>
+<li><code>||</code> - OR operator</li>
+</ul>
+</li>
+</ul>
+<h1 id="-and-operator-all-must-be-true"><code>&amp;&amp;</code> - AND Operator: ALL must be TRUE<a class="headerlink" href="#-and-operator-all-must-be-true" title="Permanent link">¶</a></h1>
+<ul>
+<li>Combines two or more conditions where the overall result is true if and only if ALL conditions are true.  </li>
+<li>You can combine as many conditions as you want.  </li>
+<li>C++ Syntax for using the AND operator  <ul>
+<li>Can user either <code>&amp;&amp;</code> or <code>and</code></li>
+</ul>
+</li>
+</ul>
+<pre><code class="language-c++">if(condition 1 &amp;&amp; condition 2 &amp;&amp;...)
+    ...
+</code></pre>
+<pre><code class="language-c++">if(condition 1 and condition 2 and...)
+    ...
+}```
+
+###### Logic Table for AND
+|A|B|A &amp;&amp; B|
+|-|-|:-:|
+|True|True|True &amp;&amp; True = True|
+|True|False|True &amp;&amp; False = False|
+|False|True|False &amp;&amp; True = False|
+|False|False|False &amp;&amp; False = False|
+
+# `||` - OR Operator: Just ONE needs to be TRUE
+- Combines two or more conditions where the overall results is TRUE if AT LEAST ONE condition is true.
+- You can combine as many conditions as you want.  
+- C++ Syntax for using the OR operator  
+    - Can user either `||` or `or`
+
+```c++
+if(condition 1 || condition 2 ||...)
+    ...
+</code></pre>
+<pre><code class="language-c++">if(condition 1 or condition 2 or...)
+    ...
+}```
+
+###### Logic Table for AND
+|A|B|A &amp;&amp; B|
+|-|-|:-:|
+|True|True|True &amp;&amp; True = True|
+|True|False|True &amp;&amp; False = True|
+|False|True|False &amp;&amp; True = True|
+|False|False|False &amp;&amp; False = False|
+
+# Representing ranges with Boolean Operators
+- You can use a combination of Boolean operators and conditions to make sure a value is within a range.
+- Consider the following number line. Where the red arrow show the values that we want to represent. An enclosed box includes the value, and open box excludes the value.
+###### Number Line 1:
+```mermaid
+flowchart LR  
+    C[... -4]:::Yes---D
+    D[-3]:::Yes---E
+    E[-2]:::Yes---F
+    F[-1]:::Num---G
+    G[0]:::Num---H
+    H[1]:::Yes---I
+    I[2]:::Yes---J
+    J[3]:::Yes---K
+    K[4 ...]:::Yes
+    classDef Num fill:#fff,color:#000,stroke-width:0px;
+    classDef Yes fill:#f00,stroke-width:0px;
+    classDef No fill:#0000,stroke-width:2px,stroke:#f00;
+    linkStyle 0 stroke-width:37px,fill:none,stroke:red;
+    linkStyle 1 stroke-width:37px,fill:none,stroke:red;
+    linkStyle 5 stroke-width:37px,fill:none,stroke:red;
+    linkStyle 6 stroke-width:37px,fill:none,stroke:red;
+    linkStyle 7 stroke-width:37px,fill:none,stroke:red;
+    linkStyle default stroke-width:37px,fill:none,stroke:white;
+</code></pre>
+<ul>
+<li>Condition 1: <code>if(x &lt;= -2 || x &gt;= 1)</code></li>
+</ul>
+<h6 id="number-line-2">Number Line 2:<a class="headerlink" href="#number-line-2" title="Permanent link">¶</a></h6>
+<div class="mermaid">flowchart LR  
+    C[... -4]:::Yes---D
+    D[-3]:::Yes---E
+    E[-2]:::No---F
+    F[-1]:::Num---G
+    G[0]:::Num---H
+    H[1]:::Yes---I
+    I[2]:::Yes---J
+    J[3]:::Yes---K
+    K[4 ...]:::Yes
+    classDef Num fill:#fff,color:#000,stroke-width:0px;
+    classDef Yes fill:#f00,stroke-width:0px;
+    classDef No fill:#fff,color:#000,stroke-width:2px,stroke:#f00;
+    linkStyle 0 stroke-width:37px,fill:none,stroke:red;
+    linkStyle 1 stroke-width:37px,fill:none,stroke:red;
+    linkStyle 5 stroke-width:37px,fill:none,stroke:red;
+    linkStyle 6 stroke-width:37px,fill:none,stroke:red;
+    linkStyle 7 stroke-width:37px,fill:none,stroke:red;
+    linkStyle default stroke-width:37px,fill:none,stroke:white;
+</div>
+<ul>
+<li>Condition 2: <code>if(x &lt; -2 || x &gt;= 1)</code></li>
+</ul>
+<h6 id="number-line-3">Number Line 3:<a class="headerlink" href="#number-line-3" title="Permanent link">¶</a></h6>
+<div class="mermaid">flowchart LR  
+    C[... -4]:::Num---D
+    D[-3]:::Num---E
+    E[-2]:::No---F
+    F[-1]:::Yes---G
+    G[0]:::Yes---H
+    H[1]:::Num---I
+    I[2]:::Num---J
+    J[3]:::Num---K
+    K[4 ...]:::Num
+    classDef Num fill:#fff,color:#000,stroke-width:0px;
+    classDef Yes fill:#f00,stroke-width:0px;
+    classDef No fill:#fff,color:#000,stroke-width:2px,stroke:#f00;
+    linkStyle 2 stroke-width:37px,fill:none,stroke:red;
+    linkStyle 3 stroke-width:37px,fill:none,stroke:red;
+    linkStyle 4 stroke-width:37px,fill:none,stroke:red;
+    linkStyle default stroke-width:37px,fill:none,stroke:white;
+</div>
+<ul>
+<li>Condition 3: <code>if(x &gt; -2 || x &lt;= 1)</code></li>
+</ul>
+<h1 id="combination-of-boolean-operators">Combination of Boolean Operators<a class="headerlink" href="#combination-of-boolean-operators" title="Permanent link">¶</a></h1>
+<h3 id="you-can-use-any-combination-of-and-in-a-condition">You can use any combination of &amp;&amp; and || in a condition<a class="headerlink" href="#you-can-use-any-combination-of-and-in-a-condition" title="Permanent link">¶</a></h3>
+<ul>
+<li>The <code>&amp;&amp;</code> operator takes precedence over <code>||</code><ul>
+<li>
+<h6 id="examples">Examples:<a class="headerlink" href="#examples" title="Permanent link">¶</a></h6>
+<ul>
+<li><code>if( TRUE || TRUE ) = TRUE</code> </li>
+<li><code>if (TRUE || FALSE &amp;&amp; TRUE) = FALSE</code> </li>
+<li><code>if((TRUE || FALSE) &amp;&amp; TRUE) = TRUE</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="shipping-program-example">Shipping Program Example<a class="headerlink" href="#shipping-program-example" title="Permanent link">¶</a></h1>
+<p>Write a program that calculates a shipping rate for a company based on the destination and weight of the package.<br/>
+    - If the package is sent outside the U.S, shipping is $70.00.
+    - If the package is sent within the U.S and the weight is more than 10lbs, shipping is $25.00
+    - If the package is sent within the U.S and the weight is between 1-10lbs, shipping is $7.50
+    - If the package is sent within the U.S and the weight is less than 1 lb, shipping = $2.50.
+    - If the package is sent within the U.S to Alaska (AK) or Hawaii (HI), the shipping rate is $40.00, regardless of weight.</p>
+<pre><code class="language-c++">/*
+* Name: James Wibowo
+* File Name: Shipping.cpp
+* Program: This program will calculate shipping rates based on destination and weight.
+* Date: 09/07/22
+*/
+
+#include &lt;iostream&gt;
+#include &lt;string&gt;
+using namespace std;
+
+int main()
+{
+    //init
+    double packWeig;
+    string packDest,packDestState;
+    AllDest = 
+    //input weight and destination
+    cout &lt;&lt; "Package Weight?\nLbs: ";
+    cin &gt;&gt; packWeig;
+    cout &lt;&lt; "Package Country Destination? (Enter Two Letter Code): ";
+    cin &gt;&gt; packDest;
+    if (packDest == "US")
+    {
+        cout &lt;&lt; "Package State Destination? (Enter Two Letter Code): ";
+        cin &gt;&gt; packDestState;
+        if (packDestState == "AK")
+        {
+            cout &lt;&lt; "\n\nShipping Cost: $40.00";
+            return 0
+        }
+        else if (packDestState == "HI")
+        {
+            cout &lt;&lt; "\n\nShipping Cost: $40.00";
+            return 0
+        }
+        else
+        {
+            if (packWeig &lt; 1)
+            {
+                cout &lt;&lt; "\n\nShipping Cost: $2.50";
+                return 0;
+            }
+            else if (packWeig &lt;= 10)
+            {
+                cout &lt;&lt; "\n\nShipping Cost: $7.50";
+                return 0
+            }
+            else
+            {
+                cout &lt;&lt; "\n\nShipping Cost: $25.00";
+                return 0
+            }
+        }
+    }
+    else
+    {
+        cout &lt;&lt; "\n\nShipping Cost: $70.00";
+        return 0
+    }
+    return 0;
+}
+
+</code></pre>
+</article>
+</div>
+</div>
+</main>
+<footer class="md-footer">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Previous: Lab 2" class="md-footer__link md-footer__link--prev" href="../../Week%202/Lab2/Lab%202%20Submission/" rel="prev">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</div>
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Previous
+              </span>
+              Lab 2
+            </div>
+</div>
+</a>
+<a aria-label="Next: Chapter 3: Loops, loops, and more loops" class="md-footer__link md-footer__link--next" href="../../Week%204/2022-09-14%20Loops/" rel="next">
+<div class="md-footer__title">
+<div class="md-ellipsis">
+<span class="md-footer__direction">
+                Next
+              </span>
+              Chapter 3: Loops, loops, and more loops
+            </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+<script src="../../../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
+<script src="../../../javascripts/mathjax.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+<script>mermaid.initialize({});</script></body>
+</html>
