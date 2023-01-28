@@ -21,7 +21,12 @@ Best of luck with your work. Hopefully these notes can help ya! [![<3](https://s
 [[JAPN 3900-03]]
 
 # 2023 Winter
-## 
+## Art 1200-01
+
+## History 1460-04
+
+## PSci 2030-62
+
 
 
 
