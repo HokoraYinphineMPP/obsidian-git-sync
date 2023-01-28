@@ -1,11 +1,11 @@
 {
-  "collapse-filter": false,
+  "collapse-filter": true,
   "search": "",
   "showTags": false,
   "showAttachments": true,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": true,
+  "collapse-color-groups": false,
   "colorGroups": [
     {
       "query": "path:\"MATH 2720-04\"",
@@ -36,16 +36,16 @@
       }
     }
   ],
-  "collapse-display": true,
+  "collapse-display": false,
   "showArrow": true,
-  "textFadeMultiplier": -0.7,
-  "nodeSizeMultiplier": 1.69145299145299,
+  "textFadeMultiplier": -1,
+  "nodeSizeMultiplier": 2.16486414961186,
   "lineSizeMultiplier": 2.4034188034188,
-  "collapse-forces": true,
-  "centerStrength": 0.291870450410494,
-  "repelStrength": 18.5,
-  "linkStrength": 0.92,
-  "linkDistance": 47,
-  "scale": 0.0720766659351404,
+  "collapse-forces": false,
+  "centerStrength": 0.315417208673994,
+  "repelStrength": 9.55716302046577,
+  "linkStrength": 1,
+  "linkDistance": 30,
+  "scale": 0.4640233612060568,
   "close": true
 }
