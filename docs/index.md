@@ -10,6 +10,10 @@ Best of luck with your work. Hopefully these notes can help ya! [![<3](https://s
 
 [![](https://cdn.discordapp.com/emojis/348897065360949248.webp?size=32&quality=lossless ":NikoGIGALUL:")](https://cdn.discordapp.com/emojis/348897065360949248.webp?quality=lossless ":NikoGIGALUL:")
 
+
+
+
+
 # 2022 Fall
 ## CSE 2010-12
 [[CSE 2010-12]]
@@ -22,10 +26,16 @@ Best of luck with your work. Hopefully these notes can help ya! [![<3](https://s
 
 # 2023 Winter
 ## Art 1200-01
-
+[[Art 1200-01]]
 ## History 1460-04
-
+[[History 1460-04]]
 ## PSci 2030-62
+[[PSci 2030-62]]
+
+
+
+
+
 
 
 
