@@ -14,5 +14,13 @@
       ],
       "key": "ArrowRight"
     }
+  ],
+  "obsidian-living-graph:toggle": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": " "
+    }
   ]
 }
