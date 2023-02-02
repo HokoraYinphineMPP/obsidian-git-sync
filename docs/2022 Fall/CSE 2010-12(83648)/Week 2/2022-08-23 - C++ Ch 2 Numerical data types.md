@@ -1,3 +1,5 @@
+
+![[Recording 20230201181016.webm]]
 # Chapter 2: Numerical Data Types
 ###### Data types
 what they are
