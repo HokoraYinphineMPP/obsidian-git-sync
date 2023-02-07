@@ -35,6 +35,9 @@ This is the concept behind **_inheritance._**
 - To show the relationship between inherited classes in C++, we can use the Unified Modeling Language (UML).
 - UML is a language that graphically shows the relationship between classes and objects.
 - Classes are shown in rectangular boxes, while the inheritance relationship is shown by a solid line ending in a hollow triangle that goes from the specific class to the general class.
+
+![[Pasted image 20221107173633.png]]
+
 ```mermaid
 graph TD;
 	subgraph UML Diagrams denoting inheritance
