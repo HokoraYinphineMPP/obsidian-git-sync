@@ -193,3 +193,4 @@ Your submission for Lab 4 should include the following:
 - Screenshot(s) for Exercise 2
 - .cpp file for Exercise 3
 - Screenshot for Exercise 3
+![[docs/2022 Fall/CSE 2010-12(83648)/Week 5/Lab 4/Exercise1.png]]![[docs/2022 Fall/CSE 2010-12(83648)/Week 5/Lab 4/Exercise2.png]]

@@ -1,4 +1,6 @@
-	# Lab 03: Control Flow with if-else and Loops (Due **9/26** BEFORE lecture)
+
+
+# Lab 03: Control Flow with if-else and Loops (Due **9/26** BEFORE lecture)
 ###### Due: Mon Sep 26, 2022 5:30pm
 ###### Ungraded, 45 Possible Points
 
@@ -152,3 +154,8 @@ Your submission for Lab 3 should include the following:
 
 
 
+![[docs/2022 Fall/CSE 2010-12(83648)/Week 4/Lab 3/Exercise1.png]]
+![[docs/2022 Fall/CSE 2010-12(83648)/Week 4/Lab 3/Exercise2.png]]
+![[docs/2022 Fall/CSE 2010-12(83648)/Week 4/Lab 3/Exercise3.png]]
+![[Exercise4.png]]
+![[Exercise5.png]]
