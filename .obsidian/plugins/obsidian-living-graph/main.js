@@ -210,7 +210,7 @@ var intervals = [
   },
   {
     name: "Breathing Network",
-    repelForce: 18.5 / 20,
+    repelForce: 9.0 / 20,
     linkForce: 0.92,
     linkDistance: 0.1,
     intervals: [
