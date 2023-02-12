@@ -21,6 +21,8 @@ if(condition) {
 
 - If there is more than one statement in the body, you MUST use curly braces.
 
+[[testing markdown file]]
+
 ```mermaid
 graph TD;
     A([Start]):::Red-->B;
