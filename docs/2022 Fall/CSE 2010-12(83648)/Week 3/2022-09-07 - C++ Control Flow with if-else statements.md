@@ -27,9 +27,9 @@ graph TD;
     C{{Is input greater than 0?}}:::Yellow--No-->D;
     C--Yes-->H([End]):::Red;
     D[Output 'You did not listen...']:::Green-->H;
-	classDef Red fill:#d05e56;
-	classDef Yellow fill:#d8a027, color:#000;
-	classDef Green fill:#448d7a;
+	classDef Red fill:#d05e56, stroke:white;
+	classDef Yellow fill:#d8a027, color:#000, stroke:white;
+	classDef Green fill:#448d7a, stroke:white;
 ```
 
 __if.cpp__
