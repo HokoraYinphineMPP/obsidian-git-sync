@@ -9,19 +9,21 @@ But in many cases, we need to control what the program does based on user input,
 	- The condition of an `if` statement is made up of an expression that evaluates to TRUE or FALSE. It typically compares values using relational operators.
 	- The body of an `if` statement is made up of either one statement or multiple statements. These statements will run ONLY if the condition evaluates to TRUE.
 
+[[testing markdown file]]
 ###### C++ Syntax for if statements
 ```c++
 if(condition)
-	single statement body```
+	single statement body
+```
 
 ```c++
 if(condition) {
 //multiple statements body
-}```
+}
+```
 
 - If there is more than one statement in the body, you MUST use curly braces.
 
-[[testing markdown file]]
 
 ```mermaid
 graph TD;
