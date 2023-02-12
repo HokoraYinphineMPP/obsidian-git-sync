@@ -13,6 +13,7 @@ But in many cases, we need to control what the program does based on user input,
 ```c++
 if(condition)
 	single statement body```
+
 ```c++
 if(condition) {
 //multiple statements body
@@ -27,9 +28,9 @@ graph TD;
     C{{Is input greater than 0?}}:::Yellow--No-->D;
     C--Yes-->H([End]):::Red;
     D[Output 'You did not listen...']:::Green-->H;
-	classDef Red fill:#d05e56, stroke:white;
-	classDef Yellow fill:#d8a027, color:#000, stroke:white;
-	classDef Green fill:#448d7a, stroke:white;
+	classDef Red fill:#d05e56, stroke:#ffffff;
+	classDef Yellow fill:#d8a027, color:#000, stroke:#ffffff;
+	classDef Green fill:#448d7a, stroke:#ffffff;
 ```
 
 __if.cpp__
