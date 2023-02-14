@@ -440,4 +440,12 @@ int main()
 	}
 	else
 	{
-		cout << "\n
+		cout << "\n\nShipping Cost: $70.00";
+		return 0
+	}
+	return 0;
+}
+
+```
+
+
