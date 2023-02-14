@@ -35,7 +35,7 @@ graph TD;
 	classDef Red fill:#d05e56;
 	classDef Yellow fill:#d8a027, color:#000;
 	classDef Green fill:#448d7a;
-	linkStyle default stroke-width:2px,fill:none, stroke:blue
+	linkStyle default stroke-width:2px,fill:none, stroke:white
 ```
 
 __if.cpp__
@@ -120,6 +120,7 @@ graph TD;
 	classDef Red fill:#d05e56;
 	classDef Yellow fill:#d8a027, color:#000;
 	classDef Green fill:#448d7a;
+	linkStyle default stroke-width:2px,fill:none, stroke:white
 ```
 
 __if_else.cpp__
@@ -205,6 +206,7 @@ graph TD;
 	classDef Red fill:#d05e56;
 	classDef Yellow fill:#d8a027, color:#000;
 	classDef Green fill:#448d7a;
+	linkStyle default stroke-width:2px,fill:none, stroke:white
 ```
 __if_else_if.cpp__
 ```c++
@@ -438,12 +440,4 @@ int main()
 	}
 	else
 	{
-		cout << "\n\nShipping Cost: $70.00";
-		return 0
-	}
-	return 0;
-}
-
-```
-
-
+		cout << "\n
