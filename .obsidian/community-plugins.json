@@ -3,5 +3,6 @@
   "obsidian-timelines",
   "obsidian-living-graph",
   "calendar",
-  "sync-graph-settings"
+  "sync-graph-settings",
+  "persistent-graph"
 ]
