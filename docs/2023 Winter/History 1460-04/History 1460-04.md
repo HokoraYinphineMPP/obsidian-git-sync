@@ -7,6 +7,7 @@ Special Thanks to Lucas Reyes!
 
 ## Week 3
 [[1460 Feb 6]]
+[[1460 Feb 8]]
 
 ## Week 4
 [[1460 Feb 13]]
@@ -16,4 +17,4 @@ Special Thanks to Lucas Reyes!
 [[1460 Feb 22]]
 
 ## Week 6
-[[1406 Mar 01]]
+[[1460 Mar 01]]
