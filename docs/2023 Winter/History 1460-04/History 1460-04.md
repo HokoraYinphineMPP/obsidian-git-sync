@@ -1,3 +1,7 @@
+Special Thanks to Lucas Reyes!
+## Week 1
+[[1460 Jan 25]]
+
 ## Week 2
 [[1460 Feb 1]]
 
