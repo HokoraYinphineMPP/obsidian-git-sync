@@ -22,3 +22,6 @@ Special Thanks to Lucas Reyes!
 
 ## Week 7
 [[1460 Mar 08]]
+
+## Week 8
+[[1460 Mar 13]]
