@@ -2,7 +2,7 @@
 ## Background 
 At this point in the course, the programs we have written have a very linear flow. There is a set of instructions we give the program for it to make it from point a to point b, and it does not veer off or go in different directions.
 
-But in many cases, we need to control what the program does based on user input, or the state of a variable. We want to control the flow of our program as it runs to give us multiple options for routes it can take.
+	But in many cases, we nee d to control what the program does based on user input, or the state of a variable. We want to control the flow of our program as it runs to give us multiple options for routes it can take.
 
 ## The `if` Statement
 - The `if` statement is used to implement a decision in the program. It is made up of a condition and a body.
