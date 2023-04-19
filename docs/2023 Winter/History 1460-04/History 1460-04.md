@@ -38,6 +38,9 @@ Spring Break
 [[1460 Apr 03]]
 [[1460 Apr 05]]
 
+## Week 12
+[[1460 Apr 12]]
+
 ## Week 13
 [[1460 Apr 17]]
 [[1460 Apr 19]]
