@@ -14,10 +14,10 @@ as you progress through these instructions, there may be other files you will be
 # First question!
 ## Is your Android rooted?
 
-**>** [[Rooted|My Android is rooted!]]
+![](https://cdn.discordapp.com/attachments/803186540359450664/1100707666361323520/ezgif.com-resize_1.gif) [[Rooted|My Android is rooted!]]
 
-**>** [[Not Rooted|My Android is NOT rooted!]]
+![](https://cdn.discordapp.com/attachments/803186540359450664/1100707666361323520/ezgif.com-resize_1.gif) [[Not Rooted|My Android is NOT rooted!]]
 
-**>** [[Root Unknown|What does this mean...]]
+![](https://cdn.discordapp.com/attachments/803186540359450664/1100707666361323520/ezgif.com-resize_1.gif) [[Root Unknown|What does this mean...]]
 
-**>** [[No Android|I don't have an Android...]]
+![](https://cdn.discordapp.com/attachments/803186540359450664/1100707666361323520/ezgif.com-resize_1.gif) [[No Android|I don't have an Android...]]

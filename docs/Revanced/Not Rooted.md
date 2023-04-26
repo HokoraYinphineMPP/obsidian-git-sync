@@ -13,4 +13,4 @@ That's alright! You'll just need another thing to download!
 
 
 
-**>** [[MicroG Installed|Cool! I installed it.]]
+![](https://cdn.discordapp.com/attachments/803186540359450664/1100707666361323520/ezgif.com-resize_1.gif) [[MicroG Installed|Cool! I installed it.]]

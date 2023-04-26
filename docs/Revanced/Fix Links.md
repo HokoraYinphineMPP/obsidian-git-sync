@@ -11,4 +11,4 @@ then Settings > Apps & notification > See all apps > Youtube ReVanced > Advanced
 You're good to go now!
 
 
-**>** [[Install Done|Go back]]
+![](https://cdn.discordapp.com/attachments/803186540359450664/1100707666361323520/ezgif.com-resize_1.gif) [[Install Done|Go back]]

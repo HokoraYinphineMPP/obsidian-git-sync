@@ -19,4 +19,4 @@ Depending on what app you installed, paste the package name of the app you insta
 You should be good to go now!
 
 
-**>** [[Install Done|Go back]]
+![](https://cdn.discordapp.com/attachments/803186540359450664/1100707666361323520/ezgif.com-resize_1.gif) [[Install Done|Go back]]
