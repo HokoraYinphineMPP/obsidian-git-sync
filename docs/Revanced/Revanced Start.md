@@ -13,4 +13,5 @@ as you progress through these instructions, there may be other files you will be
 
 [[Rooted|My Android is rooted!]]
 [[Not Rooted|My Android is NOT rooted!]]
-[[No Android|I don't have an Android]]
+[[Root Unknown|What does this mean...]]
+[[No Android|I don't have an Android...]]
