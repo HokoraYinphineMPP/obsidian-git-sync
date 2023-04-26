@@ -1,3 +1,4 @@
 # > Let's set up my downloader then!
 Cool!
-Youll find the settings
+You have three options for a downloader
+(there may be more! if you find any you like, DM me!  )
