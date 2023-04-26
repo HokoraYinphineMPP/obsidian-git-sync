@@ -6,3 +6,5 @@ You have three options for a downloader
 |:-:|:-:|:-:|
 |Vanced Recommended ||Hokora Recommended [![](https://cdn.discordapp.com/emojis/1072706617616891904.webp?size=16&quality=lossless ":HokoraYea:")](https://cdn.discordapp.com/emojis/1072706617616891904.webp?quality=lossless ":HokoraYea:") |
 
+![[scrcpy_8bJBoUd4Oc.gif]]
+
