@@ -7,7 +7,8 @@ You have three options for a downloader
 |:-:|:-:|:-:|
 |Vanced Recommended|Vanced Recommended|Hokora Recommended [![](https://cdn.discordapp.com/emojis/1072706617616891904.webp?size=16&quality=lossless ":HokoraYea:")](https://cdn.discordapp.com/emojis/1072706617616891904.webp?quality=lossless ":HokoraYea:") |
 
-![[scrcpy_8bJBoUd4Oc.gif]]
+![[ezgif.com-resize (2).gif]]
+
 
 Depending on what app you installed, paste the package name of the app you installed!
 
@@ -15,7 +16,8 @@ Depending on what app you installed, paste the package name of the app you insta
 |:-:|:-:|:-:|
 |org.schabi.newpipe|ussr.razar.youtube_dl|com.junkfood.seal|
 
-![[scrcpy_t98x8jMbM5.gif]]
+![[ezgif.com-resize (3).gif]]
+
 
 You should be good to go now!
 
