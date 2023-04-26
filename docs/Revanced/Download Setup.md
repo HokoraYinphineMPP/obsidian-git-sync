@@ -8,3 +8,12 @@ You have three options for a downloader
 
 ![[scrcpy_8bJBoUd4Oc.gif]]
 
+Depending on what app you installed, paste the package name of the app you installed!
+
+|NewPipe|PowerTube|Seal|
+|:-:|:-:|:-:|
+|org.schabi.newpipe|ussr.razar.youtube_dl|com.junkfood.seal|
+
+![[scrcpy_t98x8jMbM5.gif]]
+
+You should be good to go now!
