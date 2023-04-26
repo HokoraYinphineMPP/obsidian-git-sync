@@ -4,7 +4,8 @@ Cool! Here's where things get fun.
 
 ## Install and open your Revanced Manager!
 It should look something like this.
-![[tTXoWW2s.gif]]
+
+![[scrcpy_c5xvNH8Hc0.gif]]
 
 ## Tap on "Select an application"
 ![[oUGWO1Gr.gif]]
@@ -23,7 +24,7 @@ It should look something like this.
 
 ## It will take a while! So be patient!
 
-![[Pasted image 20230426000716.png]]
+![[Pasted image 20230426013512.png]]
 
 
 
