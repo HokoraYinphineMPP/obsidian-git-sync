@@ -19,4 +19,4 @@ You might notice when you open a youtube link, it opens your original youtube in
 
 
 
-DM Hokora Yinphine MPP#6969 and yell at me to finish this part lol
+> DM Hokora Yinphine MPP#6969 and yell at me to finish this part lol
