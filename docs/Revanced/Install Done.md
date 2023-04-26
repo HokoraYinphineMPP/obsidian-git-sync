@@ -1,5 +1,6 @@
 # > It installed!
 ![[yippie.gif]]
+
 Yippie! [![](https://cdn.discordapp.com/attachments/803186540359450664/1100686306989838416/ezgif.com-resize.gif ":yippie:")](https://cdn.discordapp.com/attachments/803186540359450664/1100686623638814771/Awesome.gif ":yippie:") Everything seems to work now! (I hope...)
 
 You're now good to go! However a few things still dont work...
