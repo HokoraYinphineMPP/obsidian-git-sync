@@ -1,6 +1,6 @@
 Hey! let's just jump right in.
 
-# Required files
+# Required files (Prerequisites)
 You'll need these files!
 as you progress through these instructions, there may be other files you will be required to download!
 
