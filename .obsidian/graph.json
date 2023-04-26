@@ -29,17 +29,17 @@
       }
     },
     {
+      "query": "path:\"Revanced\"",
+      "color": {
+        "a": 1,
+        "rgb": 10480
+      }
+    },
+    {
       "query": "path:/",
       "color": {
         "a": 1,
         "rgb": 16777215
-      }
-    },
-    {
-      "query": "path:",
-      "color": {
-        "a": 1,
-        "rgb": 4706723
       }
     }
   ],
@@ -49,10 +49,10 @@
   "nodeSizeMultiplier": 2.16486414961186,
   "lineSizeMultiplier": 2.4034188034188,
   "collapse-forces": false,
-  "centerStrength": 0.289314922229143,
+  "centerStrength": 0.351900853408732,
   "repelStrength": 9,
   "linkStrength": 0.92,
   "linkDistance": 47,
-  "scale": 0.22920135941749564,
-  "close": false
+  "scale": 0.6316046762907651,
+  "close": true
 }
