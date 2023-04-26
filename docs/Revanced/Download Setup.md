@@ -17,3 +17,6 @@ Depending on what app you installed, paste the package name of the app you insta
 ![[scrcpy_t98x8jMbM5.gif]]
 
 You should be good to go now!
+
+
+**>** [[Install Done|Go back]]

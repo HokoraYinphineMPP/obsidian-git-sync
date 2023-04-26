@@ -4,9 +4,18 @@
 Yippie! [![](https://cdn.discordapp.com/attachments/803186540359450664/1100686306989838416/ezgif.com-resize.gif ":yippie:")](https://cdn.discordapp.com/attachments/803186540359450664/1100686623638814771/Awesome.gif ":yippie:") Everything seems to work now! (I hope...)
 
 You're now good to go! However a few things still dont work...
-Another thing youll need to set up is the Downloader!
+
+## Downloader
+Something you'll need to set up is the Downloader!
 
 **>** [[Download Setup|Let's set up my downloader then!]]
+
+
+## Fix links
+You might notice when you open a youtube link, it opens your original youtube instead of Revanced!
+
+**>** [[Fix Links|Let's fix that up then!]]
+
 
 
 
