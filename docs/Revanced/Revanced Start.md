@@ -11,5 +11,6 @@ as you progress through these instructions, there may be other files you will be
 # First question!
 ## Is your Android rooted?
 
-[[My Android is rooted!]]
-[[I don't have an Android]]
+[[Rooted|My Android is rooted!]]
+[[Not Rooted|My Android is NOT rooted!]]
+[[No Android|I don't have an Android]]
