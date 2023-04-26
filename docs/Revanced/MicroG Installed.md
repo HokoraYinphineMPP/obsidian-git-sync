@@ -10,16 +10,18 @@ Tap on "Select an application"
 Then Tap on "Storage"
 ![[Imhyxm4s.gif|250]]
 Find the Youtube APK File you downloaded earlier.
-![[F2pLuChL.gif]]
+![[F2pLuChL.gif|250]]
 Make sure the Current version matches the Recommended version!
-![[Pasted image 20230426000039.png]]
+![[Pasted image 20230426000039.png|250]]
 Tap on "Select patches"
-![[scrcpy_YlvoTfHJ1b.gif]]
+![[scrcpy_YlvoTfHJ1b.gif|200]]
 Tap on "Recommended"
-![[scrcpy_P90tIY8jcR.gif]]
+![[scrcpy_P90tIY8jcR.gif|200]]
 Finally Click "Done" and then "Patch"!
-![[scrcpy_fqJXgZASX8.gif]]
+![[scrcpy_fqJXgZASX8.gif|200]]
 
 It will take a while! So be patient!
 
-**>** [[I finished]]
+![[Pasted image 20230426000716.png|200]]
+
+**>** [[Patching Done|It finished Applying patches!]]
