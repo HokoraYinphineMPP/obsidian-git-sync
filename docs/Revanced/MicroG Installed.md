@@ -2,9 +2,9 @@
 
 Cool! Here's where things get fun.
 
-##### Install and open your Revanced Manager!
+## Install and open your Revanced Manager!
 It should look something like this.
-![[tTXoWW2s.gif|200]]
+![[tTXoWW2s.gif]]
 Tap on "Select an application"
 ![[oUGWO1Gr.gif|250]]
 Then Tap on "Storage"
@@ -14,14 +14,14 @@ Find the Youtube APK File you downloaded earlier.
 Make sure the Current version matches the Recommended version!
 ![[Pasted image 20230426000039.png|250]]
 Tap on "Select patches"
-![[scrcpy_YlvoTfHJ1b.gif|200]]
+![[scrcpy_YlvoTfHJ1b.gif]]
 Tap on "Recommended"
-![[scrcpy_P90tIY8jcR.gif|200]]
+![[scrcpy_P90tIY8jcR.gif]]
 Finally Click "Done" and then "Patch"!
-![[scrcpy_fqJXgZASX8.gif|200]]
+![[scrcpy_fqJXgZASX8.gif]]
 
 It will take a while! So be patient!
 
-![[Pasted image 20230426000716.png|200]]
+![[Pasted image 20230426000716.png]]
 
 **>** [[Patching Done|It finished Applying patches!]]
