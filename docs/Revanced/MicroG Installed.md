@@ -7,13 +7,13 @@ It should look something like this.
 ![[tTXoWW2s.gif]]
 
 ## Tap on "Select an application"
-![[oUGWO1Gr.gif|250]]
+![[oUGWO1Gr.gif]]
 ## Then Tap on "Storage"
-![[Imhyxm4s.gif|250]]
+![[Imhyxm4s.gif]]
 ## Find the Youtube APK File you downloaded earlier.
-![[F2pLuChL.gif|250]]
+![[F2pLuChL.gif]]
 ## Make sure the Current version matches the Recommended version!
-![[Pasted image 20230426000039.png|250]]
+![[Pasted image 20230426000039.png]]
 ## Tap on "Select patches"
 ![[scrcpy_YlvoTfHJ1b.gif]]
 ## Tap on "Recommended"
