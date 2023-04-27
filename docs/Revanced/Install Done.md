@@ -8,13 +8,13 @@ You're now good to go! However a few things still dont work...
 ## Downloader
 Something you'll need to set up is the Downloader!
 
-![](https://cdn.discordapp.com/attachments/803186540359450664/1100957591233900564/image_2023-04-26_182246728.gif) [[Download Setup|Let's set up my downloader then!]]
+![](https://cdn.discordapp.com/attachments/803186540359450664/1100960373282193449/image_2023-04-26_182246728_1.gif) [[Download Setup|Let's set up my downloader then!]]
 
 
 ## Fix links
 You might notice when you open a youtube link, it opens your original youtube instead of Revanced!
 
-![](https://cdn.discordapp.com/attachments/803186540359450664/1100957591233900564/image_2023-04-26_182246728.gif) [[Fix Links|Let's fix that up then!]]
+![](https://cdn.discordapp.com/attachments/803186540359450664/1100960373282193449/image_2023-04-26_182246728_1.gif) [[Fix Links|Let's fix that up then!]]
 
 
 ## What's this... Revanced *Extended* I hear about?
