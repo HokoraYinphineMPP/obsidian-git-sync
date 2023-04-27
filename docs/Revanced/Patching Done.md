@@ -6,6 +6,6 @@ Your screen should now look like this.
 
 Now just click "Install" and hope for the best!
 
-![](https://cdn.discordapp.com/attachments/803186540359450664/1100707666361323520/ezgif.com-resize_1.gif) [[Install Done|It worked!]]
+![](https://cdn.discordapp.com/attachments/803186540359450664/1100957591233900564/image_2023-04-26_182246728.gif) [[Install Done|It worked!]]
 
-![](https://cdn.discordapp.com/attachments/803186540359450664/1100707666361323520/ezgif.com-resize_1.gif) [[Install Fail|It failed to install??]]
+![](https://cdn.discordapp.com/attachments/803186540359450664/1100957591233900564/image_2023-04-26_182246728.gif) [[Install Fail|It failed to install??]]

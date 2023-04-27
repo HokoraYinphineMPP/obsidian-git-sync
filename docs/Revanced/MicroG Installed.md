@@ -31,4 +31,4 @@ It should look something like this.
 
 
 
-![](https://cdn.discordapp.com/attachments/803186540359450664/1100707666361323520/ezgif.com-resize_1.gif) [[Patching Done|It finished Applying patches!]]
+![](https://cdn.discordapp.com/attachments/803186540359450664/1100957591233900564/image_2023-04-26_182246728.gif) [[Patching Done|It finished Applying patches!]]

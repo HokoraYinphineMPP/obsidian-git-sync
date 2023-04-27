@@ -7,7 +7,7 @@ You have three options for a downloader
 |:-:|:-:|:-:|
 |Vanced Recommended|Vanced Recommended|Hokora Recommended [![](https://cdn.discordapp.com/emojis/1072706617616891904.webp?size=16&quality=lossless ":HokoraYea:")](https://cdn.discordapp.com/emojis/1072706617616891904.webp?quality=lossless ":HokoraYea:") |
 
-![](https://cdn.discordapp.com/attachments/803186540359450664/1100707666361323520/ezgif.com-resize_1.gif) [[Arch Type|Which version do I download???]]
+![](https://cdn.discordapp.com/attachments/803186540359450664/1100957591233900564/image_2023-04-26_182246728.gif) [[Arch Type|Which version do I download???]]
 
 
 ![[ezgif.com-resize (2).gif]]
@@ -25,4 +25,4 @@ Depending on what app you installed, paste the package name of the app you insta
 You should be good to go now!
 
 
-![](https://cdn.discordapp.com/attachments/803186540359450664/1100707666361323520/ezgif.com-resize_1.gif) [[Install Done|Go back]]
+![](https://cdn.discordapp.com/attachments/803186540359450664/1100957591233900564/image_2023-04-26_182246728.gif) [[Install Done|Go back]]
