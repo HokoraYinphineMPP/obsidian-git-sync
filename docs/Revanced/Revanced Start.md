@@ -5,9 +5,8 @@ You'll need these files!
 
 As you progress through these instructions, there may be other files you will be required to download!
 
-- [Revanced Manager](https://github.com/revanced/revanced-manager/releases/tag/v0.0.57) 
-<details>`(v0.0.57 as of Apr 25, 2023)`</details>
-- [Youtube APK file](https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=4701623&key=0e84306bc5ac6062bf7fb134b7126e2c0320f126&forcebaseapk=true) `(v18.15.40 as of Apr 25, 2023)`
+- [Revanced Manager](github.com/revanced/revanced-manager/releases/latest) <details><summary>> Where do I download?!</summary>test</details>
+- [Youtube APK file](https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=4701623&key=0e84306bc5ac6062bf7fb134b7126e2c0320f126&forcebaseapk=true) <details><summary>> What version do I download?!</summary>test</details>
 
 <font color=#f44>⚠ DO NOT INSTALL YOUTUBE! ONLY DOWNLOAD THE APK! ⚠</font>
 
