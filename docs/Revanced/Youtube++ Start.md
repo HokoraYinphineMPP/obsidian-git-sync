@@ -1,8 +1,10 @@
 # Let's Install Youtube++!
 
-Great! First things first, ***You will need a computer!***
+Great! First things first, You ***==will==*** need a computer!
 
-Both
+Both MacOS and Windows will work!
+
+
 
 
 
