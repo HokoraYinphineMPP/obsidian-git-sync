@@ -6,7 +6,7 @@ So for now, you can keep in touch on the [ReVanced GitHub](https://github.com/re
 Alternatively, you can also install
 ## Youtube++
 
-![](https://cdn.discordapp.com/attachments/803186540359450664/1100707666361323520/ezgif.com-resize_1.gif) [[MicroG Installed|Cool!]]
+![](https://cdn.discordapp.com/attachments/803186540359450664/1100707666361323520/ezgif.com-resize_1.gif) [[Youtube++ Start|Cool! I'll install Youtube++ then.]]
 
 # I have Windows Mobile!
 
