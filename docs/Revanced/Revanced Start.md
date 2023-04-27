@@ -5,7 +5,9 @@ You'll need these files!
 
 As you progress through these instructions, there may be other files you will be required to download!
 
-- [Revanced Manager](github.com/revanced/revanced-manager/releases/latest) <details><summary>> Where do I download?!</summary>test</details>
+- [Revanced Manager](https://github.com/revanced/revanced-manager/releases/latest) <details><summary>> Where do I download it?!</summary>Scroll down! You'll see under "Assets" a file that ends with ".apk". Go ahead and download that! Your phone may ask you to enable "Install unknown apps" on your browser
+</details>
+
 - [Youtube APK file](https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=4701623&key=0e84306bc5ac6062bf7fb134b7126e2c0320f126&forcebaseapk=true) <details><summary>> What version do I download?!</summary>test</details>
 
 <font color=#f44>⚠ DO NOT INSTALL YOUTUBE! ONLY DOWNLOAD THE APK! ⚠</font>
