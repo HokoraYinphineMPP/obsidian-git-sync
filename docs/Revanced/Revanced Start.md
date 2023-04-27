@@ -7,12 +7,9 @@ As you progress through these instructions, there may be other files you will be
 
 - [Revanced Manager](https://github.com/revanced/revanced-manager/releases/latest)
 
-<details><summary>Where do I download it?!</summary><font size="2">Scroll down!
-
-You'll see under "Assets" a file that ends with ".apk".
-
-Go ahead and download that!
-
+<details><summary>Where do I download it?!</summary><font size="2">Scroll down!<br>
+You'll see under "Assets" a file that ends with ".apk".<br>
+Go ahead and download that!<br>
 Your phone may ask you to enable "Install unknown apps" on your browser so go ahead and just enable that, then try installing again.</font>
 </details>
 
@@ -20,10 +17,8 @@ Your phone may ask you to enable "Install unknown apps" on your browser so go ah
 
 <font color=#f44>⚠ DO NOT INSTALL YOUTUBE! ONLY DOWNLOAD THE APK! ⚠</font>
 <font color=#f44>⚠ DO NOT DOWNLOAD THE BUNDLE! DOWNLOAD THE APK! (Labeled "nodpi") ⚠</font>
-<details><summary>What version do I download?!</summary>Open <a href="https://github.com/revanced/revanced-patches/blob/main/README.md">this page</a> in a new tab!
-
+<details><summary>What version do I download?!</summary>Open <a href="https://github.com/revanced/revanced-patches/blob/main/README.md">this page</a> in a new tab!<br>
 Under "📦 com.google.android.youtube", click Details.
-
 You can see the version you need under "🏹 Target Version"
 </details>
 
