@@ -1,6 +1,6 @@
 # Let's Install Youtube++!
 
-Great! First things first, You <font color=>will</font> need a computer!
+Great! First things first, You <font color=#f33>will</font> need a computer!
 
 Both MacOS and Windows will work!
 
