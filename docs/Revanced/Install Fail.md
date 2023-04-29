@@ -10,7 +10,7 @@ on the top right select "Export APK" and save it somewhere you'll remember!
 Now let's install another app!
 ###### I know i know... *another* app to download...
 # Split APK Installer (SAI)
-- [SAI](https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=2005826&key=d64cbaf2ff96924d1805c01aa7c739c01a0ff94c) `v4.5 as of April 26, 2023`
+- ![](https://cdn.discordapp.com/attachments/803186540359450664/1101811331482529932/downloadicon.gif)[SAI](https://www.apkmirror.com/wp-content/themes/APKMirror/download.php?id=2005826&key=d64cbaf2ff96924d1805c01aa7c739c01a0ff94c) `v4.5 as of April 26, 2023`
 
 This will help us debug the install!
 
