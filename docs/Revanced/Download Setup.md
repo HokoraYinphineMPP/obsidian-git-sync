@@ -3,7 +3,7 @@ Cool!
 You have three options for a downloader
 (there may be more! if you find any you like, DM me! `Hokora Yinphine MPP#6969` )
 
-|[NewPipe](https://github.com/TeamNewPipe/NewPipe/releases/latest)|[PowerTube](https://github.com/razar-dev/PowerTube/releases/latest)|[Seal](https://github.com/JunkFood02/Seal/releases/latest)|
+|![](https://cdn.discordapp.com/attachments/803186540359450664/1101814511872245800/fixeddownloadicon.gif) [NewPipe](https://github.com/TeamNewPipe/NewPipe/releases/latest)|![](https://cdn.discordapp.com/attachments/803186540359450664/1101814511872245800/fixeddownloadicon.gif)[PowerTube](https://github.com/razar-dev/PowerTube/releases/latest)|![](https://cdn.discordapp.com/attachments/803186540359450664/1101814511872245800/fixeddownloadicon.gif)[Seal](https://github.com/JunkFood02/Seal/releases/latest)|
 |:-:|:-:|:-:|
 |Vanced Recommended|Vanced Recommended|Hokora Recommended [![](https://cdn.discordapp.com/emojis/1072706617616891904.webp?size=16&quality=lossless ":HokoraYea:")](https://cdn.discordapp.com/emojis/1072706617616891904.webp?quality=lossless ":HokoraYea:") |
 
