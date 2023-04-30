@@ -5,7 +5,7 @@ You'll need these files!
 
 As you progress through these instructions, there may be other files you will be required to download!
 
-- ![](https://cdn.discordapp.com/attachments/803186540359450664/1101814511872245800/fixeddownloadicon.gif) [Revanced Manager](https://github.com/revanced/revanced-manager/releases/latest)
+- ![](https://cdn.discordapp.com/attachments/803186540359450664/1101814511872245800/fixeddownloadicon.gif) [ReVanced Manager](https://github.com/ReVanced/ReVanced-manager/releases/latest)
 
 <details><summary>Where do I download it?!</summary><font size="2">Scroll down!<br>
 You'll see under "Assets" a file that ends with ".apk".<br>
@@ -18,7 +18,7 @@ Your phone may ask you to enable "Install unknown apps" on your browser so go ah
 <font color=#f44>⚠ DO NOT INSTALL YouTube! ONLY DOWNLOAD THE APK! ⚠</font>
 
 <font color=#f44>⚠ DO NOT DOWNLOAD THE BUNDLE! DOWNLOAD THE APK! (Labeled "nodpi") ⚠</font>
-<details><summary>What version do I download?!</summary>Open <a href="https://github.com/revanced/revanced-patches/blob/main/README.md">this page</a> in a new tab!<br>
+<details><summary>What version do I download?!</summary>Open <a href="https://github.com/ReVanced/ReVanced-patches/blob/main/README.md">this page</a> in a new tab!<br>
 Under "📦 com.google.android.YouTube", click Details.<br>
 You can see the version you need under "🏹 Target Version"
 </details>

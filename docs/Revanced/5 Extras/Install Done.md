@@ -12,12 +12,12 @@ Something you'll need to set up is the Downloader!
 
 
 ## Fix links
-You might notice when you open a youtube link, it opens your original youtube instead of Revanced!
+You might notice when you open a YouTube link, it opens your original YouTube instead of ReVanced!
 
 ![](https://cdn.discordapp.com/attachments/803186540359450664/1100960373282193449/image_2023-04-26_182246728_1.gif) [[Fix Links|Let's fix that up then!]]
 
 
-## What's this... Revanced *Extended* I hear about?
+## What's this... ReVanced *Extended* I hear about?
 
 
 

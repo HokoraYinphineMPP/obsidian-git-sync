@@ -1,4 +1,4 @@
-# Let's Install Youtube++!
+# Let's Install YouTube++!
 
 Great! First things first, You <font color=#f44>will</font> need a computer!
 

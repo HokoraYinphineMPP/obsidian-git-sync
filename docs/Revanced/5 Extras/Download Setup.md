@@ -17,7 +17,7 @@ Depending on what app you installed, paste the package name of the app you insta
 
 |NewPipe|PowerTube|Seal|
 |:-:|:-:|:-:|
-|org.schabi.newpipe|ussr.razar.youtube_dl|com.junkfood.seal|
+|org.schabi.newpipe|ussr.razar.YouTube_dl|com.junkfood.seal|
 
 ![[ezgif.com-resize (3).gif]]
 
