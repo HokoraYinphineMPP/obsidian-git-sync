@@ -35,6 +35,6 @@ If you're curious what exactly a patch does, say hi and send a question in the <
 
 
 
-
+![](https://cdn.discordapp.com/attachments/803186540359450664/1100960373282193449/image_2023-04-26_182246728_1.gif) [[Patching Troubleshooting|A bunch of patches failed to install! D:]]
 
 ![](https://cdn.discordapp.com/attachments/803186540359450664/1100960373282193449/image_2023-04-26_182246728_1.gif) [[Patching Done|It finished Applying patches!]]
