@@ -22,7 +22,7 @@ It should look something like this.
 
 <details><summary>Wait! I see a feature I don't want!</summary>That's alright! However if you don't know what a patch exactly does, don't disable it! You'll likely break it.<br>
 It's also worth noting that some patches are also disable-able within the ReVanced Youtube app even after patching+installation as well! The toggles are tucked away in the youtube settings page at the bottom.<br>
-If you're curious what exactly a patch does, say hi and send a question in the [ReVanced Discord]()!
+If you're curious what exactly a patch does, say hi and send a question in the <a href="https://discord.gg/revanced">ReVanced Discord</a>!
 </details>
 
 ## Finally Click "Done" and then "Patch"!
