@@ -9,7 +9,7 @@ Alternatively, you can also install
 ![](https://cdn.discordapp.com/attachments/803186540359450664/1100960373282193449/image_2023-04-26_182246728_1.gif) [[Youtube++ Start|Cool! I'll install Youtube++ then.]]
 
 # I have Windows Mobile!
-
+> skill issue
 
 # I have Linux/Ubuntu Touch!
 

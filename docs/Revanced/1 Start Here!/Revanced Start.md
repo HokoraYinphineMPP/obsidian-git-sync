@@ -13,13 +13,13 @@ Go ahead and download that!<br>
 Your phone may ask you to enable "Install unknown apps" on your browser so go ahead and just enable that, then try installing again.</font>
 </details>
 
-- ![](https://cdn.discordapp.com/attachments/803186540359450664/1101814511872245800/fixeddownloadicon.gif) [Youtube APK file](https://www.apkmirror.com/apk/google-inc/youtube/youtube-18-15-40-release/youtube-18-15-40-2-android-apk-download/)
+- ![](https://cdn.discordapp.com/attachments/803186540359450664/1101814511872245800/fixeddownloadicon.gif) [YouTube APK file](https://www.apkmirror.com/apk/google-inc/YouTube/YouTube-18-15-40-release/YouTube-18-15-40-2-android-apk-download/)
 
-<font color=#f44>⚠ DO NOT INSTALL YOUTUBE! ONLY DOWNLOAD THE APK! ⚠</font>
+<font color=#f44>⚠ DO NOT INSTALL YouTube! ONLY DOWNLOAD THE APK! ⚠</font>
 
 <font color=#f44>⚠ DO NOT DOWNLOAD THE BUNDLE! DOWNLOAD THE APK! (Labeled "nodpi") ⚠</font>
 <details><summary>What version do I download?!</summary>Open <a href="https://github.com/revanced/revanced-patches/blob/main/README.md">this page</a> in a new tab!<br>
-Under "📦 com.google.android.youtube", click Details.<br>
+Under "📦 com.google.android.YouTube", click Details.<br>
 You can see the version you need under "🏹 Target Version"
 </details>
 
