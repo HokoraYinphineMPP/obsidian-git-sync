@@ -11,7 +11,7 @@ It should look something like this.
 ![[oUGWO1Gr.gif]]
 ## Then Tap on "Storage"
 ![[Imhyxm4s.gif]]
-## Find the Youtube APK File you downloaded earlier.
+## Find the YouTube APK File you downloaded earlier.
 ![[F2pLuChL.gif]]
 ## Make sure the Current version matches the Recommended version!
 ![[Pasted image 20230426000039.png]]
@@ -21,7 +21,7 @@ It should look something like this.
 ![[scrcpy_P90tIY8jcR.gif]]
 
 <details><summary>Wait! I see a feature I don't want!</summary>That's alright! However if you don't know what a patch exactly does, don't disable it! You'll likely break it.<br> <br>
-It's also worth noting that some patches are also togglable within the ReVanced Youtube app even after patching+installation as well! The toggles are tucked away in the youtube settings page at the bottom.<br> <br>
+It's also worth noting that some patches are also togglable within the ReVanced YouTube app even after patching + installation as well! The toggles are tucked away in the YouTube settings page at the bottom.<br> <br>
 If you're curious what exactly a patch does, say hi and send a question in the <a href="https://discord.gg/revanced">ReVanced Discord</a>!
 </details>
 
