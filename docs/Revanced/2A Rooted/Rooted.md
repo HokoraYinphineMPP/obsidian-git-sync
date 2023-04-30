@@ -19,6 +19,12 @@ It should look something like this.
 ![[scrcpy_YlvoTfHJ1b.gif]]
 ## Tap on "Recommended"
 ![[scrcpy_P90tIY8jcR.gif]]
+
+<details><summary>Wait! I see a feature I don't want!</summary>That's alright! However if you don't know what a patch exactly does, don't disable it! You'll likely break it.<br>
+test<br>
+Lorem Shitsum dolor sit amet.
+</details>
+
 ## Finally Click "Done" and then "Patch"!
 ![[scrcpy_fqJXgZASX8.gif]]
 
