@@ -1,6 +1,6 @@
 # Hey! let's just jump right in.
 
-<details><summary>I don't really like this guide...</summary>There are alot of guides out there!<br> <br> If you like text only, try <a href="https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide">my friend's guide</a>!<br> <br>
+<details><summary>I don't really like this guide...</summary>There are alot of guides out there!<br> <br> If you like text only, try <a href="https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide">my friend Soda's guide</a>!<br> <br>
 If you're in the <a href="https://discord.gg/revanced">ReVanced Discord server</a>, you can try <a href="https://discord.com/channels/952946952348270622/1020635123894464512">E.'s (somewhat outdated) guide</a>!
 </details>
 
