@@ -1,6 +1,7 @@
 # Hey! let's just jump right in.
 
-<details><summary>I don't really like this guide...</summary>There are alot of guides out there!<br> <br> If you like text only, try <a href="https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide">my friend's guide</a>!<br>
+<details><summary>I don't really like this guide...</summary>There are alot of guides out there!<br> <br> If you like text only, try <a href="https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide">my friend's guide</a>!<br> <br>
+If you're in the <a href="https://discord.gg/revanced">ReVanced Discord server</a>, you can try <a href="https://discord.com/channels/952946952348270622/1020635123894464512">E.'s (somewhat outdated) guide</a>!
 </details>
 
 ## Required files (Prerequisites)
@@ -10,9 +11,9 @@ As you progress through these instructions, there may be other files you will be
 
 - ![](https://cdn.discordapp.com/attachments/803186540359450664/1101814511872245800/fixeddownloadicon.gif) [ReVanced Manager](https://github.com/ReVanced/ReVanced-manager/releases/latest)
 
-<details><summary>Where do I download it?!</summary><font size="2">Scroll down!<br>
-You'll see under "Assets" a file that ends with ".apk".<br>
-Go ahead and download that!<br>
+<details><summary>Where do I download it?!</summary><font size="2">Scroll down!<br> <br>
+You'll see under "Assets" a file that ends with ".apk".<br> <br>
+Go ahead and download that!<br> <br>
 Your phone may ask you to enable "Install unknown apps" on your browser so go ahead and just enable that, then try installing again.</font>
 </details>
 
@@ -21,8 +22,8 @@ Your phone may ask you to enable "Install unknown apps" on your browser so go ah
 <font color=#f44>⚠ DO NOT INSTALL YOUTUBE! ONLY DOWNLOAD THE APK! ⚠</font>
 
 <font color=#f44>⚠ DO NOT DOWNLOAD THE BUNDLE! DOWNLOAD THE APK! (Labeled "nodpi") ⚠</font>
-<details><summary>What version do I download?!</summary>Open <a href="https://github.com/ReVanced/ReVanced-patches/blob/main/README.md">this page</a> in a new tab!<br>
-Under "📦 com.google.android.YouTube", click Details.<br>
+<details><summary>What version do I download?!</summary>Open <a href="https://github.com/ReVanced/ReVanced-patches/blob/main/README.md">this page</a> in a new tab!<br> <br>
+Under "📦 com.google.android.YouTube", click Details.<br> <br>
 You can see the version you need under "🏹 Target Version"
 </details>
 
