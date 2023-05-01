@@ -1,9 +1,5 @@
 # Hey! let's just jump right in.
 
-<details><summary>I don't really like this guide...</summary>That's alright. There are alot of guides out there!<br> <br> If you like text only, try <a href="https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide">my friend Soda's guide</a>!<br> <br>
-If you're in the <a href="https://discord.gg/revanced">ReVanced Discord server</a>, you can try <a href="https://discord.com/channels/952946952348270622/1020635123894464512">E.'s (somewhat outdated) guide</a>!<br> <br>If you <i>really</i> don't like my guide, <a href="https://discord.com/users/221417731776446467">DM me and tell me what's wrong</a>!
-</details>
-
 ## Required files (Prerequisites)
 You'll need these files!
 
@@ -41,3 +37,12 @@ You can see the version you need under "🏹 Target Version"
 ![](https://cdn.discordapp.com/attachments/803186540359450664/1100960373282193449/image_2023-04-26_182246728_1.gif) [[Root Unknown|What does this mean...]]
 
 ![](https://cdn.discordapp.com/attachments/803186540359450664/1100960373282193449/image_2023-04-26_182246728_1.gif) [[No Android|I don't have an Android...]]
+
+
+
+---
+
+
+<details><summary>I don't really like this guide...</summary>That's alright. There are alot of guides out there!<br> <br> If you like text only, try <a href="https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide">my friend Soda's guide</a>! He has a one page guide as well.<br> <br>
+If you're in the <a href="https://discord.gg/revanced">ReVanced Discord server</a>, you can try <a href="https://discord.com/channels/952946952348270622/1020635123894464512">E.'s (somewhat outdated) guide</a>!<br> <br>If you <i>really</i> don't like my guide, <a href="https://discord.com/users/221417731776446467">DM me and tell me what's wrong</a>!
+</details>
