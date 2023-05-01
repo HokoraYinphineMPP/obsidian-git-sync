@@ -1,5 +1,8 @@
 # Hey! let's just jump right in.
 
+<details><summary>I don't really like this guide...</summary>There are alot of guides out there!<br> <br> If you like text only, try <a href="https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide">my friend's guide</a>!<br>
+</details>
+
 ## Required files (Prerequisites)
 You'll need these files!
 
