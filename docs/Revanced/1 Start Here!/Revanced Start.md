@@ -1,7 +1,3 @@
----
-title: Revanced Start
-id: R1
----
 # Hey! let's just jump right in.
 
 ## Required files (Prerequisites)
@@ -53,8 +49,8 @@ If you're in the <a href="https://discord.gg/revanced">ReVanced Discord server</
 
 
 <title>Test1</title>
-<meta content="Test2" property="og:title" />
-<meta content="Test3" property="og:description" />
+<meta content="ReVanced Setup Guide!" property="og:title" />
+<meta content="Go ahead and start here!" property="og:description" />
 <meta content="https://hokorayinphinempp.github.io/obsidian-git-sync/Revanced/1%20Start%20Here%21/Revanced%20Start/" property="og:url" />
 <meta content="https://media.discordapp.net/attachments/803186540359450664/1100686623638814771/Awesome.gif" property="og:image" />
 <meta content="#43B581" data-react-helmet="true" name="theme-color" />
