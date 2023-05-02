@@ -13,7 +13,7 @@ Go ahead and download that!<br> <br>
 Your phone may ask you to enable "Install unknown apps" on your browser so go ahead and just enable that, then try installing again.</font>
 </details>
 
-- ![](https://cdn.discordapp.com/attachments/803186540359450664/1101814511872245800/fixeddownloadicon.gif) [YouTube APK file](https://www.apkmirror.com/apk/google-inc/YouTube/YouTube-18-15-40-release/YouTube-18-15-40-2-android-apk-download/)
+- ![](https://cdn.discordapp.com/attachments/803186540359450664/1101814511872245800/fixeddownloadicon.gif) [YouTube APK file](https://www.apkmirror.com/apk/google-inc/youtube/youtube-18-16-37-release/youtube-18-16-37-2-android-apk-download/)
 
 <font color=#f44>⚠ DO NOT INSTALL YOUTUBE! ONLY DOWNLOAD THE APK! ⚠</font>
 
