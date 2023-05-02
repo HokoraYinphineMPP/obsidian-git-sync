@@ -1,5 +1,6 @@
 ---
-
+title: Revanced Start
+id: R1
 ---
 # Hey! let's just jump right in.
 
