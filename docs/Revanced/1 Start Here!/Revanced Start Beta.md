@@ -95,7 +95,7 @@ If you're in the <a href="https://discord.gg/revanced">ReVanced Discord server</
 </head>
 <body>
 
-<button class="button"><img src="https://cdn.discordapp.com/attachments/803186540359450664/1100960373282193449/image_2023-04-26_182246728_1.gif">My Android is rooted!</button>
+<button class="button"><img src="https://cdn.discordapp.com/attachments/803186540359450664aaaaaaaa/1100960373282193449/image_2023-04-26_182246728_1.gif">My Android is rooted!</button>
 <button class="button button2"><img src="https://cdn.discordapp.com/attachments/803186540359450664/1100960373282193449/image_2023-04-26_182246728_1.gif">My Android is NOT rooted!</button><br>
 <button class="button button3"><img src="https://cdn.discordapp.com/attachments/803186540359450664/1100960373282193449/image_2023-04-26_182246728_1.gif">What does this mean...</button>
 <button class="button button4"><img src="https://cdn.discordapp.com/attachments/803186540359450664/1100960373282193449/image_2023-04-26_182246728_1.gif">I don't have an Android...</button>
