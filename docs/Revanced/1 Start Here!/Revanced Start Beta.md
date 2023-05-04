@@ -50,6 +50,8 @@ img {max-width: 100%;}
   margin: 4px 2px;
   cursor: pointer;
   transition: 0.4s;
+  outline-color: #777;
+  outline-style:solid;
 }
 .button:hover {
   background-color:#002ead;
