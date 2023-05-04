@@ -99,9 +99,11 @@ img {max-width: 100%;}
 ---
 
 
-<details><summary>I don't really like this guide...</summary>That's alright. There are alot of guides out there!<br> <br> If you like text only, try <a href="https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide">my friend Soda's guide</a>! He has a <a href="https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/00-first-start/">one page guide</a> as well.<br> <br>
+<html><body><details><summary>I don't really like this guide...</summary>That's alright. There are alot of guides out there!<br> <br> If you like text only, try <a href="https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide">my friend Soda's guide</a>! He has a <a href="https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide/00-first-start/">one page guide</a> as well.<br> <br>
 If you're in the <a href="https://discord.gg/revanced">ReVanced Discord server</a>, you can try <a href="https://discord.com/channels/952946952348270622/1020635123894464512">E.'s (somewhat outdated) guide</a>!<br> <br>If you <i>really</i> don't like my guide, <a href="https://discord.com/users/221417731776446467">DM me and tell me what's wrong</a>!
 </details>
+</body>
+</html>
 
 
 <title>Test1</title>
