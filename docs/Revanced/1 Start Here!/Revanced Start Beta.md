@@ -30,13 +30,69 @@ You can see the version you need under "🏹 Target Version"
 # First question!
 ## Is your Android rooted?
 
-![](https://cdn.discordapp.com/attachments/803186540359450664/1100960373282193449/image_2023-04-26_182246728_1.gif) [[Rooted|My Android is rooted!]]
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width">
+<style>
+img {max-width: 100%;}
+.button {
+  background-color: #2094f3; 
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  width: 100%;
+  text-align: center;
+  border-radius: 15px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.button:hover {
+  background-color:#002ead;
+  transition: 0.4s;
+  }
+.button:focus {
+  outline-color: transparent;
+  outline-style:solid;
+  background-color:#002ead;	
+  transition: 0.2s;
+  box-shadow: 0 0 0 4px #eeeeee;
+}
+.button:active {
+  background-color: #ffbf00; 
+  transition: 0.4s;
+}
+.button2 {background-color: #2094f3;} /* Blue */
+.button3 {background-color: #555555; padding: 5px 10px; border-radius: 9px;} /* Red */ 
+.button4 {background-color: #555555; padding: 5px 10px; border-radius: 9px;} /* Gray */
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 0px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid rgba(0, 0, 0, 0);
+  padding: 0px 3px;
+  font-size: 0px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<div class="grid-container">
+  <div class="grid-item"><a href="https://hokorayinphinempp.github.io/obsidian-git-sync/Revanced/2A%20Rooted/Rooted/"><button class="button"><img src="https://cdn.discordapp.com/attachments/803186540359450664/1100960373282193449/image_2023-04-26_182246728_1.gif">My Android is rooted!</button></a></div>
+  <div class="grid-item"><a href="https://hokorayinphinempp.github.io/obsidian-git-sync/Revanced/2B%20Unrooted/Not%20Rooted/"><button class="button button2"><img src="https://cdn.discordapp.com/attachments/803186540359450664/1100960373282193449/image_2023-04-26_182246728_1.gif">My Android is NOT rooted!</button></a></div>
+  <div class="grid-item"><a href="https://hokorayinphinempp.github.io/obsidian-git-sync/Revanced/1%20Start%20Here%21/Root%20Unknown/"><button class="button button3"><img src="https://cdn.discordapp.com/attachments/803186540359450664/1100960373282193449/image_2023-04-26_182246728_1.gif">What does this mean...</button></a></div>
+  <div class="grid-item"><a href="https://hokorayinphinempp.github.io/obsidian-git-sync/Revanced/1%20Start%20Here%21/No%20Android/"><button class="button button4"><img src="https://cdn.discordapp.com/attachments/803186540359450664/1100960373282193449/image_2023-04-26_182246728_1.gif">I don't have an Android...</button></a></div>
+</div>
+</body>
+</html>
 
-![](https://cdn.discordapp.com/attachments/803186540359450664/1100960373282193449/image_2023-04-26_182246728_1.gif) [[Not Rooted|My Android is NOT rooted!]]
-
-![](https://cdn.discordapp.com/attachments/803186540359450664/1100960373282193449/image_2023-04-26_182246728_1.gif) [[Root Unknown|What does this mean...]]
-
-![](https://cdn.discordapp.com/attachments/803186540359450664/1100960373282193449/image_2023-04-26_182246728_1.gif) [[No Android|I don't have an Android...]]
 
 
 
