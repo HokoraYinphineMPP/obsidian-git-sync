@@ -51,7 +51,7 @@ img {max-width: 100%;}
   cursor: pointer;
   transition: 0.4s;
   outline-color: #448aff;
-  outline-width: initial;
+  outline-width: 1px;
   outline-style:solid;
 }
 .button:hover {
