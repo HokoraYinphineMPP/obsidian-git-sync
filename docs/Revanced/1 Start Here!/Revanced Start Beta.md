@@ -37,7 +37,7 @@ You can see the version you need under "🏹 Target Version"
 <style>
 img {max-width: 100%;}
 .button {
-  background-color: #2094f3; 
+  background-color: #448aff1a; 
   border: none;
   color: white;
   padding: 15px 25px;
@@ -50,7 +50,7 @@ img {max-width: 100%;}
   margin: 4px 2px;
   cursor: pointer;
   transition: 0.4s;
-  outline-color: #777;
+  outline-color: #448aff;
   outline-style:solid;
 }
 .button:hover {
@@ -68,9 +68,9 @@ img {max-width: 100%;}
   background-color: #ffbf00; 
   transition: 0.4s;
 }
-.button2 {background-color: #2094f3;} /* Blue */
-.button3 {background-color: #555555; padding: 5px 10px; border-radius: 9px;} /* Red */ 
-.button4 {background-color: #555555; padding: 5px 10px; border-radius: 9px;} /* Gray */
+.button2 {background-color: #448aff1a;} /* Blue */
+.button3 {background-color: #8080801a; padding: 5px 10px; border-radius: 9px;} /* Red */ 
+.button4 {background-color: #8080801a; padding: 5px 10px; border-radius: 9px;} /* Gray */
 .grid-container {
   display: grid;
   grid-template-columns: auto auto;
@@ -98,6 +98,7 @@ img {max-width: 100%;}
   </div>
   </body>
   </html>
+
 
 
 
