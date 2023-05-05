@@ -43,7 +43,7 @@ img {max-width: 100%;}
   padding: 15px 25px;
   width: 100%;
   text-align: center;
-  border-radius: 15px;
+  border-radius: .1rem;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
@@ -51,26 +51,27 @@ img {max-width: 100%;}
   cursor: pointer;
   transition: 0.4s;
   outline-color: #448aff;
+  outline-width: initial;
   outline-style:solid;
 }
 .button:hover {
-  background-color:#002ead;
+  background-color:#002ead50;
   transition: 0.4s;
   }
 .button:focus {
   outline-color: transparent;
   outline-style:solid;
-  background-color:#002ead;	
+  background-color:#002ead50;	
   transition: 0.2s;
   box-shadow: 0 0 0 4px #eeeeee;
 }
 .button:active {
-  background-color: #ffbf00; 
+  background-color: #ffbf0050; 
   transition: 0.4s;
 }
-.button2 {background-color: #448aff1a;} /* Blue */
-.button3 {background-color: #8080801a; padding: 5px 10px; border-radius: 9px;} /* Red */ 
-.button4 {background-color: #8080801a; padding: 5px 10px; border-radius: 9px;} /* Gray */
+.button2 {background-color: #448aff1a;}
+.button3 {background-color: #8080801a; padding: 5px 10px;} 
+.button4 {background-color: #8080801a; padding: 5px 10px;}
 .grid-container {
   display: grid;
   grid-template-columns: auto auto;
