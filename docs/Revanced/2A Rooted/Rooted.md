@@ -2,6 +2,8 @@
 
 Cool! Here's where things get fun.
 
+<font color=#f44>⚠ UNFINISHED! DO NOT FOLLOW THIS SECTION! PLEASE REFER TO SODA'S GUIDE INSTEAD⚠</font>
+
 ## Install and open your ReVanced Manager!
 It should look something like this.
 
