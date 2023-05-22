@@ -8,7 +8,8 @@ Alternatively, you can also install
 
 ![](https://cdn.discordapp.com/attachments/803186540359450664/1100960373282193449/image_2023-04-26_182246728_1.gif) [[YouTube++ Start|Cool! I'll install YouTube++ then.]]
 
-## I have 
+# I use a browser!
+There are many browsers out there with adblock like Brave, Orion, OperaGX, etc! If you want to stick with your own browser, you may be able to find chromium extensions such as <a href="https://ublockorigin.com">UBlock Origin</a> or <a href="https://www.adblockplus.org/en/download">AdblockPlus</a>!
 
 # I have Windows Mobile!
 > skill issue
