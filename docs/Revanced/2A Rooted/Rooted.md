@@ -1,8 +1,13 @@
 # > My phone is rooted!
 
-Cool! Here's where things get fun.
+Cool! Let's make sure you have all the requirements.
 
-<font color=#f44>⚠ UNFINISHED! DO NOT FOLLOW THIS SECTION! PLEASE REFER TO SODA'S GUIDE INSTEAD⚠</font>
+## Root Prerequisites
+- Android 8+
+- ARMv8
+- Magisk or KernelSU root
+
+<font color=#f44>⚠ UNFINISHED! DO NOT FOLLOW THIS SECTION! PLEASE REFER TO SODA'S GUIDE INSTEAD! ⚠</font>
 
 ## Install and open your ReVanced Manager!
 It should look something like this.
