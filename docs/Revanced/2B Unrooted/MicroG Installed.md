@@ -21,7 +21,7 @@ It should look something like this.
 ![[scrcpy_P90tIY8jcR.gif]]
 
 <details><summary>It doesn't say Recommended, it says Default!</summary>That's alright! Tap that instead.<br> <br>
-You're using a newer version of the Vanced Manager!
+You're using a newer version of the ReVanced Manager!
 </details>
 
 <details><summary>Wait! I see a feature I don't want!</summary>That's alright! However if you don't know what a patch exactly does, don't disable it! You'll likely break it.<br> <br>
