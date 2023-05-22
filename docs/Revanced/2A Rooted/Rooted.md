@@ -7,7 +7,7 @@ Cool! Let's make sure you have all the requirements.
 - ARMv8
 - Magisk or KernelSU root
 
-<font color=#f44>⚠ UNFINISHED! DO NOT FOLLOW THIS SECTION! PLEASE REFER TO SODA'S GUIDE INSTEAD! ⚠</font>
+<font color=#f44>⚠ UNFINISHED! DO NOT FOLLOW THIS SECTION! PLEASE REFER TO SODA'S GUIDE OR <a href="https://discord.com/channels/952946952348270622/1096758100725346395">E'S GUIDE</a> INSTEAD! ⚠</font>
 
 ## Install and open your ReVanced Manager!
 It should look something like this.
