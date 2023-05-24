@@ -15,6 +15,9 @@ It should look something like this.
 ![[F2pLuChL.gif]]
 ## Make sure the Current version matches the Recommended version!
 ![[Pasted image 20230426000039.png]]
+
+<font color=#f44>⚠ The version is <b>not</b> v18.15.40! It is only shown as an example. ⚠</font>
+
 ## Tap on "Select patches"
 ![[scrcpy_YlvoTfHJ1b.gif]]
 ## Tap on "Recommended"
