@@ -5,7 +5,7 @@ You'll need these files!
 
 As you progress through these instructions, there may be other files you will be required to download!
 
-- ![](https://cdn.discordapp.com/attachments/803186540359450664/1101814511872245800/fixeddownloadicon.gif) [ReVanced Manager](https://github.com/revanced/revanced-manager/releases/latest)
+- ![](https://cdn.discordapp.com/attachments/803186540359450664/1101814511872245800/fixeddownloadicon.gif) [ReVanced Manager]({{ latest_release_link }})
 
 <details><summary>Where do I download it?!</summary><font size="2">Scroll down!<br> <br>
 You'll see under "Assets" a file that ends with ".apk".<br> <br>
