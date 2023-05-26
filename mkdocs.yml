@@ -46,8 +46,7 @@ markdown_extensions:
 plugins:
   - search
   - roamlinks
-#  - updateVer:
-#      path: D:\obsidian-git-sync\updateVer.py
+  - get-latest-manager-release
   - mermaid2
 
 extra_javascript:
