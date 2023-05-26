@@ -22,6 +22,6 @@ There are many browsers out there with adblock like <a href="https://brave.com/d
 
 # I have Quest 1/Quest 2/Pimax Crystal!
 These HMDs actually run Android! However, you likely may have to patch on a different device such as your phone or computer. 
->> Confirmed: Quest 1 can run revanced 
+> Confirmed: Quest 1 can run revanced lmao, the big issue is settings page doesnt have a soft back button
 
 > DM Hokora Yinphine MPP#6969 and yell at me to finish this part lol
