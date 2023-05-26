@@ -1,4 +1,4 @@
-# Hey! let's just jump right in.
+# Hey! let's just jump right in. [Beta]
 
 ## Required files (Prerequisites)
 You'll need these files!
