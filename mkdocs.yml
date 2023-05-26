@@ -47,7 +47,7 @@ plugins:
   - search
   - roamlinks
   - updateVer
-    path: updateVer.py
+      path: updateVer.py
   - mermaid2
 
 extra_javascript:
