@@ -46,7 +46,7 @@ markdown_extensions:
 plugins:
   - search
   - roamlinks
-  - updateVer
+  - updateVer:
       path: updateVer.py
   - mermaid2
 
