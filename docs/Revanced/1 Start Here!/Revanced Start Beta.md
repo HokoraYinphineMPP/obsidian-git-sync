@@ -119,4 +119,3 @@ img {max-width: 100%;}
 
 
 
-{% set asset_name = 'revanced-manager' + dynamic_part + '.apk' %} <a href="https://github.com/owner/repository/releases/latest/download/{{ asset_name }}">Download latest release</a>
