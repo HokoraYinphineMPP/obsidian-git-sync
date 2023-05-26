@@ -4,9 +4,9 @@ Sadly iOS doesn't have ReVanced support yet...
 So for now, you can keep in touch on the [ReVanced GitHub](https://github.com/ReVanced), [ReVanced Twitter](https://twitter.com/ReVancedapp), or the [ReVanced Discord](http://ReVanced.app/discord)!
 
 Alternatively, you can also install
-## YouTube++
+## uYouPlus
 
-![](https://cdn.discordapp.com/attachments/803186540359450664/1100960373282193449/image_2023-04-26_182246728_1.gif) [[YouTube++ Start|Cool! I'll install YouTube++ then.]]
+![](https://cdn.discordapp.com/attachments/803186540359450664/1100960373282193449/image_2023-04-26_182246728_1.gif) [[Youtube++ Start|Cool! I'll install uYouPlus then.]]
 
 # I use a browser!
 There are many browsers out there with adblock like <a href="https://brave.com/download/">Brave</a>, <a href="https://browser.kagi.com">Orion</a>, <a href="https://www.opera.com/gx">Opera GX</a>, etc! If you want to stick with your own browser, you may be able to find chromium extensions such as <a href="https://ublockorigin.com">UBlock Origin</a> or <a href="https://www.adblockplus.org/en/download">AdblockPlus</a>!
