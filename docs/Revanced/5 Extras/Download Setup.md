@@ -26,7 +26,8 @@ You should be good to go now!
 
 <details><summary>It's saying something about YouTube Premium!</summary>You likely just pressed the wrong download button. There are two! <br> <br>
 There's the original YouTube Premium download button under the player (next to the like buttons)<br> <br>
-The one you are looking for is inside your video player!<br> <br>
+The one you are looking for is inside your video player (but you may need to enable it).<br> <br>
+You can enable it in the ReVanced settings under Revanced > Interaction > External download settings > Show external download button.<br> <br>
 If you want to get rid of the YouTube Premium download button, disable it in the ReVanced settings under Revanced > Layout > Hide action buttons > Hide download button.
 </details>
 
