@@ -40,4 +40,3 @@ Finally, call the following function to determine the largest value in the array
 
 **Remember to call delete at the end of your program to delete the array!**
 
-
