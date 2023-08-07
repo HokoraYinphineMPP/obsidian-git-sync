@@ -1,4 +1,7 @@
-# Hey! let's just jump right in. [Beta]
+# Hey! let's just jump right in.
+
+## <font color=#f44>⚠ USE <a href="https://sodawithoutsparkles.github.io/revanced-troubleshooting-guide">SODA's GUIDE</a> FOR NOW! ⚠</font>
+I'm currently focusing on other music and video related projects, so for the time being, this guide isn't maintained!
 
 ## Required files (Prerequisites)
 You'll need these files!
