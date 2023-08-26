@@ -58,4 +58,3 @@ The emulator (Wabbitemu.exe) and the calculator (.rom).
 # Revanced Youtube 
 If you're here to figure out how to install Revanced Youtube, let's start [[Revanced Start|here]]!
 
-
