@@ -58,6 +58,9 @@ The emulator (Wabbitemu.exe) and the calculator (.rom).
 
 
 
-# Revanced Youtube 
+# [[Revanced Start|Revanced Youtube]]
 If you're here to figure out how to install Revanced Youtube, let's start [[Revanced Start|here]]!
 
+
+# [[latex format|Latex Formatting]]
+Some cool notes about Obsidian $\TeX$/$\LaTeX$ formatting
