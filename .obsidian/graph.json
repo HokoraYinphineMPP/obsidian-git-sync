@@ -41,6 +41,13 @@
         "a": 1,
         "rgb": 16777215
       }
+    },
+    {
+      "query": "path:\"Math 2220\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 16748339
+      }
     }
   ],
   "collapse-display": false,
@@ -53,6 +60,6 @@
   "repelStrength": 9,
   "linkStrength": 0.92,
   "linkDistance": 47,
-  "scale": 0.670077935855373,
-  "close": true
+  "scale": 0.7563244419631387,
+  "close": false
 }
