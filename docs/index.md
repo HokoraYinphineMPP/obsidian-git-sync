@@ -38,6 +38,8 @@ Best of luck with your work. Hopefully these notes can help ya! [![<3](https://s
 ## Math 2720-05
 [[Math 2220]]
 
+# Nils Japan
+[[Nils Japan]]
 
 
 
