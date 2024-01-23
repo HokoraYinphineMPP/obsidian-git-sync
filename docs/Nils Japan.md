@@ -28,8 +28,29 @@ Even if you start from the beginner’s level, you can extend your studies for a
 ## Class Schedule
 | Morning | Afternoon | Monday | Tuesday | Wednesday | Thursday | Friday |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-| 8:40 - 9:30 | 13:00 - 13:50 | HomeRoom | Main Text<br><br>![](https://www.nilsjapan.com/programs/img/icon_maintext.jpg) | Main Text<br><br>![](https://www.nilsjapan.com/programs/img/icon_maintext.jpg) | Main Text<br><br>![](https://www.nilsjapan.com/programs/img/icon_maintext.jpg) |  |
-| 9:35 - 10:20 | 13:55 - 14:40 | Test<br><br>![](https://www.nilsjapan.com/programs/img/icon_test.jpg) | Main Text<br><br>![](https://www.nilsjapan.com/programs/img/icon_maintext.jpg) | Main Text<br><br>![](https://www.nilsjapan.com/programs/img/icon_maintext.jpg) | Main Text<br><br>![](https://www.nilsjapan.com/programs/img/icon_maintext.jpg) |  |
+| 8:40 - 9:30 | 13:00 - 13:50 | HomeRoom | Main Text<br><br>![](https://www.nilsjapan.com/programs/img/icon_maintext.jpg) | Main Text<br><br>![](https://www.nilsjapan.com/programs/img/icon_maintext.jpg) | Main Text<br><br>![](https://www.nilsjapan.com/programs/img/icon_maintext.jpg) | Main Text<br><br>![](https://www.nilsjapan.com/programs/img/icon_maintext.jpg) |
+| 9:35 - 10:20 | 13:55 - 14:40 | Test<br><br>![](https://www.nilsjapan.com/programs/img/icon_test.jpg) | Main Text<br><br>![](https://www.nilsjapan.com/programs/img/icon_maintext.jpg) | Main Text<br><br>![](https://www.nilsjapan.com/programs/img/icon_maintext.jpg) | Main Text<br><br>![](https://www.nilsjapan.com/programs/img/icon_maintext.jpg) | Main Text<br><br>![](https://www.nilsjapan.com/programs/img/icon_maintext.jpg) |
 | 10:35 - 11:20 | 14:50 - 15:35 | Grammar<br><br>![](https://www.nilsjapan.com/programs/img/icon_grammar.jpg) | Reading<br><br>![](https://www.nilsjapan.com/programs/img/icon_reading.jpg) | Vocabulary<br><br>![](https://www.nilsjapan.com/programs/img/icon_vocabulary.jpg) | Listening<br><br>![](https://www.nilsjapan.com/programs/img/icon_listening.jpg) | Current Topics<br><br>![](https://www.nilsjapan.com/programs/img/icon_current.jpg) |
 | 11:25 - 12:10 | 15:40 - 16:25 | Grammar<br><br>![](https://www.nilsjapan.com/programs/img/icon_grammar.jpg) | Reading<br><br>![](https://www.nilsjapan.com/programs/img/icon_reading.jpg) | Vocabulary<br><br>![](https://www.nilsjapan.com/programs/img/icon_vocabulary.jpg) | Listening<br><br>![](https://www.nilsjapan.com/programs/img/icon_listening.jpg) | Current Topics<br><br>![](https://www.nilsjapan.com/programs/img/icon_current.jpg) |
-|  |  |  |  |  |  |  |
+## Enrollment Schedule and Program Fee
+
+2024 Oct-2025 Sep
+May 17, 2024
+**$6,550** ~~$8,050~~ until Mar 20, 2024
+`($1,500 tuition fee discount if the application is received until Mar 20, 2024)`
+`Total price includes registration fee, visa processing fee, class tuition fee and textbooks. Health insurance fee, accommodations fee and your travel tickets are not included `
+
+## Application Process
+Required documents :
+
+- [NILS Admission Form (Download)](https://www.nilsjapan.com/applying/application-form-2019.pdf)
+- Diploma of the highest degree completed
+- Pass certificate of JLPT, NAT-Test, etc
+- Your birth certificate
+- Bank statements of your financial sponsor
+- Copy of your passport
+- Photos
+*Note : Above required documents depend on your nationality. Please contact us for more information.
+
+
+![[opera_VrdREAW3lK.png]]
