@@ -42,7 +42,8 @@ Best of luck with your work. Hopefully these notes can help ya! [![<3](https://s
 [[Nils Japan Long term]]
 
 # [ISI](https://www.isi-education.com)
-[[2024]]
+[[ISI2024]]
+
 
 
 
