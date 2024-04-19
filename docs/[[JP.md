@@ -4,4 +4,6 @@
 |    あなた    |  anata  |   あなた    |         you          |
 |   あのひと    | anohito |   あの人    | that person, he, she |
 |   あのかた    | anokata |   あの方    |     polite of ^      |
-|           |         |          |                      |
+|    ＋さん    |  +san   |   ＋さん    |   Mr., Ms. suffix    |
+|   ＋ちゃん    |  +chan  |   ＋ちゃん   |      kid suffix      |
+|    ＋じん    |  +jin   |    人生    |                      |
