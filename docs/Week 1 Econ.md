@@ -121,3 +121,14 @@ the circular flow diagram describes how goods and services and income flow throu
 	- with his budget, he can either purces at most 5 bananas, or at most 20 blueberries
 	- with this information, we can set up a budget constraint which gives a collection of all the different choices alexander can make
 
+# Quantifying tradeoffs
+- Suppose Alex is at a "best" decision (ie: he spends his entire budget) of 3 bananas, and 8 blueberries
+- but suppose that Alex is getting sick of bananas, he'd prefer to consume 1 less banana
+- how many more blueberries could he consume?
+	- 1 more blueberry?
+	- 2?
+	- 3?
+	- 4?
+	- or more?
+			
+## 
