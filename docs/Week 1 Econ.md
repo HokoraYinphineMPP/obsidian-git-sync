@@ -69,7 +69,7 @@
 # Circular Flow Diagram
 ```mermaid
 graph LR
-	B[Firms] -- [Goods and Services] --> A[Households]
+	B[Firms] -- Goods and Services --> A[Households]
 	B -- Wages, Salaries and benefits --> A
 	A -- Labor Services --> B
 	A -- Payment for Goods and Services --> B
@@ -87,5 +87,30 @@ the circular flow diagram describes how goods and services and income flow throu
 - Markets are guided by prices and quantities
 	- people decide how much of something to buy based on its price
 		- both jobs and goods
+
+## Market organize most, but not all econ activity
+
+# Summary
+- Economics is the study of 
+
+
+
+
+
+
+## The concept of tradeoff
+- We defined economics as **decision under conditions of scarcity**
+- a **tradeoff** is a situation in which choosing one of something leads to less of something else
+	- ex
+		- producing more gives us more goods and services, but possibly at the expense of addition pollution
+		- working more gives you more money/income, but less time to rest or study for school
+		- hiring more workers allows you to create/sell more output, but costs you more to operate
+
+## Breaking down the tradeoff concept
+- When economics study choices (consumption behavior, macro policy choices, etc.), they work with models
+	- they develop a model, or a simplified view to try to understand how people make their choices
+	- two examples today
+		- Budget constraint from microeconom
+		- Production Possibilies Frontier (aka "PPF") from macroecon
 
 ## 
