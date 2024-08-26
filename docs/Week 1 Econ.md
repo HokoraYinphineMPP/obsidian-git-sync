@@ -59,4 +59,23 @@
 		- what causes prices to go up?
 		- (how) should governments support their economy?
 
-## 
+## Economics models
+- Econ models are simplified ways of thinking about the economy
+- since the economy is so complex, economists have found ways of "boiling down" the relationships in it
+- this "boiling down" is called modeling
+	- imagine building a model airplane or train
+		- its not the exact same thing but it gives a good estimate
+
+# Circular Flow Diagram
+```mermaid
+Graph LR
+A->B
+```
+Example of an economic model.
+the circular flow diagram describes how goods and services and income flow through an economy
+
+- **Households** are **groups of people** like families or people living alone or with others
+- **Firms** are **businesses**
+
+(personal businesses act like households and firms)
+
