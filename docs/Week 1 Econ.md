@@ -61,15 +61,15 @@
 
 ## Economics models
 - Econ models are simplified ways of thinking about the economy
-- since the economy is so complex, economists have found ways of "boiling down" the relationships in it
-- this "boiling down" is called modeling
+- since the economy is so complex, economists have found ways of "*boiling down*" the relationships in it
+- this "*boiling down*" is called **modeling**
 	- imagine building a model airplane or train
 		- its not the exact same thing but it gives a good estimate
 
 # Circular Flow Diagram
 ```mermaid
 graph LR
-	B[Firms] -- Goods and Services --> A[Households]
+	B((Firms/Businesses)) -- Goods and Services --> A((Households))
 	B -- Wages, Salaries and benefits --> A
 	A -- Labor Services --> B
 	A -- Payment for Goods and Services --> B
@@ -80,7 +80,7 @@ the circular flow diagram describes how goods and services and income flow throu
 - **Households** are **groups of people** like families or people living alone or with others
 - **Firms** are **businesses**
 
-(personal businesses act like households and firms)
+`(personal businesses act like households and firms)`
 
 ## How are economies organized?
 - For most people, econ decisions are primarily made in markets
@@ -130,7 +130,7 @@ the circular flow diagram describes how goods and services and income flow throu
 	- 3?
 	- 4?
 	- or more?
-		- examples branches off to more complex ideas like "how much does it cost to take 2 hours off of work to go to a party"
+		- `examples branches off to more complex ideas like "how much does it cost to take 2 hours off of work to go to a party"`
 	- Opportunity cost
 		- 1 banana is 4 blueberries
 		- 1 blueberry is 1/4 banana
