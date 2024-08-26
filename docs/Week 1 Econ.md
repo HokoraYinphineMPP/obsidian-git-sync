@@ -142,4 +142,11 @@ the circular flow diagram describes how goods and services and income flow throu
 - Macroeconomics also has tradeoffs
 	- ie
 		- the country can either provide a lot of healthcare, or a lot of education, but its hard to provide both
-		- there are constraints on the size of the trained workforce, and 
+		- there are constraints on the size of the trained workforce, and of course, people's needs are balanced between healthcare and education
+		- further, it can be hard to shift to a new spot on the curve quickly, because of the time it takes to train workers and allocate resources to a different industry
+
+# Summary
+- Tradeoffs are very common in economics
+	- they occur at the micro and macro level
+- Tradeoffs can be quantified as opportunity costs, which tell you how much of something you need to give up in order to get more of something else
+
