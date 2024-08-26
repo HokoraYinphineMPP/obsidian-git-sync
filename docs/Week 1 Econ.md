@@ -130,5 +130,16 @@ the circular flow diagram describes how goods and services and income flow throu
 	- 3?
 	- 4?
 	- or more?
-			
-## 
+		- examples branches off to more complex ideas like "how much does it cost to take 2 hours off of work to go to a party"
+	- Opportunity cost
+		- 1 banana is 4 blueberries
+		- 1 blueberry is 1/4 banana
+		- $\$2*1$ is $\$0.50*4$
+
+## Tradeoffs at the macro level
+- The concept of tradeoff is widely applicable
+- the ex we saw was microeconomics
+- Macroeconomics also has tradeoffs
+	- ie
+		- the country can either provide a lot of healthcare, or a lot of education, but its hard to provide both
+		- there are constraints on the size of the trained workforce, and 
