@@ -68,8 +68,11 @@
 
 # Circular Flow Diagram
 ```mermaid
-Graph LR
-A->B
+graph LR
+	B[Firms] -- [Goods and Services] --> A[Households]
+	B -- Wages, Salaries and benefits --> A
+	A -- Labor Services --> B
+	A -- Payment for Goods and Services --> B
 ```
 Example of an economic model.
 the circular flow diagram describes how goods and services and income flow through an economy
@@ -79,3 +82,10 @@ the circular flow diagram describes how goods and services and income flow throu
 
 (personal businesses act like households and firms)
 
+## How are economies organized?
+- For most people, econ decisions are primarily made in markets
+- Markets are guided by prices and quantities
+	- people decide how much of something to buy based on its price
+		- both jobs and goods
+
+## 
