@@ -110,7 +110,14 @@ the circular flow diagram describes how goods and services and income flow throu
 - When economics study choices (consumption behavior, macro policy choices, etc.), they work with models
 	- they develop a model, or a simplified view to try to understand how people make their choices
 	- two examples today
-		- Budget constraint from microeconom
-		- Production Possibilies Frontier (aka "PPF") from macroecon
+		- Budget constraint from microeconomy
+		- Production Possibilist Frontier (aka "PPF") from macroeconomy
 
-## 
+## How individuals make choices based on budget contraint
+- ex
+	- Alex only consumes two goods, bananas and blueberries.
+		- bananas cost $2 and blueberries cost $.50 each
+	- suppose $10 in income
+	- with his budget, he can either purces at most 5 bananas, or at most 20 blueberries
+	- with this information, we can set up a budget constraint which gives a collection of all the different choices alexander can make
+
