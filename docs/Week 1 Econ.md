@@ -113,12 +113,12 @@ the circular flow diagram describes how goods and services and income flow throu
 		- Budget constraint from microeconomy
 		- Production Possibilist Frontier (aka "PPF") from macroeconomy
 
-## How individuals make choices based on budget contraint
+## How individuals make choices based on budget constraint
 - ex
 	- Alex only consumes two goods, bananas and blueberries.
 		- bananas cost $2 and blueberries cost $.50 each
 	- suppose $10 in income
-	- with his budget, he can either purces at most 5 bananas, or at most 20 blueberries
+	- with his budget, he can either purchases at most 5 bananas, or at most 20 blueberries
 	- with this information, we can set up a budget constraint which gives a collection of all the different choices alexander can make
 
 # Quantifying tradeoffs
