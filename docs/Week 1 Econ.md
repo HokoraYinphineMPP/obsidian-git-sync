@@ -150,8 +150,3 @@ the circular flow diagram describes how goods and services and income flow throu
 	- they occur at the micro and macro level
 - Tradeoffs can be quantified as opportunity costs, which tell you how much of something you need to give up in order to get more of something else
 
-
-```mermaid
-graph
-C17 --> C18
-```
