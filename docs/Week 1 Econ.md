@@ -140,7 +140,7 @@ the circular flow diagram describes how goods and services and income flow throu
 - The concept of tradeoff is widely applicable
 - the ex we saw was microeconomics
 - Macroeconomics also has tradeoffs
-	- ie
+	- ex
 		- the country can either provide a lot of healthcare, or a lot of education, but its hard to provide both
 		- there are constraints on the size of the trained workforce, and of course, people's needs are balanced between healthcare and education
 		- further, it can be hard to shift to a new spot on the curve quickly, because of the time it takes to train workers and allocate resources to a different industry
