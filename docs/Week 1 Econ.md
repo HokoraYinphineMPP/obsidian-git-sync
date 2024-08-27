@@ -152,3 +152,9 @@ the circular flow diagram describes how goods and services and income flow throu
 
 
 
+```mermaid
+xychart-beta
+x-axis miau
+y-axis miau
+line[200,100]
+```
